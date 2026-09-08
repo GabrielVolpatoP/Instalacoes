@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\begin{table}[htbp]
+\centering
+\caption{Cargas do Condomínio}
+\label{tab:cargas_condominio}
+\renewcommand{\arraystretch}{1.06} % Ajusta a altura das linhas da tabela
+
+\begin{tabular}{l l c c c}
+
+\toprule
+\textbf{Tipo} & \textbf{Ambiente} & \textbf{Watts} & \textbf{VA} & \textbf{Fase} \\
+\midrule
+\multirow{13}{*}{\rotatebox{90}{Iluminação}} 
+ & Garagem Subsolo & 3000 & 3000 & T \\
+ & Rampas - Térreo & 1200 & 1200 & T \\
+ & Salão de Festas & \multirow{3}{*}{1500} & \multirow{3}{*}{1500} & \multirow{3}{*}{R} \\
+ & Cozinha         &                       &                       & \\
+ & Guarita e Banheiros                     &                       &                       & \\
+ & Área de Recreação & 900 & 900 & R \\
+ & Quadra de Esportes & 1200 & 1200 & R \\
+ & Depósito de Gás & 800 & 800 & R \\
+ & Entrada & 1500 & 1500 & S \\
+ & Escadas & 2800 & 2800 & R \\
+ & Corredor do TIPO & 1500 & 1500 & S \\
+ & Áreas Descobertas - Térreo & 2400 & 2400 & T \\
+ & Elevadores & 200 & 200 & R \\
+ & Emergência & 200 & 200 & S \\
+ & Casa de máquinas & 800 & 800 & S \\
+\midrule
+\multirow{9}{*}{\rotatebox{90}{Tomada}}
+ & Salão de Festas: 127V & 2000 & 2500 & T \\
+ & Salão de Festas: 220V & 1500 & 1875 & RS \\
+ & Cozinha Salão de Festas: Freezer & 1200 & 1500 & RS \\
+ & Cozinha Salão de Festas: Grill & 1200 & 1500 & ST \\
+ & Corredor do Tipo: 220V & 1500 & 1875 & ST \\
+ & Garagem do Subsolo - 220V & 1500 & 1875 & RT \\
+ & Poço Elevadores & 1400 & 1750 & S \\
+ & Guarita & 1500 & 1875 & S \\
+ & Condomínio & 1400 & 1750 & R \\
+ \midrule
+  & Portões de Garagem & 600 & 750 & S \\
+  & Elevador & 5520 & 6900 & RST \\
+  & Bomba de Recalque & 3680 & 4600 & RST \\
+\midrule
+\textbf{Total} & 25 & \textbf{41000} & \textbf{46750} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
