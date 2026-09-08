@@ -2,8 +2,8 @@ PWD /Volumes/Disco Rigido/Volpato/Documentos/Instalacoes
 INPUT /usr/local/texlive/2026/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalaçoes.tex
-OUTPUT Instalaçoes.log
+INPUT /Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalacoes.tex
+OUTPUT Instalacoes.log
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
@@ -218,11 +218,11 @@ INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/t1phv.fd
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/t1phv.fd
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/t1phv.fd
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
-INPUT ./Instalaçoes.aux
-INPUT ./Instalaçoes.aux
-INPUT Instalaçoes.aux
-OUTPUT Instalaçoes.aux
-OUTPUT Instalaçoes.pdf
+INPUT ./Instalacoes.aux
+INPUT ./Instalacoes.aux
+INPUT Instalacoes.aux
+OUTPUT Instalacoes.aux
+OUTPUT Instalacoes.pdf
 INPUT /usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -300,9 +300,9 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm
-INPUT ./Instalaçoes.toc
-INPUT ./Instalaçoes.toc
-INPUT Instalaçoes.toc
+INPUT ./Instalacoes.toc
+INPUT ./Instalacoes.toc
+INPUT Instalacoes.toc
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -315,12 +315,12 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
-INPUT ./Instalaçoes.lof
-INPUT ./Instalaçoes.lof
-INPUT Instalaçoes.lof
-INPUT ./Instalaçoes.lot
-INPUT ./Instalaçoes.lot
-INPUT Instalaçoes.lot
+INPUT ./Instalacoes.lof
+INPUT ./Instalacoes.lof
+INPUT Instalacoes.lof
+INPUT ./Instalacoes.lot
+INPUT ./Instalacoes.lot
+INPUT Instalacoes.lot
 INPUT ./imagens/Logo_UEM.png
 INPUT ./imagens/Logo_UEM.png
 INPUT ./imagens/Logo_UEM.png
@@ -425,9 +425,9 @@ INPUT ./imagens/Logo_UEM.png
 INPUT ./imagens/Logo_UEM.png
 INPUT ./imagens/Logo_UEM.png
 INPUT ./imagens/Logo_UEM.png
-INPUT ./Instalaçoes.bbl
-INPUT ./Instalaçoes.bbl
-INPUT Instalaçoes.bbl
+INPUT ./Instalacoes.bbl
+INPUT ./Instalacoes.bbl
+INPUT Instalacoes.bbl
 INPUT ./imagens/Logo_UEM.png
 INPUT ./imagens/Logo_UEM.png
 INPUT ./imagens/Logo_UEM.png
@@ -436,10 +436,10 @@ INPUT ./imagens/Logo_UEM.png
 INPUT ./imagens/Logo_UEM.png
 INPUT ./imagens/Logo_UEM.png
 INPUT ./imagens/Logo_UEM.png
-OUTPUT Instalaçoes.toc
-OUTPUT Instalaçoes.lof
-OUTPUT Instalaçoes.lot
-INPUT Instalaçoes.aux
+OUTPUT Instalacoes.toc
+OUTPUT Instalacoes.lof
+OUTPUT Instalacoes.lot
+INPUT Instalacoes.aux
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
