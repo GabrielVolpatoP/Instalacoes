@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.27)  8 SEP 2026 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.27)  8 SEP 2026 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -815,8 +815,8 @@ LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
 \ABCItoken=\toks41
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 74.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 98.
+Package hyperref Info: Option `colorlinks' set `true' on input line 78.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 102.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 ) (./Instalacoes.aux
@@ -825,26 +825,26 @@ Package babel Info: 'brazil' activates 'portuges' shorthands.
 )
 \openout1 = `Instalacoes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-Package hyperref Info: Link coloring ON on input line 98.
-LaTeX Info: Redefining \degres on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+Package hyperref Info: Link coloring ON on input line 102.
+LaTeX Info: Redefining \degres on input line 102.
 \myptabbox=\box73
 \myptabboxwidth=\skip269
  (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -866,13 +866,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 98.
-Package microtype Info: Applying patch `item' on input line 98.
-Package microtype Info: Applying patch `toc' on input line 98.
-Package microtype Info: Applying patch `eqnum' on input line 98.
-Package microtype Info: Applying patch `footnote' on input line 98.
-Package microtype Info: Applying patch `verbatim' on input line 98.
-LaTeX Info: Redefining \microtypesetup on input line 98.
+LaTeX Info: Redefining \microtypecontext on input line 102.
+Package microtype Info: Applying patch `item' on input line 102.
+Package microtype Info: Applying patch `toc' on input line 102.
+Package microtype Info: Applying patch `eqnum' on input line 102.
+Package microtype Info: Applying patch `footnote' on input line 102.
+Package microtype Info: Applying patch `verbatim' on input line 102.
+LaTeX Info: Redefining \microtypesetup on input line 102.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -890,19 +890,19 @@ Package microtype Info: Loading generic protrusion settings for font family
  (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-brazil.trsl
 File: translations-basic-dictionary-brazil.trsl (brazil translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `brazil'. on input line 98.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `brazil'. on input line 102.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
 File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 98.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 102.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-french.trsl
 File: translations-basic-dictionary-french.trsl (french translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 98.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 102.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 98.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 102.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -941,18 +941,18 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 <imagens/Logo.png, id=4, 851.18pt x 923.45pt>
 File: imagens/Logo.png Graphic file (type png)
 <use imagens/Logo.png>
-Package pdftex.def Info: imagens/Logo.png  used on input line 118.
+Package pdftex.def Info: imagens/Logo.png  used on input line 122.
 (pdftex.def)             Requested size: 79.6678pt x 86.43231pt.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 120.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 124.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 120.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 124.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -963,7 +963,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 
+l.158 
        [1
 
 
@@ -974,7 +974,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 172.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 176.
  (./Instalacoes.toc [2
 
 {/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]) [3] [4
@@ -998,14 +998,14 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 <imagens/Logo_UEM.png, id=176, 792.8019pt x 382.5492pt>
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 337.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 339.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 
 Class memoir Warning: The material used in the headers is too large
 (34.55182pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 337.
+(in both cases you will find help in the memoir manual). on input line 339.
 
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1016,7 +1016,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./imagens/Logo_UEM.png): large interlaced PNG might cause out of memory (use non-interlaced PNG to fix this)
 >]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 352.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 354.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
@@ -1025,10 +1025,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 369.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 371.
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 381.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 383.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1036,7 +1036,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [12]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 425.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 427.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1044,7 +1044,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [13]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 482.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 484.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1052,7 +1052,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [14]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 515.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 517.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1061,11 +1061,11 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{table.0.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.515 \end{equation}
+l.517 \end{equation}
                     ]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 572.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 574.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1074,11 +1074,11 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{table.0.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.572 
+l.574 
       ]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 640.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 642.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1087,15 +1087,15 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{table.0.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.640 
+l.642 
       ]
-Overfull \hbox (31.42871pt too wide) in paragraph at lines 651--715
+Overfull \hbox (31.42871pt too wide) in paragraph at lines 653--717
  [][] 
  []
 
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 717.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 719.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1103,7 +1103,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [18]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 718.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 720.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1112,11 +1112,11 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{table.0.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.718 \newpage
+l.720 \newpage
               ]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 830.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 832.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1124,7 +1124,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [20]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 889.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 891.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1133,11 +1133,11 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{table.0.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.889 
+l.891 
       ]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 897.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 899.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1146,11 +1146,11 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{table.0.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.897 
+l.899 
       ]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 958.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 960.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1158,7 +1158,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [23]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 978.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 980.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1167,11 +1167,11 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{table.0.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.978 
+l.980 
       ]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1039.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1041.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1179,7 +1179,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [25]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1084.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1086.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1187,31 +1187,31 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [26]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1100.
+(hyperref)                removing `math shift' on input line 1102.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1100.
+(hyperref)                removing `subscript' on input line 1102.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1100.
+(hyperref)                removing `math shift' on input line 1102.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1116.
+(hyperref)                removing `math shift' on input line 1118.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1116.
+(hyperref)                removing `subscript' on input line 1118.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1116.
+(hyperref)                removing `math shift' on input line 1118.
 
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1129.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1131.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1219,7 +1219,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [27]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1185.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1187.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1227,7 +1227,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [28]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1238.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1240.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1235,7 +1235,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [29]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1281.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1283.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1243,7 +1243,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [30]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1349.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1351.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1263,11 +1263,11 @@ bibitemlist
 Class memoir Warning: The material used in the headers is too large
 (34.55182pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 1353.
+(in both cases you will find help in the memoir manual). on input line 1355.
 
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1353.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1355.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
