@@ -1,8 +1,8 @@
-PWD /Users/volpato/LaTex
+PWD /Volumes/Disco Rigido/Volpato/Documentos/Instalacoes
 INPUT /usr/local/texlive/2026/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/volpato/LaTex/Instalaçoes.tex
+INPUT /Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalaçoes.tex
 OUTPUT Instalaçoes.log
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls
