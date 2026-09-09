@@ -28,10 +28,6 @@
 % --- Espaçamento de primeira linha (ABNT) ---
 \setlength{\parindent}{1.5cm}
 
-\setcounter{section}{0} % Reinicia a numeração das seções para 1 na primeira seção do texto
-\setcounter{chapter}{0} % Reinicia a numeração das seções para 1 na primeira seção do texto
-
-
 \newcommand{\norma}[1]{\textbf{#1}}
 
 % --- Pacote e comando para destacar, ao longo do texto, os itens do ---
@@ -274,6 +270,8 @@ compilar o projeto com o utilitário \texttt{makeindex} além do
 % \centering
 
 
+
+
 % ============================================================
 % ETAPA 3 DO ROTEIRO -- INTRODUÇÃO
 % ============================================================
@@ -476,7 +474,7 @@ WC Social       & 7,9     & 3,51 \\
 Sacada 1        & 13,2    & 10,34 \\
 Sacada 2        & 8,9     & 4,63 \\
 Sacada 3        & 7,6     & 3,75 \\\toprule
-\textbf{Total}  & \textbf{133,2}   & \textbf{89,3} \\\toprule
+\textbf{Total}  & 133,2   & 89,3 \\\toprule
 \end{tabular}
 \fonte{O autor (2026).}
 \label{tab:apartamento_individual}
@@ -545,7 +543,7 @@ WC Social        & 1 & 100 &  100 \\
 Sacada 1          & 2 & 100 + 60 &  160 \\
 Sacada 2         & 1 & 100 &  100 \\
 Sacada 3         & 1 & 100 &  100 \\\toprule
-\textbf{Total}   & \textbf{19} & \textbf{1.660} &  \textbf{1.660} \\\toprule
+\textbf{Total}   & \textbf{19} & -- &  \textbf{1.660} \\\toprule
 \end{tabular}
 \fonte{O autor (2026).}
 \label{tab:iluminacao_apartamento_individual}
@@ -623,7 +621,7 @@ Sacada 1         & 3 & 600 + 600 + 600 &  1800\\
 Sacada 2         & 0 & 0 &  0\\
 Sacada 3         & 0 & 0 &  0\\
 \toprule
-\textbf{Total}   & \textbf{26} & \textbf{7600} &  \textbf{7600} \\
+\textbf{Total}   & 26 & - &  7600 \\
 \toprule
 \end{tabular}
 \fonte{O autor (2026).}
@@ -706,7 +704,7 @@ pelo fabricante:
         \toprule
         Sacada 3 & - & - & - & - & - \\
         \toprule
-        \textbf{Total} & \textbf{18} & - & \textbf{42260} & \textbf{42260} & \textbf{52750} \\
+        \textbf{Total} & 18 & - & 42260 & 42260 & 52750 \\
         \toprule
         \end{tabular}
         
@@ -786,7 +784,7 @@ e coletivas:
 
         \centering
         \small
-        \renewcommand{\arraystretch}{1.25}
+        \renewcommand{\arraystretch}{1.15}
         \resizebox{\linewidth}{!}{%
         \begin{tabular}{c | c c c c c c c c c c c c}
         \toprule
@@ -845,7 +843,7 @@ e coletivas:
 
         \centering
         \small
-        \renewcommand{\arraystretch}{1.25}
+        \renewcommand{\arraystretch}{1.15}
         \resizebox{\linewidth}{!}{%
         \begin{tabular}{c | c c c c c c c c c c | c}
             \toprule
@@ -914,14 +912,14 @@ qualitativa, sem os valores numéricos de cada carga comum.}
 \centering
 \caption{Cargas do Condomínio}
 \label{tab:cargas_condominio}
-\renewcommand{\arraystretch}{1.15} % Ajusta a altura das linhas da tabela
+\renewcommand{\arraystretch}{1.06} % Ajusta a altura das linhas da tabela
 
-\begin{tabular}{l | c c c c}
+\begin{tabular}{l l c c c}
 
 \toprule
 \textbf{Tipo} & \textbf{Ambiente} & \textbf{Watts} & \textbf{VA} & \textbf{Fase} \\
 \midrule
-\multirow{13}{*}{\rotatebox{90}{\textbf{Iluminação}}} 
+\multirow{13}{*}{\rotatebox{90}{Iluminação}} 
  & Garagem Subsolo & 3000 & 3000 & T \\
  & Rampas - Térreo & 1200 & 1200 & T \\
  & Salão de Festas & \multirow{3}{*}{1500} & \multirow{3}{*}{1500} & \multirow{3}{*}{R} \\
@@ -938,7 +936,7 @@ qualitativa, sem os valores numéricos de cada carga comum.}
  & Emergência & 200 & 200 & S \\
  & Casa de máquinas & 800 & 800 & S \\
 \midrule
-\multirow{9}{*}{\rotatebox{90}{\textbf{Tomada}}}
+\multirow{9}{*}{\rotatebox{90}{Tomada}}
  & Salão de Festas: 127V & 2000 & 2500 & T \\
  & Salão de Festas: 220V & 1500 & 1875 & RS \\
  & Cozinha Salão de Festas: Freezer & 1200 & 1500 & RS \\
@@ -953,7 +951,7 @@ qualitativa, sem os valores numéricos de cada carga comum.}
   & Elevador & 5520 & 6900 & RST \\
   & Bomba de Recalque & 3680 & 4600 & RST \\
 \midrule
-\textbf{Total} & \textbf{25} & \textbf{41000} & \textbf{46750} & \textbf{---} \\
+\textbf{Total} & 25 & \textbf{41000} & \textbf{46750} & \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1022,12 +1020,48 @@ critério de origem contratual/regulatória e não de norma técnica geral.
 % ============================================================
 \subsection{Categoria da Unidade Consumidora}
 
-\hspace{1.27cm}\FALTA{Definir e justificar a \textbf{categoria da unidade consumidora}
-(item do roteiro): classe residencial, subclasse (edifício de uso
-coletivo/condomínio), grupo tarifário (Grupo B, dado o nível de tensão de
-fornecimento em baixa tensão) e demais enquadramentos exigidos pela COPEL
-para o tipo de edificação e de fornecimento de energia elétrica adotados
-neste projeto.}
+\hspace{1.27cm}Após a definição de todos os circuitos das unidades consumidoras, bem como o cálculo da carga total instalada e das demandas de cada quadro, realiza-se a consulta à Tabela 4 do CODI para determinar a categoria correspondente ao edifício de uso coletivo e às respectivas unidades consumidoras.
+
+Para o edifício de uso coletivo, a demanda foi calculada conforme o procedimento estabelecido pelo CODI, resultando em uma demanda final de 223,264 kVA. Esse é, portanto, o valor de demanda a ser solicitado à Copel. De acordo com a Tabela 4 do CODI, Dimensionamento do Ramal de Ligação em BT e Sistema de Aterramento, o valor obtido enquadra-se na categoria de demanda máxima de 225 kVA.
+
+Dessa forma, o ramal de ligação que alimentará o edifício será constituído por:
+
+\[3 \times 3\#120(120)\,\mathrm{mm}^2 - 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,3 \times 100\,\mathrm{mm} \]
+
+Após a caixa seccionadora, é acrescentado o condutor de proteção (terra), resultando na seguinte configuração:
+
+\[3 \times 3\#120(120)T95\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,3 \times 100\,\mathrm{mm} \]
+
+Esse circuito estende-se desde o ponto de entrega até o QGBT (Quadro Geral de Baixa Tensão). A partir do QGBT, são realizados novos cálculos de demanda para cada trecho de alimentação, considerando as cargas atendidas pelos CM1 e CM2.
+
+Para o CM1, foi obtida uma demanda máxima de 112,5 kVA, enquanto para o CM2 a demanda máxima calculada foi de 150 kVA. Ambos os valores foram determinados conforme o procedimento do CODI e posteriormente verificados de acordo com a Tabela 4.
+
+O circuito de alimentação entre o QGBT e os CM1 e CM2 é constituído por:
+
+\[2 \times 3\#70(70)T70\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,2 \times 100\,\mathrm{mm} \]
+
+A partir dos CM1 e CM2, a alimentação é distribuída entre os quadros correspondentes às unidades consumidoras dos apartamentos e os quadros destinados às cargas de condomínio. Neste projeto, as cargas de condomínio são distribuídas entre os quadros da casa de máquinas, térreo e subsolo.
+
+Para cada unidade consumidora, a categoria é determinada por meio da expressão P1G1 P2G2. Para as unidades consumidoras dos apartamentos, foi definida a categoria 37, cujo ramal de ligação é constituído por:
+
+\[3\#10(10)T10\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,32\,\mathrm{mm} \]
+
+No caso das cargas de condomínio, a alimentação proveniente do CM1 segue inicialmente para o QGC (Quadro Geral do Condomínio). A partir desse quadro, a distribuição é realizada para os quadros específicos da casa de máquinas, do térreo e do subsolo. Para cada um desses quadros, foi realizado um cálculo individual de demanda e, posteriormente, determinada a categoria correspondente na tabela de dimensionamento do CODI.
+
+Para o QGC, a demanda calculada pelo procedimento do CODI foi de 31,066 kVA. O ramal de alimentação correspondente é:
+
+\[3\#35(35)T16\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,50\,\mathrm{mm} \]
+
+Para o quadro da casa de máquinas, a demanda calculada é de X kVA. Esse quadro foi enquadrado na categoria 36, sendo utilizado o seguinte ramal de alimentação:
+
+\[3\#10(10)T10\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,32\,\mathrm{mm} \]
+
+Para os quadros do térreo e do subsolo, foram obtidas demandas de X kVA e Y kVA, respectivamente. Ambos os quadros foram enquadrados na categoria 28, sendo adotado para suas alimentações o seguinte ramal:
+
+\[2\#10(10)T10\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,32\,\mathrm{mm} \]
+
+Assim, a distribuição elétrica do edifício pode ser organizada de forma hierárquica, partindo do ponto de entrega e seguindo para o QGBT, de onde são derivados os circuitos de alimentação dos CM1 e CM2. A partir desses centros de medição, são alimentadas as unidades consumidoras dos apartamentos e as cargas de uso coletivo, que, por sua vez, são distribuídas entre os respectivos quadros de condomínio. Para facilitar a visualização dessa distribuição, foi elaborado um fluxograma, apresentado na Figura F.
+
 
 % ============================================================
 \subsection{Localização do Barramento Geral e dos Medidores}
@@ -1291,11 +1325,68 @@ conforme simbologia normatizada.}
 
 \subsection{Estudo de Pesquisa: Projeto Telefônico}
 
-\hspace{1.27cm}\FALTA{Elaborar, como tarefa de pesquisa (item 2 da Etapa 4 do roteiro),
-a descrição da \textbf{sequência básica de passos para a elaboração de um
-projeto telefônico}, de acordo com a prática nº 235-510-600 da Telebrás,
-sem necessidade de dimensionar um projeto telefônico completo -- apenas
-descrever a sequência normativa de etapas.}
+\hspace{1.27cm}A Prática Telebrás 235-510-600 define rede telefônica como o conjunto de  
+cabos telefônicos, blocos terminais, ferragens e acessórios instalados no 
+interior de uma edificação, com a finalidade de permitir a ligação de 
+equipamentos de telecomunicações à rede telefônica urbana. O projeto 
+telefônico, por sua vez, é o documento técnico composto de desenhos,
+tabela de materiais e memorial descritivo que dimensiona a rede interna de 
+modo a garantir a compatibilidade com a rede urbana.
+
+O Capítulo 5 da Prática Telebrás 235-510-600, intitulado "Sequência Básica 
+para Elaboração de Redes Telefônicas em Edifícios", descreve a sequência do 
+projeto telefônico. A Prática estabelece que a rede telefônica de um edifício,
+independentemente de sua utilidade, é dividida em três partes, sendo elas:
+
+\begin{enumerate}
+    \item Cabos de entrada, que interligam a rede externa aos distribuidores gerais do edifício;
+    \item Cabos primários ou cabos de prumada, que se estendem do distribuidor geral até a última caixa de distribuição da prumada; e
+    \item Cabos secundários ou cabos de distribuição, que interligam duas caixas de distribuição, ou uma caixa de distribuição a uma caixa de saída.
+\end{enumerate}
+
+O projeto de uma rede telefônica interna tem por finalidade dimensionar essas
+três partes, além de determinar a quantidade necessária de blocos terminais 
+internos, de modo a prover um sistema de comunicação adequado ao porte e à 
+finalidade do edifício. A Figura X apresenta o fluxograma da sequência de 
+passos para o dimensionamento de um projeto telefônico.
+
+A sequência de passos apresentada na Figura X é a única lista denominada, pela Prática, de sequência básica (Capítulo 5, item 5.04). O dimensionamento parte da rede mais próxima do usuário final, ou seja, dos cabos secundários, e avança em direção à rede mais próxima da concessionária, isto é, dos cabos de entrada. Somente após o dimensionamento dessas três partes da rede são tratados o cálculo de blocos terminais, os comprimentos de cabos, a distribuição de pares, a tabela de materiais e a representação gráfica do projeto. Essa sequência está detalhada nas etapas a seguir.
+
+\begin {enumerate}
+    \item Projeto da Rede de Cabos Secundários
+    
+    \hspace{1.27cm}No primeiro passo da sequência, é determinada a carga de cada caixa de distribuição em todos os pavimentos, corrigida por um fator de 0,7 sobre o número de pontos previstos, a fim de se obter um número ideal de pares terminados. Esse fator representa uma taxa de simultaneidade típica de utilização das linhas, evitando o superdimensionamento da rede. Nesta etapa também é definida a capacidade dos cabos CCI (Cabo Interno, tipo interno-interno) ou CI (Cabo Interno), responsáveis por interligar as caixas de distribuição às caixas de saída.
+    \item Projeto da Rede de Cabos Primários
+    
+    \hspace{1.27cm}Nesta etapa, é dimensionada a prumada do edifício, considerando duas situações construtivas:
+    \begin{enumerate}[label=\alph*)]
+        \item Edifícios com poços de elevação, nos quais cada caixa de distribuição ligada à prumada é atendida diretamente por um cabo próprio. Essa solução é indicada para edifícios de maior porte ou com elevado número de pavimentos, nos quais a demanda por pares justifica cabos individuais.
+        \item Edifícios com tubulação convencional, nos quais um único cabo se ramifica pelas caixas de distribuição. Essa solução é indicada para edifícios de menor porte, em que a viabilidade construtiva ou a menor demanda por pares não justificam a instalação de poços de elevação dedicados.
+    \end{enumerate}
+    \item Projeto dos Cabos de Entrada
+    
+    \hspace{1.27cm}Nesta etapa, são dimensionados os cabos que interligam a caixa de distribuição geral do prédio ao ponto de entrega da concessionária, que pode ser uma caixa subterrânea ou um poste, a depender da infraestrutura externa disponível na região (rede subterrânea ou aérea). A capacidade desse cabo é definida em função da quantidade ideal de pares terminados, calculada nas etapas anteriores.
+    \item Determinação da Quantidade de Blocos Terminais Necessários nas 
+    Caixas da Rede Interna
+    
+    \hspace{1.27cm}Nesta etapa, é calculada a quantidade de blocos terminais necessários, dividindo-se o número de pares efetivamente terminados pela capacidade padrão de 10 pares por bloco terminal e arredondando-se o resultado para o número inteiro superior. O Capítulo 10 da Prática, "Disposição dos Cabos e Blocos Terminais", complementa esta etapa ao estabelecer critérios físicos de arranjo dos blocos.
+    \item Determinação dos Comprimentos dos Cabos da Rede Interna
+    
+    \hspace{1.27cm}Nesta etapa, é definido o comprimento de cada trecho de cabo, considerando a extensão da tubulação percorrida, as formas de terminação nos blocos e os raios mínimos de curvatura em função do número de pares do cabo.
+    \item Distribuição dos Cabos da Rede Interna
+    
+    \hspace{1.27cm}Nesta etapa, são designadas, para cada cabo, as camadas de pares (isto é, os grupos de pares agrupados fisicamente dentro do cabo) que atenderão às previsões de demanda em cada ponto da rede, partindo da última caixa de distribuição em direção à caixa de distribuição geral.
+    \item Elaboração da Tabela de Materiais
+    
+    \hspace{1.27cm}Nesta etapa, é elaborada a tabela de materiais, posicionada no desenho do projeto, descrevendo tipos e quantidades de caixas, blocos terminais, canaletas, abraçadeiras e demais materiais necessários para a execução.
+    \item Desenho de Projeto
+    
+    \hspace{1.27cm}Nesta etapa, é elaborado o desenho do projeto da rede telefônica interna, que deve conter os elementos necessários para o completo entendimento dos serviços a executar, utilizar a simbologia padrão definida pela Prática e apresentar, no mínimo, os seguintes elementos: corte vertical, esquema da rede, planta baixa com rede secundária, detalhes do distribuidor geral, tabela de materiais e legenda preenchida.
+\end{enumerate}
+
+A análise do Capítulo 5 da Prática Telebrás 235-510-600 evidencia que a elaboração de um projeto de rede telefônica em edifícios segue uma metodologia sequencial, que parte da rede mais próxima do usuário final (cabos secundários) em direção à rede mais próxima da concessionária (cabos de entrada), para só então tratar do dimensionamento de blocos terminais, comprimentos de cabos, distribuição de pares, materiais e representação gráfica.
+
+Em projetos atuais, esse dimensionamento é frequentemente complementado por normas de cabeamento estruturado, como a ABNT NBR 14565, e pela regulamentação vigente da Agência Nacional de Telecomunicações (Anatel), que devem ser observadas em conjunto com a sequência básica aqui apresentada.
 
 % ============================================================
 % ETAPA 5 DO ROTEIRO
