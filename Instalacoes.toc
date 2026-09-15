@@ -51,8 +51,8 @@
 \contentsline {subsection}{\numberline {0.2.23}Prumada Elétrica}{37}{subsection.0.2.23}%
 \contentsline {subsection}{\numberline {0.2.24}Diagramas Unifilares dos Quadros}{37}{subsection.0.2.24}%
 \contentsline {subsection}{\numberline {0.2.25}Estudo de Pesquisa: Projeto Telefônico}{38}{subsection.0.2.25}%
-\contentsline {section}{\numberline {0.3}Conclusões}{40}{section.0.3}%
-\contentsline {section}{\numberline {0.4}Apêndices}{41}{section.0.4}%
+\contentsline {section}{\numberline {0.3}Conclusões}{42}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Apêndices}{42}{section.0.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{42}{section*.17}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{45}{section*.17}%

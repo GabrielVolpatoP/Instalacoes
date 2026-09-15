@@ -1602,10 +1602,21 @@ independentemente de sua utilidade, é dividida em três partes, sendo elas:
 O projeto de uma rede telefônica interna tem por finalidade dimensionar essas
 três partes, além de determinar a quantidade necessária de blocos terminais 
 internos, de modo a prover um sistema de comunicação adequado ao porte e à 
-finalidade do edifício. A Figura X apresenta o fluxograma da sequência de 
+finalidade do edifício. A Figura \ref{fluxograma_projeto_telefonico} apresenta o fluxograma da sequência de 
 passos para o dimensionamento de um projeto telefônico.
 
-A sequência de passos apresentada na Figura X é a única lista denominada, pela Prática, de sequência básica (Capítulo 5, item 5.04). O dimensionamento parte da rede mais próxima do usuário final, ou seja, dos cabos secundários, e avança em direção à rede mais próxima da concessionária, isto é, dos cabos de entrada. Somente após o dimensionamento dessas três partes da rede são tratados o cálculo de blocos terminais, os comprimentos de cabos, a distribuição de pares, a tabela de materiais e a representação gráfica do projeto. Essa sequência está detalhada nas etapas a seguir.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagens/fluxograma_projeto_telefonico.png}
+    
+        \caption{Fluxograma da sequência de passos para o dimensionamento de um projeto telefônico.}
+    
+    \label{fluxograma_projeto_telefonico}
+\end{figure}
+
+\hspace{1.27cm}\FALTA{FALAR SOBRE O TOPIICO \textbf{DISPONIBILIZAR O DESENHO DA TUBULAÇAO [...] DA IMAMGE \Ref{fluxograma_projeto_telefonico}}.}
+
+A sequência de passos apresentada na Figura \ref{fluxograma_projeto_telefonico} é a única lista denominada, pela Prática, de sequência básica (Capítulo 5, item 5.04). O dimensionamento parte da rede mais próxima do usuário final, ou seja, dos cabos secundários, e avança em direção à rede mais próxima da concessionária, isto é, dos cabos de entrada. Somente após o dimensionamento dessas três partes da rede são tratados o cálculo de blocos terminais, os comprimentos de cabos, a distribuição de pares, a tabela de materiais e a representação gráfica do projeto. Essa sequência está detalhada nas etapas a seguir.
 
 \begin {enumerate}
     \item Projeto da Rede de Cabos Secundários
@@ -1658,6 +1669,154 @@ fornecimento, dimensionamento de condutores/proteções e eventuais
 dificuldades ou decisões de projeto tomadas pelo grupo.}
 
 \section{Apêndices}
+
+\begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
+\centering
+
+% Inicia a rotação do conteúdo
+%\begin{sideways}
+    % O minipage serve para "empacotar" o título e a tabela juntos para que o caption funcione virado.
+    % O tamanho \linewidth indica que a tabela pode ocupar até a largura máxima da página
+    \begin{minipage}{\linewidth}
+        \centering
+        \caption{Capacidades de condução de corrente (Ampacidade) para métodos de referência}
+        \label{tab:ampacidade}
+        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
+        %\setlength{\tabcolsep}{8pt}       
+
+        \centering
+        \small
+        \renewcommand{\arraystretch}{1.15}
+        \resizebox{\linewidth}{!}{%
+        \begin{tabular}{c | c c c c c c c c c c c c}
+        \toprule
+        \multirow{3}{*}{\textbf{Seção Nominal}} & \multicolumn{12}{c}{\textbf{Métodos de Referência e Nº de condutores carregados}} \\
+        \cmidrule(l){2-13}
+         & \multicolumn{2}{c}{A1} & \multicolumn{2}{c}{A2} & \multicolumn{2}{c}{B1} & \multicolumn{2}{c}{B2} & \multicolumn{2}{c}{C} & \multicolumn{2}{c}{D} \\
+        \cmidrule(l){2-3} \cmidrule(l){4-5} \cmidrule(l){6-7} \cmidrule(l){8-9} \cmidrule(l){10-11} \cmidrule(l){12-13}
+        \textbf{(mm$^2$)} & 2 & 3 & 2 & 3 & 2 & 3 & 2 & 3 & 2 & 3 & 2 & 3 \\
+        \midrule
+        1 & 11 & 10 & 11 & 10 & 14 & 12 & 13 & 12 & 15 & 14 & 18 & 15 \\
+        1,5 & 14,5 & 13,5 & 14 & 13 & 17,5 & 15,5 & 16,5 & 15 & 19,5 & 17,5 & 22 & 18 \\
+        2,5 & 19,5 & 18 & 18,5 & 17,5 & 24 & 21 & 23 & 20 & 27 & 24 & 29 & 24 \\
+        4 & 26 & 24 & 25 & 23 & 32 & 28 & 30 & 27 & 36 & 32 & 38 & 31 \\
+        6 & 34 & 31 & 32 & 29 & 41 & 36 & 38 & 34 & 46 & 41 & 47 & 39 \\
+        10 & 46 & 42 & 43 & 39 & 57 & 50 & 52 & 46 & 63 & 57 & 63 & 52 \\
+        16 & 61 & 56 & 57 & 52 & 76 & 68 & 69 & 62 & 85 & 76 & 81 & 67 \\
+        25 & 80 & 73 & 75 & 68 & 101 & 89 & 90 & 80 & 112 & 96 & 104 & 86 \\
+        35 & 99 & 89 & 92 & 83 & 125 & 110 & 111 & 99 & 138 & 119 & 125 & 103 \\
+        50 & 119 & 108 & 110 & 99 & 151 & 134 & 133 & 118 & 168 & 144 & 148 & 122 \\
+        70 & 151 & 136 & 139 & 125 & 192 & 171 & 168 & 149 & 213 & 184 & 183 & 151 \\
+        95 & 182 & 164 & 167 & 150 & 232 & 207 & 201 & 179 & 258 & 223 & 216 & 179 \\
+        120 & 210 & 188 & 192 & 172 & 269 & 239 & 232 & 206 & 299 & 259 & 246 & 203 \\
+        150 & 240 & 216 & 219 & 196 & 309 & 275 & 265 & 236 & 344 & 299 & 278 & 230 \\
+        185 & 273 & 245 & 248 & 223 & 353 & 314 & 300 & 268 & 392 & 341 & 312 & 258 \\
+        240 & 321 & 286 & 291 & 261 & 415 & 370 & 351 & 313 & 461 & 403 & 361 & 297 \\
+        \bottomrule
+        \end{tabular}%
+        }
+        \label{tab:Ampacidade}
+        \vspace{0.2cm}
+        \fonte{FALTA!}
+    \end{minipage}
+%\end{sideways}
+
+\end{table}
+
+% ---------------------------------
+
+\begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
+\centering
+
+        \centering
+        \caption{Cálculo da parcela de demanda de um apartamento em função da área útil}
+        \label{tab:demanda_apartamento}
+        \setlength{\tabcolsep}{8pt}       
+        \vspace{0.1cm}
+        \centering
+        \small
+        \begin{tabular}{c c c c c c}
+        \toprule
+        
+        %\multicolumn{6}{c}{\textbf{CÁLCULO DA PARCELA DE DEMANDA DE }} \\
+        %\multicolumn{6}{c}{\textbf{UM APARTAMENTO EM FUNÇÃO DA ÁREA ÚTIL}} \\
+        %\toprule
+
+        \textbf{Área (m$^2$)} & \textbf{kVA} & \textbf{Área (m$^2$)} & \textbf{kVA} & \textbf{Área (m$^2$)} & \textbf{kVA} \\
+        \midrule
+        20 & 1,00 & 46 & 1,08 & 73 & 1,63 \\
+        20 & 1,00 & 47 & 1,10 & 74 & 1,65 \\
+        21 & 1,00 & 48 & 1,12 & 75 & 1,67 \\
+        22 & 1,00 & 49 & 1,14 & 76 & 1,69 \\
+        23 & 1,00 & 50 & 1,16 & 77 & 1,71 \\
+        24 & 1,00 & 51 & 1,18 & 78 & 1,73 \\
+        25 & 1,00 & 52 & 1,20 & 79 & 1,75 \\
+        26 & 1,00 & 53 & 1,22 & 80 & 1,76 \\
+        27 & 1,00 & 54 & 1,24 & 81 & 1,78 \\
+        28 & 1,00 & 55 & 1,26 & 82 & 1,80 \\
+        29 & 1,00 & 56 & 1,28 & 83 & 1,82 \\
+        30 & 1,00 & 57 & 1,30 & 84 & 1,84 \\
+        31 & 1,00 & 58 & 1,32 & 85 & 1,86 \\
+        32 & 1,00 & 59 & 1,34 & 86 & 1,88 \\
+        33 & 1,00 & 60 & 1,36 & 87 & 1,90 \\
+        34 & 1,00 & 61 & 1,38 & 88 & 1,92 \\
+        35 & 1,00 & 62 & 1,40 & 89 & 1,94 \\
+        36 & 1,00 & 63 & 1,43 & 90 & 1,96 \\
+        37 & 1,00 & 64 & 1,45 & 91 & 1,98 \\
+        38 & 1,00 & 65 & 1,47 & 92 & 2,00 \\
+        39 & 1,00 & 66 & 1,49 & 93 & 2,02 \\
+        40 & 1,00 & 67 & 1,51 & 94 & 2,04 \\
+        41 & 1,00 & 68 & 1,53 & 95 & 2,06 \\
+        42 & 1,00 & 69 & 1,55 & 96 & 2,08 \\
+        43 & 1,01 & 70 & 1,57 & 97 & 2,10 \\
+        44 & 1,03 & 71 & 1,59 & 98 & 2,12 \\
+        45 & 1,05 & 72 & 1,61 & 99 & 2,14 \\
+        \bottomrule
+        \end{tabular}%
+        
+        \vspace{0.2cm}
+        \fonte{FALTA}
+
+\end{table}
+
+% ---------------------------------
+
+\begin{table}[H]
+\centering
+\small
+\caption{Critério simplificado de queda de tensão}
+\label{tab:criterio_simplificado}
+
+\setlength{\tabcolsep}{8pt}       
+\vspace{0.1cm}
+        
+\begin{tabular}{c c c c c c}
+\toprule
+\multirow{2}{*}{\textbf{Tensão}} & \textbf{Seção Nominal ($S$)} & \textbf{1\%} & \textbf{2\%} & \textbf{3\%} & \textbf{4\%} \\
+ & \textbf{[mm$^2$]} & \textbf{de queda} & \textbf{de queda} & \textbf{de queda} & \textbf{de queda} \\
+\midrule
+\multirow{7}{*}{\textbf{110 V}} 
+ & 1,5 & 5.263 & 10.526 & 15.789 & 21.052 \\
+ & 2,5 & 8.773 & 17.546 & 26.319 & 35.092 \\
+ & 4   & 14.036 & 28.072 & 42.108 & 56.144 \\
+ & 6   & 21.054 & 42.108 & 63.162 & 84.216 \\
+ & 10  & 35.090 & 70.100 & 105.270 & 140.360 \\
+ & 16  & 56.144 & 112.288 & 168.432 & 224.576 \\
+ & 25  & 87.725 & 175.450 & 263.175 & 350.900 \\
+\midrule
+\multirow{7}{*}{\textbf{220 V}} 
+ & 1,5 & 21.054 & 42.108 & 63.163 & 84.216 \\
+ & 2,5 & 35.090 & 70.180 & 105.270 & 140.360 \\
+ & 4   & 56.144 & 112.288 & 168.432 & 224.576 \\
+ & 6   & 84.216 & 168.432 & 253.648 & 336.864 \\
+ & 10  & 140.360 & 280.720 & 421.080 & 561.440 \\
+ & 16  & 224.576 & 449.152 & 673.728 & 898.304 \\
+ & 25  & 350.900 & 701.800 & 1.052.700 & 1.403.600 \\
+\bottomrule
+\end{tabular}
+        \vspace{0.2cm}
+        \fonte{FALTA}
+\end{table}
 
 \FALTA{Reunir nos Apêndices (item 3 da Etapa 5 do roteiro) as tabelas,
 normas e demais materiais de apoio utilizados para a composição dos
