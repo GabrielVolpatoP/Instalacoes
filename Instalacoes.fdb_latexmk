@@ -1,15 +1,28 @@
 # Fdb version 4
+<<<<<<< Updated upstream
 ["bibtex Instalacoes"] 1789491225.83809 "Instalacoes.aux" "Instalacoes.bbl" "Instalacoes" 1789491232.9691 0
   "./referencias.bib" 1788453771.70987 770 b86fcff041527ab2381b6ff519cbf6e1 ""
   "/usr/local/texlive/2026/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/local/texlive/2026/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
   "Instalacoes.aux" 1789491231.51306 33666 a5f23507bbce1267d86ba19544fb5593 "pdflatex"
+=======
+["bibtex Instalacoes"] 1789489185.91538 "Instalacoes.aux" "Instalacoes.bbl" "Instalacoes" 1789489226.75045 0
+  "./referencias.bib" 1788453771.70987 770 b86fcff041527ab2381b6ff519cbf6e1 ""
+  "/usr/local/texlive/2026/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
+  "/usr/local/texlive/2026/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
+  "Instalacoes.aux" 1789489224.93625 29532 57f06b22b960293a35fb5f535b47f2c9 "pdflatex"
+>>>>>>> Stashed changes
   (generated)
   "Instalacoes.bbl"
   "Instalacoes.blg"
   (rewritten before read)
+<<<<<<< Updated upstream
 ["pdflatex"] 1789491226.20763 "/Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalacoes.tex" "Instalacoes.pdf" "Instalacoes" 1789491232.97003 0
   "/Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalacoes.tex" 1789491202.65486 87729 9556839aaba41b3207d680a22b715fe9 ""
+=======
+["pdflatex"] 1789489217.02508 "/Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalacoes.tex" "Instalacoes.pdf" "Instalacoes" 1789489226.75086 0
+  "/Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalacoes.tex" 1789489216.2137 80460 24ccc121fe0b05d06be1e3a6befd974d ""
+>>>>>>> Stashed changes
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -174,6 +187,7 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1787833568 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1787833140 3636769 a9aebe97ff8651ddab8398263cde58b5 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
+<<<<<<< Updated upstream
   "Instalacoes.aux" 1789491231.51306 33666 a5f23507bbce1267d86ba19544fb5593 "pdflatex"
   "Instalacoes.bbl" 1789491226.19711 899 ddfac5fea189652a8ef70da94655c27b "bibtex Instalacoes"
   "Instalacoes.lof" 1789491231.53738 186 bdc75e620e11489f9e2b0626d6ae1ccf "pdflatex"
@@ -183,6 +197,17 @@
   "imagens/Logo.png" 1787074730.29254 43134 f7f771cef59032d757109f185665cac8 ""
   "imagens/Logo_UEM.png" 1787849128.83675 194542 59878289aeaa1322645907fedae7ea0d ""
   "imagens/fluxograma_projeto_telefonico.png" 1789491202.66554 388957 3045020643b495b20e33cb7f5798c9df ""
+=======
+  "Instalacoes.aux" 1789489224.93625 29532 57f06b22b960293a35fb5f535b47f2c9 "pdflatex"
+  "Instalacoes.bbl" 1789489186.40698 899 ddfac5fea189652a8ef70da94655c27b "bibtex Instalacoes"
+  "Instalacoes.lof" 1789489224.95748 186 e82a2ff62838779baf6ffeb2cfa7c88f "pdflatex"
+  "Instalacoes.lot" 1789489224.95756 1176 ac25d9628ce63baaea3cbf2b46dc63ef "pdflatex"
+  "Instalacoes.tex" 1789489216.2137 80460 24ccc121fe0b05d06be1e3a6befd974d ""
+  "Instalacoes.toc" 1789489224.95731 4769 39f9743aac2a8976202c4075d5219744 "pdflatex"
+  "imagens/Logo.png" 1787074730.29254 43134 f7f771cef59032d757109f185665cac8 ""
+  "imagens/Logo_UEM.png" 1787849128.83675 194542 59878289aeaa1322645907fedae7ea0d ""
+  "imagens/fluxograma_projeto_telefonico.png" 1789481084.67009 388957 3045020643b495b20e33cb7f5798c9df ""
+>>>>>>> Stashed changes
   (generated)
   "Instalacoes.aux"
   "Instalacoes.lof"

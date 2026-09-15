@@ -1,5 +1,6 @@
 TesteZone.tex
 TesteZone.pdf
+<<<<<<< Updated upstream
 TesteZone.synctex.gz
 TesteZone.log
 TesteZone.fls
@@ -12,3 +13,5 @@ TesteZone.fdb_latexmk
 TesteZone.aux
 TesteZone.aux
 TesteZone.fdb_latexmk
+=======
+>>>>>>> Stashed changes
