@@ -1,28 +1,28 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.9.3)  9 SEP 2026 11:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.27)  15 SEP 2026 13:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jmcch/OneDrive/Documentos/latex/Instalacoes.tex
-(c:/Users/jmcch/OneDrive/Documentos/latex/Instalacoes.tex
+**"/Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalacoes.tex"
+(/Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalacoes.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-12-24>
-(C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/abntex2\abntex2.cls
+L3 programming layer <2026-01-19>
+(/usr/local/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2.cls
 Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
-(C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/memoir\memoir.cls
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/memoir/memoir.cls
 Document Class: memoir 2025/11/04 v3.8.4b configurable book, report, article document class
-(C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2025-12-24 L3 programming layer (loader) 
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xpatch/xpatch.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count276
 ))
@@ -31,12 +31,12 @@ Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \xlvchars=\skip51
 \@memcnta=\count277
 \c@@memmarkcntra=\count278
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
 \trimtop=\skip52
 \trimedge=\skip53
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/memoir\mem12.clo
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/memoir/mem12.clo
 File: mem12.clo 2022/07/29 v0.5 memoir class 12pt size option
 )
 \binding=\skip54
@@ -126,7 +126,7 @@ File: mem12.clo 2022/07/29 v0.5 memoir class 12pt size option
 \beforePoemTitleskip=\skip114
 \midPoemTitleskip=\skip115
 \afterPoemTitleskip=\skip116
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen153
 \ar@mcellbox=\box53
@@ -135,11 +135,11 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \extratabsurround=\skip117
 \backup@length=\skip118
 \ar@cellbox=\box54
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2025/10/21 v1.06 decimal alignment package (DPC)
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/tools\delarray.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/delarray.sty
 Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@col@width=\dimen155
 \TX@old@table=\dimen156
@@ -148,7 +148,7 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@delta=\dimen159
 \TX@cols=\count297
 \TX@ftn=\toks19
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen160
 \lightrulewidth=\dimen161
@@ -202,22 +202,22 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \afterepigraphskip=\skip131
 \epigraphwidth=\skip132
 \epigraphrule=\skip133
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
-Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+)) (/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )))
 \c@section@level=\count308
@@ -290,7 +290,7 @@ LaTeX Info: Redefining \flushbottom on input line 8099.
 \c@pagenote=\count312
 \c@pagenoteshadow=\count313
 \mem@pn@lastkern=\skip181
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks23
 \verbatim@line=\toks24
@@ -298,7 +298,7 @@ Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 )
 \verbatimindent=\skip182
 \verbatim@out=\write3
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/base\shortvrb.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/base/shortvrb.sty
 Package: shortvrb 2024/12/25 v3.0q Standard LaTeX documentation package V3 (FMi)
 )
 \bvboxsep=\skip183
@@ -361,143 +361,134 @@ Package tocbibind [2008/07/23] emulated by memoir.
 Package tocloft [2008/07/23] emulated by memoir.
 Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/textcase\textcase.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2025/02/16 v1.05 Text only upper/lower case changing (DPC)
 Package textcase Info: Defining Legacy names on input line 20.
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen193
 \Hy@linkcounter=\count335
 \Hy@pagecounter=\count336
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count337
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4195.
-Package hyperref Info: Link nesting OFF on input line 4200.
-Package hyperref Info: Hyper index ON on input line 4203.
-Package hyperref Info: Plain pages OFF on input line 4210.
-Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4462.
+Package hyperref Info: Bookmarks ON on input line 4468.
 \c@Hy@tempcnt=\count338
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4801.
+LaTeX Info: Redefining \url on input line 4807.
 \XeTeXLinkMargin=\dimen194
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count339
 \Field@Width=\dimen195
 \Fld@charsize=\dimen196
-Package hyperref Info: Hyper figures OFF on input line 6078.
-Package hyperref Info: Link nesting OFF on input line 6083.
-Package hyperref Info: Hyper index ON on input line 6086.
-Package hyperref Info: backreferencing OFF on input line 6093.
-Package hyperref Info: Link coloring OFF on input line 6098.
-Package hyperref Info: Link coloring with OCG OFF on input line 6103.
-Package hyperref Info: PDF/A mode OFF on input line 6108.
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
 \Hy@abspage=\count340
 \c@Item=\count341
 \c@Hfootnote=\count342
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
 \Fld@listcount=\count343
 \c@bookmark@seq@number=\count344
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip191
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/memoir\memhfixc.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2025/09/16 v1.24 hyperref package fixes for memoir class
 \c@memhycontfloat=\count345
 \c@mem@Hpagenote=\count346
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
-Package: bookmark 2026-05-21 v1.32 PDF bookmarks (HO)
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
-File: bkm-pdftex.def 2026-05-21 v1.32 bookmark driver for pdfTeX (HO)
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 \BKM@id=\count347
-)) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+)) (/usr/local/texlive/2026/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2026/03/08 v26.4 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count348
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2070.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2072.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2073.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
 \U@D=\dimen197
-\l@unhyphenated=\language79
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\l@unhyphenated=\language91
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 \bbl@dirlevel=\count349
-Package babel Info: Configuration files are deprecated, as
-(babel)             they can break document portability.
-(babel)             Reported on input line 4196.
-
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel-french.tex) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\babel-brazil.tex)
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/babel/locale/en/babel-english.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/babel/locale/invalid/babel-brazil.tex)
 Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 4320.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
+(babel)             from babel-en.ini. Reported on input line 4330.
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 105.
+(babel)             (\language22). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 108.
+(babel)             (\language22). Reported on input line 108.
 )
 Package babel Info: Importing font and identification data for french
-(babel)             from babel-fr.ini. Reported on input line 4320.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.ldf
-Language: french 2026-06-06 v4.1a French support from the babel system
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french3.ldf
-Language: french 2026-06-06 v3.7f French support from the babel system
+(babel)             from babel-fr.ini. Reported on input line 4330.
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/babel-french/french.ldf
+Language: french 2025-08-15 v4.0e French support from the babel system
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/babel-french/french3.ldf
+Language: french 2025-08-15 v3.7e French support from the babel system
 \FB@stdchar=\count350
-Package babel Info: Making : an active character on input line 266.
-Package babel Info: Making ; an active character on input line 267.
-Package babel Info: Making ! an active character on input line 268.
-Package babel Info: Making ? an active character on input line 269.
+Package babel Info: Making : an active character on input line 273.
+Package babel Info: Making ; an active character on input line 274.
+Package babel Info: Making ! an active character on input line 275.
+Package babel Info: Making ? an active character on input line 276.
 \FBguill@level=\count351
 \FBold@everypar=\toks25
 \FB@Mht=\dimen198
@@ -506,17 +497,18 @@ Package babel Info: Making ? an active character on input line 269.
 \mc@charslot=\count354
 \std@mcc=\count355
 \dec@mcc=\count356
-\listindentFB=\dimen199
-\descindentFB=\dimen256
-\labelwidthFB=\dimen257
-\labelfullwidthFB=\dimen258
-\FB@pardim=\dimen259
-\parindentFFN=\dimen260
-\FBfnindent=\dimen261
+\FB@pardim=\dimen199
+\listindentFB=\dimen256
+\descindentFB=\dimen257
+\labelindentFB=\dimen258
+\labelwidthFB=\dimen259
+\leftmarginFB=\dimen260
+\parindentFFN=\dimen261
+\FBfnindent=\dimen262
 ))
 Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 4320.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+(babel)             from babel-es.ini. Reported on input line 4330.
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks26
 \es@quotdepth=\count357
@@ -528,28 +520,28 @@ Package babel Info: Making > an active character on input line 722.
 
 Package babel Warning: Name 'brazil' is deprecated.
 (babel)                Use 'brazilian' instead.
-(babel)                Reported on input line 4320.
+(babel)                Reported on input line 4330.
 
 Package babel Info: Importing font and identification data for brazil
-(babel)             from babel-pt-BR.ini. Reported on input line 4320.
-(C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\brazilian.ldf
+(babel)             from babel-pt-BR.ini. Reported on input line 4330.
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
 Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language56). Reported on input line 100.
-)) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+(babel)             (\language73). Reported on input line 100.
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/carlisle/scalefnt.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip192
-\enit@outerparindent=\dimen262
+\enit@outerparindent=\dimen263
 \enit@toks=\toks27
 \enit@inbox=\box58
 \enit@count@id=\count358
 \enitdp@description=\count359
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count360
 \calc@Bcount=\count361
-\calc@Adimen=\dimen263
-\calc@Bdimen=\dimen264
+\calc@Adimen=\dimen264
+\calc@Bdimen=\dimen265
 \calc@Askip=\skip193
 \calc@Bskip=\skip194
 LaTeX Info: Redefining \setlength on input line 86.
@@ -598,30 +590,30 @@ Class memoir Warning: \settocpreprocessor is marked deprecated and will be
 \ABNTEXsignwidth=\skip199
 \ABNTEXsignthickness=\skip256
 \ABNTEXsignskip=\skip257
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks28
 \inpenc@posthook=\toks29
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen265
-\Gin@req@width=\dimen266
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+\Gin@req@height=\dimen266
+\Gin@req@width=\dimen267
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
 \MT@toks=\toks30
 \MT@tempbox=\box59
@@ -631,49 +623,49 @@ LaTeX Info: Redefining \leftprotrusion on input line 1085.
 \MT@prot@toks=\toks31
 LaTeX Info: Redefining \rightprotrusion on input line 1104.
 LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen267
+\MT@outer@kern=\dimen268
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
 \MT@listname@count=\count372
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdftex.def
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 944.
 LaTeX Info: Redefining \lslig on input line 944.
 \MT@outer@space=\skip258
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip259
 \multirow@cntb=\count373
 \multirow@dima=\skip260
-\bigstrutjot=\dimen268
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+\bigstrutjot=\dimen269
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
 \c@r@tfl@t=\count374
 \rotFPtop=\skip261
 \rotFPbot=\skip262
 \rot@float@box=\box60
 \rot@mess@toks=\toks32
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip263
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks33
-\ex@=\dimen269
-)) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+\ex@=\dimen270
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen270
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+\pmbraise@=\dimen271
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count375
@@ -693,7 +685,7 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen271
+\big@size=\dimen272
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count380
@@ -711,29 +703,29 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \column@=\count385
 \maxfields@=\count386
 \andhelp@=\toks35
-\eqnshift@=\dimen272
-\alignsep@=\dimen273
-\tagshift@=\dimen274
-\tagwidth@=\dimen275
-\totwidth@=\dimen276
-\lineht@=\dimen277
+\eqnshift@=\dimen273
+\alignsep@=\dimen274
+\tagshift@=\dimen275
+\tagwidth@=\dimen276
+\totwidth@=\dimen277
+\lineht@=\dimen278
 \@envbody=\toks36
 \multlinegap=\skip264
 \multlinetaggap=\skip265
 \mathdisplay@stack=\toks37
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
-Package: siunitx 2026-08-23 v3.5.6 A comprehensive (SI) units package
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
 \l__siunitx_number_uncert_offset_int=\count387
 \l__siunitx_number_exponent_fixed_int=\count388
 \l__siunitx_number_min_decimal_int=\count389
@@ -743,59 +735,58 @@ Package: siunitx 2026-08-23 v3.5.6 A comprehensive (SI) units package
 \l__siunitx_number_upper_threshold_int=\count393
 \l__siunitx_number_group_first_int=\count394
 \l__siunitx_number_group_size_int=\count395
-\l__siunitx_number_group_min_int=\count396
-\l__siunitx_number_group_minimum_int=\count397
-\l__siunitx_compound_count_int=\count398
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations.sty
+\l__siunitx_number_group_minimum_int=\count396
+\l__siunitx_angle_tmp_dim=\dimen279
+\l__siunitx_angle_marker_box=\box63
+\l__siunitx_angle_unit_box=\box64
+\l__siunitx_compound_count_int=\count397
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
 )
-\l__siunitx_table_tmp_box=\box63
-\l__siunitx_table_tmp_dim=\dimen278
-\l__siunitx_table_column_width_dim=\dimen279
-\l__siunitx_table_integer_box=\box64
-\l__siunitx_table_decimal_box=\box65
-\l__siunitx_table_uncert_box=\box66
-\l__siunitx_table_before_box=\box67
-\l__siunitx_table_after_box=\box68
-\l__siunitx_table_before_dim=\dimen280
-\l__siunitx_table_carry_dim=\dimen281
-\l__siunitx_unit_tmp_int=\count399
-\l__siunitx_unit_position_int=\count400
-\l__siunitx_unit_total_int=\count401
-\l__siunitx_sexagesimal_tmp_dim=\dimen282
-\l__siunitx_sexagesimal_marker_box=\box69
-\l__siunitx_sexagesimal_unit_box=\box70
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+\l__siunitx_table_tmp_box=\box65
+\l__siunitx_table_tmp_dim=\dimen280
+\l__siunitx_table_column_width_dim=\dimen281
+\l__siunitx_table_integer_box=\box66
+\l__siunitx_table_decimal_box=\box67
+\l__siunitx_table_uncert_box=\box68
+\l__siunitx_table_before_box=\box69
+\l__siunitx_table_after_box=\box70
+\l__siunitx_table_before_dim=\dimen282
+\l__siunitx_table_carry_dim=\dimen283
+\l__siunitx_unit_tmp_int=\count398
+\l__siunitx_unit_position_int=\count399
+\l__siunitx_unit_total_int=\count400
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count402
+\c@float@type=\count401
 \float@exts=\toks38
 \float@box=\box71
 \@float@everytoks=\toks39
 \@floatcapt=\box72
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count403
-\Gm@cntv=\count404
-\c@Gm@tempcnt=\count405
-\Gm@bindingoffset=\dimen283
-\Gm@wd@mp=\dimen284
-\Gm@odd@mp=\dimen285
-\Gm@even@mp=\dimen286
-\Gm@layoutwidth=\dimen287
-\Gm@layoutheight=\dimen288
-\Gm@layouthoffset=\dimen289
-\Gm@layoutvoffset=\dimen290
+\Gm@cnth=\count402
+\Gm@cntv=\count403
+\c@Gm@tempcnt=\count404
+\Gm@bindingoffset=\dimen284
+\Gm@wd@mp=\dimen285
+\Gm@odd@mp=\dimen286
+\Gm@even@mp=\dimen287
+\Gm@layoutwidth=\dimen288
+\Gm@layoutheight=\dimen289
+\Gm@layouthoffset=\dimen290
+\Gm@layoutvoffset=\dimen291
 \Gm@dimlist=\toks40
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -805,18 +796,18 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/abntex2\abntex2cite.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/abntex2\abntex2abrev.sty)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
 \minimumbiblabelwidth=\skip266
 \ABCIauxlen=\skip267
-\c@ABCIaux=\count406
-\c@ABCImax=\count407
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+\c@ABCIaux=\count405
+\c@ABCImax=\count406
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 \biblabelsep=\skip268
@@ -826,9 +817,9 @@ LaTeX Info: Redefining \cite on input line 618.
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 74.
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 98.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
-) (Instalacoes.aux
+) (./Instalacoes.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 19.
 )
@@ -856,24 +847,24 @@ Package hyperref Info: Link coloring ON on input line 98.
 LaTeX Info: Redefining \degres on input line 98.
 \myptabbox=\box73
 \myptabboxwidth=\skip269
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count408
-\scratchdimen=\dimen291
+\scratchcounter=\count407
+\scratchdimen=\dimen292
 \scratchbox=\box74
-\nofMPsegments=\count409
-\nofMParguments=\count410
+\nofMPsegments=\count408
+\nofMParguments=\count409
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count411
-\MPscratchDim=\dimen292
-\MPnumerator=\count412
-\makeMPintoPDFobject=\count413
+\MPscratchCnt=\count410
+\MPscratchDim=\dimen293
+\MPnumerator=\count411
+\makeMPintoPDFobject=\count412
 \everyMPtoPDFconversion=\toks43
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Info: Redefining \microtypecontext on input line 98.
 Package microtype Info: Applying patch `item' on input line 98.
@@ -896,19 +887,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-brazil.trsl
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-brazil.trsl
 File: translations-basic-dictionary-brazil.trsl (brazil translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `brazil'. on input line 98.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-spanish.trsl
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
 File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 98.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-french.trsl
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-french.trsl
 File: translations-basic-dictionary-french.trsl (french translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 98.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 98.
@@ -947,28 +938,28 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<imagens/Logo.png, id=3, 851.18pt x 923.45pt>
+<imagens/Logo.png, id=4, 851.18pt x 923.45pt>
 File: imagens/Logo.png Graphic file (type png)
 <use imagens/Logo.png>
 Package pdftex.def Info: imagens/Logo.png  used on input line 118.
 (pdftex.def)             Requested size: 79.6678pt x 86.43231pt.
-(C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 120.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 120.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
-{C:/Users/jmcch/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./imagens/Logo.png>]
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc} <./imagens/Logo.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -984,31 +975,27 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 172.
- (Instalacoes.toc [2
+ (./Instalacoes.toc [2
 
-]) [3] [4
+{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]) [3] [4
 
 
-] (Instalacoes.lof) [5
+] (./Instalacoes.lof) [5
 
 
 ] [6
 
-]
-
-LaTeX Warning: Citation `nbr5410' on page 7 undefined on input line 219.
-
-[7
+] [7
 
 ] [8
 
-] (Instalacoes.lot) [9
+] (./Instalacoes.lot) [9
 
 ] [10
 
 
 ]
-<imagens/Logo_UEM.png, id=168, 792.8019pt x 382.5492pt>
+<imagens/Logo_UEM.png, id=192, 792.8019pt x 382.5492pt>
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
 Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 337.
@@ -1030,7 +1017,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 pdfTeX warning: pdflatex (file ./imagens/Logo_UEM.png): large interlaced PNG might cause out of memory (use non-interlaced PNG to fix this)
 >]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 352.
- (C:\Users\jmcch\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1055,9 +1042,6 @@ Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 425.
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
  [13]
-
-LaTeX Warning: Citation `nbr14039' on page 14 undefined on input line 430.
-
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
 Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 482.
@@ -1187,7 +1171,7 @@ l.978
       ]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1026.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1015.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1195,7 +1179,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [25]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1053.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1066.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1203,47 +1187,23 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [26]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1096.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1110.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
  [27]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1136.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1136.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1136.
-
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1142.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1160.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
  [28]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1152.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1152.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1152.
-
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1202.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1225.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1251,18 +1211,18 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [29]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1257.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1273.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
  [30]
 
-LaTeX Warning: Citation `nbr14039' on page 31 undefined on input line 1273.
+LaTeX Warning: Reference `eq:demanda_simples' on page 31 undefined on input line 1300.
 
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1306.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1301.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1270,7 +1230,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [31]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1352.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1332.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1278,41 +1238,118 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [32]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1371.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1387.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
  [33]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1391.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1391.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1391.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1407.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1407.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1407.
+
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1390.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1434.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
  [34]
-
-LaTeX Warning: Citation `nbr14039' on page 35 undefined on input line 1403.
-
-
-LaTeX Warning: Citation `nbr14039' on page 35 undefined on input line 1441.
-
-No file Instalacoes.bbl.
-
-Class memoir Warning: The material used in the headers is too large
-(34.55182pt) for the given head height (14.5pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 1446.
-
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1446.
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1492.
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
  [35]
+File: imagens/Logo_UEM.png Graphic file (type png)
+<use imagens/Logo_UEM.png>
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1541.
+(pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
+
+Overfull \vbox (20.05182pt too high) has occurred while \output is active []
+
+ [36]
+File: imagens/Logo_UEM.png Graphic file (type png)
+<use imagens/Logo_UEM.png>
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1590.
+(pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
+
+Overfull \vbox (20.05182pt too high) has occurred while \output is active []
+
+ [37]
+File: imagens/Logo_UEM.png Graphic file (type png)
+<use imagens/Logo_UEM.png>
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1614.
+(pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
+
+Overfull \vbox (20.05182pt too high) has occurred while \output is active []
+
+ [38]
+File: imagens/Logo_UEM.png Graphic file (type png)
+<use imagens/Logo_UEM.png>
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1634.
+(pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
+
+Overfull \vbox (20.05182pt too high) has occurred while \output is active []
+
+ [39]
+File: imagens/Logo_UEM.png Graphic file (type png)
+<use imagens/Logo_UEM.png>
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1671.
+(pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
+
+Overfull \vbox (20.05182pt too high) has occurred while \output is active []
+
+ [40] (./Instalacoes.bbl
+File: imagens/Logo_UEM.png Graphic file (type png)
+<use imagens/Logo_UEM.png>
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 3.
+(pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
+
+Overfull \vbox (20.05182pt too high) has occurred while \output is active []
+
+ [41]
+bibitemlist
+)
+
+Class memoir Warning: The material used in the headers is too large
+(34.55182pt) for the given head height (14.5pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 1701.
+
+File: imagens/Logo_UEM.png Graphic file (type png)
+<use imagens/Logo_UEM.png>
+Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1701.
+(pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
+
+Overfull \vbox (20.05182pt too high) has occurred while \output is active []
+
+ [42
+
+]
 \tf@toc=\write4
 \openout4 = `Instalacoes.toc'.
 
@@ -1322,7 +1359,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 \tf@lot=\write6
 \openout6 = `Instalacoes.lot'.
 
- (Instalacoes.aux)
+ (./Instalacoes.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1333,17 +1370,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 26216 strings out of 467871
- 510866 string characters out of 5418377
- 966913 words of memory out of 5000000
- 54195 multiletter control sequences out of 15000+600000
- 686430 words of font info for 367 fonts, out of 8000000 for 9000
+ 26101 strings out of 467525
+ 501560 string characters out of 5418982
+ 965744 words of memory out of 5000000
+ 54097 multiletter control sequences out of 15000+600000
+ 686466 words of font info for 367 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,22n,107p,1049b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jmcch\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/jmcch/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Instalacoes.pdf (36 pages, 418098 bytes).
+ 99i,22n,107p,1063b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on Instalacoes.pdf (43 pages, 397913 bytes).
 PDF statistics:
- 568 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
- 62331 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 648 PDF objects out of 1000 (max. 8388607)
+ 567 compressed objects within 6 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 62403 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex Instalacoes"] 1788890518.01184 "Instalacoes.aux" "Instalacoes.bbl" "Instalacoes" 1788890524.22505 0
+["bibtex Instalacoes"] 1789491010.02499 "Instalacoes.aux" "Instalacoes.bbl" "Instalacoes" 1789491017.95527 0
   "./referencias.bib" 1788453771.70987 770 b86fcff041527ab2381b6ff519cbf6e1 ""
   "/usr/local/texlive/2026/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/local/texlive/2026/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "Instalacoes.aux" 1788890522.99077 28154 683221304c73456423096879a892f157 "pdflatex"
+  "Instalacoes.aux" 1789491016.28847 32288 13bc8728988f69955adea32a1454feb0 "pdflatex"
   (generated)
   "Instalacoes.bbl"
   "Instalacoes.blg"
   (rewritten before read)
-["pdflatex"] 1788890518.37899 "/Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalacoes.tex" "Instalacoes.pdf" "Instalacoes" 1788890524.22556 0
-  "/Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalacoes.tex" 1788890511.25972 63695 8bdbb62841be2ebf16805d5383bbdd9e ""
+["pdflatex"] 1789491010.70067 "/Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalacoes.tex" "Instalacoes.pdf" "Instalacoes" 1789491017.95578 0
+  "/Volumes/Disco Rigido/Volpato/Documentos/Instalacoes/Instalacoes.tex" 1789491000.96329 80992 bcfac5f97260bbf15e043e8a8e382824 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -174,12 +174,12 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1787833568 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1787833140 3636769 a9aebe97ff8651ddab8398263cde58b5 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "Instalacoes.aux" 1788890522.99077 28154 683221304c73456423096879a892f157 "pdflatex"
-  "Instalacoes.bbl" 1788890518.36759 899 ddfac5fea189652a8ef70da94655c27b "bibtex Instalacoes"
-  "Instalacoes.lof" 1788890523.00778 29 9a4c7bc9daf7936d0a55d1536c7c4aff "pdflatex"
-  "Instalacoes.lot" 1788890523.00796 765 a5ebaee78f1d50dadeddb41218b25cca "pdflatex"
-  "Instalacoes.tex" 1788890511.25972 63695 8bdbb62841be2ebf16805d5383bbdd9e ""
-  "Instalacoes.toc" 1788890523.00761 4769 3e194a70c7ce863c81e8ba42af8633ec "pdflatex"
+  "Instalacoes.aux" 1789491016.28847 32288 13bc8728988f69955adea32a1454feb0 "pdflatex"
+  "Instalacoes.bbl" 1789491010.67438 899 ddfac5fea189652a8ef70da94655c27b "bibtex Instalacoes"
+  "Instalacoes.lof" 1789491016.30695 29 9a4c7bc9daf7936d0a55d1536c7c4aff "pdflatex"
+  "Instalacoes.lot" 1789491016.30701 765 a5ebaee78f1d50dadeddb41218b25cca "pdflatex"
+  "Instalacoes.tex" 1789491000.96329 80992 bcfac5f97260bbf15e043e8a8e382824 ""
+  "Instalacoes.toc" 1789491016.30685 5601 2a1289fd59bcdfbee1e7fe4c4338cb41 "pdflatex"
   "imagens/Logo.png" 1787074730.29254 43134 f7f771cef59032d757109f185665cac8 ""
   "imagens/Logo_UEM.png" 1787849128.83675 194542 59878289aeaa1322645907fedae7ea0d ""
   (generated)

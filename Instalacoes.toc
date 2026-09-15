@@ -23,28 +23,36 @@
 \contentsline {subsection}{\numberline {0.2.4}Carga dos Apartamentos}{20}{subsection.0.2.4}%
 \contentsline {subsection}{\numberline {0.2.5}Carga do Condomínio}{23}{subsection.0.2.5}%
 \contentsline {subsection}{\numberline {0.2.6}Carga Total da Instalação}{24}{subsection.0.2.6}%
-\contentsline {subsection}{\numberline {0.2.7}Cálculo da Demanda}{25}{subsection.0.2.7}%
-\contentsline {subsection}{\numberline {0.2.8}Categoria da Unidade Consumidora}{25}{subsection.0.2.8}%
-\contentsline {subsection}{\numberline {0.2.9}Localização do Barramento Geral e dos Medidores}{26}{subsection.0.2.9}%
-\contentsline {subsection}{\numberline {0.2.10}Determinação do Tipo de Fornecimento e Tensão}{26}{subsection.0.2.10}%
-\contentsline {subsection}{\numberline {0.2.11}Princípios Fundamentais (ABNT NBR 5410)}{26}{subsection.0.2.11}%
-\contentsline {subsection}{\numberline {0.2.12}Esquema de Distribuição (Características Gerais)}{27}{subsection.0.2.12}%
-\contentsline {subsection}{\numberline {0.2.13}Pedido de Fornecimento de Energia Elétrica à COPEL}{27}{subsection.0.2.13}%
-\contentsline {subsection}{\numberline {0.2.14}Dimensionamento dos Circuitos (Distribuição e Terminais)}{27}{subsection.0.2.14}%
-\contentsline {subsubsection}{\numberline {0.2.14.1}Cálculo da Corrente de Projeto ($I_B$)}{27}{subsubsection.0.2.14.1}%
-\contentsline {subsubsection}{\numberline {0.2.14.2}Cálculo da Corrente Corrigida ($I_{cp}$)}{27}{subsubsection.0.2.14.2}%
-\contentsline {subsection}{\numberline {0.2.15}Dimensionamento de Condutores e Eletrodutos}{28}{subsection.0.2.15}%
-\contentsline {subsubsection}{\numberline {0.2.15.1}Condutores}{28}{subsubsection.0.2.15.1}%
-\contentsline {subsubsection}{\numberline {0.2.15.2}Eletrodutos}{28}{subsubsection.0.2.15.2}%
-\contentsline {subsection}{\numberline {0.2.16}Dimensionamento dos Dispositivos de Proteção}{29}{subsection.0.2.16}%
-\contentsline {subsection}{\numberline {0.2.17}Subestação e Grupos Geradores (Se Aplicável)}{30}{subsection.0.2.17}%
-\contentsline {subsubsection}{\numberline {0.2.17.1}Subestação}{30}{subsubsection.0.2.17.1}%
-\contentsline {subsubsection}{\numberline {0.2.17.2}Grupo Gerador}{30}{subsubsection.0.2.17.2}%
-\contentsline {subsection}{\numberline {0.2.18}Prumada Elétrica}{31}{subsection.0.2.18}%
-\contentsline {subsection}{\numberline {0.2.19}Diagramas Unifilares dos Quadros}{31}{subsection.0.2.19}%
-\contentsline {subsection}{\numberline {0.2.20}Estudo de Pesquisa: Projeto Telefônico}{31}{subsection.0.2.20}%
-\contentsline {section}{\numberline {0.3}Conclusões}{31}{section.0.3}%
-\contentsline {section}{\numberline {0.4}Apêndices}{31}{section.0.4}%
+\contentsline {subsection}{\numberline {0.2.7}Cálculo de Demanda}{25}{subsection.0.2.7}%
+\contentsline {subsection}{\numberline {0.2.8}Demanda dos Apartamentos}{25}{subsection.0.2.8}%
+\contentsline {subsection}{\numberline {0.2.9}Demanda do Condomínio}{26}{subsection.0.2.9}%
+\contentsline {subsubsection}{\numberline {0.2.9.1}Cargas de Iluminação}{26}{subsubsection.0.2.9.1}%
+\contentsline {subsubsection}{\numberline {0.2.9.2}Cargas de Tomadas}{26}{subsubsection.0.2.9.2}%
+\contentsline {subsubsection}{\numberline {0.2.9.3}Carga do Elevador e Bomba d'água}{27}{subsubsection.0.2.9.3}%
+\contentsline {subsection}{\numberline {0.2.10}Demanda total do edifício}{27}{subsection.0.2.10}%
+\contentsline {subsection}{\numberline {0.2.11}Aplicação do Fator de Demanda}{27}{subsection.0.2.11}%
+\contentsline {subsection}{\numberline {0.2.12}Divisão da Demanda Entre os Centros de Medição}{28}{subsection.0.2.12}%
+\contentsline {subsection}{\numberline {0.2.13}Categoria da Unidade Consumidora}{31}{subsection.0.2.13}%
+\contentsline {subsection}{\numberline {0.2.14}Localização do Barramento Geral e dos Medidores}{32}{subsection.0.2.14}%
+\contentsline {subsection}{\numberline {0.2.15}Determinação do Tipo de Fornecimento e Tensão}{33}{subsection.0.2.15}%
+\contentsline {subsection}{\numberline {0.2.16}Princípios Fundamentais (ABNT NBR 5410)}{33}{subsection.0.2.16}%
+\contentsline {subsection}{\numberline {0.2.17}Esquema de Distribuição (Características Gerais)}{33}{subsection.0.2.17}%
+\contentsline {subsection}{\numberline {0.2.18}Pedido de Fornecimento de Energia Elétrica à COPEL}{34}{subsection.0.2.18}%
+\contentsline {subsection}{\numberline {0.2.19}Dimensionamento dos Circuitos (Distribuição e Terminais)}{34}{subsection.0.2.19}%
+\contentsline {subsubsection}{\numberline {0.2.19.1}Cálculo da Corrente de Projeto ($I_B$)}{34}{subsubsection.0.2.19.1}%
+\contentsline {subsubsection}{\numberline {0.2.19.2}Cálculo da Corrente Corrigida ($I_{cp}$)}{34}{subsubsection.0.2.19.2}%
+\contentsline {subsection}{\numberline {0.2.20}Dimensionamento de Condutores e Eletrodutos}{35}{subsection.0.2.20}%
+\contentsline {subsubsection}{\numberline {0.2.20.1}Condutores}{35}{subsubsection.0.2.20.1}%
+\contentsline {subsubsection}{\numberline {0.2.20.2}Eletrodutos}{35}{subsubsection.0.2.20.2}%
+\contentsline {subsection}{\numberline {0.2.21}Dimensionamento dos Dispositivos de Proteção}{36}{subsection.0.2.21}%
+\contentsline {subsection}{\numberline {0.2.22}Subestação e Grupos Geradores (Se Aplicável)}{36}{subsection.0.2.22}%
+\contentsline {subsubsection}{\numberline {0.2.22.1}Subestação}{36}{subsubsection.0.2.22.1}%
+\contentsline {subsubsection}{\numberline {0.2.22.2}Grupo Gerador}{37}{subsubsection.0.2.22.2}%
+\contentsline {subsection}{\numberline {0.2.23}Prumada Elétrica}{37}{subsection.0.2.23}%
+\contentsline {subsection}{\numberline {0.2.24}Diagramas Unifilares dos Quadros}{37}{subsection.0.2.24}%
+\contentsline {subsection}{\numberline {0.2.25}Estudo de Pesquisa: Projeto Telefônico}{38}{subsection.0.2.25}%
+\contentsline {section}{\numberline {0.3}Conclusões}{40}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Apêndices}{41}{section.0.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{33}{section*.17}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{42}{section*.17}%
