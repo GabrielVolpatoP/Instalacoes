@@ -977,45 +977,300 @@ somada à carga do condomínio ($P_{esp}$) assim que esta for calculada, para
 compor a Carga Total da Instalação exigida no item do roteiro.
 
 % ============================================================
-\subsection{Cálculo da Demanda}
+\subsection{Cálculo de Demanda}
 
-\hspace{1.27cm}Diferentemente da carga instalada -- que representa a soma aritmética de
-todas as potências, na hipótese (irrealista) de funcionamento simultâneo de
-tudo --, a \textbf{demanda} representa a potência efetivamente solicitada à
-rede, considerando a \emph{diversidade de uso} entre os diversos
-equipamentos. Esse conceito é especialmente relevante em edificações
-coletivas, nas quais a probabilidade de uso simultâneo de todas as cargas
-tende a diminuir com o aumento do número de unidades consumidoras.
+\hspace{1.27cm}O cálculo de demanda foi realizado com base nos critérios estabelecidos pelas normas da Companhia Paranaense de Energia (COPEL), considerando as cargas instaladas no edifício e os respectivos fatores de demanda e diversificação. Inicialmente, foi determinada a demanda correspondente às unidades habitacionais e, posteriormente, foram consideradas as cargas das áreas de uso comum do edifício.
 
-O cálculo de demanda emprega \textbf{Fatores de Demanda (FD)}, definidos
-pela concessionária local com base em critérios estatísticos de uso,
-aplicados sobre a carga instalada de cada grupo:
+\subsection{Demanda dos Apartamentos}
+\hspace{1.27cm}O edifício possui 14 apartamentos, com área de 89,27 m² por unidade. Para o cálculo da demanda das unidades habitacionais, foi considerada uma relação de 1,94 kVA por apartamento. Para 14 apartamentos, o fator de diversificação correspondente à quantidade de unidades é 12,76. Dessa forma, a demanda resultante dos apartamentos é determinada pelo produto entre a demanda de uma unidade e o fator de diversificação:
 
-\begin{equation}
-    D = \big(P_{ilum+TUG} \times FD_{ilum+TUG}\big) +
-        \big(P_{TUE} \times FD_{TUE}\big)
-    \label{eq:demanda_simples}
-\end{equation}
+\[
+D_r = (FDEM) \times (FDIV) 
+\]
 
-Para edificações de uso coletivo complexo -- como escolas, hospitais e
-grandes condomínios --, nas quais coexistem diferentes tipos de carga com
-diferentes perfis de simultaneidade, recomenda-se o cálculo por
-\textbf{blocos de carga}, segundo o padrão típico de fórmulas de demanda
-adotadas pelas concessionárias para esse tipo de edificação:
+Substituindo os valores:
 
-\begin{equation}
-    P_{dem} = A \cdot \left(\dfrac{0{,}77}{0{,}92}\right) + B \cdot 0{,}70
-    + C \cdot 0{,}95 + D \cdot 0{,}59 + E \cdot 1{,}2 + F + G
-    \label{eq:demanda_blocos}
-\end{equation}
+\[
+D_r = (1,94) \times (12,76) = 24,75 \mathrm{kVA}
+\]
 
-em que cada letra representa a potência instalada de um grupo de carga
-distinto (por exemplo: $A$ -- iluminação e TUGs; $B$ -- ar-condicionado;
-$C$ -- bombas; $D$ -- elevadores; $E$ -- cargas de cozinha industrial ou
-similares; $F$ e $G$ -- demais cargas especiais e de reserva),
-\textbf{devendo os coeficientes numéricos ser sempre confirmados junto às
-normas técnicas vigentes da concessionária local}, por se tratar de
-critério de origem contratual/regulatória e não de norma técnica geral.
+Assim, a demanda correspondente aos apartamentos é de 24,75 kVA.
+
+Para a determinação da demanda de uma unidade habitacional, foram considerados os valores $P_1=7.740$~W e $P_2=42.260$~W, juntamente com os fatores $G_1=0,35$ e $G_2=0,40$. A demanda individual é determinada pela expressão:
+
+\[
+D = (P_1 \times G_1) + (P_2 \times G_2)
+\]
+
+Substituindo os valores:
+
+\[
+D = (7.740 \times 0,35) + (42.260 \times 0,40) = 19,613 \mathrm{kVA}
+\]
+
+O resultado obtido é de 19.613 VA, correspondente à demanda de uma unidade habitacional.
+
+\subsection{Demanda do Condomínio}
+\hspace{1.27cm}Além das unidades habitacionais, foram consideradas as cargas de utilização comum do edifício, denominadas demanda do edifício $D_s$. Essas cargas foram divididas em iluminação, tomadas, elevador e bomba de recalque.
+
+\subsubsection{Cargas de Iluminação}
+\hspace{1.27cm}A carga total instalada de iluminação considerada foi de 18 kW, com fator de potência igual a 0,9. Para a determinação da demanda, foi considerado 100\% de 10 kW e 25\% dos 8 kW restantes, resultando em uma carga demandada de 12 kW.
+
+\[
+P_{\mathrm{dem}} = (100\% \times 10) + (25\% \times 8)
+\]
+
+\[
+P_{\mathrm{dem}} = 10 + 2
+\]
+
+\[
+P_{\mathrm{dem}} = 12\ \mathrm{kW}
+\]
+
+A conversão da potência ativa para potência aparente é realizada considerando o fator de potência:
+
+\[
+D_{\mathrm{ilum}} = \frac{P_{\mathrm{dem}}}{FP}
+\]
+
+\[
+D_{\mathrm{ilum}} = \frac{12}{0,9}
+\]
+
+\[
+D_{\mathrm{ilum}} = 13,33\ \mathrm{kVA}
+\]
+A demanda correspondente às cargas de iluminação é, portanto, de 13,33 kVA.
+
+\subsubsection{Cargas de Tomadas}
+\hspace{1.27cm}Para as cargas de tomadas, foi considerada uma carga total instalada de 13,8 kW e fator de potência igual a 0,9. Aplicando-se o fator de demanda de 20\%, obtém-se:
+\[
+P_{\mathrm{dem,tom}} = 0,20 \times 13,8
+\]
+
+\[
+P_{\mathrm{dem,tom}} = 2,76\ \mathrm{kW}
+\]
+
+\[
+D_{\mathrm{tom}} = \frac{2,76}{0,9}
+\]
+
+\[
+D_{\mathrm{tom}} = 3,066\ \mathrm{kVA}
+\]
+
+\subsubsection{Carga do Elevador e Bomba d'água}
+\hspace{1.27cm}O edifício possui um elevador acionado por um motor de 7,5 cv. De acordo com a Tabela 3 utilizada no dimensionamento, esse motor corresponde a uma demanda de 8,65 kVA. Para a bomba de recalque, foi considerada uma unidade com potência de 5 cv. Conforme a Tabela 3 utilizada no dimensionamento, essa potência corresponde a uma demanda de 6,02 kVA.
+
+Com isso, a demanda das cargas do edifício é obtida pela soma das demandas de iluminação, tomadas, elevador e bomba de recalque:
+\[
+D_s = D_{\mathrm{ilum}} + D_{\mathrm{tom}} + D_{\mathrm{elev}} + D_{\mathrm{bomba}}
+\]
+
+\[
+D_s = 13,33 + 3,066 + 8,65 + 6,02
+\]
+
+\[
+D_s = 31,066\ \mathrm{kVA}
+\]
+Assim, a demanda das cargas do edifício é de 31,066 kVA.
+
+\subsection{Demanda total do edifício}
+
+\hspace{1.27cm}A demanda total do edifício é determinada pela soma da demanda dos apartamentos com a demanda das cargas de uso comum:
+\[
+D_e = D_r + D_s
+\]
+
+\[
+D_e = 24,75 + 31,066
+\]
+
+\[
+D_e = 55,816\ \mathrm{kVA}
+\]
+
+Obtém-se, portanto, uma demanda total de 55,816 kVA.
+
+\subsection{Aplicação do Fator de Demanda}
+\hspace{1.27cm}Após a determinação da demanda total, foi realizada a análise do percentual de utilização em relação à capacidade considerada. Antes da aplicação do fator multiplicativo, o percentual obtido era de 6,59\%.
+
+\[
+F = \frac{25}{6,59}
+\]
+
+\[
+F \approx 3,79
+\]
+
+\hspace{1.27cm}Para que o percentual atingisse exatamente 25\%, o fator multiplicativo calculado foi de 3,79. Entretanto, o grupo optou pela utilização do fator multiplicativo igual a 4. Com essa escolha, o percentual resultante passou de 6,59\% para 26,36\%, valor superior ao mínimo de 25\% considerado no procedimento.
+
+\[
+6,59 \times 4 = 26,36\%
+\]
+
+Dessa forma, a demanda a ser solicitada à COPEL foi determinada como 223.264 VA.
+
+\[
+D_{\mathrm{final}} = 55,816 \times 4
+\]
+
+\[
+D_{\mathrm{final}} = 223,264\ \mathrm{kVA}
+\]
+
+\subsection{Divisão da Demanda Entre os Centros de Medição}
+\hspace{1.27cm}A distribuição das unidades consumidoras foi realizada em dois centros de medição. O primeiro centro de medição (CM1) atende cinco apartamentos de 89,27 m², além das cargas correspondentes às áreas comuns do edifício. O segundo centro de medição (CM2) atende os nove apartamentos restantes.
+
+Para o CM1, considerando cinco apartamentos, o fator de diversificação utilizado foi 4,84. A demanda correspondente às unidades habitacionais é:
+
+\[
+D_r' = 1,94 \times 4,84
+\]
+
+\[
+D_r' = 9,3896\ \mathrm{kVA}
+\]
+
+Assim, a demanda das cinco unidades é de 9,3896 kVA. Somando-se a demanda das áreas comuns, igual a 31,066 kVA, obtém-se:
+
+\[
+D_e' = D_r' + D_s
+\]
+
+\[
+D_e' = 9,3896 + 31,066
+\]
+
+\[
+D_e' = 40,4556\ \mathrm{kVA}
+\]
+
+Portanto, a demanda calculada para o CM1 é de 40,4556 kVA.
+Para descobrir o fator multiplicativo de demanda do CM1, calcula-se a carga total instalada no CM1:
+\[
+CTI_{CM1} = 257.600 + 41.000
+\]
+
+\[
+CTI_{CM1} = 298.000\ \mathrm{VA}
+\]
+
+\[
+\frac{D_e'}{CTI_{CM1}} \times 100
+=
+\frac{40.455,6}{298.000} \times 100
+\]
+
+\[
+\frac{D_e'}{CTI_{CM1}} \times 100
+=
+13,57\%
+\]
+
+\[
+\frac{40.455,6 \times Y}{298.000} = 0,25
+\]
+
+\[
+Y =
+\frac{0,25 \times 298.000}{40.455,6}
+\]
+
+\[
+Y \approx 1,84
+\]
+
+Para que essa relação atingisse aproximadamente 25\%, foi determinado um fator multiplicativo de 1,84. Entretanto, adotou-se o fator multiplicativo igual a 2. Dessa forma, o percentual resultante é:
+
+\[
+13,57\% \times 2 = 27,14\%
+\]
+
+A demanda resultante é de 80.911,2 VA, correspondente à demanda considerada para uma capacidade de 112,5 kVA, conforme a Tabela 4 utilizada no dimensionamento.
+
+\[
+D_{CM1} = 40.455,6 \times 2
+\]
+
+\[
+D_{CM1} = 80.911,2\ \mathrm{VA}
+\]
+
+Para o CM2, correspondente aos nove apartamentos restantes, foi utilizado o fator de diversificação 8,68. A demanda das unidades é:
+
+\[
+D_r'' = 1,94 \times 8,68
+\]
+
+\[
+D_r'' = 16,839\ \mathrm{kVA}
+\]
+
+Dessa forma, a demanda calculada para o CM2 é de 16,839 kVA e carga total instalada é de 463.680 VA.
+
+\[
+CTI_{CM2} = 463.680\ \mathrm{VA}
+\]
+
+Para calcular o fator multiplicativo:
+
+\[
+\frac{D_e''}{CTI_{CM2}} \times 100
+=
+\frac{16.839}{463.680} \times 100
+\]
+
+\[
+\frac{D_e''}{CTI_{CM2}} \times 100
+=
+3,63\%
+\]
+
+\[
+\frac{16.839 \times W}{463.680} = 0,25
+\]
+
+\[
+W =
+\frac{0,25 \times 463.680}{16.839}
+\]
+
+\[
+W \approx 6,88
+\]
+
+Para que essa relação atingisse aproximadamente 25\%, foi determinado um fator multiplicativo de 6,88. O fator multiplicativo adotado foi de 7,5, resultando em:
+
+\[
+3,63\% \times 7,5 = 27,225\%
+\]
+
+A demanda resultante é de 126.292,5 VA, correspondente à demanda considerada para uma capacidade de 150 kVA, conforme a Tabela 4 utilizada no dimensionamento.
+\[
+D_{CM2} = 16.839 \times 7,5
+\]
+
+\[
+D_{CM2} = 126.292,5\ \mathrm{VA}
+\]
+
+Além do cálculo global, foram determinadas as demandas específicas das principais áreas de utilização do edifício por meio da expressão baseada nos valores $P_1$, $P_2$, $G_1$ e $G_2$.
+
+Para a casa de máquinas, foram consideradas as seguintes cargas: iluminação de 1.000 W, TUGs de 1.400 W, TUEs de 0 W, elevador de 5.520 W e bomba d'água de 3.680 W. Dessa forma, foram obtidos $P_1=2.400$ W e $P_2=9.200$ W, com $G_1=0,66$ e $G_2=1$.
+
+A demanda calculada para a casa de máquinas foi de 10.784 VA, sendo classificada na categoria 36, correspondente a 19 kVA.
+
+Para o térreo, que compreende o salão de festas, hall de entrada, área de recreação, quadra de esportes e guarita, foram consideradas cargas de iluminação de 13.200 W, TUGs de 4.900 W e TUEs de 5.400 W. Com isso, foram obtidos $P_1=18.100$ W e $P_2=5.400$ W, utilizando-se $G_1=0,24$ e $G_2=0,76$.
+
+A demanda calculada para o térreo foi de 8.448 VA, correspondente à categoria 28, com demanda de referência de 11.000 VA.
+
+Para os subsolos e o depósito de gás, foram consideradas cargas de iluminação de 3.800 W e TUGs de 600 W, não sendo consideradas cargas de TUEs. Assim, foram obtidos $P_1=4.400$ W e $P_2=0$ W, com $G_1=0,52$ e $G_2=0$.
+
+A demanda calculada para essa área foi de 2.288 VA, também correspondente à categoria 28, com demanda de referência de 11.000 VA.
 
 % ============================================================
 \subsection{Categoria da Unidade Consumidora}
@@ -1042,7 +1297,7 @@ O circuito de alimentação entre o QGBT e os CM1 e CM2 é constituído por:
 
 A partir dos CM1 e CM2, a alimentação é distribuída entre os quadros correspondentes às unidades consumidoras dos apartamentos e os quadros destinados às cargas de condomínio. Neste projeto, as cargas de condomínio são distribuídas entre os quadros da casa de máquinas, térreo e subsolo.
 
-Para cada unidade consumidora, a categoria é determinada por meio da expressão P1G1 P2G2. Para as unidades consumidoras dos apartamentos, foi definida a categoria 37, cujo ramal de ligação é constituído por:
+Para cada unidade consumidora, a categoria é determinada por meio da expressão \((P_1 \times G_1) + (P_2 \times G_2)\) (Equação~\ref{eq:demanda_simples}). Para as unidades consumidoras dos apartamentos, foi definida a categoria 37, cujo ramal de ligação é constituído por:
 
 \[3\#10(10)T10\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,32\,\mathrm{mm} \]
 
