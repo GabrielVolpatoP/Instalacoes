@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.27)  15 SEP 2026 13:53
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.27)  15 SEP 2026 13:20
->>>>>>> Stashed changes
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.27)  15 SEP 2026 13:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -999,11 +995,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 
 
 ]
-<<<<<<< Updated upstream
 <imagens/Logo_UEM.png, id=203, 792.8019pt x 382.5492pt>
-=======
-<imagens/Logo_UEM.png, id=187, 792.8019pt x 382.5492pt>
->>>>>>> Stashed changes
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
 Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 337.
@@ -1225,18 +1217,12 @@ Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1273.
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
  [30]
-<<<<<<< Updated upstream
 
 LaTeX Warning: Reference `eq:demanda_simples' on page 31 undefined on input line 1300.
 
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
 Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1301.
-=======
-File: imagens/Logo_UEM.png Graphic file (type png)
-<use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1303.
->>>>>>> Stashed changes
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1244,33 +1230,19 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [31]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-<<<<<<< Updated upstream
 Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1332.
-=======
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1345.
->>>>>>> Stashed changes
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
  [32]
-<imagens/fluxograma_projeto_telefonico.png, id=326, 2239.36626pt x 2987.16pt>
-File: imagens/fluxograma_projeto_telefonico.png Graphic file (type png)
-<use imagens/fluxograma_projeto_telefonico.png>
-Package pdftex.def Info: imagens/fluxograma_projeto_telefonico.png  used on input line 1355.
-(pdftex.def)             Requested size: 364.19667pt x 485.79518pt.
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-<<<<<<< Updated upstream
 Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1387.
-=======
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1363.
->>>>>>> Stashed changes
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
-<<<<<<< Updated upstream
  [33]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1299,17 +1271,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
 Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1434.
-=======
- [33
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1363 
-        <./imagens/fluxograma_projeto_telefonico.png>]
-File: imagens/Logo_UEM.png Graphic file (type png)
-<use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1383.
->>>>>>> Stashed changes
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1317,11 +1278,7 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [34]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-<<<<<<< Updated upstream
 Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1492.
-=======
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1401.
->>>>>>> Stashed changes
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
@@ -1329,16 +1286,11 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
  [35]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
-<<<<<<< Updated upstream
 Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1541.
-=======
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1526.
->>>>>>> Stashed changes
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
-<<<<<<< Updated upstream
  [36]
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
@@ -1406,34 +1358,15 @@ l.1781
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
 Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1820.
-=======
- [36
-pdfTeX warning (ext4): destination with the same identifier (name{table.0.8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1526 
-       ]
-File: imagens/Logo_UEM.png Graphic file (type png)
-<use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1565.
->>>>>>> Stashed changes
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
-<<<<<<< Updated upstream
  [43
 pdfTeX warning (ext4): destination with the same identifier (name{table.0.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1820 
-=======
- [37
-pdfTeX warning (ext4): destination with the same identifier (name{table.0.9}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1565 
->>>>>>> Stashed changes
        ] (./Instalacoes.bbl
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
@@ -1442,11 +1375,7 @@ Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 3.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
-<<<<<<< Updated upstream
  [44
-=======
- [38
->>>>>>> Stashed changes
 pdfTeX warning (ext4): destination with the same identifier (name{table.0.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1458,28 +1387,16 @@ bibitemlist
 Class memoir Warning: The material used in the headers is too large
 (34.55182pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-<<<<<<< Updated upstream
 (in both cases you will find help in the memoir manual). on input line 1860.
 
 File: imagens/Logo_UEM.png Graphic file (type png)
 <use imagens/Logo_UEM.png>
 Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1860.
-=======
-(in both cases you will find help in the memoir manual). on input line 1605.
-
-File: imagens/Logo_UEM.png Graphic file (type png)
-<use imagens/Logo_UEM.png>
-Package pdftex.def Info: imagens/Logo_UEM.png  used on input line 1605.
->>>>>>> Stashed changes
 (pdftex.def)             Requested size: 62.59596pt x 30.20178pt.
 
 Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 
-<<<<<<< Updated upstream
  [45
-=======
- [39
->>>>>>> Stashed changes
 
 ]
 \tf@toc=\write4
@@ -1496,9 +1413,12 @@ Overfull \vbox (20.05182pt too high) has occurred while \output is active []
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< Updated upstream
  26132 strings out of 467525
  502264 string characters out of 5418982
  967430 words of memory out of 5000000
@@ -1513,20 +1433,4 @@ PDF statistics:
  592 compressed objects within 6 object streams
  157 named destinations out of 1000 (max. 500000)
  64456 words of extra memory for PDF output out of 74296 (max. 10000000)
-=======
- 26116 strings out of 467525
- 502099 string characters out of 5418982
- 967526 words of memory out of 5000000
- 54110 multiletter control sequences out of 15000+600000
- 686975 words of font info for 372 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 99i,22n,107p,1063b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Instalacoes.pdf (40 pages, 611514 bytes).
-PDF statistics:
- 613 PDF objects out of 1000 (max. 8388607)
- 533 compressed objects within 6 object streams
- 145 named destinations out of 1000 (max. 500000)
- 64392 words of extra memory for PDF output out of 74296 (max. 10000000)
->>>>>>> Stashed changes
 

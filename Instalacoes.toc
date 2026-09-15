@@ -23,7 +23,6 @@
 \contentsline {subsection}{\numberline {0.2.4}Carga dos Apartamentos}{20}{subsection.0.2.4}%
 \contentsline {subsection}{\numberline {0.2.5}Carga do Condomínio}{23}{subsection.0.2.5}%
 \contentsline {subsection}{\numberline {0.2.6}Carga Total da Instalação}{24}{subsection.0.2.6}%
-<<<<<<< Updated upstream
 \contentsline {subsection}{\numberline {0.2.7}Cálculo de Demanda}{25}{subsection.0.2.7}%
 \contentsline {subsection}{\numberline {0.2.8}Demanda dos Apartamentos}{25}{subsection.0.2.8}%
 \contentsline {subsection}{\numberline {0.2.9}Demanda do Condomínio}{26}{subsection.0.2.9}%
@@ -57,30 +56,3 @@
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{45}{section*.17}%
-=======
-\contentsline {subsection}{\numberline {0.2.7}Cálculo da Demanda}{25}{subsection.0.2.7}%
-\contentsline {subsection}{\numberline {0.2.8}Categoria da Unidade Consumidora}{25}{subsection.0.2.8}%
-\contentsline {subsection}{\numberline {0.2.9}Localização do Barramento Geral e dos Medidores}{27}{subsection.0.2.9}%
-\contentsline {subsection}{\numberline {0.2.10}Determinação do Tipo de Fornecimento e Tensão}{27}{subsection.0.2.10}%
-\contentsline {subsection}{\numberline {0.2.11}Princípios Fundamentais (ABNT NBR 5410)}{28}{subsection.0.2.11}%
-\contentsline {subsection}{\numberline {0.2.12}Esquema de Distribuição (Características Gerais)}{28}{subsection.0.2.12}%
-\contentsline {subsection}{\numberline {0.2.13}Pedido de Fornecimento de Energia Elétrica à COPEL}{28}{subsection.0.2.13}%
-\contentsline {subsection}{\numberline {0.2.14}Dimensionamento dos Circuitos (Distribuição e Terminais)}{28}{subsection.0.2.14}%
-\contentsline {subsubsection}{\numberline {0.2.14.1}Cálculo da Corrente de Projeto ($I_B$)}{28}{subsubsection.0.2.14.1}%
-\contentsline {subsubsection}{\numberline {0.2.14.2}Cálculo da Corrente Corrigida ($I_{cp}$)}{29}{subsubsection.0.2.14.2}%
-\contentsline {subsection}{\numberline {0.2.15}Dimensionamento de Condutores e Eletrodutos}{29}{subsection.0.2.15}%
-\contentsline {subsubsection}{\numberline {0.2.15.1}Condutores}{29}{subsubsection.0.2.15.1}%
-\contentsline {subsubsection}{\numberline {0.2.15.2}Eletrodutos}{30}{subsubsection.0.2.15.2}%
-\contentsline {subsection}{\numberline {0.2.16}Dimensionamento dos Dispositivos de Proteção}{30}{subsection.0.2.16}%
-\contentsline {subsection}{\numberline {0.2.17}Subestação e Grupos Geradores (Se Aplicável)}{31}{subsection.0.2.17}%
-\contentsline {subsubsection}{\numberline {0.2.17.1}Subestação}{31}{subsubsection.0.2.17.1}%
-\contentsline {subsubsection}{\numberline {0.2.17.2}Grupo Gerador}{31}{subsubsection.0.2.17.2}%
-\contentsline {subsection}{\numberline {0.2.18}Prumada Elétrica}{32}{subsection.0.2.18}%
-\contentsline {subsection}{\numberline {0.2.19}Diagramas Unifilares dos Quadros}{32}{subsection.0.2.19}%
-\contentsline {subsection}{\numberline {0.2.20}Estudo de Pesquisa: Projeto Telefônico}{32}{subsection.0.2.20}%
-\contentsline {section}{\numberline {0.3}Conclusões}{36}{section.0.3}%
-\contentsline {section}{\numberline {0.4}Apêndices}{36}{section.0.4}%
-\vspace {\cftbeforechapterskip }
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{39}{section*.17}%
->>>>>>> Stashed changes
