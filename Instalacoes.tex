@@ -21,8 +21,6 @@
 \usepackage{amsmath,amssymb}
 \usepackage{siunitx}
 \usepackage{float}
-\usepackage{xcolor}
-
 
 % --- Margens (ABNT: Superior/Esquerda 3cm, Inferior/Direita 2cm) ---
 \usepackage[top=3cm, left=3cm, right=2cm, bottom=2cm]{geometry}
@@ -36,6 +34,7 @@
 % --- roteiro (ROTEIRO_DE_ELABORAÇÃO_DO_PROJETO_ELÉTRICO...) que ainda ---
 % --- não foram atendidos pelo grupo. Basta remover o \FALTA{...} ---
 % --- quando o item correspondente for de fato elaborado. ---
+\usepackage{xcolor}
 \newcommand{\FALTA}[1]{%
   \par\noindent\fcolorbox{red}{yellow!15}{%
     \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{%
@@ -455,13 +454,13 @@ equipamentos previstos assim o exigir.
 
 % --- AJUSTES DE ESPAÇAMENTO ---
 \renewcommand{\arraystretch}{1.4} % Aumenta a altura das linhas (padrão é 1.0)
-\setlength{\tabcolsep}{15pt}      % Aumenta o espaço lateral entre as colunas (padrão é 6pt)
+\setlength{\tabcolsep}{12pt}      % Aumenta o espaço lateral entre as colunas (padrão é 6pt)
 % ------------------------------
 
 \begin{tabular}{c c c}
-\hline
-\textbf{Cômodos} & \textbf{Perímetro} \small{(m)} & \textbf{Área} \small{(m²)} \rule{0pt}{15pt} \\
-\hline
+\toprule
+\textbf{Cômodos} & \textbf{Perímetro} \small{(m)} & \textbf{Área} \small{(m²)} \\
+\toprule
 Área de Serviço	& 6,9     & 2,8 \\
 BWC	            & 6,3     & 2,15 \\
 Cozinha	        & 9,85    & 5,97 \\
@@ -474,8 +473,8 @@ Quarto 2        & 12,8    & 9,88 \\
 WC Social       & 7,9     & 3,51 \\
 Sacada 1        & 13,2    & 10,34 \\
 Sacada 2        & 8,9     & 4,63 \\
-Sacada 3        & 7,6     & 3,75 \\\hline
-\textbf{Total}  & 133,2   & 89,3 \\\hline
+Sacada 3        & 7,6     & 3,75 \\\toprule
+\textbf{Total}  & 133,2   & 89,3 \\\toprule
 \end{tabular}
 \fonte{O autor (2026).}
 \label{tab:apartamento_individual}
@@ -528,9 +527,9 @@ e o teto (altura de suspensão ou embutimento).
 % ------------------------------
 
 \begin{tabular}{c c c c c}
-\hline
-\textbf{Cômodos} &\textbf{Quantidade} & \textbf{Potência Unitária} & \textbf{Potência Total} \rule{0pt}{15pt}\\
-\hline
+\toprule
+\textbf{Cômodos} &\textbf{Quantidade} & \textbf{Potência Unitária} & \textbf{Potência Total}\\
+\toprule
 Área de Serviço	& 1   & 100 & 100 \\
 BWC	             & 1 & 100 &  100 \\
 Cozinha	         & 1 & 100 &  100 \\
@@ -543,26 +542,12 @@ Quarto 2         & 2 & 100 + 60 &  160 \\
 WC Social        & 1 & 100 &  100 \\
 Sacada 1          & 2 & 100 + 60 &  160 \\
 Sacada 2         & 1 & 100 &  100 \\
-Sacada 3         & 1 & 100 &  100 \\\hline
-\textbf{Total}   & \textbf{19} & -- &  \textbf{1.660} \\\hline
+Sacada 3         & 1 & 100 &  100 \\\toprule
+\textbf{Total}   & \textbf{19} & -- &  \textbf{1.660} \\\toprule
 \end{tabular}
 \fonte{O autor (2026).}
 \label{tab:iluminacao_apartamento_individual}
 \end{table}
-
-\FALTA{A linha "Total" desta tabela estava incorretamente repetindo os
-valores de uma única linha (1, 100, 100); foi corrigida acima para o
-somatório das potências individuais (\textbf{1.660~VA}). Além disso,
-recomenda-se conferir os valores de \textbf{Suíte} (12,51~m², excedente de
-6,51~m² sobre os 6~m² iniciais $\Rightarrow n=1 \Rightarrow$ 100+60 =
-\textbf{160~VA}, e não 220~VA) e de \textbf{Quarto~2} (9,88~m², excedente
-de 3,88~m² $\Rightarrow n=0 \Rightarrow$ \textbf{100~VA}, e não 160~VA)
-frente à Equação~\eqref{eq:iluminacao}, pois os valores atualmente
-lançados na tabela não correspondem exatamente ao critério de
-arredondamento ali definido (acréscimos de \SI{4}{\meter\squared}
-\emph{inteiros}). Essa verificação também impacta o total de
-\textbf{1.560~W} de iluminação por apartamento indicado na Tabela "Cargas
-dos Apartamentos" (Seção~4.5).}
 
 \subsubsection{Tomadas de Uso Geral (TUGs)}
 
@@ -605,9 +590,9 @@ projeto.
 % ------------------------------
 
 \begin{tabular}{c c c c c}
-\hline
-\textbf{Cômodos} &\textbf{Quantidade} & \textbf{Potência Unitária} & \textbf{Potência Total} \rule{0pt}{15pt}\\
-\hline
+\toprule
+\textbf{Cômodos} &\textbf{Quantidade} & \textbf{Potência Unitária} & \textbf{Potência Total}\\
+\toprule
 Área de Serviço	 & 1 & 600 & 600\\
 BWC	             & 1 & 600 &  600\\
 Cozinha	         & 3 & 600 + 600 + 600 &  1800\\
@@ -621,9 +606,9 @@ WC Social        & 1 & 600 &  600\\
 Sacada 1         & 3 & 600 + 600 + 600 &  1800\\
 Sacada 2         & 0 & 0 &  0\\
 Sacada 3         & 0 & 0 &  0\\
-\hline
+\toprule
 \textbf{Total}   & 26 & - &  7600 \\
-\hline
+\toprule
 \end{tabular}
 \fonte{O autor (2026).}
 \label{tab:tomadas_gerais_apartamento_individual}
@@ -657,56 +642,56 @@ pelo fabricante:
         \caption{Tomadas de Uso Especifico}
         \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
         
-        \renewcommand{\arraystretch}{1.15} % Ajusta a altura das linhas da tabela
-        \setlength{\tabcolsep}{9pt}       
+        \renewcommand{\arraystretch}{1.06} % Ajusta a altura das linhas da tabela
+        \setlength{\tabcolsep}{8pt}       
 
-        \begin{tabular}{c c c c c}
-        \hline
-        \multirow{2}{*}{\textbf{Ambiente}} & \multicolumn{4}{|c}{\textbf{TUE's}} \rule{0pt}{15pt}\\
-        \cline{2-5} 
-        & \multicolumn{1}{|c}{\textbf{Quant.}} & \textbf{Tipo (de aparelho)} & \textbf{Potência Unitária (W)} & \textbf{Potência Total (W)} \rule{0pt}{15pt}\\
-        \hline
+        \begin{tabular}{c  c c c c c}
+        \toprule
+        \multirow{2}{*}{\textbf{Ambiente}} & \multicolumn{5}{c}{\textbf{TUE's}} \\
+        \cline{2-6} 
+        & \textbf{Quant.} & \textbf{Tipo (de aparelho)} & \textbf{Potência Unitária (W)} & \textbf{Potência Total (W)} & \textbf{Potência Total (VA)} \\
+        \toprule
         \multirow{2}{*}{Área de Serviço} 
-        & 1 & Máquina Lava e Seca & 1220 & \multirow{2}{*}{1360} \\
-        & 1 & Robô Aspirador     & 140  &                       \\
-        \hline
-        BWC & 1 & Chuveiro & 7500 & 7500 \\
-        \hline
+        & 1 & Máquina Lava e Seca & 1220 & \multirow{2}{*}{1360} & \multirow{2}{*}{1700} \\
+        & 1 & Robô Aspirador     & 140  &                       &                       \\
+        \toprule
+        BWC & 1 & Chuveiro & 7500 & 7500 & 9375 \\
+        \toprule
         \multirow{5}{*}{Cozinha} 
-        & 1 & Torneira Elétrica & 5550 & \multirow{5}{*}{12990} \\
-        & 1 & Fogão             & 4000 &                        \\
-        & 1 & Microondas        & 1100 &                        \\
-        & 1 & Geladeira         & 340  &                        \\
-        & 1 & Air Fryer         & 2000 &                        \\
-        \hline
-        Sala & 1 & A/C Central & 1500 & 1500 \\
-        \hline 
+        & 1 & Torneira Elétrica & 5550 & \multirow{5}{*}{12990} & \multirow{5}{*}{16237,5} \\
+        & 1 & Fogão             & 4000 &                        &                          \\
+        & 1 & Microondas        & 1100 &                        &                          \\
+        & 1 & Geladeira         & 340  &                        &                          \\
+        & 1 & Air Fryer         & 2000 &                        &                          \\
+        \toprule
+        Sala & 1 & A/C Central & 1500 & 1500 & 1875 \\
+        \toprule 
         \multirow{2}{*}{Quarto 1} 
-        & 1 & Televisão & 300 & \multirow{2}{*}{1115} \\
-        & 1 & Ar Condicionado & 815  &                       \\
-        \hline
-        Circulação & - & - & - & - \\
-        \hline
+        & 1 & Televisão & 300 & \multirow{2}{*}{1115} & \multirow{2}{*}{1393,75} \\
+        & 1 & Ar Condicionado & 815  &                       &                       \\
+        \toprule
+        Circulação & - & - & - & - & - \\
+        \toprule
         \multirow{2}{*}{Quarto 1} 
-        & 1 & Televisão & 300 & \multirow{2}{*}{1500} \\
-        & 1 & Ar Condicionado & 1200  &                       \\
-        \hline
-        WC Suíte & 1 & Chuveiro & 7500 & 7500 \\
-        \hline
+        & 1 & Televisão & 300 & \multirow{2}{*}{1500} & \multirow{2}{*}{1800} \\
+        & 1 & Ar Condicionado & 1200  &                       &                       \\
+        \toprule
+        WC Suíte & 1 & Chuveiro & 7500 & 7500 & 9375 \\
+        \toprule
         \multirow{2}{*}{Quarto 2} 
-        & 1 & Televisão & 300 & \multirow{2}{*}{1115} \\
-        & 1 & Ar Condicionado & 815  &                       \\
-        \hline
-        WC Social & 1 & Chuveiro & 7500 & 7500 \\
-        \hline
-        Sacada 1 & 1 & Adega & 180 & 180 \\
-        \hline
-        Sacada 2 & - & - & - & - \\
-        \hline
-        Sacada 3 & - & - & - & - \\
-        \hline
-        \textbf{Total} & 18 & - & 42260 & 42260 \\
-        \hline
+        & 1 & Televisão & 300 & \multirow{2}{*}{1115} & \multirow{2}{*}{1393,75} \\
+        & 1 & Ar Condicionado & 815  &                       &                       \\
+        \toprule
+        WC Social & 1 & Chuveiro & 7500 & 7500 & 9375 \\
+        \toprule
+        Sacada 1 & 1 & Adega & 180 & 180 & 225 \\
+        \toprule
+        Sacada 2 & - & - & - & - & - \\
+        \toprule
+        Sacada 3 & - & - & - & - & - \\
+        \toprule
+        \textbf{Total} & 18 & - & 42260 & 42260 & 52750 \\
+        \toprule
         \end{tabular}
         
         \vspace{0.2cm}
@@ -785,25 +770,25 @@ e coletivas:
 
         \centering
         \small
-        \renewcommand{\arraystretch}{1.4}
+        \renewcommand{\arraystretch}{1.15}
         \resizebox{\linewidth}{!}{%
         \begin{tabular}{c | c c c c c c c c c c c c}
-        \hline
-        \multirow{3}{*}{\textbf{Consumidor}} & \multirow{3}{*}{\shortstack{N\textsuperscript{o} de\\ Apartamento}} & \multirow{3}{*}{\shortstack{\'Area\\ (m2)}} & \multirow{3}{*}{\shortstack{Ilumina\c{c}\~ao\\ (W)}} & \multirow{3}{*}{\shortstack{Tomadas\\ (W)}} & \multicolumn{8}{c}{Cargas dos aparelhos usadas nas TUE's} \rule{0pt}{15pt}\\
-        \cline{6-13}
+        \toprule
+        \multirow{3}{*}{\textbf{Consumidor}} & \multirow{3}{*}{\shortstack{N\textsuperscript{o} de\\ Apartamento}} & \multirow{3}{*}{\shortstack{\'Area\\ (m2)}} & \multirow{3}{*}{\shortstack{Ilumina\c{c}\~ao\\ (W)}} & \multirow{3}{*}{\shortstack{Tomadas\\ (W)}} & \multicolumn{8}{c}{Cargas dos aparelhos usadas nas TUE's} \\
+        \cmidrule(lr){6-13}
         & & & & & \multicolumn{4}{c}{Ar. Cond. (W)} & \multicolumn{3}{c}{Chuveiro (W)} & \multirow{2}{*}{\shortstack{M\'aq. Lava\\ e Seca (W)}}\\
-        \cline{6-9} \cline{10-12}
+        \cmidrule(lr){6-9} \cmidrule(lr){10-12}
         & & & & & Quarto 1 & Su\'ite & Quarto 2 & Central & BCW & Banho 1 & Banho 2 & \\
-        \hline
+        \midrule
         \multirow{5}{*}{Centro de Medi\c{c}\~ao 1}
         & 101 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 102 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 201 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 202 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 301 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
-        \hline
+        \midrule
         \textbf{Total -- CM1} & \textbf{5} & \textbf{446,4} & \textbf{7.800} & \textbf{38.000} & \textbf{4.075} & \textbf{6.000} & \textbf{4.075} & \textbf{7.500} & \textbf{37.500} & \textbf{37.500} & \textbf{37.500} & \textbf{6.100} \\
-        \hline
+        \midrule
         \multirow{9}{*}{Centro de Medi\c{c}\~ao 2}
         & 302 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 401 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
@@ -814,11 +799,11 @@ e coletivas:
         & 602 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 701 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 702 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
-        \hline
+        \midrule
         \textbf{Total -- CM2} & \textbf{9} & \textbf{803} & \textbf{14040} & \textbf{68400} & \textbf{7335} & \textbf{10800} & \textbf{7335} & \textbf{13500} & \textbf{67500} & \textbf{67500} & \textbf{67500} & \textbf{10980} \\
-        \hline
+        \midrule
         \textbf{Total Geral: CM1 + CM2} & \textbf{14} & \textbf{1250} & \textbf{21840} & \textbf{106400} & \textbf{11410} & \textbf{16800} & \textbf{11410} & \textbf{21000} & \textbf{105000} & \textbf{105000} & \textbf{105000} & \textbf{17080} \\
-        \hline
+        \bottomrule
         \end{tabular}%
         }
         
@@ -844,25 +829,25 @@ e coletivas:
 
         \centering
         \small
-        \renewcommand{\arraystretch}{1.3}
+        \renewcommand{\arraystretch}{1.15}
         \resizebox{\linewidth}{!}{%
         \begin{tabular}{c | c c c c c c c c c c | c}
-            \hline
-            \multirow{3}{*}{\textbf{Consumidor}} & \multicolumn{9}{c}{Cargas dos aparelhos usadas nas TUE's} &  \rule{0pt}{15pt}\\
-            \cline{2-12}
+            \toprule
+            \multirow{3}{*}{\textbf{Consumidor}} & \multicolumn{9}{c}{Cargas dos aparelhos usadas nas TUE's} &  \\
+            \cmidrule(lr){2-12}
             & \multicolumn{3}{c}{Televisores} & \multirow{2}{*}{\shortstack{Torneira\\ El\'etrica}} & \multirow{2}{*}{\shortstack{Rob\^o\\ Aspirador}} & \multirow{2}{*}{Fog\~ao} & \multirow{2}{*}{Microondas} & \multirow{2}{*}{Geladeira} & \multirow{2}{*}{Air Fryer} & \multirow{2}{*}{Adega} & \multirow{2}{*}{\textbf{TOTAL}} \\
-            \cline{2-4}
+            \cmidrule(lr){2-4}
             & Su\'ite & Quarto 1 & Quarto 2 & & & & & & & & \\
-            \hline
+            \midrule
             \multirow{5}{*}{Centro de Medi\c{c}\~ao 1}
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
-            \hline
+            \midrule
             \textbf{Total -- CM1} & \textbf{1.500} & \textbf{1.500} & \textbf{1.500} & \textbf{27.750} & \textbf{700} & \textbf{20.000} & \textbf{5.500} & \textbf{1.700} & \textbf{10.000} & \textbf{900} & \textbf{257.100} \\
-            \hline
+            \midrule
             \multirow{9}{*}{Centro de Medi\c{c}\~ao 2}
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
@@ -873,11 +858,11 @@ e coletivas:
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
-            \hline
+            \midrule
             \textbf{Total -- CM2} & \textbf{2700} & \textbf{2700} & \textbf{2700} & \textbf{49950} & \textbf{1260} & \textbf{36000} & \textbf{9900} & \textbf{3060} & \textbf{18000} & \textbf{1620} & \textbf{462780} \\
-            \hline
+            \midrule
             \textbf{Total Geral: CM1 + CM2} & \textbf{4200} & \textbf{4200} & \textbf{4200} & \textbf{77700} & \textbf{1960} & \textbf{56000} & \textbf{15400} & \textbf{4760} & \textbf{28000} & \textbf{2520} & \textbf{719880} \\
-            \hline
+            \bottomrule
             \end{tabular}%
         }
         
@@ -887,14 +872,6 @@ e coletivas:
 \end{sideways}
 
 \end{table}
-
-\FALTA{Verificar a consistência entre o valor "TOTAL" de
-\textbf{51.420~W} por apartamento apresentado na Tabela "Cargas dos
-Apartamentos -- Parte 2 de 2" e o valor de \textbf{42.260~W}
-(\textbf{52.750~VA}) obtido para o apartamento-exemplo na Tabela "Tomadas
-de Uso Específico" (Seção~4.3), pois as duas tabelas deveriam refletir a
-mesma carga de TUEs por apartamento. Recomenda-se recalcular e conferir
-os totais antes da entrega final.}
 
 \subsection{Carga do Condomínio}
 \label{subsec:carga_condominio}
@@ -913,13 +890,13 @@ qualitativa, sem os valores numéricos de cada carga comum.}
 \centering
 \caption{Cargas do Condomínio}
 \label{tab:cargas_condominio}
-\renewcommand{\arraystretch}{1.18} % Ajusta a altura das linhas da tabela
+\renewcommand{\arraystretch}{1.06} % Ajusta a altura das linhas da tabela
 
 \begin{tabular}{l l c c c}
 
-\hline
-\textbf{Tipo} & \textbf{Ambiente} & \textbf{Watts} & \textbf{VA} & \textbf{Fase} \rule{0pt}{15pt}\\
-\hline
+\toprule
+\textbf{Tipo} & \textbf{Ambiente} & \textbf{Watts} & \textbf{VA} & \textbf{Fase} \\
+\midrule
 \multirow{13}{*}{\rotatebox{90}{Iluminação}} 
  & Garagem Subsolo & 3000 & 3000 & T \\
  & Rampas - Térreo & 1200 & 1200 & T \\
@@ -936,7 +913,7 @@ qualitativa, sem os valores numéricos de cada carga comum.}
  & Elevadores & 200 & 200 & R \\
  & Emergência & 200 & 200 & S \\
  & Casa de máquinas & 800 & 800 & S \\
-\hline
+\midrule
 \multirow{9}{*}{\rotatebox{90}{Tomada}}
  & Salão de Festas: 127V & 2000 & 2500 & T \\
  & Salão de Festas: 220V & 1500 & 1875 & RS \\
@@ -947,13 +924,13 @@ qualitativa, sem os valores numéricos de cada carga comum.}
  & Poço Elevadores & 1400 & 1750 & S \\
  & Guarita & 1500 & 1875 & S \\
  & Condomínio & 1400 & 1750 & R \\
- \hline
+ \midrule
   & Portões de Garagem & 600 & 750 & S \\
   & Elevador & 5520 & 6900 & RST \\
   & Bomba de Recalque & 3680 & 4600 & RST \\
-\hline
+\midrule
 \textbf{Total} & 25 & \textbf{41000} & \textbf{46750} & \\
-\hline
+\bottomrule
 \end{tabular}
 \end{table}
 
@@ -985,10 +962,9 @@ compor a Carga Total da Instalação exigida no item do roteiro.
 \subsection{Demanda dos Apartamentos}
 \hspace{1.27cm}O edifício possui 14 apartamentos, com área de 89,27 m² por unidade. Para o cálculo da demanda das unidades habitacionais, foi considerada uma relação de 1,94 kVA por apartamento. Para 14 apartamentos, o fator de diversificação correspondente à quantidade de unidades é 12,76. Dessa forma, a demanda resultante dos apartamentos é determinada pelo produto entre a demanda de uma unidade e o fator de diversificação:
 
-\begin{equation}
-    D_r = (FDEM) \times (FDIV) 
-    \label{eq:demanda_apartamento}
-\end{equation}
+\[
+D_r = (FDEM) \times (FDIV) 
+\]
 
 Substituindo os valores:
 
@@ -1018,10 +994,9 @@ O resultado obtido é de 19.613 VA, correspondente à demanda de uma unidade hab
 \subsubsection{Cargas de Iluminação}
 \hspace{1.27cm}A carga total instalada de iluminação considerada foi de 18 kW, com fator de potência igual a 0,9. Para a determinação da demanda, foi considerado 100\% de 10 kW e 25\% dos 8 kW restantes, resultando em uma carga demandada de 12 kW.
 
-\begin{equation}
-    P_{\mathrm{dem}} = (100\% \times 10) + (25\% \times 8)
-    \label{eq:demanda_iluminacao}
-\end{equation}
+\[
+P_{\mathrm{dem}} = (100\% \times 10) + (25\% \times 8)
+\]
 
 \[
 P_{\mathrm{dem}} = 10 + 2
@@ -1033,10 +1008,9 @@ P_{\mathrm{dem}} = 12\ \mathrm{kW}
 
 A conversão da potência ativa para potência aparente é realizada considerando o fator de potência:
 
-\begin{equation}
-    D_{\mathrm{ilum}} = \frac{P_{\mathrm{dem}}}{FP}
-    \label{eq:Demanda_iluminacao}
-\end{equation}
+\[
+D_{\mathrm{ilum}} = \frac{P_{\mathrm{dem}}}{FP}
+\]
 
 \[
 D_{\mathrm{ilum}} = \frac{12}{0,9}
@@ -1069,12 +1043,9 @@ D_{\mathrm{tom}} = 3,066\ \mathrm{kVA}
 \hspace{1.27cm}O edifício possui um elevador acionado por um motor de 7,5 cv. De acordo com a Tabela 3 utilizada no dimensionamento, esse motor corresponde a uma demanda de 8,65 kVA. Para a bomba de recalque, foi considerada uma unidade com potência de 5 cv. Conforme a Tabela 3 utilizada no dimensionamento, essa potência corresponde a uma demanda de 6,02 kVA.
 
 Com isso, a demanda das cargas do edifício é obtida pela soma das demandas de iluminação, tomadas, elevador e bomba de recalque:
-
-\begin{equation}
-    D_s = D_{\mathrm{ilum}} + D_{\mathrm{tom}} + D_{\mathrm{elev}} + D_{\mathrm{bomba}}
-    \label{eq:demanda_cargas_elevador_bomba}
-\end{equation}
-
+\[
+D_s = D_{\mathrm{ilum}} + D_{\mathrm{tom}} + D_{\mathrm{elev}} + D_{\mathrm{bomba}}
+\]
 
 \[
 D_s = 13,33 + 3,066 + 8,65 + 6,02
@@ -1088,10 +1059,9 @@ Assim, a demanda das cargas do edifício é de 31,066 kVA.
 \subsection{Demanda total do edifício}
 
 \hspace{1.27cm}A demanda total do edifício é determinada pela soma da demanda dos apartamentos com a demanda das cargas de uso comum:
-\begin{equation}
-    D_e = D_r + D_s
-    \label{eq:Demanda_total_edificio}
-\end{equation}
+\[
+D_e = D_r + D_s
+\]
 
 \[
 D_e = 24,75 + 31,066
@@ -1676,104 +1646,7 @@ discutindo os resultados obtidos de carga instalada, demanda, tipo de
 fornecimento, dimensionamento de condutores/proteções e eventuais
 dificuldades ou decisões de projeto tomadas pelo grupo.}
 
-\newpage
-
 \section{Apêndices}
-
-\hspace{1.27cm}Este apêndice reúne o conjunto de tabelas técnicas e normativas utilizadas como base de cálculo para o projeto de instalações elétricas detalhado ao longo deste trabalho. A compilação destes dados em uma seção dedicada tem como objetivo principal não sobrecarregar o corpo do texto com dados de catálogos e normas, garantindo ao mesmo tempo a transparência, a rastreabilidade e a fundamentação de todas as escolhas de projeto apresentadas.
-
-As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensionamento da instalação e sua utilização se resume nas seguintes categorias:
-
-\subsection{Capacidade de Condução de Corrente e Fatores de Correção}
-
-\hspace{1.27cm}Estas tabelas \ref{tab:fct}, \ref{tab:fca} e \ref{tab:ampacidade} são os pilares para o dimensionamento dos condutores elétricos. A Tabela \ref{tab:ampacidade} fornece a ampacidade (capacidade de condução de corrente) base dos cabos para diferentes métodos de referência e seções nominais. Como as condições reais da instalação divergem dos padrões ideais de laboratório, utilizam-se a Tabela \ref{tab:fct} (Fator de Correção de Temperatura - FCT) e a Tabela \ref{tab:fca} (Fator de Correção de Agrupamento - FCA) para penalizar a capacidade de condução dos cabos em função da temperatura ambiente e da quantidade de circuitos justapostos no mesmo conduto, garantindo a integridade da isolação.
-
-\begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
-\centering
-
-% Inicia a rotação do conteúdo
-%\begin{sideways}
-    % O minipage serve para "empacotar" o título e a tabela juntos para que o caption funcione virado.
-    % O tamanho \textwidth indica que a tabela pode ocupar até a largura máxima da página
-    %\begin{minipage}{\textwidth}
-        \centering
-        \caption{Fator de Correção de Temperatura (FCT)}
-        \label{tab:fct}
-        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
-        \setlength{\tabcolsep}{8pt} % margem entre colunas
-        \renewcommand{\arraystretch}{1.25} % Ajusta a altura das linhas da tabela
-
-        %\resizebox{\linewidth}{!}{%
-        \begin{tabular}{|c |c | c |c | c|}
-        \hline
-        \multirow{3}{*}{\shortstack{\textbf{Temperatura} \\ (°C)}} & \multicolumn{4}{c|}{\textbf{ISOLAMENTO}} \rule{0pt}{15pt}\\
-        \cline{2-5}
-        & \multicolumn{2}{c|}{\textbf{Ambiente}} & \multicolumn{2}{c|}{\textbf{Do solo}} \rule{0pt}{15pt}\\
-        \cline{2-3} \cline{4-5}
-        & \textbf{PVC} & \textbf{EPR ou XLPE} & \textbf{PVC} & \textbf{EPR ou XLPE} \rule{0pt}{15pt}\\
-        \hline
-        10 & 1,22 & 1,15 & 1,1 & 1,07 \\ \hline
-        15 & 1,17 & 1,12 & 1,05 & 1,04 \\ \hline
-        20 & 1,12 & 1,08 & 1 & 1 \\ \hline
-        25 & 1,06 & 1,04 & 0,95 & 0,96 \\ \hline
-        30 & 1 & 1 & 0,89 & 0,93 \\ \hline
-        35 & 0,94 & 0,96 & 0,84 & 0,89 \\ \hline
-        40 & 0,87 & 0,91 & 0,77 & 0,85 \\ \hline
-        45 & 0,79 & 0,87 & 0,71 & 0,82 \\ \hline
-        50 & 0,71 & 0,82 & 0,63 & 0,76 \\ \hline
-        55 & 0,61 & 0,76 & 0,55 & 0,71 \\ \hline
-        60 & 0,5 & 0,71 & 0,45 & 0,65 \\
-        \hline
-        \end{tabular}%
-        %}
-        
-        \vspace{0.2cm}
-        \fonte{O autor (2026).}
-    %\end{minipage}
-%\end{sideways}
-
-\end{table}
-
-% ------------------------
-
-\begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
-\centering
-
-% Inicia a rotação do conteúdo
-\begin{sideways}
-    % O minipage serve para "empacotar" o título e a tabela juntos para que o caption funcione virado.
-    % O tamanho \textwidth indica que a tabela pode ocupar até a largura máxima da página
-    \begin{minipage}{\textheight}
-        \centering
-        \caption{Fator de Correção de Agrupamento (FCA)}
-        \label{tab:fca}
-        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
-        \setlength{\tabcolsep}{8pt} % margem entre colunas
-        \renewcommand{\arraystretch}{1.3} % Ajusta a altura das linhas da tabela
-
-        \resizebox{\linewidth}{!}{%
-        \begin{tabular}{|c|>{\centering\arraybackslash}m{5cm}|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-        \hline
-        \multirow{2}{*}{\textbf{Item}} & \multirow{2}{*}{\shortstack{\textbf{Disposição dos} \\ \textbf{cabos justapostos}}} & \multicolumn{12}{c|}{\textbf{Número de circuitos ou cabos multiconductors}} & \multirow{2}{*}{\textbf{Ref.}} \rule{0pt}{15pt}\\
-        \cline{3-14}
-        & & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9 a 11} & \textbf{12 a 15} & \textbf{15 a 19} & \textbf{$\ge$ 20} & \\
-        \hline
-        1 & Em feixe: ao ar livre ou sobre superfície; embutidos; em conduto fechado & 1 & 0,8 & 0,7 & 0,65 & 0,6 & 0,57 & 0,54 & 0,52 & 0,5 & 0,45 & 0,41 & 0,38 & \multirow{1}{*}{\shortstack{\textbf{36 a 39} \\ \textbf{(métodos A a F)}}} \\ \hline
-        2 & Camada única sobre parede, piso, ou bandeja não perfurada ou prateleira & 1 & 0,85 & 0,79 & 0,75 & 0,73 & 0,72 & 0,72 & 0,71 & \multicolumn{4}{c|}{0,7} & \multirow{2}{*}{\shortstack{\textbf{36 a 37} \\ \textbf{(métodos C)}}} \\ \cline{1-14}
-        3 & Camada única no teto & 0,95 & 0,81 & 0,72 & 0,68 & 0,66 & 0,64 & 0,63 & 0,62 & \multicolumn{4}{c|}{0,61} &  \\ \hline
-        4 & Camada única em bandeja perfurada & 1 & 0,88 & 0,82 & 0,77 & 0,75 & 0,73 & 0,73 & 0,72 & \multicolumn{4}{c|}{0,78} & \multirow{2}{*}{\shortstack{\textbf{38 a 39} \\ \textbf{(métodos E a F)}}} \\ \cline{1-14}
-        5 & Camada única sobre leito, suporte, etc. & 1 & 0,87 & 0,82 & 0,8 & 0,8 & 0,79 & 0,79 & 0,78 & \multicolumn{4}{c|}{0,78} &  \\ \hline
-        \end{tabular}%
-        }
-        
-        \vspace{0.2cm}
-        \fonte{O autor (2026).}
-    \end{minipage}
-\end{sideways}
-
-\end{table}
-
-% ------------------------
 
 \begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
 \centering
@@ -1788,101 +1661,42 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \label{tab:ampacidade}
         \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
         %\setlength{\tabcolsep}{8pt}       
-        %\small
-        \renewcommand{\arraystretch}{1.2} % Ajusta a altura das linhas da tabela
+
+        \centering
+        \small
+        \renewcommand{\arraystretch}{1.15}
         \resizebox{\linewidth}{!}{%
-        \begin{tabular}{|c | c | c | c |c | c |c | c |c | c |c | c |c|}
-        \hline
-        \multirow{2}{*}{\shortstack{\textbf{Seção} \\ \textbf{Nominal}}} & \multicolumn{12}{c|}{\textbf{Métodos de Referência e Nº de condutores carregados}} \rule{0pt}{16pt}\\
-        \cline{2-13}
-         & \multicolumn{2}{c|}{\textbf{A1}} & \multicolumn{2}{c|}{\textbf{A2}} & \multicolumn{2}{c|}{\textbf{B1}} & \multicolumn{2}{c|}{\textbf{B2}} & \multicolumn{2}{c|}{\textbf{C}} & \multicolumn{2}{c|}{\textbf{D}} \rule{0pt}{15pt}\\
-        \cline{2-3} \cline{4-5} \cline{6-7} \cline{8-9} \cline{10-11} \cline{12-13}
-        \textbf{(mm$^2$)} & \textbf{2} & \textbf{3} & \textbf{2} & \textbf{3} & \textbf{2} & \textbf{3} & \textbf{2} & \textbf{3} & \textbf{2} & \textbf{3} & \textbf{2} & \textbf{3} \rule{0pt}{15pt}\\ \hline
-        1 & 11 & 10 & 11 & 10 & 14 & 12 & 13 & 12 & 15 & 14 & 18 & 15 \\ \hline
-        1,5 & 14,5 & 13,5 & 14 & 13 & 17,5 & 15,5 & 16,5 & 15 & 19,5 & 17,5 & 22 & 18 \\ \hline
-        2,5 & 19,5 & 18 & 18,5 & 17,5 & 24 & 21 & 23 & 20 & 27 & 24 & 29 & 24 \\ \hline
-        4 & 26 & 24 & 25 & 23 & 32 & 28 & 30 & 27 & 36 & 32 & 38 & 31 \\ \hline
-        6 & 34 & 31 & 32 & 29 & 41 & 36 & 38 & 34 & 46 & 41 & 47 & 39 \\ \hline
-        10 & 46 & 42 & 43 & 39 & 57 & 50 & 52 & 46 & 63 & 57 & 63 & 52 \\ \hline
-        16 & 61 & 56 & 57 & 52 & 76 & 68 & 69 & 62 & 85 & 76 & 81 & 67 \\ \hline
-        25 & 80 & 73 & 75 & 68 & 101 & 89 & 90 & 80 & 112 & 96 & 104 & 86 \\ \hline
-        35 & 99 & 89 & 92 & 83 & 125 & 110 & 111 & 99 & 138 & 119 & 125 & 103 \\ \hline
-        50 & 119 & 108 & 110 & 99 & 151 & 134 & 133 & 118 & 168 & 144 & 148 & 122 \\ \hline
-        70 & 151 & 136 & 139 & 125 & 192 & 171 & 168 & 149 & 213 & 184 & 183 & 151 \\ \hline
-        95 & 182 & 164 & 167 & 150 & 232 & 207 & 201 & 179 & 258 & 223 & 216 & 179 \\ \hline
-        120 & 210 & 188 & 192 & 172 & 269 & 239 & 232 & 206 & 299 & 259 & 246 & 203 \\ \hline
-        150 & 240 & 216 & 219 & 196 & 309 & 275 & 265 & 236 & 344 & 299 & 278 & 230 \\ \hline
-        185 & 273 & 245 & 248 & 223 & 353 & 314 & 300 & 268 & 392 & 341 & 312 & 258 \\ \hline
+        \begin{tabular}{c | c c c c c c c c c c c c}
+        \toprule
+        \multirow{3}{*}{\textbf{Seção Nominal}} & \multicolumn{12}{c}{\textbf{Métodos de Referência e Nº de condutores carregados}} \\
+        \cmidrule(l){2-13}
+         & \multicolumn{2}{c}{A1} & \multicolumn{2}{c}{A2} & \multicolumn{2}{c}{B1} & \multicolumn{2}{c}{B2} & \multicolumn{2}{c}{C} & \multicolumn{2}{c}{D} \\
+        \cmidrule(l){2-3} \cmidrule(l){4-5} \cmidrule(l){6-7} \cmidrule(l){8-9} \cmidrule(l){10-11} \cmidrule(l){12-13}
+        \textbf{(mm$^2$)} & 2 & 3 & 2 & 3 & 2 & 3 & 2 & 3 & 2 & 3 & 2 & 3 \\
+        \midrule
+        1 & 11 & 10 & 11 & 10 & 14 & 12 & 13 & 12 & 15 & 14 & 18 & 15 \\
+        1,5 & 14,5 & 13,5 & 14 & 13 & 17,5 & 15,5 & 16,5 & 15 & 19,5 & 17,5 & 22 & 18 \\
+        2,5 & 19,5 & 18 & 18,5 & 17,5 & 24 & 21 & 23 & 20 & 27 & 24 & 29 & 24 \\
+        4 & 26 & 24 & 25 & 23 & 32 & 28 & 30 & 27 & 36 & 32 & 38 & 31 \\
+        6 & 34 & 31 & 32 & 29 & 41 & 36 & 38 & 34 & 46 & 41 & 47 & 39 \\
+        10 & 46 & 42 & 43 & 39 & 57 & 50 & 52 & 46 & 63 & 57 & 63 & 52 \\
+        16 & 61 & 56 & 57 & 52 & 76 & 68 & 69 & 62 & 85 & 76 & 81 & 67 \\
+        25 & 80 & 73 & 75 & 68 & 101 & 89 & 90 & 80 & 112 & 96 & 104 & 86 \\
+        35 & 99 & 89 & 92 & 83 & 125 & 110 & 111 & 99 & 138 & 119 & 125 & 103 \\
+        50 & 119 & 108 & 110 & 99 & 151 & 134 & 133 & 118 & 168 & 144 & 148 & 122 \\
+        70 & 151 & 136 & 139 & 125 & 192 & 171 & 168 & 149 & 213 & 184 & 183 & 151 \\
+        95 & 182 & 164 & 167 & 150 & 232 & 207 & 201 & 179 & 258 & 223 & 216 & 179 \\
+        120 & 210 & 188 & 192 & 172 & 269 & 239 & 232 & 206 & 299 & 259 & 246 & 203 \\
+        150 & 240 & 216 & 219 & 196 & 309 & 275 & 265 & 236 & 344 & 299 & 278 & 230 \\
+        185 & 273 & 245 & 248 & 223 & 353 & 314 & 300 & 268 & 392 & 341 & 312 & 258 \\
         240 & 321 & 286 & 291 & 261 & 415 & 370 & 351 & 313 & 461 & 403 & 361 & 297 \\
-        \hline
+        \bottomrule
         \end{tabular}%
         }
-
+        \label{tab:Ampacidade}
         \vspace{0.2cm}
         \fonte{FALTA!}
     \end{minipage}
-%\end{sideways}
-
-\end{table}
-
-\subsection{Cálculo de Demanda Predial} 
-
-\hspace{1.27cm}Para o dimensionamento da entrada de energia de edificações residenciais, a carga total instalada raramente é utilizada de forma simultânea as tabelas \ref{tab:diversificacao_quantidade_apartamentos} e \ref{tab:demanda_apartamento}. A Tabela \ref{tab:demanda_apartamento} permite estipular a demanda individual de cada unidade consumidora (apartamento) em função de sua área útil. Em seguida, aplica-se a Tabela \ref{tab:diversificacao_quantidade_apartamentos}, que fornece o fator de diversificação em função da quantidade de apartamentos, permitindo o dimensionamento seguro e econômico do ramal alimentador geral do edifício.
-
-% ---------------------------------
-
-\begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
-\centering
-
-% Inicia a rotação do conteúdo
-%\begin{sideways}
-    % O minipage serve para "empacotar" o título e a tabela juntos para que o caption funcione virado.
-    % O tamanho \textwidth indica que a tabela pode ocupar até a largura máxima da página
-    %\begin{minipage}{\textwidth}
-        \centering
-        \caption{Diversificação em função da quantidade de apartamentos}
-        \label{tab:diversificacao_quantidade_apartamentos}
-        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
-        \setlength{\tabcolsep}{8pt} % margem entre colunas
-        \renewcommand{\arraystretch}{1.2} % Ajusta a altura das linhas da tabela
-        %\resizebox{\linewidth}{!}{%
-        \begin{tabular}{|c | c| c | c |c | c|}
-            \hline
-            \textbf{Nº Aptos} & \textbf{F. Div} & \textbf{Nº Aptos} & \textbf{F. Div} & \textbf{Nº Aptos} & \textbf{F. Div} \rule{0pt}{15pt}\\
-            \hline
-            1 & 1 & 26 & 21,06 & 52 & 36,46 \\ \hline
-            2 & 1,96 & 27 & 21,67 & 53 & 37,02 \\ \hline
-            3 & 2,92 & 28 & 22,27 & 54 & 37,58 \\ \hline
-            4 & 3,88 & 29 & 22,88 & 55 & 38,14 \\ \hline
-            5 & 4,84 & 30 & 23,48 & 56 & 38,7 \\ \hline
-            6 & 5,8 & 31 & 24,08 & 57 & 39,26 \\ \hline
-            7 & 6,76 & 32 & 24,69 & 58 & 39,82 \\ \hline
-            8 & 7,72 & 33 & 25,29 & 59 & 40,38 \\ \hline
-            9 & 8,68 & 34 & 25,9 & 60 & 40,94 \\ \hline
-            10 & 9,64 & 35 & 26,5 & 61 & 41,5 \\ \hline
-            11 & 10,42 & 36 & 27,1 & 62 & 42,06 \\ \hline
-            12 & 11,2 & 37 & 27,71 & 63 & 42,62 \\ \hline
-            13 & 11,93 & 38 & 28,31 & 64 & 43,18 \\ \hline
-            14 & 12,76 & 39 & 28,92 & 65 & 43,74 \\ \hline
-            15 & 13,54 & 40 & 29,52 & 66 & 44,3 \\ \hline
-            16 & 14,32 & 41 & 30,12 & 67 & 44,86 \\ \hline
-            17 & 15,1 & 42 & 30,73 & 68 & 45,42 \\ \hline
-            18 & 15,88 & 43 & 31,33 & 69 & 45,98 \\ \hline
-            19 & 16,66 & 44 & 31,94 & 70 & 46,54 \\ \hline
-            20 & 17,44 & 45 & 32,54 & 71 & 47,1 \\ \hline
-            21 & 18,04 & 46 & 33,1 & 71 & 47,1 \\ \hline
-            21 & 18,04 & 47 & 33,66 & 72 & 47,66 \\ \hline
-            22 & 18,65 & 48 & 34,22 & 73 & 48,22 \\ \hline
-            23 & 19,25 & 49 & 34,78 & 74 & 48,78 \\ \hline
-            24 & 19,86 & 50 & 35,34 & 75 & 49,34 \\ \hline
-            25 & 20,46 & 51 & 35,9 & 76 & 49,9 \\
-            \hline
-        \end{tabular}%
-        %}
-        
-        \vspace{0.2cm}
-        \fonte{O autor (2026).}
-    %\end{minipage}
 %\end{sideways}
 
 \end{table}
@@ -1895,48 +1709,47 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \centering
         \caption{Cálculo da parcela de demanda de um apartamento em função da área útil}
         \label{tab:demanda_apartamento}
-        \setlength{\tabcolsep}{9pt} % margem entre colunas
-        \renewcommand{\arraystretch}{1.2} % Ajusta a altura das linhas da tabela
+        \setlength{\tabcolsep}{8pt}       
         \vspace{0.1cm}
         \centering
         \small
-        \begin{tabular}{|c| c | c | c | c | c|}
-        \hline
+        \begin{tabular}{c c c c c c}
+        \toprule
         
         %\multicolumn{6}{c}{\textbf{CÁLCULO DA PARCELA DE DEMANDA DE }} \\
         %\multicolumn{6}{c}{\textbf{UM APARTAMENTO EM FUNÇÃO DA ÁREA ÚTIL}} \\
-        %\hline
+        %\toprule
 
-        \textbf{Área (m$^2$)} & \textbf{kVA} & \textbf{Área (m$^2$)} & \textbf{kVA} & \textbf{Área (m$^2$)} & \textbf{kVA} \rule{0pt}{15pt} \\
-        \hline
-        20 & 1,00 & 46 & 1,08 & 73 & 1,63 \\ \hline
-        20 & 1,00 & 47 & 1,10 & 74 & 1,65 \\ \hline
-        21 & 1,00 & 48 & 1,12 & 75 & 1,67 \\ \hline
-        22 & 1,00 & 49 & 1,14 & 76 & 1,69 \\ \hline
-        23 & 1,00 & 50 & 1,16 & 77 & 1,71 \\ \hline
-        24 & 1,00 & 51 & 1,18 & 78 & 1,73 \\ \hline
-        25 & 1,00 & 52 & 1,20 & 79 & 1,75 \\ \hline
-        26 & 1,00 & 53 & 1,22 & 80 & 1,76 \\ \hline
-        27 & 1,00 & 54 & 1,24 & 81 & 1,78 \\ \hline
-        28 & 1,00 & 55 & 1,26 & 82 & 1,80 \\ \hline
-        29 & 1,00 & 56 & 1,28 & 83 & 1,82 \\ \hline
-        30 & 1,00 & 57 & 1,30 & 84 & 1,84 \\ \hline
-        31 & 1,00 & 58 & 1,32 & 85 & 1,86 \\ \hline
-        32 & 1,00 & 59 & 1,34 & 86 & 1,88 \\ \hline 
-        33 & 1,00 & 60 & 1,36 & 87 & 1,90 \\ \hline
-        34 & 1,00 & 61 & 1,38 & 88 & 1,92 \\ \hline
-        35 & 1,00 & 62 & 1,40 & 89 & 1,94 \\ \hline
-        36 & 1,00 & 63 & 1,43 & 90 & 1,96 \\ \hline
-        37 & 1,00 & 64 & 1,45 & 91 & 1,98 \\ \hline
-        38 & 1,00 & 65 & 1,47 & 92 & 2,00 \\ \hline
-        39 & 1,00 & 66 & 1,49 & 93 & 2,02 \\ \hline
-        40 & 1,00 & 67 & 1,51 & 94 & 2,04 \\ \hline
-        41 & 1,00 & 68 & 1,53 & 95 & 2,06 \\ \hline
-        42 & 1,00 & 69 & 1,55 & 96 & 2,08 \\ \hline
-        43 & 1,01 & 70 & 1,57 & 97 & 2,10 \\ \hline
-        44 & 1,03 & 71 & 1,59 & 98 & 2,12 \\ \hline
-        45 & 1,05 & 72 & 1,61 & 99 & 2,14 \\ 
-        \hline
+        \textbf{Área (m$^2$)} & \textbf{kVA} & \textbf{Área (m$^2$)} & \textbf{kVA} & \textbf{Área (m$^2$)} & \textbf{kVA} \\
+        \midrule
+        20 & 1,00 & 46 & 1,08 & 73 & 1,63 \\
+        20 & 1,00 & 47 & 1,10 & 74 & 1,65 \\
+        21 & 1,00 & 48 & 1,12 & 75 & 1,67 \\
+        22 & 1,00 & 49 & 1,14 & 76 & 1,69 \\
+        23 & 1,00 & 50 & 1,16 & 77 & 1,71 \\
+        24 & 1,00 & 51 & 1,18 & 78 & 1,73 \\
+        25 & 1,00 & 52 & 1,20 & 79 & 1,75 \\
+        26 & 1,00 & 53 & 1,22 & 80 & 1,76 \\
+        27 & 1,00 & 54 & 1,24 & 81 & 1,78 \\
+        28 & 1,00 & 55 & 1,26 & 82 & 1,80 \\
+        29 & 1,00 & 56 & 1,28 & 83 & 1,82 \\
+        30 & 1,00 & 57 & 1,30 & 84 & 1,84 \\
+        31 & 1,00 & 58 & 1,32 & 85 & 1,86 \\
+        32 & 1,00 & 59 & 1,34 & 86 & 1,88 \\
+        33 & 1,00 & 60 & 1,36 & 87 & 1,90 \\
+        34 & 1,00 & 61 & 1,38 & 88 & 1,92 \\
+        35 & 1,00 & 62 & 1,40 & 89 & 1,94 \\
+        36 & 1,00 & 63 & 1,43 & 90 & 1,96 \\
+        37 & 1,00 & 64 & 1,45 & 91 & 1,98 \\
+        38 & 1,00 & 65 & 1,47 & 92 & 2,00 \\
+        39 & 1,00 & 66 & 1,49 & 93 & 2,02 \\
+        40 & 1,00 & 67 & 1,51 & 94 & 2,04 \\
+        41 & 1,00 & 68 & 1,53 & 95 & 2,06 \\
+        42 & 1,00 & 69 & 1,55 & 96 & 2,08 \\
+        43 & 1,01 & 70 & 1,57 & 97 & 2,10 \\
+        44 & 1,03 & 71 & 1,59 & 98 & 2,12 \\
+        45 & 1,05 & 72 & 1,61 & 99 & 2,14 \\
+        \bottomrule
         \end{tabular}%
         
         \vspace{0.2cm}
@@ -1945,10 +1758,6 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
 \end{table}
 
 % ---------------------------------
-
-\subsection{Verificação por Queda de Tensão}
-
-\hspace{1.27cm}O dimensionamento de cabos não depende apenas de sua capacidade térmica. A Tabela \ref{tab:criterio_simplificado} apresenta os critérios simplificados para garantir que a queda de tensão desde a origem da instalação até o ponto de consumo permaneça dentro dos limites normativos (1 a 4), evitando o mau funcionamento dos equipamentos.
 
 \begin{table}[H]
 \centering
@@ -1957,192 +1766,34 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
 \label{tab:criterio_simplificado}
 
 \setlength{\tabcolsep}{8pt}       
-\renewcommand{\arraystretch}{1.2} % Ajusta a altura das linhas da tabela
 \vspace{0.1cm}
         
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
+\begin{tabular}{c c c c c c}
+\toprule
 \multirow{2}{*}{\textbf{Tensão}} & \textbf{Seção Nominal ($S$)} & \textbf{1\%} & \textbf{2\%} & \textbf{3\%} & \textbf{4\%} \\
- & {[mm$^2$]} & \textbf{de queda} & \textbf{de queda} & \textbf{de queda} & \textbf{de queda} \\
-\hline
+ & \textbf{[mm$^2$]} & \textbf{de queda} & \textbf{de queda} & \textbf{de queda} & \textbf{de queda} \\
+\midrule
 \multirow{7}{*}{\textbf{110 V}} 
- & 1,5 & 5.263 & 10.526 & 15.789 & 21.052 \\ \cline{2-6}
- & 2,5 & 8.773 & 17.546 & 26.319 & 35.092 \\ \cline{2-6}
- & 4   & 14.036 & 28.072 & 42.108 & 56.144 \\ \cline{2-6}
- & 6   & 21.054 & 42.108 & 63.162 & 84.216 \\ \cline{2-6}
- & 10  & 35.090 & 70.100 & 105.270 & 140.360 \\ \cline{2-6}
- & 16  & 56.144 & 112.288 & 168.432 & 224.576 \\ \cline{2-6}
- & 25  & 87.725 & 175.450 & 263.175 & 350.900 \\ \hline 
- \hline
+ & 1,5 & 5.263 & 10.526 & 15.789 & 21.052 \\
+ & 2,5 & 8.773 & 17.546 & 26.319 & 35.092 \\
+ & 4   & 14.036 & 28.072 & 42.108 & 56.144 \\
+ & 6   & 21.054 & 42.108 & 63.162 & 84.216 \\
+ & 10  & 35.090 & 70.100 & 105.270 & 140.360 \\
+ & 16  & 56.144 & 112.288 & 168.432 & 224.576 \\
+ & 25  & 87.725 & 175.450 & 263.175 & 350.900 \\
+\midrule
 \multirow{7}{*}{\textbf{220 V}} 
- & 1,5 & 21.054 & 42.108 & 63.163 & 84.216 \\ \cline{2-6}
- & 2,5 & 35.090 & 70.180 & 105.270 & 140.360 \\ \cline{2-6}
- & 4   & 56.144 & 112.288 & 168.432 & 224.576 \\ \cline{2-6}
- & 6   & 84.216 & 168.432 & 253.648 & 336.864 \\ \cline{2-6}
- & 10  & 140.360 & 280.720 & 421.080 & 561.440 \\ \cline{2-6}
- & 16  & 224.576 & 449.152 & 673.728 & 898.304 \\ \cline{2-6}
+ & 1,5 & 21.054 & 42.108 & 63.163 & 84.216 \\
+ & 2,5 & 35.090 & 70.180 & 105.270 & 140.360 \\
+ & 4   & 56.144 & 112.288 & 168.432 & 224.576 \\
+ & 6   & 84.216 & 168.432 & 253.648 & 336.864 \\
+ & 10  & 140.360 & 280.720 & 421.080 & 561.440 \\
+ & 16  & 224.576 & 449.152 & 673.728 & 898.304 \\
  & 25  & 350.900 & 701.800 & 1.052.700 & 1.403.600 \\
-\hline
+\bottomrule
 \end{tabular}
         \vspace{0.2cm}
         \fonte{FALTA}
-\end{table}
-
-% ---------------------------------
-
-\subsection{Cargas Motrizes}
-
-\hspace{1.27cm}Destinada ao dimensionamento de circuitos de força, a Tabela \ref{tab:motores_trifasicos} compila a demanda agrupada e os fatores de correção para instalações que contêm múltiplos motores trifásicos, considerando suas potências em CV e a probabilidade de funcionamento simultâneo.
-
-\begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
-\centering
-
-% Inicia a rotação do conteúdo
-\begin{sideways}
-    % O minipage serve para "empacotar" o título e a tabela juntos para que o caption funcione virado.
-    % O tamanho \textwidth indica que a tabela pode ocupar até a largura máxima da página
-    \begin{minipage}{\textwidth}
-        \centering
-        \caption{Motores Trifásicos - Potência e quantidade de motores para o mesmo tipo de instalação}
-        \label{tab:motores_trifasicos}
-        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
-        \setlength{\tabcolsep}{7pt} % margem entre colunas
-        \renewcommand{\arraystretch}{1.3} % Ajusta a altura das linhas da tabela
-
-        \resizebox{\linewidth}{!}{%
-        \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-        \hline
-        \multirow{3}{*}{\shortstack{\textbf{Potência} \\ \textbf{do motor} \\ \textbf{(CV)}}} & \multicolumn{10}{c|}{\textbf{Quantidade de motores para mesmo tipo de instalação}} \\
-        \cline{2-11}
-        & \textbf{1*} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} \\
-        \cline{2-11}
-                & \multicolumn{10}{c|}{\textbf{Fator de Correção / Demanda}} \\
-        \hline
-        $\frac{1}{3}$ & 0,65 & 0,98 & 1,24 & 1,5 & 1,76 & 1,95 & 2,15 & 2,34 & 2,53 & 2,73 \\ \hline
-        $\frac{1}{2}$ & 0,87 & 1,31 & 1,65 & 2,66 & 2,35 & 2,61 & 2,87 & 3,13 & 3,39 & 3,65 \\ \hline
-        $\frac{3}{4}$ & 1,26 & 1,89 & 2,39 & 2,9 & 3,4 & 3,78 & 4,16 & 4,51 & 4,91 & 5,29 \\ \hline
-        1 & 1,52 & 2,28 & 2,89 & 3,5 & 4,1 & 4,56 & 5,02 & 5,47 & 5,93 & 6,38 \\ \hline
-        1$\frac{1}{2}$ & 2,17 & 3,26 & 4,12 & 4,99 & 5,86 & 6,51 & 7,16 & 7,81 & 8,46 & 9,11 \\ \hline
-        2 & 2,7 & 4,05 & 5,13 & 6,21 & 7,29 & 8,1 & 8,91 & 9,72 & 10,53 & 11,34 \\ \hline
-        3 & 04,04 & 6,06 & 7,68 & 9,29 & 10,91 & 12,12 & 13,33 & 14,54 & 15,76 & 16,97 \\ \hline
-        4 & 05,03 & 7,55 & 9,56 & 11,57 & 13,58 & 15,09 & 16,6 & 13,11 & 19,62 & 21,13 \\ \hline
-        5 & 06,02 & 9,03 & 11,44 & 13,85 & 16,25 & 18,86 & 19,87 & 21,67 & 23,43 & 25,28 \\ \hline
-        7$\frac{1}{2}$ & 8,65 & 12,98 & 16,44 & 19,9 & 23,36 & 25,95 & 28,55 & 31,14 & 33,74 & 36,33 \\ \hline
-        10 & 11,54 & 17,31 & 21,93 & 26,54 & 31,16 & 34,62 & 38,03 & 41,54 & 45,01 & 48,47 \\ \hline
-        12$\frac{1}{2}$ & 14,69 & 21,14 & 26,77 & 32,41 & 38,04 & 42,27 & 46,5 & 50,72 & 54,95 & 59,18 \\ \hline
-        15 & 16,65 & 24,98 & 31,63 & 33,29 & 44,96 & 49,95 & 54,95 & 59,94 & 64,93 & 69,93 \\ \hline
-        20 & 22,1 & 33,15 & 41,99 & 50,83 & 59,67 & 66,3 & 72,93 & 79,56 & 96,19 & 92,82 \\ \hline
-        25 & 25,83 & 33,75 & 49,03 & 59,41 & 69,74 & 77,49 & 85,24 & 92,99 & 100,74 & 108,49 \\ \hline
-        30 & 30,52 & 45,78 & 57,99 & 70,2 & 82,4 & 91,56 & 100,72 & 109,87 & 119,03 & 128,18 \\ \hline
-        40 & 39,74 & 59,61 & 75,51 & 91,4 & 107,3 & 119,22 & 131,14 & 143,06 & 154,99 & 166,91 \\ \hline
-        50 & 46,73 & 73,1 & 92,59 & 112,03 & 131,57 & 146,19 & 160,81 & 175,43 & 190,05 & 204,67 \\ 
-        \hline
-        \end{tabular}%\
-        }
-        
-        \vspace{0.1cm}
-        \fonte{O autor (2026).}
-    \end{minipage}
-\end{sideways}
-
-\end{table}
-
-% ---------------------------------
-
-\subsection{Infraestrutura de Alimentação e Unidades Consumidoras}
-
-\hspace{1.27cm}A Tabela \ref{tab:dimensionamento_ramal} descreve o padrão do ramal de ligação subterrâneo geral. Já a Tabela \ref{tab:dimensionamento_unidades_consumidoras} detalha o dimensionamento individual das unidades consumidoras. A partir da demanda máxima prevista em kVA, esta tabela estipula a corrente do disjuntor de proteção, a configuração do sistema (fases e fios), e as seções nominais exigidas para os condutores de cobre ou alumínio nos ramais de ligação e de entrada, além de definir os eletrodutos e a malha de aterramento correspondente.
-
-\begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
-\centering
-
-% Inicia a rotação do conteúdo
-\begin{sideways}
-    % O minipage serve para "empacotar" o título e a tabela juntos para que o caption funcione virado.
-    % O tamanho \textwidth indica que a tabela pode ocupar até a largura máxima da página
-    \begin{minipage}{\textheight}
-        \centering
-        \caption{Dimensionamento do Ramal de Ligação em BT e Sistema de Aterramento}
-        \label{tab:dimensionamento_ramal}
-        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
-        \setlength{\tabcolsep}{8pt} % margem entre colunas
-        \renewcommand{\arraystretch}{1.4} % Ajusta a altura das linhas da tabela
-
-        \resizebox{\linewidth}{!}{%
-        \begin{tabular}{|c|c|c|c|c|c|c|c|}
-        \hline
-        \multirow{4}{*}{\shortstack{\textbf{Demanda Máxima}\\\textbf{Prevista (kVA)}}} & \multirow{4}{*}{\shortstack{\textbf{Disjuntor}\\\textbf{Proteção}\\\textbf{Geral (A)}}} & \multicolumn{4}{c|}{\textbf{Ramal de Ligação Subterrâneo (TF Copel até seccionadora)}} & \multicolumn{2}{c|}{\textbf{Sistema de Aterramento}} \\
-        \cline{3-8}
-        \rule{0pt}{30pt} & & \multicolumn{2}{c|}{\shortstack{\textbf{Dimensionamento de Fase e Neutro}\\\textbf{(Maneira "D")}}} & \multicolumn{2}{c|}{\shortstack{\textbf{Eletroduto $\phi$ nominal}}} & \multirow{2}{*}{\shortstack{\textbf{Condutor}\\\textbf{Cobre nu}\\{mm$^2$}}} & \multirow{2}{*}{\shortstack{\textbf{Eletroduto}\\\textbf{PVC $\phi$}\\\textbf{nominal} \\(mm)}} \\
-        \cline{3-6}
-        & & \shortstack{\textbf{Cobre mm$^2$}\\\textbf{(LITORAL)}} & \shortstack{\textbf{Alumínio} \\mm$^2$} & \shortstack{\textbf{No poste}\\{(mm)}} & \shortstack{\textbf{No solo}\\{(mm)}} & & \rule{0pt}{30pt} \\
-        \hline
-        112,5 & 300 & 2 x 70 (*) & 2 x 120 & 100 & 2 x 100 & 70 & 25 \\ \hline
-        150 & 400 & 2 x 120 (*) & 2 x 185 & 100 & 2 x 100 & 95 & 25 \\ \hline
-        190 & 500 & 3 x 120 (*) & 3 x 185 & 2 x 100 & 3 x 100 & 95 & 25 \\ \hline
-        225 & 600 & 3 x 120 (*) & 3 x 185 & 2 x 100 & 3 x 100 & 95 & 25 \\ \hline
-        266 & 700 & 4 x 120 (*) & 4 x 185 & 2 x 100 & 4 x 100 & 95 & 25 \\ \hline
-        300 & 800 & 4 x 120 (*) & 4 x 185 & 2 x 100 & 4 x 100 & 95 & 25 \\ \hline
-        500 & 1.400 & 6 x 120 (*) & 6 x 185 & - & 6 x 100 & 95 & 25 \\ \hline
-        \end{tabular}%
-        }
-        
-        \vspace{0.2cm}
-        \fonte{O autor (2026).}
-    \end{minipage}
-\end{sideways}
-
-\end{table}
-
-% ---------------------------------
-
-
-
-\begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
-\centering
-
-% Inicia a rotação do conteúdo
-\begin{sideways}
-    % O minipage serve para "empacotar" o título e a tabela juntos para que o caption funcione virado.
-    % O tamanho \textwidth indica que a tabela pode ocupar até a largura máxima da página
-    \begin{minipage}{\textheight}
-        \centering
-        \caption{Dimensionamento para as Unidades Consumidoras}
-        \label{tab:dimensionamento_unidades_consumidoras}
-        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
-        \setlength{\tabcolsep}{9pt} % margem entre colunas
-        \renewcommand{\arraystretch}{1.6} % Ajusta a altura das linhas da tabela
-        \resizebox{\linewidth}{!}{%
-        \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-            \hline
-            \multirow{6}{*}{\rotatebox{270}{\textbf{Categoria}}} & \multirow{6}{*}{\rotatebox{270}{\shortstack{\textbf{Demanda}\\\textbf{máxima prevista}\\\textbf{(kVA)}}}} & \multirow{6}{*}{\rotatebox{270}{\shortstack{\textbf{Disjuntor}\\\textbf{(A)}}}} & \multirow{6}{*}{\rotatebox{270}{\shortstack{\textbf{N.º de}\\\textbf{fases}}}} & \multirow{6}{*}{\rotatebox{270}{\shortstack{\textbf{Numero}\\\textbf{de fios}}}} & \multirow{6}{*}{\rotatebox{270}{\textbf{Medidas}}} & \multicolumn{2}{c|}{\textbf{Ramal de Ligacao}} & \multicolumn{5}{c|}{\textbf{Ramal de Entrada}} & \multicolumn{2}{c|}{\textbf{Aterramento}} & \multirow{5}{*}{\shortstack{\textbf{Poste}\\\textbf{Carga a 200}\\\textbf{mm do topo}\\\textbf{do poste daN}}} \\
-            \cline{7-15}
-            & & & & & & \multicolumn{2}{c|}{\textbf{Multiplexador}} & \multirow{3}{*}{\shortstack{\textbf{Embutido}\\\textbf{Cobre mm$^2$}\\\textbf{F e N}\\\textbf{Maneira}\\\textbf{"B1" de}\\\textbf{Instalar}}} & \multicolumn{2}{c|}{\shortstack{\textbf{Subterraneo}\\\textbf{Cobre mm$^2$}\\\textbf{F e N Maneira}\\\textbf{"D" de instalar}}} & \multicolumn{2}{c|}{\multirow{1}{*}{\shortstack{\textbf{Eletroduto}\\\textbf{$\phi$ nominal}}}} & \multirow{3}{*}{\shortstack{\textbf{Condutor}\\\textbf{Cobre nu}\\\textbf{mm$^2$}}} & \multirow{3}{*}{\shortstack{\textbf{Eletroduto}\\\textbf{PVC}\\\textbf{$\phi$ nominal}}} & \\
-            \cline{7-8} \cline{10-11}
-            & & & & & & \multirow{3}{*}{\shortstack{\textbf{Cobre}\\\textbf{(mm$^2$)}}} & \multirow{3}{*}{\shortstack{\textbf{Aluminio}\\\textbf{(mm$^2$)}}} & & \multirow{3}{*}{\shortstack{\textbf{Isolaçao}\\\textbf{PVC}\\\textbf{(70 ºC)}}} & \multirow{3}{*}{\shortstack{\textbf{Isolaçao}\\\textbf{EPR/EXPE}\\\textbf{(90 ºC)}}} & \multicolumn{2}{c|}{} & & & \\
-            \cline{12-13}
-            & & & & & & & & & & & \multirow{2}{*}{\textbf{(mm)}} & \multirow{2}{*}{\textbf{(Pol)}} & & & \\
-            & & & & & & & & & & & & & & & \\
-            \hline
-            12 & 6 & 50 & 1 & 2 & M & 10 & 16 & 10 & 10 & 10 & 32 & 1 & 10 & 19 & 75 \\ \hline
-            14 & 8 & 63 & 1 & 2 & M & 10 & 16 & 16 & 16 & 10 & 32 & 1 & 16 & 19 & 75 \\ \hline
-            19 & 10 & 50 & 1 & 3 & M3 & 10 & 16 & 10 & 10 & 10 & 32 & 1 & 10 & 19 & 75 \\ \hline
-            22 & 15 & 70 & 1 & 3 & M3 & 10 & 25 & 25 & 25 & 16 & 32 & 1 & 16 & 19 & 100 \\ \hline
-            25 & 25 & 100 & 1 & 3 & M3 & 16 & 35 & 35 & 35 & 25 & 40 & $1\frac{1}{4}$ & 16 & 19 & 200 \\ \hline
-            28 & 11 & 50 & 2 & 3 & B & 10 & 16 & 10 & 10 & 10 & 32 & 1 & 10 & 19 & 75 \\ \hline
-            29 & 14 & 63 & 2 & 3 & B & 10 & 16 & 16 & 16 & 10 & 32 & 1 & 16 & 19 & 75 \\ \hline
-            36 & 19 & 50 & 3 & 4 & T & 10 & 16 & 10 & 10 & 10 & 32 & 1 & 10 & 19 & 75 \\ \hline
-            37 & 24 & 63 & 3 & 4 & T & 16 & 16 & 16 & 16 & 10 & 32 & 1 & 16 & 19 & 75 \\ \hline
-            38 & 30 & 80 & 3 & 4 & T & 16 & 25 & 25 & 25 & 16 & 40 & $1\frac{1}{4}$ & 16 & 19 & 200 \\ \hline
-            41 & 38 & 100 & 3 & 4 & T & 16 & 25 & 35 & 35 & 25 & 40 & $1\frac{1}{4}$ & 16 & 19 & 200 \\ \hline
-        \end{tabular}%
-        }
-        
-        \vspace{0.2cm}
-        \fonte{O autor (2026).}
-    \end{minipage}
-\end{sideways}
-
 \end{table}
 
 \FALTA{Reunir nos Apêndices (item 3 da Etapa 5 do roteiro) as tabelas,
