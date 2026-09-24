@@ -222,32 +222,32 @@ gerar esta lista com \texttt{\textbackslash listofquadros}.}
 % --- Glossário ---
 %\begin{glossario}
 \begin{itemize}[leftmargin=1.2cm]
-    \item[NBR] Norma Brasileira, publicada pela ABNT.
-    \item[COPEL] Companhia Paranaense de Energia, concessionária de energia
-    elétrica do Estado do Paraná.
-    \item[TUG] Tomada de Uso Geral.
-    \item[TUE] Tomada de Uso Específico.
-    \item[QGBT] Quadro Geral de Baixa Tensão.
-    \item[DTM] Disjuntor termomagnético
-    \item[NTC] Norma Técnica da Copel
-    \item[Demanda] Valor de Potência elétrica requerida por uma unidade consumidora
-    \item[Fator de Potência] Número que mede a eficiência que a energia elétrica é sada em um circuito 
-    \item[Prumada] Conjunto de elementos de uma edificação alinhados na vertical
-    \item[TN-C-S] Esquema de Aterramento Elétrico
+    \item[ART] Anotação de Responsabilidade Técnica 
     \item[CM] Centro de Medição
     \item[CM1] Centro de Medição 1
     \item[CM2] Centro de Medição 2   
-    \item[QGC] Quadro Geral de Condomínio 
-    \item[UC] Unidade Consumidora 
-    \item[FCT] Fator de Correção de Temperatura 
-    \item[FCA] Fator de Correção de Agrupamento
+    \item[COPEL] Companhia Paranaense de Energia, concessionária de energia
     \item[CTI] Carga Total Instalada       
+    \item[DDR]  Disjuntor Diferencial Residual 
+    \item[Demanda] Valor de Potência elétrica requerida por uma unidade consumidora
+    \item[DTM] Disjuntor termomagnético
+    \item[Fator de Potência] Número que mede a eficiência que a energia elétrica é sada em um circuito 
+    \item[FCA] Fator de Correção de Agrupamento
+    \item[FCT] Fator de Correção de Temperatura 
     \item[FDEM] Fator de Demanda 
     \item[FDIV] Fator de Diversificação 
-    \item[ART] Anotação de Responsabilidade Técnica 
-    \item[RRT] Registro de Responsabilidade Técnica 
     \item[IDR] Interruptor Diferencial Residual
-    \item[DDR]  Disjuntor Diferencial Residual 
+    \item[NBR] Norma Brasileira, publicada pela ABNT.
+    \item[NTC] Norma Técnica da Copel
+    \item[Prumada] Conjunto de elementos de uma edificação alinhados na vertical
+    \item[QGBT] Quadro Geral de Baixa Tensão.
+    \item[QGC] Quadro Geral de Condomínio 
+    \item[RRT] Registro de Responsabilidade Técnica 
+    \item[TN-C-S] Esquema de Aterramento Elétrico
+    \item[TUE] Tomada de Uso Específico.
+    \item[TUG] Tomada de Uso Geral.
+    \item[UC] Unidade Consumidora 
+    elétrica do Estado do Paraná.
 \end{itemize}
 \FALTA{Completar o glossário com os demais termos técnicos utilizados no
 memorial (ex.: DTM, IDR/DR, NTC, demanda, fator de potência, prumada,
@@ -375,15 +375,9 @@ edificação em estudo:
     autônomas} distribuídas em pavimentos, agrupadas em \textbf{2 Centros
     de Medição} (CM1, com 5 apartamentos, e CM2, com 9 apartamentos),
     conforme detalhado na Tabela~7 (Cargas dos Apartamentos);
-    \FALTA{confirmar/ajustar a natureza exata da edificação -- ex.:
-    edifício residencial puro ou de uso misto -- e sua classificação de
-    ocupação conforme a concessionária local e a NBR~5410;}
     \item A área construída total do apartamento-tipo é de
     \textbf{89,3~m²} (Tabela~\ref{tab:apartamento_individual}); a área construída total da
-    edificação (soma das 14 unidades autônomas mais áreas comuns) ainda
-    precisa ser consolidada;
-    \FALTA{informar a área construída total da edificação (m²), incluindo
-    áreas comuns, e o número de pavimentos e blocos;}
+    edificação (soma das 14 unidades autônomas mais áreas comuns) é de \textbf{493,28~m²};
     \item A finalidade do documento é demonstrar, de maneira auditável, que
     o dimensionamento atende simultaneamente aos critérios de
     \emph{capacidade de condução de corrente}, \emph{queda de tensão} e
@@ -471,9 +465,9 @@ equipamentos previstos assim o exigir.
 \begin{table}[H]
 \centering
 \caption{Informações de Apartamento Individual}
-\vspace{0.15cm} % Dá um espacinho entre o título e a tabela
+
 % --- AJUSTES DE ESPAÇAMENTO ---
-\renewcommand{\arraystretch}{1.2} % Aumenta a altura das linhas (padrão é 1.0)
+\renewcommand{\arraystretch}{1.4} % Aumenta a altura das linhas (padrão é 1.0)
 \setlength{\tabcolsep}{12pt}      % Aumenta o espaço lateral entre as colunas (padrão é 6pt)
 % ------------------------------
 
@@ -496,7 +490,6 @@ Sacada 2        & 8,9     & 4,63 \\
 Sacada 3        & 7,6     & 3,75 \\\hline
 \textbf{Total}  & 133,2   & 89,3 \rule{0pt}{15pt}para \\\hline
 \end{tabular}
-\vspace{0.15cm} % Dá um espacinho entre o título e a tabela
 \fonte{O autor (2026).}
 \label{tab:apartamento_individual}
 \end{table}
@@ -541,10 +534,9 @@ e o teto (altura de suspensão ou embutimento).
 \begin{table}[H]
 \centering
 \caption{Iluminação - Apartamentos Individual}
-\vspace{0.15cm} % Dá um espacinho entre o título e a tabela
 
 % --- AJUSTES DE ESPAÇAMENTO ---
-\renewcommand{\arraystretch}{1.2} % Aumenta a altura das linhas (padrão é 1.0)
+\renewcommand{\arraystretch}{1.4} % Aumenta a altura das linhas (padrão é 1.0)
 \setlength{\tabcolsep}{12pt}      % Aumenta o espaço lateral entre as colunas (padrão é 6pt)
 % ------------------------------
 
@@ -567,7 +559,6 @@ Sacada 2         & 1 & 100 &  100 \\
 Sacada 3         & 1 & 100 &  100 \\\hline
 \textbf{Total}   & \textbf{19} & -- &  \textbf{1.660} \rule{0pt}{15pt} \\\hline
 \end{tabular}
-\vspace{0.15cm} % Dá um espacinho entre o título e a tabela
 \fonte{O autor (2026).}
 \label{tab:iluminacao_apartamento_individual}
 \end{table}
@@ -606,10 +597,9 @@ projeto.
 \begin{table}[H]
 \centering
 \caption{Tomadas Gerais - Apartamentos Individual}
-\vspace{0.15cm} % Dá um espacinho entre o título e a tabela
 
 % --- AJUSTES DE ESPAÇAMENTO ---
-\renewcommand{\arraystretch}{1.2} % Aumenta a altura das linhas (padrão é 1.0)
+\renewcommand{\arraystretch}{1.4} % Aumenta a altura das linhas (padrão é 1.0)
 \setlength{\tabcolsep}{12pt}      % Aumenta o espaço lateral entre as colunas (padrão é 6pt)
 % ------------------------------
 
@@ -634,8 +624,6 @@ Sacada 3         & 0 & 0 &  0\\
 \textbf{Total}   & 26 & - &  7600 \rule{0pt}{15pt}\\
 \hline
 \end{tabular}
-
-\vspace{0.15cm} % Dá um espacinho entre o título e a tabela
 \fonte{O autor (2026).}
 \label{tab:tomadas_gerais_apartamento_individual}
 \end{table}
@@ -1366,17 +1354,63 @@ explicitamente no memorial, com referência ao respectivo padrão técnico.
 % ============================================================
 \subsection{Princípios Fundamentais (ABNT NBR 5410)}
 
-\hspace{1.27cm}\FALTA{Descrever, individualmente, cada um dos \textbf{Princípios
-Fundamentais} da ABNT NBR 5410 (item do roteiro), tipicamente organizados
-em: (i) princípio da segurança -- proteção contra choques elétricos,
-efeitos térmicos e sobrecorrentes; (ii) princípio do funcionamento
-adequado da instalação para o uso a que se destina; (iii) princípio da
-possibilidade de fácil e segura operação, manutenção e ampliação da
-instalação. Para cada princípio, apresentar a definição normativa e como
-o presente projeto o atende (ex.: seccionamento e comando, medidas de
-proteção contra choques, compatibilidade dos materiais/equipamentos).}
+\hspace{1.27cm}A ABNT NBR 5410 estabelece princípios fundamentais que devem orientar a concepção, execução e utilização das instalações elétricas de baixa tensão. Entre esses princípios, destacam-se a segurança das pessoas, o funcionamento adequado da instalação e a possibilidade de operação, manutenção e ampliação de forma segura e acessível.
+
+    \begin{enumerate}[label=\roman*)]
+        \item Princípio de Segurança 
+    
+        O princípio da segurança estabelece que a instalação elétrica deve proteger pessoas e animais contra choques elétricos, tanto em situações de contato acidental com partes vivas quanto em situações de falha que possam colocar massas metálicas sob tensão. Além disso, a instalação deve ser concebida de modo a evitar riscos de incêndio e queimaduras decorrentes de temperaturas elevadas ou arcos elétricos. A norma também determina que pessoas, animais e bens sejam protegidos contra os efeitos térmicos e eletromecânicos associados às sobrecorrentes.
+
+        No presente projeto, esse princípio é atendido por meio da adoção de medidas de proteção e comando adequadas aos circuitos, buscando impedir o contato com partes energizadas e permitir o desligamento da instalação quando necessário. O dimensionamento dos condutores e dos dispositivos de proteção deve considerar as correntes de funcionamento (nominais) e as possíveis sobrecorrentes, evitando que os componentes sejam submetidos a condições superiores às suas capacidades, além da aplicação dos cálculos de correção dos condutores e eletrodutos. A seleção dos materiais e equipamentos também deve ser compatível com as condições elétricas, operacionais e ambientais previstas para a instalação, conforme estabelecido pela NBR 5410.
+
+        \item Princípio do Funcionamento Adequado da Instalação
+        
+        O segundo princípio está relacionado à capacidade da instalação de operar de maneira adequada e compatível com a finalidade para a qual foi projetada. Para isso, a NBR 5410 estabelece que, na concepção da instalação, devem ser consideradas características como a utilização prevista, a demanda, o esquema de distribuição, as alimentações disponíveis, as influências externas, os riscos de incompatibilidade e as necessidades de manutenção.
+
+        No projeto, esse princípio é atendido pela definição dos circuitos e pela seleção de componentes compatíveis com as características elétricas e com as condições de operação previstas. A determinação da potência de alimentação deve considerar as cargas conectadas, mantendo a instalação dentro de limites adequados de elevação de temperatura e queda de tensão, novamente aplicando os cálculos de correção dos condutores e eletrodutos. Dessa forma, o dimensionamento dos condutores, dispositivos de proteção e demais equipamentos deve ser realizado de acordo com as demandas calculadas, garantindo que a instalação opere de forma estável e segura.
+
+        Também é considerada a divisão da instalação em circuitos, permitindo que diferentes partes possam ser operadas e protegidas de maneira independente. A norma estabelece que os circuitos devem ser planejados de modo que possam ser seccionados sem risco de realimentação inadvertida e que a divisão deve atender às necessidades de segurança, funcionamento e manutenção.
+
+        \item Princípio da Possibilidade de Fácil e Segura Operação, Manutenção e ampliação
+        
+        O terceiro princípio estabelece que a instalação deve possibilitar sua operação, inspeção, manutenção e eventual ampliação de maneira segura. Para isso, a NBR 5410 determina que a alimentação da instalação, de seus circuitos e equipamentos possa ser seccionada para manutenção, verificação, localização de defeitos e reparos. Também estabelece que os componentes sejam instalados de forma a proporcionar espaço suficiente para sua instalação e posterior substituição, ou seja, prever espaço adequado para ampliação dos circuitos, além de permitir acesso para operação, inspeção e manutenção.
+
+        No presente projeto, esse princípio é atendido pela previsão de dispositivos de seccionamento e comando e pela divisão dos circuitos do condominio e dos circuitos dos apatarmentos, além de separar os centros de medição, permitindo a desenergização dos circuitos durante intervenções e reduzindo os riscos associados às atividades de manutenção. A organização dos circuitos e a identificação dos condutores e componentes também contribuem para facilitar a localização de falhas e a realização de intervenções. A norma, também, determina que os componentes sejam instalados de maneira que suas características não sejam comprometidas e que as conexões sejam seguras e confiáveis.
+
+
+    \end{enumerate}
 
 \subsection{Esquema de Distribuição (Características Gerais)}
+
+A ABNT NBR 5410 estabelece que, na concepção de uma instalação elétrica, deve ser definido o esquema de distribuição, considerando tanto o esquema dos condutores vivos quanto o esquema de aterramento. A norma classifica os esquemas de aterramento de acordo com a situação da alimentação em relação à terra e com a situação das massas da instalação em relação à terra.
+
+\subsubsection{Esquema TN-S}
+
+No esquema TN-S, o ponto da alimentação é diretamente aterrado e as massas da instalação são conectadas a esse ponto por meio de condutores de proteção. A característica principal desse esquema é a utilização de condutores distintos para o neutro e para a proteção (N e PE) em toda a instalação.
+
+\subsubsection{Esquema TN-C}
+
+No esquema TN-C, as funções de neutro e de proteção são combinadas em um único condutor, denominado PEN, em toda a extensão do esquema. Assim, o mesmo condutor exerce simultaneamente as funções de neutro e de proteção.
+
+\subsubsection{Esquema TN-C-S}
+
+O esquema TN-C-S é uma configuração na qual as funções de neutro e proteção são inicialmente combinadas em um condutor PEN e, em determinado ponto da instalação, passam a ser realizadas por condutores distintos.
+
+\subsubsection{Esquema TT}
+
+No esquema TT, um ponto da alimentação é diretamente aterrado, enquanto as massas da instalação são conectadas a eletrodo(s) de aterramento eletricamente distinto(s) daquele utilizado para o aterramento da alimentação.
+
+Esse esquema é aplicável quando o aterramento das massas da instalação é realizado de forma independente do aterramento da alimentação, sendo necessário garantir as condições adequadas de proteção contra choques elétricos.
+
+
+\subsubsection{Esquema IT}
+
+No esquema IT, todas as partes vivas são isoladas da terra ou um ponto da alimentação é aterrado por meio de uma impedância. As massas da instalação são aterradas, podendo utilizar o mesmo eletrodo da alimentação, quando existente, ou eletrodos próprios e independentes.
+
+
+\subsubsection{Esquema adotado pela COPEL}
+
+
 
 \hspace{1.27cm}\FALTA{Descrever, exclusivamente, o item "Esquema de Distribuição" das
 Características Gerais da NBR~5410 (item do roteiro): apresentar os
