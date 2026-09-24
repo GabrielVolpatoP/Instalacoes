@@ -228,6 +228,26 @@ gerar esta lista com \texttt{\textbackslash listofquadros}.}
     \item[TUG] Tomada de Uso Geral.
     \item[TUE] Tomada de Uso Específico.
     \item[QGBT] Quadro Geral de Baixa Tensão.
+    \item[DTM] Disjuntor termomagnético
+    \item[NTC] Norma Técnica da Copel
+    \item[Demanda] Valor de Potência elétrica requerida por uma unidade consumidora
+    \item[Fator de Potência] Número que mede a eficiência que a energia elétrica é sada em um circuito 
+    \item[Prumada] Conjunto de elementos de uma edificação alinhados na vertical
+    \item[TN-C-S] Esquema de Aterramento Elétrico
+    \item[CM] Centro de Medição
+    \item[CM1] Centro de Medição 1
+    \item[CM2] Centro de Medição 2   
+    \item[QGC] Quadro Geral de Condomínio 
+    \item[UC] Unidade Consumidora 
+    \item[FCT] Fator de Correção de Temperatura 
+    \item[FCA] Fator de Correção de Agrupamento
+    \item[CTI] Carga Total Instalada       
+    \item[FDEM] Fator de Demanda 
+    \item[FDIV] Fator de Diversificação 
+    \item[ART] Anotação de Responsabilidade Técnica 
+    \item[RRT] Registro de Responsabilidade Técnica 
+    \item[IDR] Interruptor Diferencial Residual
+    \item[DDR]  Disjuntor Diferencial Residual 
 \end{itemize}
 \FALTA{Completar o glossário com os demais termos técnicos utilizados no
 memorial (ex.: DTM, IDR/DR, NTC, demanda, fator de potência, prumada,
@@ -640,7 +660,7 @@ pelo fabricante:
     \begin{minipage}{\textheight}
         \centering
         \caption{Tomadas de Uso Especifico}
-        \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
+        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
         
         \renewcommand{\arraystretch}{1} % Ajusta a altura das linhas da tabela
         \setlength{\tabcolsep}{9pt}       
@@ -692,7 +712,7 @@ pelo fabricante:
         \toprule
         \end{tabular}
         
-        \vspace{0.15cm}
+        \vspace{0.1cm}
         \fonte{O autor (2026).}
     \end{minipage}
 \end{sideways}
@@ -763,7 +783,7 @@ e coletivas:
     \begin{minipage}{\textheight}
         \centering
         \caption{Cargas dos Apartamentos - Parte 1 de 2}
-        \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
+        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
         \setlength{\tabcolsep}{8pt}       
 
         \centering
@@ -805,7 +825,7 @@ e coletivas:
         \end{tabular}%
         }
         
-        \vspace{0.15cm}
+        \vspace{0.2cm}
         \fonte{O autor (2026).}
     \end{minipage}
 \end{sideways}
@@ -822,7 +842,7 @@ e coletivas:
     \begin{minipage}{\textheight}
         \centering
         \caption{Cargas dos Apartamentos - Parte 2 de 2}
-        \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
+        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
         \setlength{\tabcolsep}{8pt}       
 
         \centering
@@ -864,7 +884,7 @@ e coletivas:
             \end{tabular}%
         }
         
-        \vspace{0.15cm}
+        \vspace{0.2cm}
         \fonte{O autor (2026).}
     \end{minipage}
 \end{sideways}
@@ -960,10 +980,9 @@ compor a Carga Total da Instalação exigida no item do roteiro.
 \subsection{Demanda dos Apartamentos}
 \hspace{1.27cm}O edifício possui 14 apartamentos, com área de 89,27 m² por unidade. Para o cálculo da demanda das unidades habitacionais, foi considerada uma relação de 1,94 kVA por apartamento. Para 14 apartamentos, o fator de diversificação correspondente à quantidade de unidades é 12,76. Dessa forma, a demanda resultante dos apartamentos é determinada pelo produto entre a demanda de uma unidade e o fator de diversificação:
 
-\begin{equation}
-    D_r = (FDEM) \times (FDIV) 
-    \label{eq:demanda_apartamentos}
-\end{equation}
+\[
+D_r = (FDEM) \times (FDIV) 
+\]
 
 Substituindo os valores:
 
@@ -993,10 +1012,9 @@ O resultado obtido é de 19.613 VA, correspondente à demanda de uma unidade hab
 \subsubsection{Cargas de Iluminação}
 \hspace{1.27cm}A carga total instalada de iluminação considerada foi de 18 kW, com fator de potência igual a 0,9. Para a determinação da demanda, foi considerado 100\% de 10 kW e 25\% dos 8 kW restantes, resultando em uma carga demandada de 12 kW.
 
-\begin{equation}
-    P_{\mathrm{dem}} = (100\% \times 10) + (25\% \times 8)
-    \label{eq:carga_iluminacao}
-\end{equation}
+\[
+P_{\mathrm{dem}} = (100\% \times 10) + (25\% \times 8)
+\]
 
 \[
 P_{\mathrm{dem}} = 10 + 2
@@ -1008,10 +1026,9 @@ P_{\mathrm{dem}} = 12\ \mathrm{kW}
 
 A conversão da potência ativa para potência aparente é realizada considerando o fator de potência:
 
-\begin{equation}
-    D_{\mathrm{ilum}} = \frac{P_{\mathrm{dem}}}{FP}
-    \label{eq:potencia_aparente_iluminacao}
-\end{equation}
+\[
+D_{\mathrm{ilum}} = \frac{P_{\mathrm{dem}}}{FP}
+\]
 
 \[
 D_{\mathrm{ilum}} = \frac{12}{0,9}
@@ -1044,11 +1061,9 @@ D_{\mathrm{tom}} = 3,066\ \mathrm{kVA}
 \hspace{1.27cm}O edifício possui um elevador acionado por um motor de 7,5 cv. De acordo com a Tabela 3 utilizada no dimensionamento, esse motor corresponde a uma demanda de 8,65 kVA. Para a bomba de recalque, foi considerada uma unidade com potência de 5 cv. Conforme a Tabela 3 utilizada no dimensionamento, essa potência corresponde a uma demanda de 6,02 kVA.
 
 Com isso, a demanda das cargas do edifício é obtida pela soma das demandas de iluminação, tomadas, elevador e bomba de recalque:
-
-\begin{equation}
-    D_s = D_{\mathrm{ilum}} + D_{\mathrm{tom}} + D_{\mathrm{elev}} + D_{\mathrm{bomba}}
-    \label{eq:demanda_edificio}
-\end{equation}
+\[
+D_s = D_{\mathrm{ilum}} + D_{\mathrm{tom}} + D_{\mathrm{elev}} + D_{\mathrm{bomba}}
+\]
 
 \[
 D_s = 13,33 + 3,066 + 8,65 + 6,02
@@ -1062,11 +1077,9 @@ Assim, a demanda das cargas do edifício é de 31,066 kVA.
 \subsection{Demanda total do edifício}
 
 \hspace{1.27cm}A demanda total do edifício é determinada pela soma da demanda dos apartamentos com a demanda das cargas de uso comum:
-
-\begin{equation}
-    D_e = D_r + D_s
-    \label{eq:demanda_total_edificio}
-\end{equation}
+\[
+D_e = D_r + D_s
+\]
 
 \[
 D_e = 24,75 + 31,066
@@ -1258,12 +1271,13 @@ A demanda calculada para essa área foi de 2.288 VA, também correspondente à c
 % ============================================================
 \subsection{Categoria da Unidade Consumidora}
 
-\hspace{1.27cm}Após a definição de todos os circuitos das unidades consumidoras, bem como o cálculo da carga total instalada e das demandas de cada quadro, realiza-se a consulta à Tabela 4 do CODI para determinar a categoria correspondente ao edifício de uso coletivo e às respectivas unidades consumidoras.
+\hspace{1.27cm}Após a definição de todos os circuitos das unidades consumidoras, bem como o cálculo da carga total instalada e das demandas de cada quadro, realiza-se a consulta à Tabela \ref{tab:dimensionamento_ramal} para determinar a categoria correspondente ao edifício de uso coletivo e às respectivas unidades consumidoras.
 
-Para o edifício de uso coletivo, a demanda foi calculada conforme o procedimento estabelecido pelo CODI, resultando em uma demanda final de 223,264 kVA. Esse é, portanto, o valor de demanda a ser solicitado à Copel. De acordo com a Tabela 4 do CODI, Dimensionamento do Ramal de Ligação em BT e Sistema de Aterramento, o valor obtido enquadra-se na categoria de demanda máxima de 225 kVA.
+Para o edifício de uso coletivo, a demanda foi calculada conforme o procedimento estabelecido pelo CODI, resultando em uma demanda final de 223,264 kVA. Esse é, portanto, o valor de demanda a ser solicitado à Copel. De acordo com a Tabela \ref{tab:dimensionamento_ramal} do CODI, Dimensionamento do Ramal de Ligação em BT e Sistema de Aterramento, o valor obtido enquadra-se na categoria de demanda máxima de 225 kVA.
 
 Dessa forma, o ramal de ligação que alimentará o edifício será constituído por:
 
+\[3 \times 3\#120(120)\,\mathrm{mm}^2 - 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,3 \times 100\,\mathrm{mm} \]
 
 Após a caixa seccionadora, é acrescentado o condutor de proteção (terra), resultando na seguinte configuração:
 
@@ -1289,11 +1303,11 @@ Para o QGC, a demanda calculada pelo procedimento do CODI foi de 31,066 kVA. O r
 
 \[3\#35(35)T16\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,50\,\mathrm{mm} \]
 
-Para o quadro da casa de máquinas, a demanda calculada é de X kVA. Esse quadro foi enquadrado na categoria 36, sendo utilizado o seguinte ramal de alimentação:
+Para o quadro da casa de máquinas, a demanda calculada é de 10,784 kVA. Esse quadro foi enquadrado na categoria 36, sendo utilizado o seguinte ramal de alimentação:
 
 \[3\#10(10)T10\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,32\,\mathrm{mm} \]
 
-Para os quadros do térreo e do subsolo, foram obtidas demandas de X kVA e Y kVA, respectivamente. Ambos os quadros foram enquadrados na categoria 28, sendo adotado para suas alimentações o seguinte ramal:
+Para os quadros do térreo e do subsolo, foram obtidas demandas de 8,448 kVA e 2,228 kVA, respectivamente. Ambos os quadros foram enquadrados na categoria 28, sendo adotado para suas alimentações o seguinte ramal:
 
 \[2\#10(10)T10\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,32\,\mathrm{mm} \]
 
@@ -1304,9 +1318,9 @@ Assim, a distribuição elétrica do edifício pode ser organizada de forma hier
 \begin{figure}[H]
     \centering
     \caption{Fluxograma do projeto elétrico.}
-    \vspace{0.15cm}
+    \vspace{0.1cm}
     \includegraphics[width=0.95\textwidth]{imagens/fluxograma_eletrico.png}
-    \vspace{0.15cm}
+    \vspace{0.1cm}
     \fonte{O autor (2026).}
     \label{img:fluxograma_projeto_eletrico}
 \end{figure}
@@ -1369,15 +1383,15 @@ norma técnica da COPEL é obrigatória).}
 
 \subsection{Pedido de Fornecimento de Energia Elétrica à COPEL}
 
-\hspace{1.27cm}\FALTA{Descrever o procedimento e relacionar os \textbf{documentos
-necessários} para o pedido de fornecimento de energia elétrica à COPEL
-para uma edificação de uso coletivo (item do roteiro), tipicamente:
-projeto elétrico assinado por profissional habilitado (com ART/RRT),
-memorial descritivo, planta de situação e de localização, formulário de
-solicitação de ligação/vistoria da concessionária, documentação do
-imóvel/condomínio e comprovante de conclusão da obra, conforme a Norma
-Técnica COPEL (NTC) aplicável ao tipo de fornecimento definido na
-subseção anterior.}
+\hspace{1.27cm}O procedimento de pedido de fornecimento de energia elétrica junto à Companhia Paranaense de Energia (COPEL) aplica-se tanto à ligação inicial de uma nova unidade consumidora quanto à religação de uma instalação existente desativada. Para fazer a solicitação, é preciso apresentar a documentação do responsável pelo imóvel. No caso de pessoa física, são necessários o documento de identidade oficial e o CPF, para pessoa jurídica, devem ser entregues o cartão CNPJ, o contrato social e os documentos dos representantes legais,além do preenchimento dos formulários padronizados no site da concessionária. 
+
+Caso seja o próprio projetista a realizar a solicitação do pedido de fornecimento, ele deve acessar o site oficial da COPEL e se encaminhar para a aba de Mais Serviços, e em seguida selecionar a opção Para Projetistas. 
+
+A parte técnica da documentação exige a entrega do projeto elétrico, que inclui a planta baixa do imóvel indicando a localização de todos os pontos de energia, e a Anotação de Responsabilidade Técnica (ART) emitida e assinada pelo engenheiro eletricista responsável. Em alguns casos específicos, também pode ser cobrada a licença ambiental ou a declaração de dispensa expedida pelo órgão ambiental competente. Além disso, é obrigatório apresentar a Declaração de Carga Instalada, que lista os equipamentos que serão usados e suas potências, é indispensável sempre que a entrada de energia tiver disjuntor de 100 A ou mais, ou se no local forem utilizados máquinas específicas como motores elétricos, aparelhos de solda ou máquinas de raios X.
+
+Antes que a COPEL faça a ligação da rede, a entrada de serviço do prédio precisa estar totalmente pronta. Isso significa que o poste, a caixa de medição, os eletrodutos, os fios e o disjuntor já devem estar instalados e dimensionados corretamente, seguindo as normas técnicas e de segurança da concessionária. A ligação da energia só é aprovada após a fiscalização e vistoria feita pela equipe da COPEL.
+
+No contexto de um projeto elétrico, garantir que a documentação técnica (como a ART/RRT, a planta com os pontos de energia e a Declaração de Carga Instalada) esteja correta e que a entrada de serviço atenda a todas as exigências da COPEL é essencial para evitar atrasos na vistoria e garantir a aprovação da ligação do edifício.
 
 % ============================================================
 \subsection{Dimensionamento dos Circuitos (Distribuição e Terminais)}
@@ -1603,9 +1617,9 @@ passos para o dimensionamento de um projeto telefônico.
     \centering
 
     \caption{Fluxograma da sequência de passos para o dimensionamento de um projeto telefônico.}
-    \vspace{0.15cm}
+    \vspace{0.1cm}
     \includegraphics[width=0.86\textwidth]{imagens/fluxograma_projeto_telefonico.png}
-    \vspace{0.15cm}
+    \vspace{0.1cm}
     \fonte{O autor (2026).}
     
     \label{fluxograma_projeto_telefonico}
@@ -1688,16 +1702,16 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \centering
         \caption{Fator de Correção de Temperatura (FCT)}
         \label{tab:fct}
-        \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
+        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
         \setlength{\tabcolsep}{8pt} % margem entre colunas
         \renewcommand{\arraystretch}{1.25} % Ajusta a altura das linhas da tabela
 
         %\resizebox{\linewidth}{!}{%
-        \begin{tabular}{c |c | c |c | c}
+        \begin{tabular}{|c |c | c |c | c|}
         \hline
-        \multirow{3}{*}{\shortstack{\textbf{Temperatura} \\ (°C)}} & \multicolumn{4}{c}{\textbf{ISOLAMENTO}} \rule{0pt}{15pt}\\
+        \multirow{3}{*}{\shortstack{\textbf{Temperatura} \\ (°C)}} & \multicolumn{4}{c|}{\textbf{ISOLAMENTO}} \rule{0pt}{15pt}\\
         \cline{2-5}
-        & \multicolumn{2}{c|}{\textbf{Ambiente}} & \multicolumn{2}{c}{\textbf{Do solo}} \rule{0pt}{15pt}\\
+        & \multicolumn{2}{c|}{\textbf{Ambiente}} & \multicolumn{2}{c|}{\textbf{Do solo}} \rule{0pt}{15pt}\\
         \cline{2-3} \cline{4-5}
         & \textbf{PVC} & \textbf{EPR ou XLPE} & \textbf{PVC} & \textbf{EPR ou XLPE} \rule{0pt}{15pt}\\
         \hline
@@ -1716,8 +1730,8 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \end{tabular}%
         %}
         
-        \vspace{0.15cm}
-        \fonte{Adaptado de Cotrim, Ademaro A.M.B. (2009, p. 293.)}
+        \vspace{0.2cm}
+        \fonte{O autor (2026).}
     %\end{minipage}
 %\end{sideways}
 
@@ -1736,12 +1750,12 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \centering
         \caption{Fator de Correção de Agrupamento (FCA)}
         \label{tab:fca}
-        \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
+        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
         \setlength{\tabcolsep}{8pt} % margem entre colunas
         \renewcommand{\arraystretch}{1.3} % Ajusta a altura das linhas da tabela
 
         \resizebox{\linewidth}{!}{%
-        \begin{tabular}{c|>{\centering\arraybackslash}m{5cm}|c|c|c|c|c|c|c|c|c|c|c|c|c}
+        \begin{tabular}{|c|>{\centering\arraybackslash}m{5cm}|c|c|c|c|c|c|c|c|c|c|c|c|c|}
         \hline
         \multirow{2}{*}{\textbf{Item}} & \multirow{2}{*}{\shortstack{\textbf{Disposição dos} \\ \textbf{cabos justapostos}}} & \multicolumn{12}{c|}{\textbf{Número de circuitos ou cabos multiconductors}} & \multirow{2}{*}{\textbf{Ref.}} \rule{0pt}{15pt}\\
         \cline{3-14}
@@ -1755,8 +1769,8 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \end{tabular}%
         }
         
-        \vspace{0.15cm}
-        \fonte{Adaptado de Cotrim, Ademaro A.M.B. (2009, p. 294).}
+        \vspace{0.2cm}
+        \fonte{O autor (2026).}
     \end{minipage}
 \end{sideways}
 
@@ -1773,18 +1787,18 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
     % O tamanho \linewidth indica que a tabela pode ocupar até a largura máxima da página
     \begin{minipage}{\linewidth}
         \centering
-        \caption{Capacidades de condução de corrente, em amperes, para os métodos de referência A1, A2, B1, B2, C e D em Isolamento PVC}
+        \caption{Capacidades de condução de corrente (Ampacidade) para métodos de referência}
         \label{tab:ampacidade}
-        \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
+        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
         %\setlength{\tabcolsep}{8pt}       
         %\small
         \renewcommand{\arraystretch}{1.2} % Ajusta a altura das linhas da tabela
         \resizebox{\linewidth}{!}{%
-        \begin{tabular}{c | c | c | c |c | c |c | c |c | c |c | c |c}
+        \begin{tabular}{|c | c | c | c |c | c |c | c |c | c |c | c |c|}
         \hline
-        \multirow{2}{*}{\shortstack{\textbf{Seção} \\ \textbf{Nominal}}} & \multicolumn{12}{c}{\textbf{Métodos de Referência e Nº de condutores carregados}} \rule{0pt}{16pt}\\
+        \multirow{2}{*}{\shortstack{\textbf{Seção} \\ \textbf{Nominal}}} & \multicolumn{12}{c|}{\textbf{Métodos de Referência e Nº de condutores carregados}} \rule{0pt}{16pt}\\
         \cline{2-13}
-         & \multicolumn{2}{c|}{\textbf{A1}} & \multicolumn{2}{c|}{\textbf{A2}} & \multicolumn{2}{c|}{\textbf{B1}} & \multicolumn{2}{c|}{\textbf{B2}} & \multicolumn{2}{c|}{\textbf{C}} & \multicolumn{2}{c}{\textbf{D}} \rule{0pt}{15pt}\\
+         & \multicolumn{2}{c|}{\textbf{A1}} & \multicolumn{2}{c|}{\textbf{A2}} & \multicolumn{2}{c|}{\textbf{B1}} & \multicolumn{2}{c|}{\textbf{B2}} & \multicolumn{2}{c|}{\textbf{C}} & \multicolumn{2}{c|}{\textbf{D}} \rule{0pt}{15pt}\\
         \cline{2-3} \cline{4-5} \cline{6-7} \cline{8-9} \cline{10-11} \cline{12-13}
         \textbf{(mm$^2$)} & \textbf{2} & \textbf{3} & \textbf{2} & \textbf{3} & \textbf{2} & \textbf{3} & \textbf{2} & \textbf{3} & \textbf{2} & \textbf{3} & \textbf{2} & \textbf{3} \rule{0pt}{15pt}\\ \hline
         1 & 11 & 10 & 11 & 10 & 14 & 12 & 13 & 12 & 15 & 14 & 18 & 15 \\ \hline
@@ -1807,8 +1821,8 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \end{tabular}%
         }
 
-        \vspace{0.15cm}
-        \fonte{Adaptado de Cotrim, Ademaro A.M.B. (2009, p. 288).}
+        \vspace{0.2cm}
+        \fonte{FALTA!}
     \end{minipage}
 %\end{sideways}
 
@@ -1831,11 +1845,11 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \centering
         \caption{Diversificação em função da quantidade de apartamentos}
         \label{tab:diversificacao_quantidade_apartamentos}
-        \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
+        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
         \setlength{\tabcolsep}{8pt} % margem entre colunas
         \renewcommand{\arraystretch}{1.2} % Ajusta a altura das linhas da tabela
         %\resizebox{\linewidth}{!}{%
-        \begin{tabular}{c | c| c | c |c | c}
+        \begin{tabular}{|c | c| c | c |c | c|}
             \hline
             \textbf{Nº Aptos} & \textbf{F. Div} & \textbf{Nº Aptos} & \textbf{F. Div} & \textbf{Nº Aptos} & \textbf{F. Div} \rule{0pt}{15pt}\\
             \hline
@@ -1869,7 +1883,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \end{tabular}%
         %}
         
-        \vspace{0.15cm}
+        \vspace{0.2cm}
         \fonte{O autor (2026).}
     %\end{minipage}
 %\end{sideways}
@@ -1886,10 +1900,10 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \label{tab:demanda_apartamento}
         \setlength{\tabcolsep}{9pt} % margem entre colunas
         \renewcommand{\arraystretch}{1.2} % Ajusta a altura das linhas da tabela
-        \vspace{0.15cm}
+        \vspace{0.1cm}
         \centering
         \small
-        \begin{tabular}{c| c | c | c | c | c}
+        \begin{tabular}{|c| c | c | c | c | c|}
         \hline
         
         %\multicolumn{6}{c}{\textbf{CÁLCULO DA PARCELA DE DEMANDA DE }} \\
@@ -1928,7 +1942,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \hline
         \end{tabular}%
         
-        \vspace{0.15cm}
+        \vspace{0.2cm}
         \fonte{FALTA}
 
 \end{table}
@@ -1942,18 +1956,17 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
 \begin{table}[H]
 \centering
 \small
-\caption{Soma dos produtos potências (Watts) × distâncias (metros) para circuitos a 2 condutores em 110 V e 220 V}
+\caption{Critério simplificado de queda de tensão}
 \label{tab:criterio_simplificado}
 
 \setlength{\tabcolsep}{8pt}       
 \renewcommand{\arraystretch}{1.2} % Ajusta a altura das linhas da tabela
-\vspace{0.15cm}
+\vspace{0.1cm}
         
-\begin{tabular}{c|c|c|c|c|c}
+\begin{tabular}{|c|c|c|c|c|c|}
 \hline
-\multirow{3}{*}{\textbf{Tensão}} & \textbf{Seção Nominal ($S$)} & \textbf{1\%} & \textbf{2\%} & \textbf{3\%} & \textbf{4\%} \\
- & {[mm$^2$]} & \textbf{de queda} & \textbf{de queda} & \textbf{de queda} & \textbf{de queda} \\ \cline{2-6}
- & \multicolumn{5}{c}{\small{$\sum  (P_{Watts} \times l_{(m)})$}} \\ 
+\multirow{2}{*}{\textbf{Tensão}} & \textbf{Seção Nominal ($S$)} & \textbf{1\%} & \textbf{2\%} & \textbf{3\%} & \textbf{4\%} \\
+ & {[mm$^2$]} & \textbf{de queda} & \textbf{de queda} & \textbf{de queda} & \textbf{de queda} \\
 \hline
 \multirow{7}{*}{\textbf{110 V}} 
  & 1,5 & 5.263 & 10.526 & 15.789 & 21.052 \\ \cline{2-6}
@@ -1962,7 +1975,8 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
  & 6   & 21.054 & 42.108 & 63.162 & 84.216 \\ \cline{2-6}
  & 10  & 35.090 & 70.100 & 105.270 & 140.360 \\ \cline{2-6}
  & 16  & 56.144 & 112.288 & 168.432 & 224.576 \\ \cline{2-6}
- & 25  & 87.725 & 175.450 & 263.175 & 350.900 \\ \hline \hline
+ & 25  & 87.725 & 175.450 & 263.175 & 350.900 \\ \hline 
+ \hline
 \multirow{7}{*}{\textbf{220 V}} 
  & 1,5 & 21.054 & 42.108 & 63.163 & 84.216 \\ \cline{2-6}
  & 2,5 & 35.090 & 70.180 & 105.270 & 140.360 \\ \cline{2-6}
@@ -1973,8 +1987,8 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
  & 25  & 350.900 & 701.800 & 1.052.700 & 1.403.600 \\
 \hline
 \end{tabular}
-        \vspace{0.15cm}
-        \fonte{CREDER, H. Instalações Elétricas. 15ª Ed. Rio de Janeiro: LTC, 2007 (Fonte direta da tabela)}
+        \vspace{0.2cm}
+        \fonte{FALTA}
 \end{table}
 
 % ---------------------------------
@@ -1994,18 +2008,18 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \centering
         \caption{Motores Trifásicos - Potência e quantidade de motores para o mesmo tipo de instalação}
         \label{tab:motores_trifasicos}
-        \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
-        \setlength{\tabcolsep}{8pt} % margem entre colunas
+        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
+        \setlength{\tabcolsep}{7pt} % margem entre colunas
         \renewcommand{\arraystretch}{1.3} % Ajusta a altura das linhas da tabela
 
         \resizebox{\linewidth}{!}{%
-        \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
         \hline
-        \multirow{3}{*}{\shortstack{\textbf{Potência} \\ \textbf{do motor} \\ \textbf{(CV)}}} & \multicolumn{10}{c}{\textbf{Quantidade de motores para mesmo tipo de instalação}} \\
+        \multirow{3}{*}{\shortstack{\textbf{Potência} \\ \textbf{do motor} \\ \textbf{(CV)}}} & \multicolumn{10}{c|}{\textbf{Quantidade de motores para mesmo tipo de instalação}} \\
         \cline{2-11}
         & \textbf{1*} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} \\
         \cline{2-11}
-                & \multicolumn{10}{c}{\textbf{Fator de Correção / Demanda}} \\
+                & \multicolumn{10}{c|}{\textbf{Fator de Correção / Demanda}} \\
         \hline
         $\frac{1}{3}$ & 0,65 & 0,98 & 1,24 & 1,5 & 1,76 & 1,95 & 2,15 & 2,34 & 2,53 & 2,73 \\ \hline
         $\frac{1}{2}$ & 0,87 & 1,31 & 1,65 & 2,66 & 2,35 & 2,61 & 2,87 & 3,13 & 3,39 & 3,65 \\ \hline
@@ -2029,7 +2043,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \end{tabular}%\
         }
         
-        \vspace{0.15cm}
+        \vspace{0.1cm}
         \fonte{O autor (2026).}
     \end{minipage}
 \end{sideways}
@@ -2053,12 +2067,12 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \centering
         \caption{Dimensionamento do Ramal de Ligação em BT e Sistema de Aterramento}
         \label{tab:dimensionamento_ramal}
-        \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
+        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
         \setlength{\tabcolsep}{8pt} % margem entre colunas
         \renewcommand{\arraystretch}{1.4} % Ajusta a altura das linhas da tabela
 
         \resizebox{\linewidth}{!}{%
-        \begin{tabular}{c|c|c|c|c|c|c|c}
+        \begin{tabular}{|c|c|c|c|c|c|c|c|}
         \hline
         \multirow{4}{*}{\shortstack{\textbf{Demanda Máxima}\\\textbf{Prevista (kVA)}}} & \multirow{4}{*}{\shortstack{\textbf{Disjuntor}\\\textbf{Proteção}\\\textbf{Geral (A)}}} & \multicolumn{4}{c|}{\textbf{Ramal de Ligação Subterrâneo (TF Copel até seccionadora)}} & \multicolumn{2}{c|}{\textbf{Sistema de Aterramento}} \\
         \cline{3-8}
@@ -2076,7 +2090,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \end{tabular}%
         }
         
-        \vspace{0.15cm}
+        \vspace{0.2cm}
         \fonte{O autor (2026).}
     \end{minipage}
 \end{sideways}
@@ -2084,6 +2098,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
 \end{table}
 
 % ---------------------------------
+
 
 
 \begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
@@ -2097,11 +2112,11 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \centering
         \caption{Dimensionamento para as Unidades Consumidoras}
         \label{tab:dimensionamento_unidades_consumidoras}
-        \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
+        \vspace{0.1cm} % Dá um espacinho entre o título e a tabela
         \setlength{\tabcolsep}{9pt} % margem entre colunas
         \renewcommand{\arraystretch}{1.6} % Ajusta a altura das linhas da tabela
         \resizebox{\linewidth}{!}{%
-        \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
             \hline
             \multirow{6}{*}{\rotatebox{270}{\textbf{Categoria}}} & \multirow{6}{*}{\rotatebox{270}{\shortstack{\textbf{Demanda}\\\textbf{máxima prevista}\\\textbf{(kVA)}}}} & \multirow{6}{*}{\rotatebox{270}{\shortstack{\textbf{Disjuntor}\\\textbf{(A)}}}} & \multirow{6}{*}{\rotatebox{270}{\shortstack{\textbf{N.º de}\\\textbf{fases}}}} & \multirow{6}{*}{\rotatebox{270}{\shortstack{\textbf{Numero}\\\textbf{de fios}}}} & \multirow{6}{*}{\rotatebox{270}{\textbf{Medidas}}} & \multicolumn{2}{c|}{\textbf{Ramal de Ligacao}} & \multicolumn{5}{c|}{\textbf{Ramal de Entrada}} & \multicolumn{2}{c|}{\textbf{Aterramento}} & \multirow{5}{*}{\shortstack{\textbf{Poste}\\\textbf{Carga a 200}\\\textbf{mm do topo}\\\textbf{do poste daN}}} \\
             \cline{7-15}
@@ -2126,64 +2141,8 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \end{tabular}%
         }
         
-        \vspace{0.15cm}
+        \vspace{0.2cm}
         \fonte{O autor (2026).}
-    \end{minipage}
-\end{sideways}
-
-\end{table}
-
-\begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
-\centering
-
-% Inicia a rotação do conteúdo
-\begin{sideways}
-    % O minipage serve para "empacotar" o título e a tabela juntos para que o caption funcione virado.
-    % O tamanho \textwidth indica que a tabela pode ocupar até a largura máxima da página
-    \begin{minipage}{\textheight}
-        \centering
-        \caption{Dimensões totais dos condutores isolados, para 750 V e 1000 V}
-        \label{tab:Dimensoes_condutores}
-        \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
-        \setlength{\tabcolsep}{14pt} % margem entre colunas
-        \renewcommand{\arraystretch}{1.18} % Ajusta a altura das linhas da tabela
-        \resizebox{\linewidth}{!}{%
-        \begin{tabular}{c|c|c|c|c|c|c|c|c|c}
-            
-            \hline
-            \multirow{6}{*}{\shortstack{\textbf{Seção}\\\textbf{Nominal}\\\textbf{do}\\\textbf{Condutor}\\\textbf{(mm$^2$)}}} & \multicolumn{6}{c|}{\textbf{750 V}} & \multicolumn{3}{c}{\textbf{1000 V}} \\
-            \cline{2-10}
-            & \multicolumn{4}{c|}{\textbf{Pirastic Antiflan}} & \textbf{Pirastic-flex Antiflan} & \textbf{Pirastic-flex} & \multicolumn{3}{c}{\textbf{Energibrás}} \\
-            \cline{2-5} \cline{6-7} \cline{8-10}
-            & \multicolumn{2}{c|}{\shortstack{\textbf{Diâmetro}\\\textbf{Externo (mm)}}} & \multicolumn{2}{c|}{\shortstack{\textbf{Seção ou}\\\textbf{Área Total}\\\textbf{(mm$^2$)}}} & \shortstack{\textbf{Diâmetro}\\\textbf{Externo (mm)}} & \shortstack{\textbf{Área}\\\textbf{Total}\\\textbf{(mm$^2$)}} & {\shortstack{\textbf{Diâmetro}\\\textbf{Condutor}\\\textbf{Nu (mm)}}} & {\shortstack{\textbf{Diâmetro}\\\textbf{Externo}\\\textbf{(mm$^2$)}}} & {\shortstack{\textbf{Área}\\\textbf{Total}\\\textbf{(mm$^2$)}}} \\
-            \cline{2-5}
-            & \textbf{Fios} & \textbf{Cabos} & \textbf{Fios} & \textbf{Cabos} & \textbf{Fios} & \textbf{Cabos} & & & \\
-            \hline
-            (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9) & (10) \\
-            \hline
-            1,5 & 2,8 & 3,0 & 6,2 & 7,1 & 3,0 & 7,1 & 1,57 & 5,17 & 21,0 \\ \hline
-            2,5 & 3,4 & 3,7 & 9,1 & 10,7 & 3,6 & 10,2 & 2,02 & 5,62 & 24,8 \\ \hline
-            4 & 3,9 & 4,2 & 11,9 & 13,8 & 4,2 & 13,8 & 2,56 & 6,56 & 33,8 \\ \hline
-            6 & 4,4 & 4,8 & 15,2 & 18,1 & 4,7 & 17,3 & 3,14 & 7,14 & 40,0 \\ \hline
-            10 & 5,6 & 5,9 & 24,3 & 27,3 & 6,1 & 29,2 & 4,05 & 8,25 & 53,4 \\ \hline
-            16 & 6,5 & 6,9 & 33,2 & 37,4 & 7,8 & 47,8 & 5,13 & 9,33 & 68,3 \\ \hline
-            25 & \multicolumn{2}{c|}{8,5} & \multicolumn{2}{c|}{56,7} & 9,6 & 72,4 & 6,4 & 11,2 & 98,5 \\ \hline
-            35 & \multicolumn{2}{c|}{9,5} & \multicolumn{2}{c|}{71} & 10,9 & 93,3 & 7,56 & 12,4 & 120,7 \\ \hline
-            50 & \multicolumn{2}{c|}{11,0} & \multicolumn{2}{c|}{95,0} & 13,2 & 136,8 & 9,15 & 14,6 & 167,3 \\ \hline
-            70 & \multicolumn{2}{c|}{13,0} & \multicolumn{2}{c|}{133} & 15,0 & 176,7 & 10,85 & 16,3 & 208,6 \\ \hline
-            95 & \multicolumn{2}{c|}{15,0} & \multicolumn{2}{c|}{177} & - & - & 12,6 & 18,6 & 271,6 \\ \hline
-            120 & \multicolumn{2}{c|}{16,5} & \multicolumn{2}{c|}{214} & - & - & 14,2 & 20,4 & 326,7 \\ \hline
-            150 & \multicolumn{2}{c|}{18,0} & \multicolumn{2}{c|}{255} & - & - & 15,9 & 22,5 & 397,4 \\ \hline
-            185 & \multicolumn{2}{c|}{20,0} & \multicolumn{2}{c|}{314} & - & - & 17,6 & 24,8 & 482,8 \\ \hline
-            240 & \multicolumn{2}{c|}{23,0} & \multicolumn{2}{c|}{416} & - & - & 20,2 & 28,0 & 615,4 \\ \hline
-            300 & \multicolumn{2}{c|}{26,0} & \multicolumn{2}{c|}{530} & - & - & 22,5 & 30,9 & 749,5 \\ \hline
-            400 & \multicolumn{2}{c|}{28,5} & \multicolumn{2}{c|}{638} & - & - & 25,9 & 34,9 & 956,1 \\ \hline
-            500 & \multicolumn{2}{c|}{32,0} & \multicolumn{2}{c|}{804} & - & - & 28,9 & 38,6 & 1169,6 \\ \hline
-        \end{tabular}%
-        }
-        
-        \vspace{0.15cm}
-        \fonte{Adaptado de Cotrim, Ademaro A.M.B. (2009, p. 294).}
     \end{minipage}
 \end{sideways}
 
