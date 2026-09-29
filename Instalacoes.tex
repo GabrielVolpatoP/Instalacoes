@@ -295,18 +295,11 @@ compilar o projeto com o utilitário \texttt{makeindex} além do
 
 \subsection{Motivação}
 
-\hspace{1.27cm}A elaboração de um projeto elétrico completo para uma edificação de uso
-coletivo permite consolidar, em um único estudo de caso, os principais
-critérios normativos de dimensionamento de instalações elétricas de baixa
-tensão previstos na ABNT NBR 5410, além de aproximar a formação do
-engenheiro eletricista das rotinas efetivamente praticadas junto às
-concessionárias de energia elétrica (no caso, a COPEL) para a obtenção do
-fornecimento de energia de uma edificação multifamiliar.
-\FALTA{Personalizar este parágrafo com a motivação específica do grupo
-para a escolha da edificação/estudo de caso (por exemplo: relevância do
-tema para a formação profissional, características que tornam o projeto
-desafiador -- número de pavimentos, presença de cargas especiais,
-necessidade de subestação, etc.).}
+\hspace{1.27cm}O engenheiro eletricista tem como uma de suas principais responsabilidades a elaboração de projetos de instalações elétricas. Durante o planejamento e a execução de uma obra, é essencial a aplicação de conhecimentos técnicos para desenvolver um sistema seguro e eficiente, sempre em estrita conformidade com as normas brasileiras. Projetos mal planejados podem comprometer severamente a segurança da edificação, resultando em riscos como incêndios, curtos-circuitos e sobrecargas em equipamentos. Em contrapartida, um profissional qualificado é capaz de aliar as exigências técnicas aos aspectos estruturais da obra, promovendo conforto, segurança e praticidade para os futuros usuários.
+
+Diante da importância dessa atribuição, o domínio da elaboração de projetos elétricos torna-se uma habilidade indispensável para a atuação profissional. Nesse contexto, o objetivo central deste trabalho é desenvolver, passo a passo, um projeto elétrico detalhado para uma edificação residencial de uso coletivo. Essa prática permitirá a aquisição de uma experiência prática valiosa para a formação profissional.
+
+A elaboração deste projeto completo para uma edificação multifamiliar permite consolidar, em um único estudo de caso, os principais critérios normativos de dimensionamento de instalações elétricas de baixa tensão previstos na ABNT NBR 5410. Além disso, o trabalho aproxima a realidade acadêmica das rotinas efetivamente exigidas pelas concessionárias de energia elétrica — neste caso, a COPEL — para a viabilização e aprovação do fornecimento de energia.
 
 \subsection{Definições de Projetos Elétricos}
 
@@ -322,16 +315,20 @@ ABNT NBR 5410.
 
 \subsection{Definições das Unidades Consumidoras}
 
-\hspace{1.27cm}Unidade consumidora é o conjunto de instalações e equipamentos elétricos
-caracterizado pelo recebimento de energia elétrica em um só ponto de
-entrega, com medição individualizada e correspondente a uma única
-classe/subclasse de consumo, nos termos definidos pela concessionária de
-energia elétrica local.
-\FALTA{Detalhar aqui as definições de unidade consumidora, categoria de
-fornecimento (residencial, comercial, condomínio) e classificação adotadas
-especificamente pela concessionária de energia elétrica em questão
-(COPEL), com base na Norma Técnica COPEL (NTC) aplicável, conforme exigido
-no item 1.3 da Etapa 3 do roteiro.}
+\hspace{1.27cm}Com base nas Normas Técnicas da COPEL (NTC), especialmente a \cite{ntc901110} (Atendimento a Edificações de Uso Coletivo) e a NTC 901110 (Fornecimento em Tensão Secundária), estão consolidadas as definições técnicas de unidade consumidora, categorias de fornecimento e classificação de condomínios exigidas pela concessionária.
+
+Segundo o padrão regulatório adotado pela COPEL, a Unidade Consumidora é caracterizada pelo recebimento de energia elétrica em um só ponto de entrega, com medição individualizada e correspondente a um único consumidor, localizada em uma mesma propriedade ou imóvel.
+
+\subsubsection{Categorias de Fornecimento em Condomínios}
+
+O fornecimento dentro de agrupamentos e edificações multifamiliares ou comerciais divide-se nas seguintes frentes:
+\begin{itemize}
+    \item \textbf{Residencial}: Destinada exclusivamente ao fornecimento de energia para instalações de habitação ou moradia (como apartamentos ou casas em condomínios fechados).
+    \item \textbf{Comercial} (ou de Serviços): Aplicada às áreas destinadas a atividades comerciais, escritórios, consultórios ou lojas integradas à edificação de uso coletivo.
+    \item \textbf{Condomínio} (Administração / Área Comum): Trata-se de uma unidade consumidora específica criada para o atendimento das cargas de uso comum dos moradores ou lojistas (exemplos: elevadores, portaria, bombas d'água, iluminação de corredores e sistemas de prevenção e combate a incêndio)
+
+\end{itemize}
+
 
 % ============================================================
 % ETAPA 4 DO ROTEIRO -- DESCRIÇÃO DAS ETAPAS DO PROJETO
@@ -342,15 +339,47 @@ A execução deste projeto foi baseada nas plantas baixas de arquitetura
 distribuídas pelo professor (formato DWG), a partir das quais foram
 extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento_individual}).
 
-\FALTA{Inserir aqui um fluxograma sequencial (figura) com as etapas de
-elaboração do projeto -- por exemplo: Levantamento de plantas
-$\rightarrow$ Levantamento de Cargas $\rightarrow$ Cálculo de Potências e
-Carga Total $\rightarrow$ Cálculo de Demanda $\rightarrow$ Definição da
-Categoria/Tipo de Fornecimento $\rightarrow$ Dimensionamento de Circuitos,
-Condutores e Eletrodutos $\rightarrow$ Dimensionamento da Proteção
-$\rightarrow$ Prumada Elétrica e Diagramas Unifilares $\rightarrow$ Pedido
-de Fornecimento à COPEL -- conforme pedido no item 1 da Etapa 4 do
-roteiro ("de preferência com fluxograma sequencial").}
+\begin{figure}[H]
+    \centering
+    \caption{Fluxograma do projeto elétrico.}
+    \vspace{0.15cm}
+    \includegraphics[width=0.92\textwidth]{imagens/fluxosgrama_sequencial.png}
+    \vspace{0.15cm}
+    \fonte{O autor (2026).}
+    \label{img:fluxograma_sequencial}
+\end{figure}
+
+\begin{enumerate}
+    \item \textbf{Análise de Plantas e Ocupação: } Combina a extração de perímetros com a definição clara de ambientes, ocupação e a finalidade de cada andar.
+    
+    \item \textbf{Levantamento de Cargas e Demandas: } Identificação rigorosa das necessidades elétricas, englobando iluminação, tomadas (TUGs e TUEs), sistemas de segurança e equipamentos de uso comum.
+    
+    \item \textbf{Cálculo de Carga Total e Demanda: } Determinação da potência instalada total e aplicação dos fatores de diversificação e demanda correspondentes às áreas privativas e de condomínio.
+    
+    \item \textbf{Definição da Categoria de Fornecimento: } Estabelecimento do tipo de ligação (monofásica, bifásica ou trifásica) com base nos cálculos de demanda exigidos pela concessionária.
+    
+    \item \textbf{Esquema de Distribuição e Aterramento: } Adoção do padrão técnico exigido (como o esquema TN-C-S) para o aterramento e neutralização das instalações.
+    
+    \item \textbf{Desenho da Planta Baixa Elétrica: } Início da representação gráfica unificada no projeto arquitetônico.
+    
+    \item \textbf{Localização de Quadros e Pontos: } Posicionamento estratégico dos quadros de distribuição, centros de medição, interruptores, pontos de iluminação e tomadas em toda a planta.
+    
+    \item \textbf{Distribuição Inicial de Circuitos: } Divisão física e lógica identificando detalhadamente iluminação, tomadas, ar-condicionado e cargas especiais.
+    
+    \item \textbf{Dimensionamento de Condutores e Queda de Tensão: } Seleção criteriosa das bitolas de cabos baseada nas correntes de projeto corrigidas, aliada ao cálculo de limites aceitáveis para queda de tensão.
+    
+    \item \textbf{Dimensionamento da Proteção (Disjuntores, DR e DPS): } Especificação completa dos dispositivos contra curtos-circuitos, sobrecargas, correntes de fuga (choques elétricos) e surtos de tensão.
+    
+    \item \textbf{Estudos de Expansão e Infraestrutura: } Planejamento de eletrodutos e espaços adicionais nos quadros que permitam modificações futuras sem a necessidade de intervenções estruturais pesadas.
+    
+    \item \textbf{Subestação e Geradores: } Tratamento específico para cabines primárias e geração de emergência para elevadores ou bombas.
+    
+    \item \textbf{Prumada Elétrica e Diagramas Unifilares: } Mapeamento vertical de toda a distribuição de energia e a representação técnica esquemática de cada quadro elétrico montado.
+    
+    \item \textbf{Elaboração do Memorial de Cálculo e Documentação: } Compilação final de dados contemplando planilhas, especificações técnicas detalhadas e as tabelas de referência utilizadas.
+    
+    \item \textbf{Apresentação e Pedido de Fornecimento: } Apresentação formal do projeto consolidado e emissão dos pedidos técnicos junto à COPEL (incluindo declaração de cargas e ART).
+\end{enumerate}
 
 \subsection{Apresentação e Finalidade do Projeto}
 
@@ -371,15 +400,9 @@ edificação em estudo:
     autônomas} distribuídas em pavimentos, agrupadas em \textbf{2 Centros
     de Medição} (CM1, com 5 apartamentos, e CM2, com 9 apartamentos),
     conforme detalhado na Tabela~7 (Cargas dos Apartamentos);
-    \FALTA{confirmar/ajustar a natureza exata da edificação -- ex.:
-    edifício residencial puro ou de uso misto -- e sua classificação de
-    ocupação conforme a concessionária local e a NBR~5410;}
     \item A área construída total do apartamento-tipo é de
     \textbf{89,3~m²} (Tabela~\ref{tab:apartamento_individual}); a área construída total da
-    edificação (soma das 14 unidades autônomas mais áreas comuns) ainda
-    precisa ser consolidada;
-    \FALTA{informar a área construída total da edificação (m²), incluindo
-    áreas comuns, e o número de pavimentos e blocos;}
+    edificação (soma das 14 unidades autônomas mais áreas comuns) é de \textbf{493,28~m²};
     \item A finalidade do documento é demonstrar, de maneira auditável, que
     o dimensionamento atende simultaneamente aos critérios de
     \emph{capacidade de condução de corrente}, \emph{queda de tensão} e
@@ -463,6 +486,7 @@ instalada de cada ponto de utilização, em estrita observância aos critérios
 mínimos normativos -- que constituem \emph{piso obrigatório}, podendo o
 projetista adotar valores superiores sempre que a carga real dos
 equipamentos previstos assim o exigir.
+
 
 \begin{table}[H]
 \centering
@@ -1365,55 +1389,55 @@ explicitamente no memorial, com referência ao respectivo padrão técnico.
 \hspace{1.27cm}A ABNT NBR 5410 estabelece princípios fundamentais que devem orientar a concepção, execução e utilização das instalações elétricas de baixa tensão. Entre esses princípios, destacam-se a segurança das pessoas, o funcionamento adequado da instalação e a possibilidade de operação, manutenção e ampliação de forma segura e acessível.
 
     \begin{enumerate}[label=\roman*)]
-        \item Princípio de Segurança 
+        \item \textbf{Princípio de Segurança }
     
-        O princípio da segurança estabelece que a instalação elétrica deve proteger pessoas e animais contra choques elétricos, tanto em situações de contato acidental com partes vivas quanto em situações de falha que possam colocar massas metálicas sob tensão. Além disso, a instalação deve ser concebida de modo a evitar riscos de incêndio e queimaduras decorrentes de temperaturas elevadas ou arcos elétricos. A norma também determina que pessoas, animais e bens sejam protegidos contra os efeitos térmicos e eletromecânicos associados às sobrecorrentes.
+        \hspace{1.27cm} O princípio da segurança estabelece que a instalação elétrica deve proteger pessoas e animais contra choques elétricos, tanto em situações de contato acidental com partes vivas quanto em situações de falha que possam colocar massas metálicas sob tensão. Além disso, a instalação deve ser concebida de modo a evitar riscos de incêndio e queimaduras decorrentes de temperaturas elevadas ou arcos elétricos. A norma também determina que pessoas, animais e bens sejam protegidos contra os efeitos térmicos e eletromecânicos associados às sobrecorrentes.
 
-        No presente projeto, esse princípio é atendido por meio da adoção de medidas de proteção e comando adequadas aos circuitos, buscando impedir o contato com partes energizadas e permitir o desligamento da instalação quando necessário. O dimensionamento dos condutores e dos dispositivos de proteção deve considerar as correntes de funcionamento (nominais) e as possíveis sobrecorrentes, evitando que os componentes sejam submetidos a condições superiores às suas capacidades, além da aplicação dos cálculos de correção dos condutores e eletrodutos. A seleção dos materiais e equipamentos também deve ser compatível com as condições elétricas, operacionais e ambientais previstas para a instalação, conforme estabelecido pela NBR 5410.
+        \hspace{1.27cm} No presente projeto, esse princípio é atendido por meio da adoção de medidas de proteção e comando adequadas aos circuitos, buscando impedir o contato com partes energizadas e permitir o desligamento da instalação quando necessário. O dimensionamento dos condutores e dos dispositivos de proteção deve considerar as correntes de funcionamento (nominais) e as possíveis sobrecorrentes, evitando que os componentes sejam submetidos a condições superiores às suas capacidades, além da aplicação dos cálculos de correção dos condutores e eletrodutos. A seleção dos materiais e equipamentos também deve ser compatível com as condições elétricas, operacionais e ambientais previstas para a instalação, conforme estabelecido pela NBR 5410.
 
-        \item Princípio do Funcionamento Adequado da Instalação
+        \item \textbf{Princípio do Funcionamento Adequado da Instalação}
         
-        O segundo princípio está relacionado à capacidade da instalação de operar de maneira adequada e compatível com a finalidade para a qual foi projetada. Para isso, a NBR 5410 estabelece que, na concepção da instalação, devem ser consideradas características como a utilização prevista, a demanda, o esquema de distribuição, as alimentações disponíveis, as influências externas, os riscos de incompatibilidade e as necessidades de manutenção.
+        \hspace{1.27cm} O segundo princípio está relacionado à capacidade da instalação de operar de maneira adequada e compatível com a finalidade para a qual foi projetada. Para isso, a NBR 5410 estabelece que, na concepção da instalação, devem ser consideradas características como a utilização prevista, a demanda, o esquema de distribuição, as alimentações disponíveis, as influências externas, os riscos de incompatibilidade e as necessidades de manutenção.
 
-        No projeto, esse princípio é atendido pela definição dos circuitos e pela seleção de componentes compatíveis com as características elétricas e com as condições de operação previstas. A determinação da potência de alimentação deve considerar as cargas conectadas, mantendo a instalação dentro de limites adequados de elevação de temperatura e queda de tensão, novamente aplicando os cálculos de correção dos condutores e eletrodutos. Dessa forma, o dimensionamento dos condutores, dispositivos de proteção e demais equipamentos deve ser realizado de acordo com as demandas calculadas, garantindo que a instalação opere de forma estável e segura.
+        \hspace{1.27cm} No projeto, esse princípio é atendido pela definição dos circuitos e pela seleção de componentes compatíveis com as características elétricas e com as condições de operação previstas. A determinação da potência de alimentação deve considerar as cargas conectadas, mantendo a instalação dentro de limites adequados de elevação de temperatura e queda de tensão, novamente aplicando os cálculos de correção dos condutores e eletrodutos. Dessa forma, o dimensionamento dos condutores, dispositivos de proteção e demais equipamentos deve ser realizado de acordo com as demandas calculadas, garantindo que a instalação opere de forma estável e segura.
 
-        Também é considerada a divisão da instalação em circuitos, permitindo que diferentes partes possam ser operadas e protegidas de maneira independente. A norma estabelece que os circuitos devem ser planejados de modo que possam ser seccionados sem risco de realimentação inadvertida e que a divisão deve atender às necessidades de segurança, funcionamento e manutenção.
+        \hspace{1.27cm} Também é considerada a divisão da instalação em circuitos, permitindo que diferentes partes possam ser operadas e protegidas de maneira independente. A norma estabelece que os circuitos devem ser planejados de modo que possam ser seccionados sem risco de realimentação inadvertida e que a divisão deve atender às necessidades de segurança, funcionamento e manutenção.
 
-        \item Princípio da Possibilidade de Fácil e Segura Operação, Manutenção e ampliação
+        \item \textbf{Princípio da Possibilidade de Fácil e Segura Operação, Manutenção e ampliação}
         
-        O terceiro princípio estabelece que a instalação deve possibilitar sua operação, inspeção, manutenção e eventual ampliação de maneira segura. Para isso, a NBR 5410 determina que a alimentação da instalação, de seus circuitos e equipamentos possa ser seccionada para manutenção, verificação, localização de defeitos e reparos. Também estabelece que os componentes sejam instalados de forma a proporcionar espaço suficiente para sua instalação e posterior substituição, ou seja, prever espaço adequado para ampliação dos circuitos, além de permitir acesso para operação, inspeção e manutenção.
+        \hspace{1.27cm} O terceiro princípio estabelece que a instalação deve possibilitar sua operação, inspeção, manutenção e eventual ampliação de maneira segura. Para isso, a NBR 5410 determina que a alimentação da instalação, de seus circuitos e equipamentos possa ser seccionada para manutenção, verificação, localização de defeitos e reparos. Também estabelece que os componentes sejam instalados de forma a proporcionar espaço suficiente para sua instalação e posterior substituição, ou seja, prever espaço adequado para ampliação dos circuitos, além de permitir acesso para operação, inspeção e manutenção.
 
-        No presente projeto, esse princípio é atendido pela previsão de dispositivos de seccionamento e comando e pela divisão dos circuitos do condominio e dos circuitos dos apatarmentos, além de separar os centros de medição, permitindo a desenergização dos circuitos durante intervenções e reduzindo os riscos associados às atividades de manutenção. A organização dos circuitos e a identificação dos condutores e componentes também contribuem para facilitar a localização de falhas e a realização de intervenções. A norma, também, determina que os componentes sejam instalados de maneira que suas características não sejam comprometidas e que as conexões sejam seguras e confiáveis.
+        \hspace{1.27cm} No presente projeto, esse princípio é atendido pela previsão de dispositivos de seccionamento e comando e pela divisão dos circuitos do condominio e dos circuitos dos apatarmentos, além de separar os centros de medição, permitindo a desenergização dos circuitos durante intervenções e reduzindo os riscos associados às atividades de manutenção. A organização dos circuitos e a identificação dos condutores e componentes também contribuem para facilitar a localização de falhas e a realização de intervenções. A norma, também, determina que os componentes sejam instalados de maneira que suas características não sejam comprometidas e que as conexões sejam seguras e confiáveis.
 
 
     \end{enumerate}
 
 \subsection{Esquema de Distribuição (Características Gerais)}
 
-A ABNT NBR 5410 estabelece que, na concepção de uma instalação elétrica, deve ser definido o esquema de distribuição, considerando tanto o esquema dos condutores vivos quanto o esquema de aterramento. A norma classifica os esquemas de aterramento de acordo com a situação da alimentação em relação à terra e com a situação das massas da instalação em relação à terra.
+A \cite{nbr5410} estabelece que, na concepção de uma instalação elétrica, deve ser definido o esquema de distribuição, considerando tanto o esquema dos condutores vivos quanto o esquema de aterramento. A norma classifica os esquemas de aterramento de acordo com a situação da alimentação em relação à terra e com a situação das massas da instalação em relação à terra.
 
 \subsubsection{Esquema TN-S}
 
-No esquema TN-S, o ponto da alimentação é diretamente aterrado e as massas da instalação são conectadas a esse ponto por meio de condutores de proteção. A característica principal desse esquema é a utilização de condutores distintos para o neutro e para a proteção (N e PE) em toda a instalação.
+\hspace{1.27cm} No esquema TN-S, o ponto da alimentação é diretamente aterrado e as massas da instalação são conectadas a esse ponto por meio de condutores de proteção. A característica principal desse esquema é a utilização de condutores distintos para o neutro e para a proteção (N e PE) em toda a instalação.
 
 \subsubsection{Esquema TN-C}
 
-No esquema TN-C, as funções de neutro e de proteção são combinadas em um único condutor, denominado PEN, em toda a extensão do esquema. Assim, o mesmo condutor exerce simultaneamente as funções de neutro e de proteção.
+\hspace{1.27cm} No esquema TN-C, as funções de neutro e de proteção são combinadas em um único condutor, denominado PEN, em toda a extensão do esquema. Assim, o mesmo condutor exerce simultaneamente as funções de neutro e de proteção.
 
 \subsubsection{Esquema TN-C-S}
 
-O esquema TN-C-S é uma configuração na qual as funções de neutro e proteção são inicialmente combinadas em um condutor PEN e, em determinado ponto da instalação, passam a ser realizadas por condutores distintos.
+\hspace{1.27cm} O esquema TN-C-S é uma configuração na qual as funções de neutro e proteção são inicialmente combinadas em um condutor PEN e, em determinado ponto da instalação, passam a ser realizadas por condutores distintos.
 
 \subsubsection{Esquema TT}
 
-No esquema TT, um ponto da alimentação é diretamente aterrado, enquanto as massas da instalação são conectadas a eletrodo(s) de aterramento eletricamente distinto(s) daquele utilizado para o aterramento da alimentação.
+\hspace{1.27cm} No esquema TT, um ponto da alimentação é diretamente aterrado, enquanto as massas da instalação são conectadas a eletrodo(s) de aterramento eletricamente distinto(s) daquele utilizado para o aterramento da alimentação.
 
 Esse esquema é aplicável quando o aterramento das massas da instalação é realizado de forma independente do aterramento da alimentação, sendo necessário garantir as condições adequadas de proteção contra choques elétricos.
 
 
 \subsubsection{Esquema IT}
 
-No esquema IT, todas as partes vivas são isoladas da terra ou um ponto da alimentação é aterrado por meio de uma impedância. As massas da instalação são aterradas, podendo utilizar o mesmo eletrodo da alimentação, quando existente, ou eletrodos próprios e independentes.
+\hspace{1.27cm} No esquema IT, todas as partes vivas são isoladas da terra ou um ponto da alimentação é aterrado por meio de uma impedância. As massas da instalação são aterradas, podendo utilizar o mesmo eletrodo da alimentação, quando existente, ou eletrodos próprios e independentes.
 
 
 \subsubsection{Esquema adotado pela COPEL}
