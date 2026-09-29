@@ -193,12 +193,7 @@ cidade/estado + mês/ano no rodapé.}
 \pdfbookmark[0]{\listfigurename}{lof}
 \listoffigures*
 \cleardoublepage
-\FALTA{A Lista de Figuras está vazia porque nenhuma figura (planta baixa,
-fluxograma, diagrama unifilar, foto, etc.) foi inserida no corpo do
-trabalho com \texttt{\textbackslash caption} em ambiente \texttt{figure}.
-Inserir as figuras exigidas nas etapas seguintes (fluxograma, prumada,
-diagramas unifilares) para que esta lista seja preenchida
-automaticamente.}
+
 
 % --- Lista de Quadros ---
 % Observação de norma: em ABNT, "Tabela" = dado estatístico/numérico e
@@ -208,50 +203,51 @@ automaticamente.}
 % resumo de normas, quadro de etapas do projeto), a Lista de Quadros
 % deve ser criada com o ambiente \texttt{quadro} do abntex2
 % (\texttt{\textbackslash listofquadros}).
-\phantomsection
-\addcontentsline{toc}{chapter}{Lista de Quadros}
-\pdfbookmark[0]{Lista de Quadros}{loq}
-\chapter*{Lista de Quadros}
-\FALTA{Nenhum Quadro (ambiente \texttt{quadro} do abntex2, distinto de
-\texttt{table}) foi criado até o momento -- apenas Tabelas. Definir se o
-grupo utilizará Quadros (ex.: quadro-resumo dos Princípios Fundamentais
-da NBR 5410 \cite{nbr5410}, quadro do esquema de distribuição) e, em caso positivo,
-gerar esta lista com \texttt{\textbackslash listofquadros}.}
-\cleardoublepage
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Lista de Quadros}
+%\pdfbookmark[0]{Lista de Quadros}{loq}
+%\chapter*{Lista de Quadros}
+%\FALTA{Nenhum Quadro (ambiente \texttt{quadro} do abntex2, distinto de
+%\texttt{table}) foi criado até o momento -- apenas Tabelas. Definir se o
+%grupo utilizará Quadros (ex.: quadro-resumo dos Princípios Fundamentais
+%da NBR 5410 \cite{nbr5410}, quadro do esquema de distribuição) e, em caso positivo,
+%gerar esta lista com \texttt{\textbackslash listofquadros}.}
+%\cleardoublepage
 
 % --- Glossário ---
 %\begin{glossario}
-\begin{itemize}[leftmargin=1.2cm]
-    \item[ART] Anotação de Responsabilidade Técnica 
-    \item[CM] Centro de Medição
-    \item[CM1] Centro de Medição 1
-    \item[CM2] Centro de Medição 2   
-    \item[COPEL] Companhia Paranaense de Energia, concessionária de energia
-    \item[CTI] Carga Total Instalada       
-    \item[DDR]  Disjuntor Diferencial Residual 
-    \item[Demanda] Valor de Potência elétrica requerida por uma unidade consumidora
-    \item[DTM] Disjuntor termomagnético
-    \item[Fator de Potência] Número que mede a eficiência que a energia elétrica é sada em um circuito 
-    \item[FCA] Fator de Correção de Agrupamento
-    \item[FCT] Fator de Correção de Temperatura 
-    \item[FDEM] Fator de Demanda 
-    \item[FDIV] Fator de Diversificação 
-    \item[IDR] Interruptor Diferencial Residual
-    \item[NBR] Norma Brasileira, publicada pela ABNT.
-    \item[NTC] Norma Técnica da Copel
-    \item[Prumada] Conjunto de elementos de uma edificação alinhados na vertical
-    \item[QGBT] Quadro Geral de Baixa Tensão.
-    \item[QGC] Quadro Geral de Condomínio 
-    \item[RRT] Registro de Responsabilidade Técnica 
-    \item[TN-C-S] Esquema de Aterramento Elétrico
-    \item[TUE] Tomada de Uso Específico.
-    \item[TUG] Tomada de Uso Geral.
-    \item[UC] Unidade Consumidora 
+%\addcontentsline{toc}{chapter}{Glossario}
+\chapter*{Glossário}
+\begin{itemize}[leftmargin=1.25cm, itemsep=0.08em]
+    \item[\textbf{ART}] Anotação de Responsabilidade Técnica 
+    \item[\textbf{CM}] Centro de Medição
+    \item[\textbf{CM1}] Centro de Medição 1
+    \item[\textbf{CM2}] Centro de Medição 2   
+    \item[\textbf{COPEL}] Companhia Paranaense de Energia, concessionária de energia
+    \item[\textbf{CTI}] Carga Total Instalada       
+    \item[\textbf{DDR}]  Disjuntor Diferencial Residual 
+    \item[\textbf{Demanda}] Valor de Potência elétrica requerida por uma unidade consumidora
+    \item[\textbf{DTM}] Disjuntor termomagnético
+    \item[\textbf{Fator de Potência}] Número que mede a eficiência que a energia elétrica é sada em um circuito 
+    \item[\textbf{FCA}] Fator de Correção de Agrupamento
+    \item[\textbf{FCT}] Fator de Correção de Temperatura 
+    \item[\textbf{FDEM}] Fator de Demanda 
+    \item[\textbf{FDIV}] Fator de Diversificação 
+    \item[\textbf{IDR}] Interruptor Diferencial Residual
+    \item[\textbf{NBR}] Norma Brasileira, publicada pela ABNT.
+    \item[\textbf{NTC}] Norma Técnica da Copel
+    \item[\textbf{Prumada}] Conjunto de elementos de uma edificação alinhados na vertical
+    \item[\textbf{QGBT}] Quadro Geral de Baixa Tensão.
+    \item[\textbf{QGC}] Quadro Geral de Condomínio 
+    \item[\textbf{RRT}] Registro de Responsabilidade Técnica 
+    \item[\textbf{TN-C-S}] Esquema de Aterramento Elétrico
+    \item[\textbf{TUE}] Tomada de Uso Específico.
+    \item[\textbf{TUG}] Tomada de Uso Geral.
+    \item[\textbf{UC}] Unidade Consumidora 
+    \item[\textbf{UE}] Unidade de Energia
     elétrica do Estado do Paraná.
 \end{itemize}
-\FALTA{Completar o glossário com os demais termos técnicos utilizados no
-memorial (ex.: DTM, IDR/DR, NTC, demanda, fator de potência, prumada,
-esquema de distribuição TN/TT/IT, etc.).}
+
 %\end{glossario}
 \cleardoublepage
 
@@ -1320,13 +1316,12 @@ Para os quadros do térreo e do subsolo, foram obtidas demandas de 8,448 kVA e 2
 
 Assim, a distribuição elétrica do edifício pode ser organizada de forma hierárquica, partindo do ponto de entrega e seguindo para o QGBT, de onde são derivados os circuitos de alimentação dos CM1 e CM2. A partir desses centros de medição, são alimentadas as unidades consumidoras dos apartamentos e as cargas de uso coletivo, que, por sua vez, são distribuídas entre os respectivos quadros de condomínio. Para facilitar a visualização dessa distribuição, foi elaborado um fluxograma, apresentado na Figura \ref{img:fluxograma_projeto_eletrico}.
 
-\newpage
 
 \begin{figure}[H]
     \centering
     \caption{Fluxograma do projeto elétrico.}
     \vspace{0.15cm}
-    \includegraphics[width=0.95\textwidth]{imagens/fluxograma_eletrico.png}
+    \includegraphics[width=0.94\textwidth]{imagens/fluxograma_eletrico.png}
     \vspace{0.15cm}
     \fonte{O autor (2026).}
     \label{img:fluxograma_projeto_eletrico}
