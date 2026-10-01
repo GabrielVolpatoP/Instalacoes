@@ -1175,13 +1175,13 @@ CTI_{CM1} = 298.000\ \mathrm{VA}
 \]
 
 \[
-\frac{D_e'}{CTI_{CM1}} \times 100
+\frac{D_r'}{CTI_{CM1}} \times 100
 =
 \frac{40.455,6}{298.000} \times 100
 \]
 
 \[
-\frac{D_e'}{CTI_{CM1}} \times 100
+\frac{D_r'}{CTI_{CM1}} \times 100
 =
 13,57\%
 \]
@@ -1234,13 +1234,13 @@ CTI_{CM2} = 463.680\ \mathrm{VA}
 Para calcular o fator multiplicativo:
 
 \[
-\frac{D_e''}{CTI_{CM2}} \times 100
+\frac{D_r''}{CTI_{CM2}} \times 100
 =
 \frac{16.839}{463.680} \times 100
 \]
 
 \[
-\frac{D_e''}{CTI_{CM2}} \times 100
+\frac{D_r''}{CTI_{CM2}} \times 100
 =
 3,63\%
 \]
@@ -1451,34 +1451,29 @@ No contexto de um projeto elétrico, garantir que a documentação técnica (com
 % ============================================================
 \subsection{Dimensionamento dos Circuitos (Distribuição e Terminais)}
 
-\hspace{1.27cm}\subsubsection{Cálculo da Corrente de Projeto ($I_B$)}
+\hspace{1.27cm}\subsubsection{Cálculo da Corrente de Projeto ($I_P$)}
 
 \hspace{1.27cm} A corrente de projeto é a corrente que o circuito deve ser capaz de
 conduzir em regime permanente, calculada a partir da potência do circuito e
 da tensão nominal de alimentação:
 
 \begin{equation}
-    \text{Circuitos monofásicos/bifásicos:} \quad I_B = \dfrac{P}{V}
+    \text{Circuitos monofásicos/bifásicos:} \quad I_P = \dfrac{P}{V}
     \label{eq:corrente_mono}
 \end{equation}
 
-\begin{equation}
-    \text{Circuitos trifásicos:} \quad I_B = \dfrac{P}{V \cdot \sqrt{3}}
-    \label{eq:corrente_tri}
-\end{equation}
-
-\subsubsection{Cálculo da Corrente Corrigida ($I_{cp}$)}
+\subsubsection{Cálculo da Corrente Corrigida ($I'_{P}$)}
 
 \hspace{1.27cm} A NBR 5410 exige que a capacidade de condução de corrente do condutor,
 originalmente tabelada para condições-padrão de instalação, seja corrigida
 sempre que as condições reais de instalação diferirem dessas condições de
 referência -- notadamente quanto ao agrupamento de circuitos em um mesmo
-eletroduto/eletrocalha e à temperatura ambiente do local de instalação.
+eletroduto e à temperatura ambiente do local de instalação.
 Os fatores de correção correspondentes ($FCA$ e $FCT$) são tabelados na
 própria norma:
 
 \begin{equation}
-    I_{cp} = \dfrac{I_B}{FCA \times FCT}
+    I'_{P} = \dfrac{I_P}{FCA \times FCT}
     \label{eq:corrente_corrigida}
 \end{equation}
 
@@ -1496,9 +1491,10 @@ em que:
     as condições reais de projeto.
 \end{itemize}
 
-A corrente corrigida $I_{cp}$ é o valor que efetivamente orienta a escolha
+A corrente corrigida $I_{P}$ é o valor que efetivamente orienta a escolha
 da seção do condutor, conforme demonstrado na Seção~8.
 
+Para o presente projeto, foram determinados os valores FCT = 0,94 (três circuitos agrupados) e FCA = 0,70 (temperatura ambiente de \SI{35}{\celsius}). Dessa forma, esses fatores são aplicados às correntes de projeto dos circuitos para determinar as respectivas correntes corrigidas, que serão utilizadas no dimensionamento dos condutores.
 % ============================================================
 \subsection{Dimensionamento de Condutores e Eletrodutos}
 
