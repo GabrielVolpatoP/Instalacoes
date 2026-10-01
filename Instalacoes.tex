@@ -74,26 +74,24 @@
 }
 
 % --- Informações de Capa e Folha de Rosto (Contra Capa) ---
-\titulo{MEMORIAL DE CÁLCULO}
+\titulo{Instalações Eletricas II\\Edificação de Uso Coletivo}
 \autor{ Antonio Nicolas Irmani\\
         Gabriel Henrique da Silva\\
         Gabriel Volpato\\
         João Marcos Conti Checom\\
         Julia Fernandes Gimenes\\
         Matheus Augusto Fernandes Franco\\}
-\local{Maringá -- Paraná}
+\local{\textbf{Maringá -- Paraná}}
 \data{2026}
 \orientador{Glaucio Pedro de Alcantara}
 \instituicao{%
-  Universidade Estadual de Maringá - UEM
+  \textbf{Universidade Estadual de Maringá - UEM}
   \par
   Departamento de Engenharia Química 
   \par
   Engenharia Elétrica}
-\tipotrabalho{Projeto Elétrico de uma Edificação}
-\preambulo{Trabalho de Conclusão de Curso apresentado ao Curso de Graduação em 
-Engenharia Eletrica da Universidade Estadual de Maringá, como requisito parcial para obtenção 
-do título de Bacharel em Engenharia Eletrica.}
+\tipotrabalho{Projeto Elétrico de uma Edificação}
+\preambulo{Parte manuscrita do Projeto Elétrico Residencial realizada pelos alunos Antonio Nicolas I., Gabriel Henrique da S., Gabriel Volpato, João Marcos C. C., Julia Fernandes G., Matheus Augusto F. F.,da 4ª série do curso de Engenharia Elétrica, apresentado na UEM – Maringá}
 
 \begin{document}
 
@@ -145,7 +143,7 @@ do título de Bacharel em Engenharia Eletrica.}
         
         % --- Local e Data ---
         \textbf{MARINGÁ -- PR}\\
-        \textbf{AGOSTO DE 2026}
+        \textbf{OUTUBRO DE 2026}
         
     \end{center}
 \end{capa}
@@ -162,63 +160,47 @@ do título de Bacharel em Engenharia Eletrica.}
 % rodapé. O comando \imprimirfolhaderosto do abntex2 gera a folha de
 % rosto padrão (autor, título, natureza do trabalho, orientador), que NÃO
 % corresponde ao modelo de contracapa pedido no roteiro.
-\FALTA{Substituir/complementar a folha de rosto gerada por
-\texttt{\textbackslash imprimirfolhaderosto} por uma \emph{contracapa}
-customizada, com caixa de texto justificada da metade da página até a
-margem direita, no modelo de texto sugerido pelo roteiro (ex.: "Parte
-manuscrita do Projeto elétrico residencial realizada pelos alunos
-[nomes], da [ano/série] série do curso de [curso], apresentado na UEM --
-Maringá, como forma para obtenção da nota final da disciplina") e com
-cidade/estado + mês/ano no rodapé.}
+
+% ============================================================
+% ETAPA 2 DO ROTEIRO -- ordem exigida:
+% Agradecimentos > Lista de Figuras > Lista de Tabelas > Glossário > Índice
+% (numeração em algarismos romanos do item "Agradecimentos" até
+% "Glossário", inclusive -- já é o padrão do abntex2 na área pré-textual)
+% ============================================================
 
 % --- Sumário ---
 \pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents*
 \cleardoublepage
 
-% ============================================================
-% ETAPA 2 DO ROTEIRO -- ordem exigida:
-% Agradecimentos > Lista de Figuras > Lista de Quadros > Glossário > Índice
-% (numeração em algarismos romanos do item "Agradecimentos" até
-% "Glossário", inclusive -- já é o padrão do abntex2 na área pré-textual)
-% ============================================================
-
 % --- Agradecimentos ---
+
 \begin{agradecimentos}
+\addcontentsline{toc}{section}{I.\hspace{1.8cm}Agradecimentos}
 \FALTA{Elaborar o texto de agradecimentos do grupo (item 1 da Etapa 2).}
 \end{agradecimentos}
 \cleardoublepage
 
 % --- Lista de Ilustrações (Figuras) ---
 \pdfbookmark[0]{\listfigurename}{lof}
+\addcontentsline{toc}{section}{II.\hspace{1.7cm}Lista de Ilustrações}
 \listoffigures*
 \cleardoublepage
 
+% --- Lista de Tabelas ---
+\pdfbookmark[0]{\listtablename}{lot}
+\addcontentsline{toc}{section}{III.\hspace{1.6cm}Lista de Tabelas}
+\listoftables*
+\cleardoublepage
 
-% --- Lista de Quadros ---
-% Observação de norma: em ABNT, "Tabela" = dado estatístico/numérico e
-% "Quadro" = informação textual organizada em linhas/colunas (não
-% numérica). O documento atual só contém Tabelas (já listadas em "Lista
-% de Tabelas", abaixo); se o grupo decidir usar Quadros (ex.: quadro-
-% resumo de normas, quadro de etapas do projeto), a Lista de Quadros
-% deve ser criada com o ambiente \texttt{quadro} do abntex2
-% (\texttt{\textbackslash listofquadros}).
-%\phantomsection
-%\addcontentsline{toc}{chapter}{Lista de Quadros}
-%\pdfbookmark[0]{Lista de Quadros}{loq}
-%\chapter*{Lista de Quadros}
-%\FALTA{Nenhum Quadro (ambiente \texttt{quadro} do abntex2, distinto de
-%\texttt{table}) foi criado até o momento -- apenas Tabelas. Definir se o
-%grupo utilizará Quadros (ex.: quadro-resumo dos Princípios Fundamentais
-%da NBR 5410 \cite{nbr5410}, quadro do esquema de distribuição) e, em caso positivo,
-%gerar esta lista com \texttt{\textbackslash listofquadros}.}
-%\cleardoublepage
 
 % --- Glossário ---
 %\begin{glossario}
 %\addcontentsline{toc}{chapter}{Glossario}
 \chapter*{Glossário}
-\begin{itemize}[leftmargin=1.3cm, itemsep=0.08em]
+\addcontentsline{toc}{section}{IV.\hspace{1.6cm}Glossário}
+
+\begin{itemize}[leftmargin=1.3cm, itemsep=0.02em]
     \item[\textbf{ART}] Anotação de Responsabilidade Técnica 
     \item[\textbf{CM}] Centro de Medição
     \item[\textbf{CM1}] Centro de Medição 1
@@ -228,7 +210,8 @@ cidade/estado + mês/ano no rodapé.}
     \item[\textbf{DDR}]  Disjuntor Diferencial Residual 
     \item[\textbf{Demanda}] Valor de Potência elétrica requerida por uma unidade consumidora
     \item[\textbf{DTM}] Disjuntor termomagnético
-    \item[\textbf{Fator de Potência}] Número que mede a eficiência que a energia elétrica é sada em um circuito 
+    \item[\textbf{Fator de}] 
+    \item[\textbf{Potência}] Número que mede a eficiência que a energia elétrica é sada em um circuito 
     \item[\textbf{FCA}] Fator de Correção de Agrupamento
     \item[\textbf{FCT}] Fator de Correção de Temperatura 
     \item[\textbf{FDEM}] Fator de Demanda 
@@ -244,21 +227,14 @@ cidade/estado + mês/ano no rodapé.}
     \item[\textbf{TUE}] Tomada de Uso Específico.
     \item[\textbf{TUG}] Tomada de Uso Geral.
     \item[\textbf{UC}] Unidade Consumidora 
-    \item[\textbf{UE}] Unidade de Energia
-    elétrica do Estado do Paraná.
+    \item[\textbf{UE}] Unidade de Energia elétrica do Estado do Paraná.
 \end{itemize}
 
-%\end{glossario}
-\cleardoublepage
-
-% --- Lista de Tabelas ---
-\pdfbookmark[0]{\listtablename}{lot}
-\listoftables*
 \cleardoublepage
 
 % --- Índice ---
 \phantomsection
-\addcontentsline{toc}{chapter}{Índice}
+\addcontentsline{toc}{section}{V.\hspace{1.75cm}Índice}
 \pdfbookmark[0]{Índice}{idx}
 \chapter*{Índice}
 \FALTA{O Índice remissivo ainda não foi gerado. É necessário: 1) carregar
@@ -335,20 +311,28 @@ O fornecimento dentro de agrupamentos e edificações multifamiliares ou comerci
 % ============================================================
 \section{Descrição das Etapas do Projeto}
 
-A execução deste projeto foi baseada nas plantas baixas de arquitetura
+\hspace{1.27cm} A execução deste projeto foi baseada nas plantas baixas de arquitetura
 distribuídas pelo professor (formato DWG), a partir das quais foram
 extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento_individual}).
+
+\subsection{Fluxograma}
+
+\hspace{1.27cm} O fluxograma representado na Figura \ref{img:fluxograma_sequencial} mostra todo o passo a passo da execução do projeto, desde seu começo até a apresentação final.
 
 \begin{figure}[H]
     \centering
     \caption{Fluxograma do projeto elétrico.}
     \vspace{0.15cm}
-    \includegraphics[width=0.92\textwidth]{imagens/fluxosgrama_sequencial.png}
+    \includegraphics[width=0.94\textwidth]{imagens/fluxosgrama_sequencial.png}
     \vspace{0.15cm}
     \fonte{O autor (2026).}
     \label{img:fluxograma_sequencial}
 \end{figure}
 
+\subsection{Descrição das Etapas do Projeto}
+\hspace{1.27cm} O projeto foi desenvolvido em etapas, seguindo o fluxograma apresentado na Figura \ref{img:fluxograma_sequencial}.
+
+\subsubsection{Levantamento e Planejamente}
 \begin{enumerate}
     \item \textbf{Análise de Plantas e Ocupação: } Combina a extração de perímetros com a definição clara de ambientes, ocupação e a finalidade de cada andar.
     
@@ -357,7 +341,10 @@ extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento
     \item \textbf{Cálculo de Carga Total e Demanda: } Determinação da potência instalada total e aplicação dos fatores de diversificação e demanda correspondentes às áreas privativas e de condomínio.
     
     \item \textbf{Definição da Categoria de Fornecimento: } Estabelecimento do tipo de ligação (monofásica, bifásica ou trifásica) com base nos cálculos de demanda exigidos pela concessionária.
-    
+\end{enumerate}
+
+\subsubsection{Lançamento e Distribuição}
+\begin{enumerate}[start=5]
     \item \textbf{Esquema de Distribuição e Aterramento: } Adoção do padrão técnico exigido (como o esquema TN-C-S) para o aterramento e neutralização das instalações.
     
     \item \textbf{Desenho da Planta Baixa Elétrica: } Início da representação gráfica unificada no projeto arquitetônico.
@@ -365,7 +352,10 @@ extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento
     \item \textbf{Localização de Quadros e Pontos: } Posicionamento estratégico dos quadros de distribuição, centros de medição, interruptores, pontos de iluminação e tomadas em toda a planta.
     
     \item \textbf{Distribuição Inicial de Circuitos: } Divisão física e lógica identificando detalhadamente iluminação, tomadas, ar-condicionado e cargas especiais.
-    
+\end{enumerate}
+
+\subsubsection{Dimensionamento Técnico}
+\begin{enumerate} [start=9]
     \item \textbf{Dimensionamento de Condutores e Queda de Tensão: } Seleção criteriosa das bitolas de cabos baseada nas correntes de projeto corrigidas, aliada ao cálculo de limites aceitáveis para queda de tensão.
     
     \item \textbf{Dimensionamento da Proteção (Disjuntores, DR e DPS): } Especificação completa dos dispositivos contra curtos-circuitos, sobrecargas, correntes de fuga (choques elétricos) e surtos de tensão.
@@ -373,7 +363,10 @@ extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento
     \item \textbf{Estudos de Expansão e Infraestrutura: } Planejamento de eletrodutos e espaços adicionais nos quadros que permitam modificações futuras sem a necessidade de intervenções estruturais pesadas.
     
     \item \textbf{Subestação e Geradores: } Tratamento específico para cabines primárias e geração de emergência para elevadores ou bombas.
-    
+\end{enumerate}
+
+\subsubsection{Finalização e Documentação}
+\begin{enumerate}[start=13]
     \item \textbf{Prumada Elétrica e Diagramas Unifilares: } Mapeamento vertical de toda a distribuição de energia e a representação técnica esquemática de cada quadro elétrico montado.
     
     \item \textbf{Elaboração do Memorial de Cálculo e Documentação: } Compilação final de dados contemplando planilhas, especificações técnicas detalhadas e as tabelas de referência utilizadas.
@@ -431,11 +424,11 @@ tensão} -- documento normativo que estabelece as condições mínimas a serem
 atendidas por instalações elétricas de baixa tensão, de modo a garantir:
 
 \begin{enumerate}[leftmargin=1.2cm]
-    \item o funcionamento adequado da instalação e a segurança de pessoas e
+    \item O funcionamento adequado da instalação e a segurança de pessoas e
     animais domésticos (proteção contra choques elétricos, efeitos térmicos
     e sobrecorrentes);
-    \item o funcionamento correto da instalação para o uso a que se destina;
-    \item a conservação de bens.
+    \item O funcionamento correto da instalação para o uso a que se destina;
+    \item A conservação de bens.
 \end{enumerate}
 
 A NBR 5410 é a base normativa para os seguintes blocos deste memorial, cuja
@@ -1669,6 +1662,8 @@ independentemente de sua utilidade, é dividida em três partes, sendo elas:
     \item Cabos secundários ou cabos de distribuição, que interligam duas caixas de distribuição, ou uma caixa de distribuição a uma caixa de saída.
 \end{enumerate}
 
+\subsubsection{Fluxograma do Projeto Telefônico}
+
 O projeto de uma rede telefônica interna tem por finalidade dimensionar essas
 três partes, além de determinar a quantidade necessária de blocos terminais 
 internos, de modo a prover um sistema de comunicação adequado ao porte e à 
@@ -1689,36 +1684,49 @@ passos para o dimensionamento de um projeto telefônico.
 
 \hspace{1.27cm}\FALTA{FALAR SOBRE O TOPIICO \textbf{DISPONIBILIZAR O DESENHO DA TUBULAÇAO [...] DA IMAMGE \Ref{fluxograma_projeto_telefonico}}.}
 
-A sequência de passos apresentada na Figura \ref{fluxograma_projeto_telefonico} é a única lista denominada, pela Prática, de sequência básica (Capítulo 5, item 5.04). O dimensionamento parte da rede mais próxima do usuário final, ou seja, dos cabos secundários, e avança em direção à rede mais próxima da concessionária, isto é, dos cabos de entrada. Somente após o dimensionamento dessas três partes da rede são tratados o cálculo de blocos terminais, os comprimentos de cabos, a distribuição de pares, a tabela de materiais e a representação gráfica do projeto. Essa sequência está detalhada nas etapas a seguir.
 
-\begin {enumerate}
-    \item Projeto da Rede de Cabos Secundários
+A sequência de passos apresentada na Figura \ref{fluxograma_projeto_telefonico} é a única lista denominada, pela Prática, de sequência básica (Capítulo 5, item 5.04). O dimensionamento parte da rede mais próxima do usuário final, ou seja, dos cabos secundários, e avança em direção à rede mais próxima da concessionária, isto é, dos cabos de entrada. Somente após o dimensionamento dessas três partes da rede são tratados o cálculo de blocos terminais, os comprimentos de cabos, a distribuição de pares, a tabela de materiais e a representação gráfica do projeto.
+
+\subsubsection{Descrição das Etapas do Projeto Telefônico}
+
+O projeto telefônico foi desenvolvido em etapas, seguindo o fluxograma apresentado na Figura \ref{img:fluxograma_projeto_eletrico}.
+
+\begin{enumerate}[start=2]
+    \item \textbf{Projeto da Rede de Cabos Secundários}
     
     \hspace{1.27cm}No primeiro passo da sequência, é determinada a carga de cada caixa de distribuição em todos os pavimentos, corrigida por um fator de 0,7 sobre o número de pontos previstos, a fim de se obter um número ideal de pares terminados. Esse fator representa uma taxa de simultaneidade típica de utilização das linhas, evitando o superdimensionamento da rede. Nesta etapa também é definida a capacidade dos cabos CCI (Cabo Interno, tipo interno-interno) ou CI (Cabo Interno), responsáveis por interligar as caixas de distribuição às caixas de saída.
-    \item Projeto da Rede de Cabos Primários
+
+    \item \textbf{Projeto da Rede de Cabos Primários} 
     
     \hspace{1.27cm}Nesta etapa, é dimensionada a prumada do edifício, considerando duas situações construtivas:
     \begin{enumerate}[label=\alph*)]
         \item Edifícios com poços de elevação, nos quais cada caixa de distribuição ligada à prumada é atendida diretamente por um cabo próprio. Essa solução é indicada para edifícios de maior porte ou com elevado número de pavimentos, nos quais a demanda por pares justifica cabos individuais.
         \item Edifícios com tubulação convencional, nos quais um único cabo se ramifica pelas caixas de distribuição. Essa solução é indicada para edifícios de menor porte, em que a viabilidade construtiva ou a menor demanda por pares não justificam a instalação de poços de elevação dedicados.
     \end{enumerate}
-    \item Projeto dos Cabos de Entrada
+
+    \item \textbf{Projeto dos Cabos de Entrada}
     
     \hspace{1.27cm}Nesta etapa, são dimensionados os cabos que interligam a caixa de distribuição geral do prédio ao ponto de entrega da concessionária, que pode ser uma caixa subterrânea ou um poste, a depender da infraestrutura externa disponível na região (rede subterrânea ou aérea). A capacidade desse cabo é definida em função da quantidade ideal de pares terminados, calculada nas etapas anteriores.
-    \item Determinação da Quantidade de Blocos Terminais Necessários nas 
-    Caixas da Rede Interna
+
+
+    \item \textbf{Determinação da Quantidade de Blocos Terminais Necessários nas 
+    Caixas da Rede Interna}
     
     \hspace{1.27cm}Nesta etapa, é calculada a quantidade de blocos terminais necessários, dividindo-se o número de pares efetivamente terminados pela capacidade padrão de 10 pares por bloco terminal e arredondando-se o resultado para o número inteiro superior. O Capítulo 10 da Prática, "Disposição dos Cabos e Blocos Terminais", complementa esta etapa ao estabelecer critérios físicos de arranjo dos blocos.
-    \item Determinação dos Comprimentos dos Cabos da Rede Interna
+
+    \item \textbf{Determinação dos Comprimentos dos Cabos da Rede Interna}
     
     \hspace{1.27cm}Nesta etapa, é definido o comprimento de cada trecho de cabo, considerando a extensão da tubulação percorrida, as formas de terminação nos blocos e os raios mínimos de curvatura em função do número de pares do cabo.
-    \item Distribuição dos Cabos da Rede Interna
+    
+    \item \textbf{Distribuição dos Cabos da Rede Interna}
     
     \hspace{1.27cm}Nesta etapa, são designadas, para cada cabo, as camadas de pares (isto é, os grupos de pares agrupados fisicamente dentro do cabo) que atenderão às previsões de demanda em cada ponto da rede, partindo da última caixa de distribuição em direção à caixa de distribuição geral.
-    \item Elaboração da Tabela de Materiais
+    
+    \item \textbf{Elaboração da Tabela de Materiais} 
     
     \hspace{1.27cm}Nesta etapa, é elaborada a tabela de materiais, posicionada no desenho do projeto, descrevendo tipos e quantidades de caixas, blocos terminais, canaletas, abraçadeiras e demais materiais necessários para a execução.
-    \item Desenho de Projeto
+    
+    \item \textbf{Desenho de Projeto}
     
     \hspace{1.27cm}Nesta etapa, é elaborado o desenho do projeto da rede telefônica interna, que deve conter os elementos necessários para o completo entendimento dos serviços a executar, utilizar a simbologia padrão definida pela Prática e apresentar, no mínimo, os seguintes elementos: corte vertical, esquema da rede, planta baixa com rede secundária, detalhes do distribuidor geral, tabela de materiais e legenda preenchida.
 \end{enumerate}
