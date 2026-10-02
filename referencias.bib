@@ -1,39 +1,152 @@
-%% LaTeX2e file `referencias.bib'
+%% LaTeX2e file `referencias.bib' -- versão revisada
+%%
+%% Convenções usadas neste arquivo:
+%%  - Linhas iniciadas por "% CONFERIR" indicam dados que não foi possível
+%%    confirmar com 100% de certeza e que devem ser checados no documento
+%%    original (capa do PDF da NTC, ficha catalográfica do livro, catálogo ABNT).
+%%  - Chaves ( tipo{chave, ...}) mantidas iguais às do projeto original
+%%    (ntc901110, nbr5410, nbr14039, telebras) para não quebrar os \cite.
 
-@manual{ntc901110,
-  title        = {NTC 901110: Atendimento a Edificações de Uso Coletivo},
-  author       = {{Companhia Paranaense de Energia - COPEL}},
-  organization = {Superintendência de Engenharia de Distribuição},
-  address      = {Curitiba, PR},
-  year         = {2021},
-  note         = {Disponível em manuais técnicos da COPEL DIS},
-}
+% ============================================================
+% NORMAS ABNT
+% ============================================================
+
+% NBR 5410:2004 segue vigente (versão corrigida em 2008); a ABNT tem uma
+% revisão em andamento, ainda não publicada.
 @book{nbr5410,
   author    = {{Associação Brasileira de Normas Técnicas}},
   title     = {NBR 5410: Instalações elétricas de baixa tensão},
   publisher = {ABNT},
   edition   = {2},
   year      = {2004},
-  address   = {Rio de Janeiro}
+  address   = {Rio de Janeiro},
+  note      = {Versão corrigida em 2008}
 }
+
+% CORREÇÃO: a edição de 2005 foi cancelada e substituída pela NBR 14039:2021
+% (3ª edição, 03.12.2021).
 @book{nbr14039,
   author    = {{Associação Brasileira de Normas Técnicas}},
   title     = {NBR 14039: Instalações elétricas de média tensão de 1,0~kV a 36,2~kV},
   publisher = {ABNT},
-  year      = {2005},
+  edition   = {3},
+  year      = {2021},
   address   = {Rio de Janeiro}
 }
-@book{ntc_copel,
-  author    = {{Companhia Paranaense de Energia -- COPEL}},
-  title     = {Norma Técnica COPEL (NTC) -- Fornecimento de energia elétrica em tensão secundária de distribuição},
-  publisher = {COPEL},
-  year      = {2026}
+
+% NOVA: citada no texto (iluminação); substituiu a NBR 5413:1992 em 2013.
+@book{nbr8995,
+  author    = {{Associação Brasileira de Normas Técnicas}},
+  title     = {NBR ISO/CIE 8995-1: Iluminação de ambientes de trabalho -- Parte 1: Interior},
+  publisher = {ABNT},
+  year      = {2013},
+  address   = {Rio de Janeiro}
 }
+
+% NOVA: citada no texto (bombas de incêndio).
+% CONFERIR: edição vigente (a de 2000 é a que costuma constar nos catálogos).
+@book{nbr13714,
+  author    = {{Associação Brasileira de Normas Técnicas}},
+  title     = {NBR 13714: Sistemas de hidrantes e de mangotinhos para combate a incêndio},
+  publisher = {ABNT},
+  year      = {2000},
+  address   = {Rio de Janeiro}
+}
+
+% NOVA: citada no texto (projeto telefônico / cabeamento estruturado).
+% CONFERIR: a ABNT publicou edição em 2019 (5ª) e há indicação de nova
+% edição em 11/2025; usar a edição que o grupo efetivamente consultou.
+@book{nbr14565,
+  author    = {{Associação Brasileira de Normas Técnicas}},
+  title     = {NBR 14565: Cabeamento estruturado para edifícios comerciais},
+  publisher = {ABNT},
+  year      = {2019},
+  address   = {Rio de Janeiro}
+}
+
+% NOVA: mais adequada que a 14565 para edifício residencial multifamiliar.
+@book{nbr16264,
+  author    = {{Associação Brasileira de Normas Técnicas}},
+  title     = {NBR 16264: Cabeamento estruturado residencial},
+  publisher = {ABNT},
+  year      = {2016},
+  address   = {Rio de Janeiro}
+}
+
+% ============================================================
+% NORMAS TÉCNICAS DA COPEL
+% ============================================================
+
+% CONFERIR: ano/revisão impresso na capa do PDF consultado (versões públicas
+% da norma circulam com data Out/2012; o projeto indicava 2021).
+@manual{ntc901110,
+  title        = {NTC 901110: Atendimento a Edificações de Uso Coletivo},
+  author       = {{Companhia Paranaense de Energia -- COPEL}},
+  organization = {Superintendência de Engenharia de Distribuição},
+  address      = {Curitiba, PR},
+  year         = {2021},
+  note         = {Disponível em manuais técnicos da COPEL DIS},
+}
+
+% SUBSTITUI a antiga entrada "ntc_copel" (que era um placeholder com ano 2026,
+% sem número e sem uso no texto). O texto cita a NTC 901100 como "Fornecimento
+% em Tensão Secundária de Distribuição".
+% CONFERIR: ano/revisão impresso na capa do PDF consultado.
+@manual{ntc901100,
+  title        = {NTC 901100: Fornecimento em Tensão Secundária de Distribuição},
+  author       = {{Companhia Paranaense de Energia -- COPEL}},
+  organization = {Superintendência de Engenharia de Distribuição},
+  address      = {Curitiba, PR},
+  year         = {2020},
+  note         = {Disponível em manuais técnicos da COPEL DIS},
+}
+
+% ============================================================
+% TELEBRÁS
+% ============================================================
 @manual{telebras,
-  author    = {{TELEBRÁS}},
-  title     = {Prática TELEBRÁS 235-510-600: Projetos de redes telefônicas em edifícios},
+  author       = {{TELEBRÁS}},
+  title        = {Prática TELEBRÁS 235-510-600: Projetos de redes telefônicas em edifícios},
   organization = {TELEBRÁS},
-  year      = {1978},
-  address   = {Brasília},
-  note      = {Engenharia. Emissão 01. Aprovada pela Instrução Técnica nº 651 de 7 de agosto de 1978}
+  year         = {1978},
+  address      = {Brasília},
+  note         = {Engenharia. Emissão 01. Aprovada pela Instrução Técnica nº 651 de 7 de agosto de 1978}
 }
+
+% ============================================================
+% LIVROS (usados como fonte das tabelas dos Apêndices)
+% ============================================================
+
+% Confirmado: 5. ed., São Paulo: Pearson Prentice Hall, 2009, ISBN 978-85-7605-208-1.
+% As tabelas de FCT, FCA e ampacidade do Apêndice citam as pp. 288, 293 e 294.
+@book{cotrim2009,
+  author    = {Cotrim, Ademaro A. M. B.},
+  title     = {Instalações elétricas},
+  edition   = {5},
+  publisher = {Pearson Prentice Hall},
+  address   = {São Paulo},
+  year      = {2009}
+}
+
+% A fonte da tabela de cargas motrizes já citava este livro (15. ed., LTC, 2007).
+@book{creder2007,
+  author    = {Creder, Hélio},
+  title     = {Instalações elétricas},
+  edition   = {15},
+  publisher = {LTC},
+  address   = {Rio de Janeiro},
+  year      = {2007}
+}
+
+% SUGESTÃO para a seção de Subestação/Grupo Gerador (dimensionamento de
+% transformador, curto-circuito e relés), ainda sem fundamentação bibliográfica.
+% CONFERIR: edição/ano do exemplar que o grupo tiver acesso (a 9. ed. é de 2017).
+% Descomente se for citar no texto.
+% book{mamede2017,
+%   author    = {Mamede Filho, João},
+%   title     = {Instalações elétricas industriais},
+%   edition   = {9},
+%   publisher = {LTC},
+%   address   = {Rio de Janeiro},
+%   year      = {2017}
+% }

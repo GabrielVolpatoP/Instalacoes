@@ -1,13 +1,4 @@
-\documentclass[
-    12pt,
-    openright,
-    oneside,
-    a4paper,
-    english,
-    french,
-    spanish,
-    brazil
-    ]{abntex2}
+\documentclass[12pt,openright,oneside,a4paper,brazil]{abntex2}
 
 % --- Pacotes Básicos ---
 \usepackage[T1]{fontenc}
@@ -21,6 +12,9 @@
 \usepackage{amsmath,amssymb}
 \usepackage{siunitx}
 \usepackage{float}
+\usepackage{makeidx} % índice remissivo
+\makeindex
+
 
 % --- Margens (ABNT: Superior/Esquerda 3cm, Inferior/Direita 2cm) ---
 \usepackage[top=3cm, left=3cm, right=2cm, bottom=2cm]{geometry}
@@ -54,16 +48,32 @@
 
 % --- Títulos e Subtítulos em Negrito ---
 \renewcommand{\ABNTEXchapterfont}{\sffamily\bfseries}
-\renewcommand{\ABNTEXchapterfontsize}{\Large}
+\renewcommand{\ABNTEXchapterfontsize}{\large}
 \renewcommand{\ABNTEXsectionfont}{\sffamily\bfseries}
 \renewcommand{\ABNTEXsectionfontsize}{\large}
+
+\renewcommand{\chaptername}{Módulo}
+\setlength{\afterchapskip}{\baselineskip} 
+
+\makeatletter
+\addto\captionsbrazil{
+  \renewcommand{\chaptermark}[1]{%
+    \markright{%
+      \ifnum \c@secnumdepth >\m@ne
+        \if@mainmatter
+          \thechapter\ --\ %  <-- Altera o texto aqui
+        \fi
+      \fi
+      #1}}%
+}
 
 % --- Citações (ABNT) ---
 \usepackage[alf]{abntex2cite}
 
 % --- Arquivo de Referências (Embutido para facilidade) ---
-% ATENÇÃO: referências de exemplo/placeholder -- ver nota [FALTA] nos
-% elementos pós-textuais. Substituir pelos dados reais e completos.
+% Referências em referencias.bib (revisado). Os itens marcados com "CONFERIR"
+% no .bib devem ser checados contra o documento original (capa da NTC,
+% ficha catalográfica, catálogo da ABNT).
 
 
 \hypersetup{
@@ -168,6 +178,7 @@
 % "Glossário", inclusive -- já é o padrão do abntex2 na área pré-textual)
 % ============================================================
 
+
 % --- Sumário ---
 \pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents*
@@ -175,32 +186,37 @@
 
 % --- Agradecimentos ---
 
+\frontmatter
+\pretextual
+\pagenumbering{arabic}
+
 \begin{agradecimentos}
-\addcontentsline{toc}{section}{I.\hspace{1.8cm}Agradecimentos}
-\FALTA{Elaborar o texto de agradecimentos do grupo (item 1 da Etapa 2).}
+\addcontentsline{toc}{section}{I.\hspace{1.82cm}Agradecimentos}
+% REVISAR: rascunho. Ajustar nomes e incluir outras pessoas/instituições, se desejado.
+\hspace{1.27cm} Agradecemos ao professor Glaucio Pedro de Alcantara, orientador da disciplina de Instalações Elétricas II, pelo acompanhamento, pelas orientações e pelo incentivo ao longo da elaboração deste projeto. Estendemos os agradecimentos à Universidade Estadual de Maringá, pela estrutura e pela formação oferecidas, aos colegas de turma, pela troca de experiências durante o desenvolvimento do trabalho, e aos nossos familiares, pelo apoio constante ao longo da graduação.
 \end{agradecimentos}
 \cleardoublepage
 
 % --- Lista de Ilustrações (Figuras) ---
-\pdfbookmark[0]{\listfigurename}{lof}
-\addcontentsline{toc}{section}{II.\hspace{1.7cm}Lista de Ilustrações}
+%\pdfbookmark[0]{LISTA DE ILUSTRAÇÕES}{idx}
+\addcontentsline{toc}{section}{II.\hspace{1.71cm}Lista de Ilustrações}
 \listoffigures*
 \cleardoublepage
 
+
 % --- Lista de Tabelas ---
+\addcontentsline{toc}{section}{III.\hspace{1.61cm}Lista de Tabelas}
 \pdfbookmark[0]{\listtablename}{lot}
-\addcontentsline{toc}{section}{III.\hspace{1.6cm}Lista de Tabelas}
 \listoftables*
 \cleardoublepage
 
 
 % --- Glossário ---
 %\begin{glossario}
-%\addcontentsline{toc}{chapter}{Glossario}
+%\addcontentsline{toc}{section}{Glossario}
+\addcontentsline{toc}{section}{IV.\hspace{1.61cm}Glossário}
 \chapter*{Glossário}
-\addcontentsline{toc}{section}{IV.\hspace{1.6cm}Glossário}
-
-\begin{itemize}[leftmargin=1.3cm, itemsep=0.02em]
+\begin{description}[itemsep=0.02em]
     \item[\textbf{ART}] Anotação de Responsabilidade Técnica 
     \item[\textbf{CM}] Centro de Medição
     \item[\textbf{CM1}] Centro de Medição 1
@@ -210,8 +226,7 @@
     \item[\textbf{DDR}]  Disjuntor Diferencial Residual 
     \item[\textbf{Demanda}] Valor de Potência elétrica requerida por uma unidade consumidora
     \item[\textbf{DTM}] Disjuntor termomagnético
-    \item[\textbf{Fator de}] 
-    \item[\textbf{Potência}] Número que mede a eficiência que a energia elétrica é sada em um circuito 
+    \item[\textbf{Fator de Potência}] Razão entre a potência ativa e a potência aparente; indica a eficiência com que a energia elétrica é utilizada em um circuito
     \item[\textbf{FCA}] Fator de Correção de Agrupamento
     \item[\textbf{FCT}] Fator de Correção de Temperatura 
     \item[\textbf{FDEM}] Fator de Demanda 
@@ -228,29 +243,24 @@
     \item[\textbf{TUG}] Tomada de Uso Geral.
     \item[\textbf{UC}] Unidade Consumidora 
     \item[\textbf{UE}] Unidade de Energia elétrica do Estado do Paraná.
-\end{itemize}
-
+\end{description}
 \cleardoublepage
 
 % --- Índice ---
-\phantomsection
-\addcontentsline{toc}{section}{V.\hspace{1.75cm}Índice}
-\pdfbookmark[0]{Índice}{idx}
-\chapter*{Índice}
-\FALTA{O Índice remissivo ainda não foi gerado. É necessário: 1) carregar
-o pacote \texttt{makeidx} (\texttt{\textbackslash usepackage\{makeidx\}}
-e \texttt{\textbackslash makeindex}) no preâmbulo; 2) marcar os termos
-relevantes ao longo do texto com \texttt{\textbackslash index\{termo\}}
-(ex.: \texttt{\textbackslash index\{fator de demanda\}}); 3) inserir
-\texttt{\textbackslash printindex} nos elementos pós-textuais; e 4)
-compilar o projeto com o utilitário \texttt{makeindex} além do
-\texttt{pdflatex}.}
+
+%\pdfbookmark[0]{ÍNDICE}{idx}
+% Gerado por \printindex (requer rodar o makeindex; ver instruções no final do arquivo).
+\addcontentsline{toc}{section}{V.\hspace{1.74cm}Índice}
+
+\printindex
 \cleardoublepage
+
 
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
 \textual
+
 % Ativa o cabeçalho/rodapé personalizado para o texto
 \pagestyle{estilo_personalizado}
 \aliaspagestyle{chapter}{estilo_personalizado}
@@ -262,14 +272,15 @@ compilar o projeto com o utilitário \texttt{makeindex} além do
 % \centering
 
 
-
+\mainmatter
+\pagenumbering{arabic}
 
 % ============================================================
 % ETAPA 3 DO ROTEIRO -- INTRODUÇÃO
 % ============================================================
-\section{Introdução}
+\chapter{INTRODUÇÃO}
 
-\subsection{Motivação}
+\section{Motivação}
 
 \hspace{1.27cm}O engenheiro eletricista tem como uma de suas principais responsabilidades a elaboração de projetos de instalações elétricas. Durante o planejamento e a execução de uma obra, é essencial a aplicação de conhecimentos técnicos para desenvolver um sistema seguro e eficiente, sempre em estrita conformidade com as normas brasileiras. Projetos mal planejados podem comprometer severamente a segurança da edificação, resultando em riscos como incêndios, curtos-circuitos e sobrecargas em equipamentos. Em contrapartida, um profissional qualificado é capaz de aliar as exigências técnicas aos aspectos estruturais da obra, promovendo conforto, segurança e praticidade para os futuros usuários.
 
@@ -277,7 +288,7 @@ Diante da importância dessa atribuição, o domínio da elaboração de projeto
 
 A elaboração deste projeto completo para uma edificação multifamiliar permite consolidar, em um único estudo de caso, os principais critérios normativos de dimensionamento de instalações elétricas de baixa tensão previstos na ABNT NBR 5410. Além disso, o trabalho aproxima a realidade acadêmica das rotinas efetivamente exigidas pelas concessionárias de energia elétrica — neste caso, a COPEL — para a viabilização e aprovação do fornecimento de energia.
 
-\subsection{Definições de Projetos Elétricos}
+\section{Definições de Projetos Elétricos}
 
 \hspace{1.27cm}Um projeto elétrico é o conjunto de documentos técnicos -- memorial
 descritivo e de cálculo, plantas, diagramas unifilares e especificações --
@@ -289,13 +300,13 @@ requisitos de segurança de pessoas e bens, de funcionamento adequado ao uso
 a que se destina e de conservação dos bens, nos termos estabelecidos pela
 ABNT NBR 5410.
 
-\subsection{Definições das Unidades Consumidoras}
+\section{Definições das Unidades Consumidoras}
 
-\hspace{1.27cm}Com base nas Normas Técnicas da COPEL (NTC), especialmente a \cite{ntc901110} (Atendimento a Edificações de Uso Coletivo) e a NTC 901110 (Fornecimento em Tensão Secundária), estão consolidadas as definições técnicas de unidade consumidora, categorias de fornecimento e classificação de condomínios exigidas pela concessionária.
+\hspace{1.27cm}Com base nas Normas Técnicas da COPEL (NTC), especialmente a NTC 901110 \cite{ntc901110} (Atendimento a Edificações de Uso Coletivo) e a NTC 901100 \cite{ntc901100} (Fornecimento em Tensão Secundária de Distribuição), estão consolidadas as definições técnicas de unidade consumidora, categorias de fornecimento e classificação de condomínios exigidas pela concessionária.
 
 Segundo o padrão regulatório adotado pela COPEL, a Unidade Consumidora é caracterizada pelo recebimento de energia elétrica em um só ponto de entrega, com medição individualizada e correspondente a um único consumidor, localizada em uma mesma propriedade ou imóvel.
 
-\subsubsection{Categorias de Fornecimento em Condomínios}
+\subsection{Categorias de Fornecimento em Condomínios}
 
 O fornecimento dentro de agrupamentos e edificações multifamiliares ou comerciais divide-se nas seguintes frentes:
 \begin{itemize}
@@ -309,19 +320,19 @@ O fornecimento dentro de agrupamentos e edificações multifamiliares ou comerci
 % ============================================================
 % ETAPA 4 DO ROTEIRO -- DESCRIÇÃO DAS ETAPAS DO PROJETO
 % ============================================================
-\section{Descrição das Etapas do Projeto}
+\chapter{ETAPAS DO PROJETO}
 
 \hspace{1.27cm} A execução deste projeto foi baseada nas plantas baixas de arquitetura
 distribuídas pelo professor (formato DWG), a partir das quais foram
 extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento_individual}).
 
-\subsection{Fluxograma}
+\section{Fluxograma}
 
-\hspace{1.27cm} O fluxograma representado na Figura \ref{img:fluxograma_sequencial} mostra todo o passo a passo da execução do projeto, desde seu começo até a apresentação final.
+\hspace{1.27cm} O fluxograma representado na Figura~\ref{img:fluxograma_sequencial} mostra todo o passo a passo da execução do projeto, desde seu começo até a apresentação final. Ele organiza o trabalho em quatro blocos sequenciais -- levantamento e planejamento, lançamento e distribuição, dimensionamento técnico, e finalização e documentação -- cuja ordem reflete a dependência entre as etapas: os resultados de carga e demanda alimentam o dimensionamento dos condutores e das proteções, e todos eles compõem a documentação entregue à concessionária. Cada bloco é detalhado na subseção seguinte.
 
 \begin{figure}[H]
     \centering
-    \caption{Fluxograma do projeto elétrico.}
+    \caption{Fluxograma das etapas de elaboração do projeto elétrico.}
     \vspace{0.15cm}
     \includegraphics[width=0.94\textwidth]{imagens/fluxosgrama_sequencial.png}
     \vspace{0.15cm}
@@ -329,10 +340,10 @@ extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento
     \label{img:fluxograma_sequencial}
 \end{figure}
 
-\subsection{Descrição das Etapas do Projeto}
+\section{Descrição das Etapas do Projeto}
 \hspace{1.27cm} O projeto foi desenvolvido em etapas, seguindo o fluxograma apresentado na Figura \ref{img:fluxograma_sequencial}.
 
-\subsubsection{Levantamento e Planejamente}
+\subsection{Levantamento e Planejamente}
 \begin{enumerate}
     \item \textbf{Análise de Plantas e Ocupação: } Combina a extração de perímetros com a definição clara de ambientes, ocupação e a finalidade de cada andar.
     
@@ -343,7 +354,7 @@ extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento
     \item \textbf{Definição da Categoria de Fornecimento: } Estabelecimento do tipo de ligação (monofásica, bifásica ou trifásica) com base nos cálculos de demanda exigidos pela concessionária.
 \end{enumerate}
 
-\subsubsection{Lançamento e Distribuição}
+\subsection{Lançamento e Distribuição}
 \begin{enumerate}[start=5]
     \item \textbf{Esquema de Distribuição e Aterramento: } Adoção do padrão técnico exigido (como o esquema TN-C-S) para o aterramento e neutralização das instalações.
     
@@ -354,7 +365,7 @@ extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento
     \item \textbf{Distribuição Inicial de Circuitos: } Divisão física e lógica identificando detalhadamente iluminação, tomadas, ar-condicionado e cargas especiais.
 \end{enumerate}
 
-\subsubsection{Dimensionamento Técnico}
+\subsection{Dimensionamento Técnico}
 \begin{enumerate} [start=9]
     \item \textbf{Dimensionamento de Condutores e Queda de Tensão: } Seleção criteriosa das bitolas de cabos baseada nas correntes de projeto corrigidas, aliada ao cálculo de limites aceitáveis para queda de tensão.
     
@@ -365,7 +376,7 @@ extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento
     \item \textbf{Subestação e Geradores: } Tratamento específico para cabines primárias e geração de emergência para elevadores ou bombas.
 \end{enumerate}
 
-\subsubsection{Finalização e Documentação}
+\subsection{Finalização e Documentação}
 \begin{enumerate}[start=13]
     \item \textbf{Prumada Elétrica e Diagramas Unifilares: } Mapeamento vertical de toda a distribuição de energia e a representação técnica esquemática de cada quadro elétrico montado.
     
@@ -374,7 +385,7 @@ extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento
     \item \textbf{Apresentação e Pedido de Fornecimento: } Apresentação formal do projeto consolidado e emissão dos pedidos técnicos junto à COPEL (incluindo declaração de cargas e ART).
 \end{enumerate}
 
-\subsection{Apresentação e Finalidade do Projeto}
+\section{Apresentação e Finalidade do Projeto}
 
 \hspace{1.27cm}Este memorial tem por objetivo apresentar, de forma técnica e sequencial, a
 metodologia de cálculo empregada no dimensionamento do sistema elétrico de
@@ -398,8 +409,8 @@ edificação em estudo:
     edificação (soma das 14 unidades autônomas mais áreas comuns) é de \textbf{493,28~m²};
     \item A finalidade do documento é demonstrar, de maneira auditável, que
     o dimensionamento atende simultaneamente aos critérios de
-    \emph{capacidade de condução de corrente}, \emph{queda de tensão} e
-    \emph{proteção contra sobrecorrentes e contatos indiretos}, tal como
+    {capacidade de condução de corrente}, {queda de tensão} e
+    {proteção contra sobrecorrentes e contatos indiretos}, tal como
     exigido pela ABNT NBR 5410;
     \item Os ambientes contemplados no levantamento de cargas de cada
     apartamento-tipo são os treze cômodos listados na
@@ -416,10 +427,10 @@ edificação em estudo:
 
 
 % ============================================================
-\subsection{Normas de Referência}
+\section{Normas de Referência}
 
 \hspace{1.27cm}O dimensionamento apresentado neste memorial fundamenta-se, prioritariamente,
-na \norma{ABNT NBR 5410:2004} -- \emph{Instalações elétricas de baixa
+na \norma{ABNT NBR 5410:2004} \cite{nbr5410} -- {Instalações elétricas de baixa
 tensão} -- documento normativo que estabelece as condições mínimas a serem
 atendidas por instalações elétricas de baixa tensão, de modo a garantir:
 
@@ -431,17 +442,19 @@ atendidas por instalações elétricas de baixa tensão, de modo a garantir:
     \item A conservação de bens.
 \end{enumerate}
 
+Vale registrar que a NBR 5410 encontra-se em processo de revisão pela ABNT; até a publicação de uma nova edição, permanece em vigor a edição de 2004 (versão corrigida em 2008), adotada neste trabalho.
+
 A NBR 5410 é a base normativa para os seguintes blocos deste memorial, cuja
 correspondência é explicitada ao longo do texto:
 
 \begin{itemize}[leftmargin=1.2cm]
     \item \textbf{Seção 3 (Levantamento de Cargas)} -- critérios mínimos de
     potência para iluminação e tomadas de uso geral, tratados na norma no
-    âmbito da determinação da \emph{carga instalada} e dos \emph{critérios
+    âmbito da determinação da {carga instalada} e dos {critérios
     de previsão de pontos de utilização} em instalações residenciais e
     similares;
     \item \textbf{Seção 4 e 5 (Potências e Demanda)} -- conceitos de
-    \emph{fator de potência}, \emph{fator de demanda} e \emph{fator de
+    {fator de potência}, {fator de demanda} e {fator de
     utilização}, empregados para evitar o superdimensionamento de
     condutores e dispositivos de proteção;
     \item \textbf{Seção 7 (Dimensionamento de Circuitos)} -- critérios de
@@ -458,31 +471,31 @@ correspondência é explicitada ao longo do texto:
 
 Adicionalmente, sempre que a edificação coletiva possuir \textbf{subestação
 transformadora própria} (cabine primária), com fornecimento em média tensão
-pela concessionária, aplica-se de forma complementar a \norma{ABNT NBR
-14039 \cite{nbr14039}:2005} -- \emph{Instalações elétricas de média tensão de 1,0 kV a
+pela concessionária, aplica-se de forma complementar a \norma{ABNT NBR 14039:2021} \cite{nbr14039} -- {Instalações elétricas de média tensão de 1,0 kV a
 36,2 kV}, que disciplina o dimensionamento dos equipamentos de manobra e
 proteção em média tensão, a malha de aterramento da subestação e os ajustes
 dos relés de proteção do transformador.
 
 Complementarmente, e sem prejuízo da precedência da NBR 5410, este memorial
 observa também os padrões técnicos e critérios de fornecimento da
-concessionária local de energia elétrica, os quais definem, entre outros
+concessionária local de energia elétrica, em especial as NTC 901100 e NTC 901110 \cite{ntc901100,ntc901110}, os quais definem, entre outros
 aspectos, o tipo de ligação (mono, bi ou trifásica), os limites de demanda
 por tipo de fornecimento e as exigências construtivas para entrada de
 serviço e subestação.
 
 % ============================================================
-\subsection{Levantamento de Cargas (Dimensionamento e Quantitativo)}
+\section{Levantamento de Cargas (Dimensionamento e Quantitativo)}
 
 \hspace{1.27cm}Nesta seção demonstra-se, ambiente a ambiente, como foi obtida a potência
 instalada de cada ponto de utilização, em estrita observância aos critérios
-mínimos normativos -- que constituem \emph{piso obrigatório}, podendo o
+mínimos normativos -- que constituem {piso obrigatório}, podendo o
 projetista adotar valores superiores sempre que a carga real dos
 equipamentos previstos assim o exigir.
 
 \begin{table}[H]
 \centering
 \caption{Informações de Apartamento Individual}
+\label{tab:apartamento_individual}
 
 % --- AJUSTES DE ESPAÇAMENTO ---
 \renewcommand{\arraystretch}{1.4} % Aumenta a altura das linhas (padrão é 1.0)
@@ -509,17 +522,16 @@ Sacada 3        & 7,6     & 3,75 \\\hline
 \textbf{Total}  & 133,2   & 89,3 \rule{0pt}{15pt}para \\\hline
 \end{tabular}
 \fonte{O autor (2026).}
-\label{tab:apartamento_individual}
 \end{table}
 
-\subsubsection{Iluminação}
+\subsection{Iluminação}\index{Iluminação}
 
 \hspace{1.27cm} A NBR 5410 estabelece critérios mínimos de potência para pontos de
 iluminação em função da área do ambiente, de modo a assegurar um nível de
 carga compatível com o uso residencial e similar, ainda que a definição
 luminotécnica final (número de luminárias, fluxo luminoso, iluminância em
 lux) deva ser objeto de projeto luminotécnico específico, com base na
-ABNT NBR ISO/CIE 8995.
+ABNT NBR ISO/CIE 8995-1 \cite{nbr8995}.
 
 \textbf{Critério mínimo de potência (carga instalada de iluminação):}
 
@@ -533,7 +545,7 @@ ABNT NBR ISO/CIE 8995.
 \end{equation}
 
 em que $A$ é a área do ambiente e $n$ é o número de acréscimos de
-\SI{4}{\meter\squared} \emph{inteiros} que excedem os \SI{6}{\meter\squared}
+\SI{4}{\meter\squared} {inteiros} que excedem os \SI{6}{\meter\squared}
 iniciais (frações de \SI{4}{\meter\squared} não geram acréscimo adicional).
 
 Complementarmente, para fins de posicionamento do ponto de luz e verificação
@@ -581,10 +593,10 @@ Sacada 3         & 1 & 100 &  100 \\\hline
 \label{tab:iluminacao_apartamento_individual}
 \end{table}
 
-\subsubsection{Tomadas de Uso Geral (TUGs)}
+\subsection{Tomadas de Uso Geral (TUGs)}\index{Tomadas de uso geral (TUG)}
 
 \hspace{1.27cm} O critério mínimo de quantidade de TUGs é definido pela norma em função do
-\emph{perímetro} do ambiente, distinguindo-se conforme a finalidade do
+{perímetro} do ambiente, distinguindo-se conforme a finalidade do
 cômodo, em razão da maior densidade de aparelhos eletrodomésticos esperada
 em cozinhas, áreas de serviço e ambientes análogos:
 
@@ -646,13 +658,13 @@ Sacada 3         & 0 & 0 &  0\\
 \label{tab:tomadas_gerais_apartamento_individual}
 \end{table}
 
-\subsubsection{Tomadas de Uso Específico (TUEs)}
+\subsection{Tomadas de Uso Específico (TUEs)}\index{Tomadas de uso específico (TUE)}
 
 \hspace{1.27cm} As TUEs correspondem aos pontos destinados a equipamentos fixos ou de
 potência elevada e localização definida em projeto -- como aparelhos de
 ar-condicionado, chuveiros e torneiras elétricas, máquinas de lavar e
 secar, fornos elétricos e bombas de menor porte. Para essas cargas, a
-potência do ponto \emph{não} é estimada por critério geométrico, mas sim
+potência do ponto {não} é estimada por critério geométrico, mas sim
 adotada diretamente a partir da potência nominal do equipamento informada
 pelo fabricante:
 
@@ -733,7 +745,7 @@ pelo fabricante:
 
 \newpage
 
-\subsubsection{Cargas Especiais de Edificações Coletivas}
+\subsection{Cargas Especiais de Edificações Coletivas}
 
 \hspace{1.27cm} Nas edificações de uso coletivo, soma-se ao levantamento residencial
 convencional o levantamento das \textbf{cargas de uso comum}, cuja
@@ -743,7 +755,7 @@ concentram os maiores blocos de potência instalada:
 \begin{itemize}[leftmargin=1.2cm]
     \item motobombas de recalque (abastecimento de água);
     \item bombas de incêndio (sistema de combate a incêndio), cujo
-    dimensionamento elétrico deve ainda observar a ABNT NBR 13714;
+    dimensionamento elétrico deve ainda observar a ABNT NBR 13714 \cite{nbr13714};
     \item elevadores e demais equipamentos de transporte vertical;
     \item iluminação e tomadas de áreas comuns, casa de máquinas e
     subestação;
@@ -757,7 +769,7 @@ partida, dado relevante para o dimensionamento dos condutores e da proteção
 correspondente.
 
 % ============================================================
-\subsection{Carga dos Apartamentos}
+\section{Carga dos Apartamentos}
 \label{subsec:carga_apartamentos}
 \hspace{1.27cm}
 As potências levantadas na subseção anterior encontram-se, em sua maioria,
@@ -903,7 +915,7 @@ e coletivas:
 
 \end{table}
 
-\subsection{Carga do Condomínio}
+\section{Carga do Condomínio}
 \label{subsec:carga_condominio}
 \hspace{1.27cm}
 \FALTA{Elaborar, nos mesmos moldes da subseção anterior, o levantamento e
@@ -964,7 +976,7 @@ qualitativa, sem os valores numéricos de cada carga comum.}
 \end{tabular}
 \end{table}
 
-\subsection{Carga Total da Instalação}
+\section{Carga Total da Instalação}
 \label{subsec:carga_total}
 \hspace{1.27cm}
 A \textbf{Carga Total Instalada} ($P_{inst}$) corresponde ao somatório das
@@ -985,11 +997,11 @@ somada à carga do condomínio ($P_{esp}$) assim que esta for calculada, para
 compor a Carga Total da Instalação exigida no item do roteiro.
 
 % ============================================================
-\subsection{Cálculo de Demanda}
+\section{Cálculo de Demanda}\index{Demanda}
 
 \hspace{1.27cm}O cálculo de demanda foi realizado com base nos critérios estabelecidos pelas normas da Companhia Paranaense de Energia (COPEL), considerando as cargas instaladas no edifício e os respectivos fatores de demanda e diversificação. Inicialmente, foi determinada a demanda correspondente às unidades habitacionais e, posteriormente, foram consideradas as cargas das áreas de uso comum do edifício.
 
-\subsection{Demanda dos Apartamentos}
+\section{Demanda dos Apartamentos}
 \hspace{1.27cm}O edifício possui 14 apartamentos, com área de 89,27 m² por unidade. Para o cálculo da demanda das unidades habitacionais, foi considerada uma relação de 1,94 kVA por apartamento. Para 14 apartamentos, o fator de diversificação correspondente à quantidade de unidades é 12,76. Dessa forma, a demanda resultante dos apartamentos é determinada pelo produto entre a demanda de uma unidade e o fator de diversificação:
 
 \begin{equation}
@@ -1019,10 +1031,10 @@ D = (7.740 \times 0,35) + (42.260 \times 0,40) = 19,613 \mathrm{kVA}
 
 O resultado obtido é de 19.613 VA, correspondente à demanda de uma unidade habitacional.
 
-\subsection{Demanda do Condomínio}
+\section{Demanda do Condomínio}
 \hspace{1.27cm}Além das unidades habitacionais, foram consideradas as cargas de utilização comum do edifício, denominadas demanda do edifício $D_s$. Essas cargas foram divididas em iluminação, tomadas, elevador e bomba de recalque.
 
-\subsubsection{Cargas de Iluminação}
+\subsection{Cargas de Iluminação}
 \hspace{1.27cm}A carga total instalada de iluminação considerada foi de 18 kW, com fator de potência igual a 0,9. Para a determinação da demanda, foi considerado 100\% de 10 kW e 25\% dos 8 kW restantes, resultando em uma carga demandada de 12 kW.
 
 \begin{equation}
@@ -1054,7 +1066,7 @@ D_{\mathrm{ilum}} = 13,33\ \mathrm{kVA}
 \]
 A demanda correspondente às cargas de iluminação é, portanto, de 13,33 kVA.
 
-\subsubsection{Cargas de Tomadas}
+\subsection{Cargas de Tomadas}
 \hspace{1.27cm}Para as cargas de tomadas, foi considerada uma carga total instalada de 13,8 kW e fator de potência igual a 0,9. Aplicando-se o fator de demanda de 20\%, obtém-se:
 \[
 P_{\mathrm{dem,tom}} = 0,20 \times 13,8
@@ -1072,7 +1084,7 @@ D_{\mathrm{tom}} = \frac{2,76}{0,9}
 D_{\mathrm{tom}} = 3,066\ \mathrm{kVA}
 \]
 
-\subsubsection{Carga do Elevador e Bomba d'água}
+\subsection{Carga do Elevador e Bomba d'água}
 \hspace{1.27cm}O edifício possui um elevador acionado por um motor de 7,5 cv. De acordo com a Tabela 3 utilizada no dimensionamento, esse motor corresponde a uma demanda de 8,65 kVA. Para a bomba de recalque, foi considerada uma unidade com potência de 5 cv. Conforme a Tabela 3 utilizada no dimensionamento, essa potência corresponde a uma demanda de 6,02 kVA.
 
 Com isso, a demanda das cargas do edifício é obtida pela soma das demandas de iluminação, tomadas, elevador e bomba de recalque:
@@ -1091,7 +1103,7 @@ D_s = 31,066\ \mathrm{kVA}
 \]
 Assim, a demanda das cargas do edifício é de 31,066 kVA.
 
-\subsection{Demanda total do edifício}
+\section{Demanda total do edifício}
 
 \hspace{1.27cm}A demanda total do edifício é determinada pela soma da demanda dos apartamentos com a demanda das cargas de uso comum:
 
@@ -1110,7 +1122,7 @@ D_e = 55,816\ \mathrm{kVA}
 
 Obtém-se, portanto, uma demanda total de 55,816 kVA.
 
-\subsection{Aplicação do Fator de Demanda}
+\section{Aplicação do Fator de Demanda}\index{Fator de demanda}
 \hspace{1.27cm}Após a determinação da demanda total, foi realizada a análise do percentual de utilização em relação à capacidade considerada. Antes da aplicação do fator multiplicativo, o percentual obtido era de 6,59\%.
 
 \[
@@ -1137,7 +1149,7 @@ D_{\mathrm{final}} = 55,816 \times 4
 D_{\mathrm{final}} = 223,264\ \mathrm{kVA}
 \]
 
-\subsection{Divisão da Demanda Entre os Centros de Medição}
+\section{Divisão da Demanda Entre os Centros de Medição}
 \hspace{1.27cm}A distribuição das unidades consumidoras foi realizada em dois centros de medição. O primeiro centro de medição (CM1) atende cinco apartamentos de 89,27 m², além das cargas correspondentes às áreas comuns do edifício. O segundo centro de medição (CM2) atende os nove apartamentos restantes.
 
 Para o CM1, considerando cinco apartamentos, o fator de diversificação utilizado foi 4,84. A demanda correspondente às unidades habitacionais é:
@@ -1288,7 +1300,7 @@ Para os subsolos e o depósito de gás, foram consideradas cargas de iluminaçã
 A demanda calculada para essa área foi de 2.288 VA, também correspondente à categoria 28, com demanda de referência de 11.000 VA.
 
 % ============================================================
-\subsection{Categoria da Unidade Consumidora}
+\section{Categoria da Unidade Consumidora}\index{Categoria de fornecimento}
 
 \hspace{1.27cm}Após a definição de todos os circuitos das unidades consumidoras, bem como o cálculo da carga total instalada e das demandas de cada quadro, realiza-se a consulta à Tabela \ref{tab:dimensionamento_ramal} para determinar a categoria correspondente ao edifício de uso coletivo e às respectivas unidades consumidoras.
 
@@ -1330,12 +1342,12 @@ Para os quadros do térreo e do subsolo, foram obtidas demandas de 8,448 kVA e 2
 
 \[2\#10(10)T10\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,32\,\mathrm{mm} \]
 
-Assim, a distribuição elétrica do edifício pode ser organizada de forma hierárquica, partindo do ponto de entrega e seguindo para o QGBT, de onde são derivados os circuitos de alimentação dos CM1 e CM2. A partir desses centros de medição, são alimentadas as unidades consumidoras dos apartamentos e as cargas de uso coletivo, que, por sua vez, são distribuídas entre os respectivos quadros de condomínio. Para facilitar a visualização dessa distribuição, foi elaborado um fluxograma, apresentado na Figura \ref{img:fluxograma_projeto_eletrico}.
+Assim, a distribuição elétrica do edifício pode ser organizada de forma hierárquica, partindo do ponto de entrega e seguindo para o QGBT, de onde são derivados os circuitos de alimentação dos CM1 e CM2. A partir desses centros de medição, são alimentadas as unidades consumidoras dos apartamentos e as cargas de uso coletivo, que, por sua vez, são distribuídas entre os respectivos quadros de condomínio. Para facilitar a visualização dessa distribuição, foi elaborado um fluxograma, apresentado na Figura~\ref{img:fluxograma_projeto_eletrico}. A leitura é feita de cima para baixo: o ponto de entrega da concessionária alimenta o QGBT; do QGBT partem os circuitos dos centros de medição CM1 e CM2; e, a partir deles, são atendidas as unidades consumidoras dos apartamentos e os quadros de condomínio, estes derivados do QGC (casa de máquinas, térreo e subsolo), com os respectivos ramais indicados ao longo desta seção.
 
 
 \begin{figure}[H]
     \centering
-    \caption{Fluxograma do projeto elétrico.}
+    \caption{Fluxograma da distribuição elétrica do edifício (ponto de entrega, QGBT, centros de medição e quadros).}
     \vspace{0.15cm}
     \includegraphics[width=0.94\textwidth]{imagens/fluxograma_eletrico.png}
     \vspace{0.15cm}
@@ -1345,7 +1357,7 @@ Assim, a distribuição elétrica do edifício pode ser organizada de forma hier
 
 
 % ============================================================
-\subsection{Localização do Barramento Geral e dos Medidores}
+\section{Localização do Barramento Geral e dos Medidores}
 
 \hspace{1.27cm}\FALTA{Indicar, com base na NTC (Norma Técnica COPEL) aplicável, a
 localização do barramento geral e a localização/arranjo dos medidores de
@@ -1355,7 +1367,7 @@ entre a entrada de serviço e o quadro de medição, e a representação dessa
 localização na planta baixa do pavimento térreo/subsolo.}
 
 % ============================================================
-\subsection{Determinação do Tipo de Fornecimento e Tensão}
+\section{Determinação do Tipo de Fornecimento e Tensão}
 
 \hspace{1.27cm}Com base na carga total instalada e, principalmente, na demanda calculada
 na Seção~5, define-se o tipo de ligação junto à concessionária local:
@@ -1376,7 +1388,7 @@ estabelecidos pela concessionária local e devem ser verificados e citados
 explicitamente no memorial, com referência ao respectivo padrão técnico.
 
 % ============================================================
-\subsection{Princípios Fundamentais (ABNT NBR 5410)}
+\section{Princípios Fundamentais (ABNT NBR 5410)}
 
 \hspace{1.27cm}A ABNT NBR 5410 estabelece princípios fundamentais que devem orientar a concepção, execução e utilização das instalações elétricas de baixa tensão. Entre esses princípios, destacam-se a segurança das pessoas, o funcionamento adequado da instalação e a possibilidade de operação, manutenção e ampliação de forma segura e acessível.
 
@@ -1404,39 +1416,39 @@ explicitamente no memorial, com referência ao respectivo padrão técnico.
 
     \end{enumerate}
 
-\subsection{Esquema de Distribuição (Características Gerais)}
+\section{Esquema de Distribuição (Características Gerais)}
 
 \hspace{1.27cm}A ABNT NBR 5410 \cite{nbr5410} estabelece que, no projeto de uma instalação elétrica, deve ser definido o esquema de distribuição, considerando tanto o esquema dos condutores vivos quanto o esquema de aterramento. A norma classifica os esquemas de aterramento de acordo com a situação da alimentação em relação à terra e com a situação das massas da instalação em relação à terra.
 
-\subsubsection{Esquema TN-S}
+\subsection{Esquema TN-S}\index{Esquema de aterramento!TN-S}
 
 \hspace{1.27cm} No esquema TN-S, o ponto da alimentação é diretamente aterrado e as massas da instalação são conectadas a esse ponto por meio de condutores de proteção. A característica principal desse esquema é a utilização de condutores distintos para o neutro e para a proteção (N e PE) em toda a instalação.
 
-\subsubsection{Esquema TN-C}
+\subsection{Esquema TN-C}\index{Esquema de aterramento!TN-C}
 
 \hspace{1.27cm} No esquema TN-C, as funções de neutro e de proteção são combinadas em um único condutor, denominado PEN, em toda a extensão do esquema. Assim, o mesmo condutor exerce simultaneamente as funções de neutro e de proteção.
 
-\subsubsection{Esquema TN-C-S}
+\subsection{Esquema TN-C-S}\index{Esquema de aterramento!TN-C-S}
 
 \hspace{1.27cm} O esquema TN-C-S é uma configuração na qual as funções de neutro e proteção são inicialmente combinadas em um condutor PEN e, em determinado ponto da instalação, passam a ser realizadas por condutores distintos.
 
-\subsubsection{Esquema TT}
+\subsection{Esquema TT}\index{Esquema de aterramento!TT}
 
 \hspace{1.27cm} No esquema TT, um ponto da alimentação é diretamente aterrado, enquanto as massas da instalação são conectadas a eletrodo(s) de aterramento eletricamente distinto(s) daquele utilizado para o aterramento da alimentação.
 
 Esse esquema é aplicável quando o aterramento das massas da instalação é realizado de forma independente do aterramento da alimentação, sendo necessário garantir as condições adequadas de proteção contra choques elétricos.
 
 
-\subsubsection{Esquema IT}
+\subsection{Esquema IT}\index{Esquema de aterramento!IT}
 
 \hspace{1.27cm}No esquema IT, todas as partes vivas são isoladas da terra ou um ponto da alimentação é aterrado por meio de uma impedância. As massas da instalação são aterradas, podendo utilizar o mesmo eletrodo da alimentação, quando existente, ou eletrodos próprios e independentes.
 
 
-\subsubsection{Esquema adotado pela COPEL e pelos projetistas}
+\subsection{Esquema adotado pela COPEL e pelos projetistas}
 
-\hspace{1.27cm} O esquema de distribuição recomendado pela COPEL é o TN-C-S, adotado também pelos projetistas. Esse sistema permite otimizar a quantidade de cabos utilizados, uma vez que os condutores neutro e de proteção são combinados em um único condutor (PEN) no trecho TN-C, localizado entre a caixa seccionadora e os quadros de distribuição (QDs) dos apartamentos e condomínios. A partir desses pontos, o sistema passa a operar no esquema TN-S, com os condutores neutro (N) e de proteção (PE) separados nos circuitos terminais das unidades consumidoras.
+\hspace{1.27cm} O esquema de distribuição recomendado pela COPEL é o \index{Esquema de aterramento!TN-C-S}TN-C-S, adotado também pelos projetistas. Esse sistema permite otimizar a quantidade de cabos utilizados, uma vez que os condutores neutro e de proteção são combinados em um único condutor (PEN) no trecho TN-C, localizado entre a caixa seccionadora e os quadros de distribuição (QDs) dos apartamentos e condomínios. A partir desses pontos, o sistema passa a operar no esquema TN-S, com os condutores neutro (N) e de proteção (PE) separados nos circuitos terminais das unidades consumidoras.
 
-\subsection{Pedido de Fornecimento de Energia Elétrica à COPEL}
+\section{Pedido de Fornecimento de Energia Elétrica à COPEL}
 
 \hspace{1.27cm}O procedimento de pedido de fornecimento de energia elétrica junto à Companhia Paranaense de Energia (COPEL) aplica-se tanto à ligação inicial de uma nova unidade consumidora quanto à religação de uma instalação existente desativada. Para fazer a solicitação, é preciso apresentar a documentação do responsável pelo imóvel. No caso de pessoa física, são necessários o documento de identidade oficial e o CPF, para pessoa jurídica, devem ser entregues o cartão CNPJ, o contrato social e os documentos dos representantes legais,além do preenchimento dos formulários padronizados no site da concessionária. 
 
@@ -1449,9 +1461,9 @@ Antes que a COPEL faça a ligação da rede, a entrada de serviço do prédio pr
 No contexto de um projeto elétrico, garantir que a documentação técnica (como a ART/RRT, a planta com os pontos de energia e a Declaração de Carga Instalada) esteja correta e que a entrada de serviço atenda a todas as exigências da COPEL é essencial para evitar atrasos na vistoria e garantir a aprovação da ligação do edifício.
 
 % ============================================================
-\subsection{Dimensionamento dos Circuitos (Distribuição e Terminais)}
+\section{Dimensionamento dos Circuitos (Distribuição e Terminais)}
 
-\hspace{1.27cm}\subsubsection{Cálculo da Corrente de Projeto ($I_P$)}
+\hspace{1.27cm}\subsection{Cálculo da Corrente de Projeto ($I_P$)}
 
 \hspace{1.27cm} A corrente de projeto é a corrente que o circuito deve ser capaz de
 conduzir em regime permanente, calculada a partir da potência do circuito e
@@ -1462,7 +1474,7 @@ da tensão nominal de alimentação:
     \label{eq:corrente_mono}
 \end{equation}
 
-\subsubsection{Cálculo da Corrente Corrigida ($I'_{P}$)}
+\subsection{Cálculo da Corrente Corrigida ($I'_{P}$)}
 
 \hspace{1.27cm} A NBR 5410 exige que a capacidade de condução de corrente do condutor,
 originalmente tabelada para condições-padrão de instalação, seja corrigida
@@ -1480,11 +1492,11 @@ própria norma:
 em que:
 
 \begin{itemize}[leftmargin=1.2cm]
-    \item $FCA$ -- \emph{Fator de Correção por Agrupamento}: decresce à
+    \item $FCA$ -- {Fator de Correção por Agrupamento}: decresce à
     medida que aumenta o número de circuitos agrupados no mesmo eletroduto,
     eletrocalha ou bandeja, refletindo o maior aquecimento mútuo entre os
     condutores;
-    \item $FCT$ -- \emph{Fator de Correção por Temperatura}: ajusta a
+    \item $FCT$ -- {Fator de Correção por Temperatura}: ajusta a
     capacidade de condução de corrente em função da temperatura ambiente do
     local de instalação, sendo usuais as referências de \SI{30}{\celsius}
     (padrão da tabela-base), \SI{35}{\celsius} e \SI{40}{\celsius} conforme
@@ -1496,9 +1508,9 @@ da seção do condutor, conforme demonstrado na Seção~8.
 
 Para o presente projeto, foram determinados os valores FCT = 0,94 (três circuitos agrupados) e FCA = 0,70 (temperatura ambiente de \SI{35}{\celsius}). Dessa forma, esses fatores são aplicados às correntes de projeto dos circuitos para determinar as respectivas correntes corrigidas, que serão utilizadas no dimensionamento dos condutores.
 % ============================================================
-\subsection{Dimensionamento de Condutores e Eletrodutos}
+\section{Dimensionamento de Condutores e Eletrodutos}
 
-\hspace{1.27cm}\subsubsection{Condutores}
+\hspace{1.27cm}\subsection{Condutores}\index{Condutores}
 
 \hspace{1.27cm} A seção dos condutores deve ser escolhida de modo que sua capacidade de
 condução de corrente (nas condições reais de instalação) seja igual ou
@@ -1521,7 +1533,7 @@ tensão admissível} e à condição de \textbf{proteção contra sobrecorrentes
 apresentada na Seção~9, prevalecendo, em cada trecho, a maior seção exigida
 entre os três critérios.
 
-\subsubsection{Eletrodutos}
+\subsection{Eletrodutos}\index{Eletrodutos}
 
 \hspace{1.27cm} O dimensionamento dos eletrodutos obedece ao critério de \textbf{taxa de
 ocupação}, segundo o qual a soma das áreas de seção transversal dos
@@ -1541,7 +1553,7 @@ memorial. Inserir essa indicação nas plantas e referenciar aqui a(s)
 figura(s) correspondente(s).}
 
 % ============================================================
-\subsection{Dimensionamento dos Dispositivos de Proteção}
+\section{Dimensionamento dos Dispositivos de Proteção}\index{Dispositivos de proteção}
 
 \hspace{1.27cm}O dimensionamento dos dispositivos de proteção contra sobrecorrentes
 (disjuntores termomagnéticos -- DTM) deve atender simultaneamente às
@@ -1578,15 +1590,15 @@ com corrente diferencial residual nominal ($I_{\Delta n}$) compatível com o
 esquema de aterramento (TN, TT ou IT) adotado na edificação.
 
 % ============================================================
-\subsection{Subestação e Grupos Geradores (Se Aplicável)}
+\section{Subestação e Grupos Geradores (Se Aplicável)}
 
 \hspace{1.27cm}Em razão do porte típico das edificações de uso coletivo, é comum a
 necessidade de cabine primária (subestação transformadora) e de sistema de
 geração de emergência. Quando presentes no projeto, esses sistemas devem
 ser tratados nos itens a seguir, com fundamentação complementar na
-\norma{ABNT NBR 14039 \cite{nbr14039}}.
+\norma{ABNT NBR 14039:2021} \cite{nbr14039}.
 
-\subsubsection{Subestação}
+\subsection{Subestação}\index{Subestação}
 
 \hspace{1.27cm} \begin{itemize}[leftmargin=1.2cm]
     \item \textbf{Corrente em média tensão:}
@@ -1605,7 +1617,7 @@ ser tratados nos itens a seguir, com fundamentação complementar na
     verificação da capacidade de interrupção dos disjuntores.
 \end{itemize}
 
-\subsubsection{Grupo Gerador}
+\subsection{Grupo Gerador}\index{Grupo gerador}
 
 \hspace{1.27cm} \begin{itemize}[leftmargin=1.2cm]
     \item Definição do regime de operação do grupo gerador (ex.:
@@ -1620,7 +1632,7 @@ ser tratados nos itens a seguir, com fundamentação complementar na
 \end{itemize}
 
 % ============================================================
-\subsection{Prumada Elétrica}
+\section{Prumada Elétrica}\index{Prumada elétrica}
 
 \hspace{1.27cm}\FALTA{Realizar e apresentar (como figura) a \textbf{prumada elétrica}
 do edifício (item do roteiro), representando esquematicamente a
@@ -1629,7 +1641,7 @@ Tensão (QGBT), os quadros de luz (QL) de cada pavimento/apartamento e os
 quadros gerais de condomínio (QG-C), com indicação dos condutores/
 eletrodutos de alimentação de cada trecho da prumada.}
 
-\subsection{Diagramas Unifilares dos Quadros}
+\section{Diagramas Unifilares dos Quadros}
 
 \hspace{1.27cm}\FALTA{Representar os \textbf{Diagramas Unifilares} de cada quadro de
 distribuição do projeto (QGBT, QL de cada apartamento, QG-C, quadro da
@@ -1637,7 +1649,7 @@ subestação/gerador quando aplicável), indicando circuitos, disjuntores
 (com suas correntes nominais), dispositivos DR/IDR e demais proteções,
 conforme simbologia normatizada.}
 
-\subsection{Estudo de Pesquisa: Projeto Telefônico}
+\section{Estudo de Pesquisa: Projeto Telefônico}\index{Projeto telefônico}
 
 \hspace{1.27cm}A Prática Telebrás 235-510-600 \cite{telebras} define rede telefônica como o conjunto de  
 cabos telefônicos, blocos terminais, ferragens e acessórios instalados no 
@@ -1658,7 +1670,7 @@ independentemente de sua utilidade, é dividida em três partes, sendo elas:
     \item Cabos secundários ou cabos de distribuição, que interligam duas caixas de distribuição, ou uma caixa de distribuição a uma caixa de saída.
 \end{enumerate}
 
-\subsubsection{Fluxograma do Projeto Telefônico}
+\subsection{Fluxograma do Projeto Telefônico}
 
 O projeto de uma rede telefônica interna tem por finalidade dimensionar essas
 três partes, além de determinar a quantidade necessária de blocos terminais 
@@ -1673,21 +1685,23 @@ passos para o dimensionamento de um projeto telefônico.
     \vspace{0.15cm}
     \includegraphics[width=0.86\textwidth]{imagens/fluxograma_projeto_telefonico.png}
     \vspace{0.15cm}
-    \fonte{O autor (2026).}
+    \fonte{Elaborado pelo autor (2026), com base em \citeonline{telebras}.}
     
     \label{fluxograma_projeto_telefonico}
 \end{figure}
 
-\hspace{1.27cm}\FALTA{FALAR SOBRE O TOPIICO \textbf{DISPONIBILIZAR O DESENHO DA TUBULAÇAO [...] DA IMAMGE \Ref{fluxograma_projeto_telefonico}}.}
+\hspace{1.27cm}Conforme indicado na Figura~\ref{fluxograma_projeto_telefonico}, a sequência culmina no \textbf{desenho do projeto}, no qual a tubulação telefônica do edifício é representada graficamente. Esse desenho reúne a rede de tubulação e de cabos em planta e em corte vertical (prumada), com a localização da caixa de distribuição geral, das caixas de distribuição de cada pavimento e das caixas de saída, de modo que a rede possa ser executada exatamente como dimensionada nas etapas anteriores.
+
+\FALTA{Inserir, como figura ou apêndice, o desenho da tubulação telefônica elaborado pelo grupo (planta baixa com a rede secundária, corte vertical, detalhe do distribuidor geral, tabela de materiais e legenda) e referenciá-lo neste ponto.}
 
 
 A sequência de passos apresentada na Figura \ref{fluxograma_projeto_telefonico} é a única lista denominada, pela Prática, de sequência básica (Capítulo 5, item 5.04). O dimensionamento parte da rede mais próxima do usuário final, ou seja, dos cabos secundários, e avança em direção à rede mais próxima da concessionária, isto é, dos cabos de entrada. Somente após o dimensionamento dessas três partes da rede são tratados o cálculo de blocos terminais, os comprimentos de cabos, a distribuição de pares, a tabela de materiais e a representação gráfica do projeto.
 
-\subsubsection{Descrição das Etapas do Projeto Telefônico}
+\subsection{Descrição das Etapas do Projeto Telefônico}
 
-O projeto telefônico foi desenvolvido em etapas, seguindo o fluxograma apresentado na Figura \ref{img:fluxograma_projeto_eletrico}.
+O projeto telefônico foi desenvolvido em etapas, seguindo o fluxograma apresentado na Figura~\ref{fluxograma_projeto_telefonico}.
 
-\begin{enumerate}[start=2]
+\begin{enumerate}
     \item \textbf{Projeto da Rede de Cabos Secundários}
     
     \hspace{1.27cm}No primeiro passo da sequência, é determinada a carga de cada caixa de distribuição em todos os pavimentos, corrigida por um fator de 0,7 sobre o número de pontos previstos, a fim de se obter um número ideal de pares terminados. Esse fator representa uma taxa de simultaneidade típica de utilização das linhas, evitando o superdimensionamento da rede. Nesta etapa também é definida a capacidade dos cabos CCI (Cabo Interno, tipo interno-interno) ou CI (Cabo Interno), responsáveis por interligar as caixas de distribuição às caixas de saída.
@@ -1729,31 +1743,33 @@ O projeto telefônico foi desenvolvido em etapas, seguindo o fluxograma apresent
 
 A análise do Capítulo 5 da Prática Telebrás 235-510-600 evidencia que a elaboração de um projeto de rede telefônica em edifícios segue uma metodologia sequencial, que parte da rede mais próxima do usuário final (cabos secundários) em direção à rede mais próxima da concessionária (cabos de entrada), para só então tratar do dimensionamento de blocos terminais, comprimentos de cabos, distribuição de pares, materiais e representação gráfica.
 
-Em projetos atuais, esse dimensionamento é frequentemente complementado por normas de cabeamento estruturado, como a ABNT NBR 14565, e pela regulamentação vigente da Agência Nacional de Telecomunicações (Anatel), que devem ser observadas em conjunto com a sequência básica aqui apresentada.
+Em projetos atuais, esse dimensionamento é frequentemente complementado por normas de cabeamento estruturado, como a ABNT NBR 14565 \cite{nbr14565} (edifícios comerciais) e a ABNT NBR 16264 \cite{nbr16264} (cabeamento estruturado residencial, mais próxima do caso deste edifício multifamiliar), e pela regulamentação vigente da Agência Nacional de Telecomunicações (Anatel), que devem ser observadas em conjunto com a sequência básica aqui apresentada.
 
 % ============================================================
 % ETAPA 5 DO ROTEIRO
 % ============================================================
-\section{Conclusões}
+\chapter{CONCLUSÕES E CONSIDERAÇÕES FINAIS}
 
-\FALTA{Elaborar as conclusões do trabalho (item 1 da Etapa 5 do roteiro).
-O roteiro exige que \textbf{não sejam aceitas conclusões evasivas ou
-simples demais}: as conclusões devem ser fundamentadas nas análises das
-normas estudadas (ABNT NBR 5410 e, se aplicável, ABNT NBR 14039 \cite{nbr14039}),
-aplicadas especificamente ao estudo de caso deste projeto -- por exemplo,
-discutindo os resultados obtidos de carga instalada, demanda, tipo de
-fornecimento, dimensionamento de condutores/proteções e eventuais
-dificuldades ou decisões de projeto tomadas pelo grupo.}
+% REVISAR: rascunho montado com os resultados que já constam no texto. Acrescentar, se houver,
+% dificuldades enfrentadas e decisões de projeto tomadas pelo grupo (ex.: critérios adotados
+% na ausência de dados da arquitetura) e atualizar os valores se os cálculos mudarem.
+\hspace{1.27cm}O desenvolvimento deste projeto permitiu aplicar, em um único estudo de caso, os critérios da ABNT NBR 5410 \cite{nbr5410} e as exigências da COPEL para uma edificação residencial de uso coletivo, percorrendo todas as etapas do fluxograma, do levantamento de cargas à definição do atendimento pela concessionária.
+
+Do ponto de vista dos resultados, a demanda calculada para o edifício foi de \SI{223,264}{kVA}, valor que se enquadra na categoria de demanda máxima de \SI{225}{kVA} da tabela de dimensionamento do ramal de ligação e que define o ramal subterrâneo em baixa tensão responsável por alimentar o QGBT. A partir do QGBT, a alimentação foi dividida entre os centros de medição CM1 e CM2, dimensionados para \SI{112,5}{kVA} e \SI{150}{kVA}, respectivamente, e o quadro geral do condomínio (QGC) foi dimensionado para \SI{31,066}{kVA}, distribuídos entre os quadros da casa de máquinas, do térreo e do subsolo. Esses números mostram que a definição correta da demanda é decisiva, pois ela determina a categoria de fornecimento, o ramal de ligação e a proteção geral, com impacto direto no custo e na segurança da instalação.
+
+A adoção do esquema de aterramento TN-C-S, a verificação dos condutores pelos critérios de capacidade de condução de corrente e de queda de tensão e a coordenação entre condutores e dispositivos de proteção seguiram as prescrições da NBR 5410, o que assegura o atendimento aos requisitos de segurança de pessoas e bens e de funcionamento adequado da instalação. A ABNT NBR 14039 \cite{nbr14039} foi estudada de forma complementar, aplicando-se apenas se houver subestação própria em média tensão.
+
+Por fim, o estudo de pesquisa sobre o projeto telefônico, baseado na Prática Telebrás \cite{telebras}, mostrou que a rede interna é dimensionada de forma sequencial, dos cabos secundários aos cabos de entrada, e complementa a formação ao tratar de uma disciplina que integra o projeto completo de uma edificação.
 
 \newpage
 
-\section{Apêndices}
+\chapter{APÊNDICE}
 
 \hspace{1.27cm}Este apêndice reúne o conjunto de tabelas técnicas e normativas utilizadas como base de cálculo para o projeto de instalações elétricas detalhado ao longo deste trabalho. A compilação destes dados em uma seção dedicada tem como objetivo principal não sobrecarregar o corpo do texto com dados de catálogos e normas, garantindo ao mesmo tempo a transparência, a rastreabilidade e a fundamentação de todas as escolhas de projeto apresentadas.
 
 As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensionamento da instalação e sua utilização se resume nas seguintes categorias:
 
-\subsection{Capacidade de Condução de Corrente e Fatores de Correção}
+\section{Capacidade de Condução de Corrente e Fatores de Correção}
 
 \hspace{1.27cm}Estas tabelas \ref{tab:fct}, \ref{tab:fca} e \ref{tab:ampacidade} são os pilares para o dimensionamento dos condutores elétricos. A Tabela \ref{tab:ampacidade} fornece a ampacidade (capacidade de condução de corrente) base dos cabos para diferentes métodos de referência e seções nominais. Como as condições reais da instalação divergem dos padrões ideais de laboratório, utilizam-se a Tabela \ref{tab:fct} (Fator de Correção de Temperatura - FCT) e a Tabela \ref{tab:fca} (Fator de Correção de Agrupamento - FCA) para penalizar a capacidade de condução dos cabos em função da temperatura ambiente e da quantidade de circuitos justapostos no mesmo conduto, garantindo a integridade da isolação.
 
@@ -1797,7 +1813,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         %}
         
         \vspace{0.15cm}
-        \fonte{Adaptado de Cotrim, Ademaro A.M.B. (2009, p. 293.)}
+        \fonte{Adaptado de \citeonline[p.~293]{cotrim2009}.}
     %\end{minipage}
 %\end{sideways}
 
@@ -1836,7 +1852,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         }
         
         \vspace{0.15cm}
-        \fonte{Adaptado de Cotrim, Ademaro A.M.B. (2009, p. 294).}
+        \fonte{Adaptado de \citeonline[p.~294]{cotrim2009}.}
     \end{minipage}
 \end{sideways}
 
@@ -1888,13 +1904,13 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         }
 
         \vspace{0.15cm}
-        \fonte{Adaptado de Cotrim, Ademaro A.M.B. (2009, p. 288).}
+        \fonte{Adaptado de \citeonline[p.~288]{cotrim2009}.}
     \end{minipage}
 %\end{sideways}
 
 \end{table}
 
-\subsection{Cálculo de Demanda Predial} 
+\section{Cálculo de Demanda Predial} 
 
 \hspace{1.27cm}Para o dimensionamento da entrada de energia de edificações residenciais, a carga total instalada raramente é utilizada de forma simultânea as tabelas \ref{tab:diversificacao_quantidade_apartamentos} e \ref{tab:demanda_apartamento}. A Tabela \ref{tab:demanda_apartamento} permite estipular a demanda individual de cada unidade consumidora (apartamento) em função de sua área útil. Em seguida, aplica-se a Tabela \ref{tab:diversificacao_quantidade_apartamentos}, que fornece o fator de diversificação em função da quantidade de apartamentos, permitindo o dimensionamento seguro e econômico do ramal alimentador geral do edifício.
 
@@ -2009,13 +2025,13 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \end{tabular}%
         
         \vspace{0.15cm}
-        \fonte{FALTA}
+        \fonte{Adaptado de \citeonline{ntc901110}.} % CONFERIR: fonte inferida; confirmar a origem real da tabela
 
 \end{table}
 
 % ---------------------------------
 
-\subsection{Verificação por Queda de Tensão}
+\section{Verificação por Queda de Tensão}\index{Queda de tensão}
 
 \hspace{1.27cm}O dimensionamento de cabos não depende apenas de sua capacidade térmica. A Tabela \ref{tab:criterio_simplificado} apresenta os critérios simplificados para garantir que a queda de tensão desde a origem da instalação até o ponto de consumo permaneça dentro dos limites normativos (1 a 4), evitando o mau funcionamento dos equipamentos.
 
@@ -2054,12 +2070,12 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
 \hline
 \end{tabular}
         \vspace{0.15cm}
-        \fonte{CREDER, H. Instalações Elétricas. 15ª Ed. Rio de Janeiro: LTC, 2007 (Fonte direta da tabela)}
+        \fonte{\citeonline{creder2007}.}
 \end{table}
 
 % ---------------------------------
 
-\subsection{Cargas Motrizes}
+\section{Cargas Motrizes}
 
 \hspace{1.27cm}Destinada ao dimensionamento de circuitos de força, a Tabela \ref{tab:motores_trifasicos} compila a demanda agrupada e os fatores de correção para instalações que contêm múltiplos motores trifásicos, considerando suas potências em CV e a probabilidade de funcionamento simultâneo.
 
@@ -2118,7 +2134,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
 
 % ---------------------------------
 
-\subsection{Infraestrutura de Alimentação e Unidades Consumidoras}
+\section{Infraestrutura de Alimentação e Unidades Consumidoras}
 
 \hspace{1.27cm}A Tabela \ref{tab:dimensionamento_ramal} descreve o padrão do ramal de ligação subterrâneo geral. Já a Tabela \ref{tab:dimensionamento_unidades_consumidoras} detalha o dimensionamento individual das unidades consumidoras. A partir da demanda máxima prevista em kVA, esta tabela estipula a corrente do disjuntor de proteção, a configuração do sistema (fases e fios), e as seções nominais exigidas para os condutores de cobre ou alumínio nos ramais de ligação e de entrada, além de definir os eletrodutos e a malha de aterramento correspondente.
 
@@ -2264,7 +2280,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         }
         
         \vspace{0.15cm}
-        \fonte{Adaptado de Cotrim, Ademaro A.M.B. (2009, p. 294).}
+        \fonte{Adaptado de \citeonline[p.~294]{cotrim2009}.}
     \end{minipage}
 \end{sideways}
 
@@ -2296,18 +2312,12 @@ corpo apenas os totais e a análise dos resultados.}
 %       editora, edição, ano de publicação do livro.
 %   [2] Título da apostila ou arquivo, nome da entidade proprietária, ano.
 %   [3] Disponível em: http://www.xxx -- no caso de links.
-\FALTA{O arquivo \texttt{referencias.bib} embutido no preâmbulo contém
-apenas uma referência de exemplo, com autor fictício ("slk") e título
-genérico ("Título da Obra Genérica"). É necessário: 1) substituir por
-referências reais efetivamente utilizadas no memorial (ex.: ABNT NBR
-5410:2004, ABNT NBR 14039 \cite{nbr14039}:2005, apostila/norma técnica da COPEL, sites
-consultados); e 2) verificar se o estilo de citação \texttt{alf} do
-abntex2cite reproduz o padrão numerado [1], [2], [3] exigido pelo
-roteiro -- caso contrário, listar as referências manualmente em um
-ambiente \texttt{referencias} no formato pedido, em vez de depender
-apenas do \texttt{.bib}.}
 
 % Imprime as referências bibliográficas do arquivo embutido 'referencias.bib'
 \bibliography{referencias}
 
 \end{document}
+
+% ============================================================
+% COMPILAÇÃO (índice remissivo + referências), nesta ordem:
+%   pdflatex Instalacoes -> makeindex Instalacoes.idx -> bibtex Instalacoes -> pdflatex -> pdflatex
