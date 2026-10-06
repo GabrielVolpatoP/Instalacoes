@@ -419,10 +419,33 @@ edificação em estudo:
     pois é a partir da classificação de cada ambiente que a norma define os
     critérios mínimos de iluminação, tomadas e proteção diferencial a
     serem aplicados;
-    \FALTA{incluir também os ambientes de uso comum (hall, casa de
-    máquinas, subestação, guarita, etc.) no levantamento, necessários para
-    a Carga do Condomínio (subseção~\ref{subsec:carga_condominio}).}
+    
 \end{itemize}
+
+Além dos apartamentos, o levantamento contempla também os ambientes de uso comum, necessários para a Carga do Condomínio. Esses ambientes foram agrupados segundo a natureza da carga:
+
+\begin{enumerate}[label=\alph*)]
+    \item Iluminação das áreas de uso comum
+    \begin{itemize}
+        \item Garagem e áreas externas: Garagem do Subsolo; Rampas (Térreo); Áreas Descobertas (Térreo); Entrada.
+        \item Lazer e apoio social: Salão de Festas, Cozinha, Guarita e Banheiros; Área de Recreação; Quadra de Esportes.
+        \item Circulação: Escadas; Corredor do Tipo; Elevadores; Iluminação de Emergência.
+        \item Apoio técnico: Depósito de Gás; Casa de Máquinas.
+    \end{itemize}
+    \item Tomadas das áreas de uso comum
+        \begin{itemize}
+            \item Salão de Festas: tomadas de uso geral em 127 V e tomadas em 220 V.
+            \item Cozinha do Salão de Festas: tomada dedicada ao freezer e tomada dedicada ao grill.
+            \item Circulação e garagem: Corredor do Tipo (220 V) e Garagem do Subsolo (220 V).
+            \item Demais áreas: Poço dos Elevadores; Guarita; Tomadas do Condomínio (uso geral).
+        \end{itemize}
+        \item Cargas de força e equipamentos
+        \begin{itemize}
+            \item Portões de Garagem.
+            \item Elevador.
+            \item Bomba de Recalque.
+        \end{itemize}
+\end{enumerate}
 
 
 
@@ -686,8 +709,8 @@ pelo fabricante:
         \caption{Tomadas de Uso Especifico}
         \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
         
-        \renewcommand{\arraystretch}{1} % Ajusta a altura das linhas da tabela
-        \setlength{\tabcolsep}{9pt}       
+        \renewcommand{\arraystretch}{1.2} % Ajusta a altura das linhas da tabela
+        \setlength{\tabcolsep}{11pt}       
 
         \begin{tabular}{c c c c c c c}
         \toprule 
@@ -696,40 +719,40 @@ pelo fabricante:
         \multirow{2}{*}{Área de Serviço} 
         & 1 & Máquina Lava e Seca & 1220 & \multirow{2}{*}{1360} & \multirow{2}{*}{1700} \\
         & 1 & Robô Aspirador     & 140  &                       &                       \\
-        \midrule
+        \hline
         BWC & 1 & Chuveiro & 7500 & 7500 & 9375 \\
-        \midrule
+        \hline
         \multirow{5}{*}{Cozinha} 
         & 1 & Torneira Elétrica & 5550 & \multirow{5}{*}{12990} & \multirow{5}{*}{16237,5} \\
         & 1 & Fogão             & 4000 &                        &                          \\
         & 1 & Microondas        & 1100 &                        &                          \\
         & 1 & Geladeira         & 340  &                        &                          \\
         & 1 & Air Fryer         & 2000 &                        &                          \\
-        \midrule
+        \hline
         Sala & 1 & A/C Central & 1500 & 1500 & 1875 \\
-        \midrule
+        \hline
         \multirow{2}{*}{Quarto 1} 
         & 1 & Televisão & 300 & \multirow{2}{*}{1115} & \multirow{2}{*}{1393,75} \\
         & 1 & Ar Condicionado & 815  &                       &                       \\
-        \midrule
+        \hline
         Circulação & - & - & - & - & - \\
-        \midrule
+        \hline
         \multirow{2}{*}{Quarto 1} 
         & 1 & Televisão & 300 & \multirow{2}{*}{1500} & \multirow{2}{*}{1800} \\
         & 1 & Ar Condicionado & 1200  &                       &                       \\
-        \midrule
+        \hline
         WC Suíte & 1 & Chuveiro & 7500 & 7500 & 9375 \\
-        \midrule
+        \hline
         \multirow{2}{*}{Quarto 2} 
         & 1 & Televisão & 300 & \multirow{2}{*}{1115} & \multirow{2}{*}{1393,75} \\
         & 1 & Ar Condicionado & 815  &                       &                       \\
-        \midrule
+        \hline
         WC Social & 1 & Chuveiro & 7500 & 7500 & 9375 \\
-        \midrule
+        \hline
         Sacada 1 & 1 & Adega & 180 & 180 & 225 \\
-        \midrule
+        \hline
         Sacada 2 & - & - & - & - & - \\
-        \midrule
+        \hline
         Sacada 3 & - & - & - & - & - \\
         \toprule
         \textbf{Total} & 18 & - & 42260 & 42260 & 52750 \\
@@ -812,25 +835,25 @@ e coletivas:
 
         \centering
         \small
-        \renewcommand{\arraystretch}{1.2}
+        \renewcommand{\arraystretch}{1.3}
         \resizebox{\linewidth}{!}{%
         \begin{tabular}{c | c c c c c c c c c c c c}
         \toprule
         \multirow{3}{*}{\textbf{Consumidor}} & \multirow{3}{*}{\shortstack{N\textsuperscript{o} de\\ Apartamento}} & \multirow{3}{*}{\shortstack{\'Area\\ (m2)}} & \multirow{3}{*}{\shortstack{Ilumina\c{c}\~ao\\ (W)}} & \multirow{3}{*}{\shortstack{Tomadas\\ (W)}} & \multicolumn{8}{c}{Cargas dos aparelhos usadas nas TUE's} \\
-        \cmidrule(lr){6-13}
+        \cline{6-13}
         & & & & & \multicolumn{4}{c}{Ar. Cond. (W)} & \multicolumn{3}{c}{Chuveiro (W)} & \multirow{2}{*}{\shortstack{M\'aq. Lava\\ e Seca (W)}}\\
-        \cmidrule(lr){6-9} \cmidrule(lr){10-12}
+        \cline{6-9} \cline{10-12}
         & & & & & Quarto 1 & Su\'ite & Quarto 2 & Central & BCW & Banho 1 & Banho 2 & \\
-        \midrule
+        \hline
         \multirow{5}{*}{Centro de Medi\c{c}\~ao 1}
         & 101 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 102 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 201 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 202 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 301 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
-        \midrule
+        \hline
         \textbf{Total -- CM1} & \textbf{5} & \textbf{446,4} & \textbf{7.800} & \textbf{38.000} & \textbf{4.075} & \textbf{6.000} & \textbf{4.075} & \textbf{7.500} & \textbf{37.500} & \textbf{37.500} & \textbf{37.500} & \textbf{6.100} \\
-        \midrule
+        \hline
         \multirow{9}{*}{Centro de Medi\c{c}\~ao 2}
         & 302 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 401 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
@@ -841,9 +864,9 @@ e coletivas:
         & 602 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 701 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 702 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
-        \midrule
+        \hline
         \textbf{Total -- CM2} & \textbf{9} & \textbf{803} & \textbf{14040} & \textbf{68400} & \textbf{7335} & \textbf{10800} & \textbf{7335} & \textbf{13500} & \textbf{67500} & \textbf{67500} & \textbf{67500} & \textbf{10980} \\
-        \midrule
+        \hline
         \textbf{Total Geral: CM1 + CM2} & \textbf{14} & \textbf{1250} & \textbf{21840} & \textbf{106400} & \textbf{11410} & \textbf{16800} & \textbf{11410} & \textbf{21000} & \textbf{105000} & \textbf{105000} & \textbf{105000} & \textbf{17080} \\
         \bottomrule
         \end{tabular}%
@@ -871,25 +894,25 @@ e coletivas:
 
         \centering
         \small
-        \renewcommand{\arraystretch}{1.13}
+        \renewcommand{\arraystretch}{1.3}
         \resizebox{\linewidth}{!}{%
         \begin{tabular}{c | c c c c c c c c c c | c}
             \toprule
             \multirow{3}{*}{\textbf{Consumidor}} & \multicolumn{9}{c}{Cargas dos aparelhos usadas nas TUE's} &  \\
-            \cmidrule(lr){2-12}
+            \cline{2-12} 
             & \multicolumn{3}{c}{Televisores} & \multirow{2}{*}{\shortstack{Torneira\\ El\'etrica}} & \multirow{2}{*}{\shortstack{Rob\^o\\ Aspirador}} & \multirow{2}{*}{Fog\~ao} & \multirow{2}{*}{Microondas} & \multirow{2}{*}{Geladeira} & \multirow{2}{*}{Air Fryer} & \multirow{2}{*}{Adega} & \multirow{2}{*}{\textbf{TOTAL}} \\
-            \cmidrule(lr){2-4}
+            \cline{2-4}
             & Su\'ite & Quarto 1 & Quarto 2 & & & & & & & & \\
-            \midrule
+            \hline
             \multirow{5}{*}{Centro de Medi\c{c}\~ao 1}
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
-            \midrule
+            \hline
             \textbf{Total -- CM1} & \textbf{1.500} & \textbf{1.500} & \textbf{1.500} & \textbf{27.750} & \textbf{700} & \textbf{20.000} & \textbf{5.500} & \textbf{1.700} & \textbf{10.000} & \textbf{900} & \textbf{257.100} \\
-            \midrule
+            \hline
             \multirow{9}{*}{Centro de Medi\c{c}\~ao 2}
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
@@ -900,9 +923,9 @@ e coletivas:
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
-            \midrule
+            \hline
             \textbf{Total -- CM2} & \textbf{2700} & \textbf{2700} & \textbf{2700} & \textbf{49950} & \textbf{1260} & \textbf{36000} & \textbf{9900} & \textbf{3060} & \textbf{18000} & \textbf{1620} & \textbf{462780} \\
-            \midrule
+            \hline
             \textbf{Total Geral: CM1 + CM2} & \textbf{4200} & \textbf{4200} & \textbf{4200} & \textbf{77700} & \textbf{1960} & \textbf{56000} & \textbf{15400} & \textbf{4760} & \textbf{28000} & \textbf{2520} & \textbf{719880} \\
             \bottomrule
             \end{tabular}%
@@ -917,16 +940,7 @@ e coletivas:
 
 \section{Carga do Condomínio}
 \label{subsec:carga_condominio}
-\hspace{1.27cm}
-\FALTA{Elaborar, nos mesmos moldes da subseção anterior, o levantamento e
-o cálculo da potência instalada das \textbf{cargas de uso comum do
-condomínio} (item 2 da Etapa 4 do roteiro): iluminação e tomadas de áreas
-comuns, casa de máquinas, subestação, motobombas de recalque, bombas de
-incêndio, elevadores, portões automáticos e demais cargas especiais
-listadas na subseção "Cargas Especiais de Edificações Coletivas"
-(Seção~4.4). O somatório dessas parcelas corresponde a $P_{esp}$ da
-Equação~\eqref{eq:carga_instalada}, hoje apresentada apenas de forma
-qualitativa, sem os valores numéricos de cada carga comum.}
+\hspace{1.27cm} Nos mesmos moldes do levantamento dos apartamentos-tipo, as cargas de uso comum foram classificadas em três grupos: iluminação, tomadas e cargas de força (equipamentos). A Tabela \ref{tab:cargas_condominio} apresenta potência ativa (W), potência aparente (VA) e a fase de ligação de cada carga. Nas cargas bifásicas ou trifásicas, a potência é dividida igualmente entre as fases indicadas.
 
 \begin{table}[H]
 \centering
@@ -934,11 +948,11 @@ qualitativa, sem os valores numéricos de cada carga comum.}
 \label{tab:cargas_condominio}
 \renewcommand{\arraystretch}{1.06} % Ajusta a altura das linhas da tabela
 
-\begin{tabular}{l l c c c}
+\begin{tabular}{c l c c c}
 
 \toprule
 \textbf{Tipo} & \textbf{Ambiente} & \textbf{Watts} & \textbf{VA} & \textbf{Fase} \\
-\midrule
+\hline
 \multirow{13}{*}{\rotatebox{90}{Iluminação}} 
  & Garagem Subsolo & 3000 & 3000 & T \\
  & Rampas - Térreo & 1200 & 1200 & T \\
@@ -955,7 +969,9 @@ qualitativa, sem os valores numéricos de cada carga comum.}
  & Elevadores & 200 & 200 & R \\
  & Emergência & 200 & 200 & S \\
  & Casa de máquinas & 800 & 800 & S \\
-\midrule
+\hline
+\small{\textbf{Subtotal}} & \small{Iluminação} & \small{18.000} & \small{18.000} & - \\
+\hline
 \multirow{9}{*}{\rotatebox{90}{Tomada}}
  & Salão de Festas: 127V & 2000 & 2500 & T \\
  & Salão de Festas: 220V & 1500 & 1875 & RS \\
@@ -966,11 +982,16 @@ qualitativa, sem os valores numéricos de cada carga comum.}
  & Poço Elevadores & 1400 & 1750 & S \\
  & Guarita & 1500 & 1875 & S \\
  & Condomínio & 1400 & 1750 & R \\
- \midrule
+ \hline
+ \small{\textbf{Subtotal}} & \small{Tomadas} & \small{13.200} & \small{16.500} & - \\
+\hline
+\multirow{3}{*}{\rotatebox{90}{\small{Forças}}}
   & Portões de Garagem & 600 & 750 & S \\
   & Elevador & 5520 & 6900 & RST \\
   & Bomba de Recalque & 3680 & 4600 & RST \\
-\midrule
+\hline
+ \small{\textbf{Subtotal}} & \small{Cargas Especiais} & \small{9.800} & \small{12.250} & - \\
+\hline
 \textbf{Total} & 25 & \textbf{41000} & \textbf{46750} & \\
 \bottomrule
 \end{tabular}
