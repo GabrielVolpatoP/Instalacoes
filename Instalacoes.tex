@@ -341,7 +341,7 @@ extraídos os perímetros e áreas de cada ambiente (Tabela~\ref{tab:apartamento
 \end{figure}
 
 \section{Descrição das Etapas do Projeto}
-\hspace{1.27cm} O projeto foi desenvolvido em etapas, seguindo o fluxograma apresentado na Figura \ref{img:fluxograma_sequencial}.
+\hspace{1.27cm} O projeto foi desenvolvido em etapas, seguindo o fluxograma apresentado na Figura~\ref{img:fluxograma_sequencial}.
 
 \subsection{Levantamento e Planejamente}
 \begin{enumerate}
@@ -403,7 +403,7 @@ edificação em estudo:
     (Tabela~\ref{tab:apartamento_individual}), organizados em \textbf{14 unidades
     autônomas} distribuídas em pavimentos, agrupadas em \textbf{2 Centros
     de Medição} (CM1, com 5 apartamentos, e CM2, com 9 apartamentos),
-    conforme detalhado na Tabela~7 (Cargas dos Apartamentos);
+    conforme detalhado na Tabela~\ref{eq:demanda_apartamentos} (Cargas dos Apartamentos);
     \item A área construída total do apartamento-tipo é de
     \textbf{89,3~m²} (Tabela~\ref{tab:apartamento_individual}); a área construída total da
     edificação (soma das 14 unidades autônomas mais áreas comuns) é de \textbf{493,28~m²};
@@ -422,24 +422,24 @@ edificação em estudo:
     
 \end{itemize}
 
-Além dos apartamentos, o levantamento contempla também os ambientes de uso comum, necessários para a Carga do Condomínio. Esses ambientes foram agrupados segundo a natureza da carga:
+Além dos apartamentos, o levantamento contempla também os ambientes de uso comum, necessários para a Carga do Condomínio (Tabela~\ref{tab:cargas_condominio}). Esses ambientes foram agrupados segundo a natureza da carga:
 
 \begin{enumerate}[label=\alph*)]
-    \item Iluminação das áreas de uso comum
+    \item \textbf{Iluminação das áreas de uso comum}
     \begin{itemize}
         \item Garagem e áreas externas: Garagem do Subsolo; Rampas (Térreo); Áreas Descobertas (Térreo); Entrada.
         \item Lazer e apoio social: Salão de Festas, Cozinha, Guarita e Banheiros; Área de Recreação; Quadra de Esportes.
         \item Circulação: Escadas; Corredor do Tipo; Elevadores; Iluminação de Emergência.
         \item Apoio técnico: Depósito de Gás; Casa de Máquinas.
     \end{itemize}
-    \item Tomadas das áreas de uso comum
+    \item \textbf{Tomadas das áreas de uso comum}
         \begin{itemize}
             \item Salão de Festas: tomadas de uso geral em 127 V e tomadas em 220 V.
             \item Cozinha do Salão de Festas: tomada dedicada ao freezer e tomada dedicada ao grill.
             \item Circulação e garagem: Corredor do Tipo (220 V) e Garagem do Subsolo (220 V).
             \item Demais áreas: Poço dos Elevadores; Guarita; Tomadas do Condomínio (uso geral).
         \end{itemize}
-        \item Cargas de força e equipamentos
+    \item \textbf{Cargas de força e equipamentos}
         \begin{itemize}
             \item Portões de Garagem.
             \item Elevador.
@@ -461,8 +461,8 @@ atendidas por instalações elétricas de baixa tensão, de modo a garantir:
     \item O funcionamento adequado da instalação e a segurança de pessoas e
     animais domésticos (proteção contra choques elétricos, efeitos térmicos
     e sobrecorrentes);
-    \item O funcionamento correto da instalação para o uso a que se destina;
-    \item A conservação de bens.
+    \item o funcionamento correto da instalação para o uso a que se destina;
+    \item a conservação de bens.
 \end{enumerate}
 
 Vale registrar que a NBR 5410 encontra-se em processo de revisão pela ABNT; até a publicação de uma nova edição, permanece em vigor a edição de 2004 (versão corrigida em 2008), adotada neste trabalho.
@@ -521,14 +521,14 @@ equipamentos previstos assim o exigir.
 \label{tab:apartamento_individual}
 
 % --- AJUSTES DE ESPAÇAMENTO ---
-\renewcommand{\arraystretch}{1.4} % Aumenta a altura das linhas (padrão é 1.0)
+\renewcommand{\arraystretch}{1.1} % Aumenta a altura das linhas (padrão é 1.0)
 \setlength{\tabcolsep}{12pt}      % Aumenta o espaço lateral entre as colunas (padrão é 6pt)
 % ------------------------------
 
 \begin{tabular}{c c c}
 \toprule
 \textbf{Cômodos} & \textbf{Perímetro} \small{(m)} & \textbf{Área} \small{(m²)} \\
-\toprule
+\midrule
 Área de Serviço	& 6,9     & 2,8 \\
 BWC	            & 6,3     & 2,15 \\
 Cozinha	        & 9,85    & 5,97 \\
@@ -541,8 +541,10 @@ Quarto 2        & 12,8    & 9,88 \\
 WC Social       & 7,9     & 3,51 \\
 Sacada 1        & 13,2    & 10,34 \\
 Sacada 2        & 8,9     & 4,63 \\
-Sacada 3        & 7,6     & 3,75 \\\hline
-\textbf{Total}  & 133,2   & 89,3 \rule{0pt}{15pt}para \\\hline
+Sacada 3        & 7,6     & 3,75 \\
+\midrule
+\textbf{Total}  & 133,2   & 89,3 \rule{0pt}{15pt}para \\
+\bottomrule
 \end{tabular}
 \fonte{O autor (2026).}
 \end{table}
@@ -589,14 +591,14 @@ e o teto (altura de suspensão ou embutimento).
 \caption{Iluminação - Apartamentos Individual}
 
 % --- AJUSTES DE ESPAÇAMENTO ---
-\renewcommand{\arraystretch}{1.4} % Aumenta a altura das linhas (padrão é 1.0)
+\renewcommand{\arraystretch}{1.1} % Aumenta a altura das linhas (padrão é 1.0)
 \setlength{\tabcolsep}{12pt}      % Aumenta o espaço lateral entre as colunas (padrão é 6pt)
 % ------------------------------
 
 \begin{tabular}{c c c c c}
 \toprule
 \textbf{Cômodos} &\textbf{Quantidade} & \textbf{Potência Unitária} & \textbf{Potência Total}\\
-\toprule
+\midrule
 Área de Serviço	& 1   & 100 & 100 \\
 BWC	             & 1 & 100 &  100 \\
 Cozinha	         & 1 & 100 &  100 \\
@@ -609,8 +611,10 @@ Quarto 2         & 2 & 100 + 60 &  160 \\
 WC Social        & 1 & 100 &  100 \\
 Sacada 1          & 2 & 100 + 60 &  160 \\
 Sacada 2         & 1 & 100 &  100 \\
-Sacada 3         & 1 & 100 &  100 \\\hline
-\textbf{Total}   & \textbf{19} & -- &  \textbf{1.660} \rule{0pt}{15pt} \\\hline
+Sacada 3         & 1 & 100 &  100 \\
+\midrule
+\textbf{Total}   & \textbf{19} & -- &  \textbf{1.660} \rule{0pt}{15pt} \\
+\bottomrule
 \end{tabular}
 \fonte{O autor (2026).}
 \label{tab:iluminacao_apartamento_individual}
@@ -652,14 +656,14 @@ projeto.
 \caption{Tomadas Gerais - Apartamentos Individual}
 
 % --- AJUSTES DE ESPAÇAMENTO ---
-\renewcommand{\arraystretch}{1.4} % Aumenta a altura das linhas (padrão é 1.0)
+\renewcommand{\arraystretch}{1.1} % Aumenta a altura das linhas (padrão é 1.0)
 \setlength{\tabcolsep}{12pt}      % Aumenta o espaço lateral entre as colunas (padrão é 6pt)
 % ------------------------------
 
 \begin{tabular}{c c c c c}
 \toprule
 \textbf{Cômodos} &\textbf{Quantidade} & \textbf{Potência Unitária} & \textbf{Potência Total}\\
-\toprule
+\midrule
 Área de Serviço	 & 1 & 600 & 600\\
 BWC	             & 1 & 600 &  600\\
 Cozinha	         & 3 & 600 + 600 + 600 &  1800\\
@@ -673,9 +677,9 @@ WC Social        & 1 & 600 &  600\\
 Sacada 1         & 3 & 600 + 600 + 600 &  1800\\
 Sacada 2         & 0 & 0 &  0\\
 Sacada 3         & 0 & 0 &  0\\
-\hline
+\midrule
 \textbf{Total}   & 26 & - &  7600 \rule{0pt}{15pt}\\
-\hline
+\bottomrule
 \end{tabular}
 \fonte{O autor (2026).}
 \label{tab:tomadas_gerais_apartamento_individual}
@@ -709,8 +713,8 @@ pelo fabricante:
         \caption{Tomadas de Uso Especifico}
         \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
         
-        \renewcommand{\arraystretch}{1.2} % Ajusta a altura das linhas da tabela
-        \setlength{\tabcolsep}{11pt}       
+        \renewcommand{\arraystretch}{1.15} % Ajusta a altura das linhas da tabela
+        \setlength{\tabcolsep}{9pt}       
 
         \begin{tabular}{c c c c c c c}
         \toprule 
@@ -776,7 +780,7 @@ importância é proporcional ao porte da edificação e que, com frequência,
 concentram os maiores blocos de potência instalada:
 
 \begin{itemize}[leftmargin=1.2cm]
-    \item motobombas de recalque (abastecimento de água);
+    \item Motobombas de recalque (abastecimento de água);
     \item bombas de incêndio (sistema de combate a incêndio), cujo
     dimensionamento elétrico deve ainda observar a ABNT NBR 13714 \cite{nbr13714};
     \item elevadores e demais equipamentos de transporte vertical;
@@ -940,7 +944,7 @@ e coletivas:
 
 \section{Carga do Condomínio}
 \label{subsec:carga_condominio}
-\hspace{1.27cm} Nos mesmos moldes do levantamento dos apartamentos-tipo, as cargas de uso comum foram classificadas em três grupos: iluminação, tomadas e cargas de força (equipamentos). A Tabela \ref{tab:cargas_condominio} apresenta potência ativa (W), potência aparente (VA) e a fase de ligação de cada carga. Nas cargas bifásicas ou trifásicas, a potência é dividida igualmente entre as fases indicadas.
+\hspace{1.27cm} Nos mesmos moldes do levantamento dos apartamentos-tipo, as cargas de uso comum foram classificadas em três grupos: iluminação, tomadas e cargas de força (equipamentos). A Tabela~\ref{tab:cargas_condominio} apresenta potência ativa (W), potência aparente (VA) e a fase de ligação de cada carga. Nas cargas bifásicas ou trifásicas, a potência é dividida igualmente entre as fases indicadas.
 
 \begin{table}[H]
 \centering
@@ -952,7 +956,7 @@ e coletivas:
 
 \toprule
 \textbf{Tipo} & \textbf{Ambiente} & \textbf{Watts} & \textbf{VA} & \textbf{Fase} \\
-\hline
+\midrule
 \multirow{13}{*}{\rotatebox{90}{Iluminação}} 
  & Garagem Subsolo & 3000 & 3000 & T \\
  & Rampas - Térreo & 1200 & 1200 & T \\
@@ -969,9 +973,9 @@ e coletivas:
  & Elevadores & 200 & 200 & R \\
  & Emergência & 200 & 200 & S \\
  & Casa de máquinas & 800 & 800 & S \\
-\hline
-\small{\textbf{Subtotal}} & \small{Iluminação} & \small{18.000} & \small{18.000} & - \\
-\hline
+\midrule
+\small{\textbf{Subtotal}} & \small{Iluminação} & \small{18.000} & \small{18.000} & - \rule{0pt}{13pt}\\
+\midrule
 \multirow{9}{*}{\rotatebox{90}{Tomada}}
  & Salão de Festas: 127V & 2000 & 2500 & T \\
  & Salão de Festas: 220V & 1500 & 1875 & RS \\
@@ -982,20 +986,23 @@ e coletivas:
  & Poço Elevadores & 1400 & 1750 & S \\
  & Guarita & 1500 & 1875 & S \\
  & Condomínio & 1400 & 1750 & R \\
- \hline
- \small{\textbf{Subtotal}} & \small{Tomadas} & \small{13.200} & \small{16.500} & - \\
-\hline
+ \midrule
+ \small{\textbf{Subtotal}} & \small{Tomadas} & \small{13.200} & \small{16.500} & - \rule{0pt}{13pt}\\
+\midrule
 \multirow{3}{*}{\rotatebox{90}{\small{Forças}}}
   & Portões de Garagem & 600 & 750 & S \\
   & Elevador & 5520 & 6900 & RST \\
   & Bomba de Recalque & 3680 & 4600 & RST \\
-\hline
- \small{\textbf{Subtotal}} & \small{Cargas Especiais} & \small{9.800} & \small{12.250} & - \\
-\hline
+\midrule
+ \small{\textbf{Subtotal}} & \small{Cargas Especiais} & \small{9.800} & \small{12.250} & - \rule{0pt}{13pt}\\
+\midrule
 \textbf{Total} & 25 & \textbf{41000} & \textbf{46750} & \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+
+
 
 \section{Carga Total da Instalação}
 \label{subsec:carga_total}
@@ -1016,6 +1023,9 @@ elevadores etc.). Com base nos totais da Tabela "Cargas dos Apartamentos"
 conforme a ressalva acima), a carga instalada dos 14 apartamentos deve ser
 somada à carga do condomínio ($P_{esp}$) assim que esta for calculada, para
 compor a Carga Total da Instalação exigida no item do roteiro.
+
+
+
 
 % ============================================================
 \section{Cálculo de Demanda}\index{Demanda}
@@ -1323,9 +1333,9 @@ A demanda calculada para essa área foi de 2.288 VA, também correspondente à c
 % ============================================================
 \section{Categoria da Unidade Consumidora}\index{Categoria de fornecimento}
 
-\hspace{1.27cm}Após a definição de todos os circuitos das unidades consumidoras, bem como o cálculo da carga total instalada e das demandas de cada quadro, realiza-se a consulta à Tabela \ref{tab:dimensionamento_ramal} para determinar a categoria correspondente ao edifício de uso coletivo e às respectivas unidades consumidoras.
+\hspace{1.27cm}Após a definição de todos os circuitos das unidades consumidoras, bem como o cálculo da carga total instalada e das demandas de cada quadro, realiza-se a consulta à Tabela~\ref{tab:dimensionamento_ramal} para determinar a categoria correspondente ao edifício de uso coletivo e às respectivas unidades consumidoras.
 
-Para o edifício de uso coletivo, a demanda foi calculada conforme o procedimento estabelecido pelo CODI, resultando em uma demanda final de 223,264 kVA. Esse é, portanto, o valor de demanda a ser solicitado à Copel. De acordo com a Tabela \ref{tab:dimensionamento_ramal} do CODI, Dimensionamento do Ramal de Ligação em BT e Sistema de Aterramento, o valor obtido enquadra-se na categoria de demanda máxima de 225 kVA.
+Para o edifício de uso coletivo, a demanda foi calculada conforme o procedimento estabelecido pelo CODI, resultando em uma demanda final de 223,264 kVA. Esse é, portanto, o valor de demanda a ser solicitado à Copel. De acordo com a Tabela~\ref{tab:dimensionamento_ramal} do CODI, Dimensionamento do Ramal de Ligação em BT e Sistema de Aterramento, o valor obtido enquadra-se na categoria de demanda máxima de 225 kVA.
 
 Dessa forma, o ramal de ligação que alimentará o edifício será constituído por:
 
@@ -1689,7 +1699,7 @@ independentemente de sua utilidade, é dividida em três partes, sendo elas:
 O projeto de uma rede telefônica interna tem por finalidade dimensionar essas
 três partes, além de determinar a quantidade necessária de blocos terminais 
 internos, de modo a prover um sistema de comunicação adequado ao porte e à 
-finalidade do edifício. A Figura \ref{fluxograma_projeto_telefonico} apresenta o fluxograma da sequência de 
+finalidade do edifício. A Figura~\ref{fluxograma_projeto_telefonico} apresenta o fluxograma da sequência de 
 passos para o dimensionamento de um projeto telefônico.
 
 \begin{figure}[H]
@@ -1707,7 +1717,7 @@ passos para o dimensionamento de um projeto telefônico.
 \hspace{1.27cm}Conforme indicado na Figura~\ref{fluxograma_projeto_telefonico}, a sequência culmina no \textbf{desenho do projeto}, no qual a tubulação telefônica do edifício é representada graficamente. Esse desenho reúne a rede de tubulação e de cabos em planta e em corte vertical (prumada), com a localização da caixa de distribuição geral, das caixas de distribuição de cada pavimento e das caixas de saída, de modo que a rede possa ser executada exatamente como dimensionada nas etapas anteriores.
 
 
-A sequência de passos apresentada na Figura \ref{fluxograma_projeto_telefonico} é a única lista denominada, pela Prática, de sequência básica (Capítulo 5, item 5.04). O dimensionamento parte da rede mais próxima do usuário final, ou seja, dos cabos secundários, e avança em direção à rede mais próxima da concessionária, isto é, dos cabos de entrada. Somente após o dimensionamento dessas três partes da rede são tratados o cálculo de blocos terminais, os comprimentos de cabos, a distribuição de pares, a tabela de materiais e a representação gráfica do projeto.
+A sequência de passos apresentada na Figura~\ref{fluxograma_projeto_telefonico} é a única lista denominada, pela Prática, de sequência básica (Capítulo 5, item 5.04). O dimensionamento parte da rede mais próxima do usuário final, ou seja, dos cabos secundários, e avança em direção à rede mais próxima da concessionária, isto é, dos cabos de entrada. Somente após o dimensionamento dessas três partes da rede são tratados o cálculo de blocos terminais, os comprimentos de cabos, a distribuição de pares, a tabela de materiais e a representação gráfica do projeto.
 
 \subsection{Descrição das Etapas do Projeto Telefônico}
 
@@ -1783,7 +1793,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
 
 \section{Capacidade de Condução de Corrente e Fatores de Correção}
 
-\hspace{1.27cm}Estas tabelas \ref{tab:fct}, \ref{tab:fca} e \ref{tab:ampacidade} são os pilares para o dimensionamento dos condutores elétricos. A Tabela \ref{tab:ampacidade} fornece a ampacidade (capacidade de condução de corrente) base dos cabos para diferentes métodos de referência e seções nominais. Como as condições reais da instalação divergem dos padrões ideais de laboratório, utilizam-se a Tabela \ref{tab:fct} (Fator de Correção de Temperatura - FCT) e a Tabela \ref{tab:fca} (Fator de Correção de Agrupamento - FCA) para penalizar a capacidade de condução dos cabos em função da temperatura ambiente e da quantidade de circuitos justapostos no mesmo conduto, garantindo a integridade da isolação.
+\hspace{1.27cm}Estas tabelas~\ref{tab:fct},~\ref{tab:fca} e~\ref{tab:ampacidade} são os pilares para o dimensionamento dos condutores elétricos. A Tabela~\ref{tab:ampacidade} fornece a ampacidade (capacidade de condução de corrente) base dos cabos para diferentes métodos de referência e seções nominais. Como as condições reais da instalação divergem dos padrões ideais de laboratório, utilizam-se a Tabela~\ref{tab:fct} (Fator de Correção de Temperatura - FCT) e a Tabela~\ref{tab:fca} (Fator de Correção de Agrupamento - FCA) para penalizar a capacidade de condução dos cabos em função da temperatura ambiente e da quantidade de circuitos justapostos no mesmo conduto, garantindo a integridade da isolação.
 
 \begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
 \centering
@@ -1798,7 +1808,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \label{tab:fct}
         \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
         \setlength{\tabcolsep}{8pt} % margem entre colunas
-        \renewcommand{\arraystretch}{1.25} % Ajusta a altura das linhas da tabela
+        \renewcommand{\arraystretch}{1.2} % Ajusta a altura das linhas da tabela
 
         %\resizebox{\linewidth}{!}{%
         \begin{tabular}{c |c | c |c | c}
@@ -1924,7 +1934,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
 
 \section{Cálculo de Demanda Predial} 
 
-\hspace{1.27cm}Para o dimensionamento da entrada de energia de edificações residenciais, a carga total instalada raramente é utilizada de forma simultânea as tabelas \ref{tab:diversificacao_quantidade_apartamentos} e \ref{tab:demanda_apartamento}. A Tabela \ref{tab:demanda_apartamento} permite estipular a demanda individual de cada unidade consumidora (apartamento) em função de sua área útil. Em seguida, aplica-se a Tabela \ref{tab:diversificacao_quantidade_apartamentos}, que fornece o fator de diversificação em função da quantidade de apartamentos, permitindo o dimensionamento seguro e econômico do ramal alimentador geral do edifício.
+\hspace{1.27cm}Para o dimensionamento da entrada de energia de edificações residenciais, a carga total instalada raramente é utilizada de forma simultânea as tabelas~\ref{tab:diversificacao_quantidade_apartamentos} e~\ref{tab:demanda_apartamento}. A Tabela~\ref{tab:demanda_apartamento} permite estipular a demanda individual de cada unidade consumidora (apartamento) em função de sua área útil. Em seguida, aplica-se a Tabela~\ref{tab:diversificacao_quantidade_apartamentos}, que fornece o fator de diversificação em função da quantidade de apartamentos, permitindo o dimensionamento seguro e econômico do ramal alimentador geral do edifício.
 
 % ---------------------------------
 
@@ -2045,7 +2055,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
 
 \section{Verificação por Queda de Tensão}\index{Queda de tensão}
 
-\hspace{1.27cm}O dimensionamento de cabos não depende apenas de sua capacidade térmica. A Tabela \ref{tab:criterio_simplificado} apresenta os critérios simplificados para garantir que a queda de tensão desde a origem da instalação até o ponto de consumo permaneça dentro dos limites normativos (1 a 4), evitando o mau funcionamento dos equipamentos.
+\hspace{1.27cm}O dimensionamento de cabos não depende apenas de sua capacidade térmica. A Tabela~\ref{tab:criterio_simplificado} apresenta os critérios simplificados para garantir que a queda de tensão desde a origem da instalação até o ponto de consumo permaneça dentro dos limites normativos (1 a 4), evitando o mau funcionamento dos equipamentos.
 
 \begin{table}[H]
 \centering
@@ -2089,7 +2099,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
 
 \section{Cargas Motrizes}
 
-\hspace{1.27cm}Destinada ao dimensionamento de circuitos de força, a Tabela \ref{tab:motores_trifasicos} compila a demanda agrupada e os fatores de correção para instalações que contêm múltiplos motores trifásicos, considerando suas potências em CV e a probabilidade de funcionamento simultâneo.
+\hspace{1.27cm}Destinada ao dimensionamento de circuitos de força, a Tabela~\ref{tab:motores_trifasicos} compila a demanda agrupada e os fatores de correção para instalações que contêm múltiplos motores trifásicos, considerando suas potências em CV e a probabilidade de funcionamento simultâneo.
 
 \begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
 \centering
@@ -2148,7 +2158,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
 
 \section{Infraestrutura de Alimentação e Unidades Consumidoras}
 
-\hspace{1.27cm}A Tabela \ref{tab:dimensionamento_ramal} descreve o padrão do ramal de ligação subterrâneo geral. Já a Tabela \ref{tab:dimensionamento_unidades_consumidoras} detalha o dimensionamento individual das unidades consumidoras. A partir da demanda máxima prevista em kVA, esta tabela estipula a corrente do disjuntor de proteção, a configuração do sistema (fases e fios), e as seções nominais exigidas para os condutores de cobre ou alumínio nos ramais de ligação e de entrada, além de definir os eletrodutos e a malha de aterramento correspondente.
+\hspace{1.27cm}A Tabela~\ref{tab:dimensionamento_ramal} descreve o padrão do ramal de ligação subterrâneo geral. Já a Tabela~\ref{tab:dimensionamento_unidades_consumidoras} detalha o dimensionamento individual das unidades consumidoras. A partir da demanda máxima prevista em kVA, esta tabela estipula a corrente do disjuntor de proteção, a configuração do sistema (fases e fios), e as seções nominais exigidas para os condutores de cobre ou alumínio nos ramais de ligação e de entrada, além de definir os eletrodutos e a malha de aterramento correspondente.
 
 \begin{table}[H] % <--- Força a tabela a ficar EXATAMENTE AQUI
 \centering
@@ -2168,7 +2178,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
         \resizebox{\linewidth}{!}{%
         \begin{tabular}{c|c|c|c|c|c|c|c}
         \hline
-        \multirow{4}{*}{\shortstack{\textbf{Demanda Máxima}\\\textbf{Prevista (kVA)}}} & \multirow{4}{*}{\shortstack{\textbf{Disjuntor}\\\textbf{Proteção}\\\textbf{Geral (A)}}} & \multicolumn{4}{c|}{\textbf{Ramal de Ligação Subterrâneo (TF Copel até seccionadora)}} & \multicolumn{2}{c|}{\textbf{Sistema de Aterramento}} \\
+        \multirow{4}{*}{\shortstack{\textbf{Demanda Máxima}\\\textbf{Prevista (kVA)}}} & \multirow{4}{*}{\shortstack{\textbf{Disjuntor}\\\textbf{Proteção}\\\textbf{Geral (A)}}} & \multicolumn{4}{c|}{\textbf{Ramal de Ligação Subterrâneo (TF Copel até seccionadora)}} & \multicolumn{2}{c}{\textbf{Sistema de Aterramento}} \\
         \cline{3-8}
         \rule{0pt}{30pt} & & \multicolumn{2}{c|}{\shortstack{\textbf{Dimensionamento de Fase e Neutro}\\\textbf{(Maneira "D")}}} & \multicolumn{2}{c|}{\shortstack{\textbf{Eletroduto $\phi$ nominal}}} & \multirow{2}{*}{\shortstack{\textbf{Condutor}\\\textbf{Cobre nu}\\{mm$^2$}}} & \multirow{2}{*}{\shortstack{\textbf{Eletroduto}\\\textbf{PVC $\phi$}\\\textbf{nominal} \\(mm)}} \\
         \cline{3-6}
