@@ -13,6 +13,7 @@
 \usepackage{siunitx}
 \usepackage{float}
 \usepackage{makeidx} % índice remissivo
+\usepackage[table,xcdraw]{xcolor}
 \makeindex
 
 
@@ -436,7 +437,7 @@ Além dos apartamentos, o levantamento contempla também os ambientes de uso com
         \begin{itemize}
             \item Salão de Festas: tomadas de uso geral em 127 V e tomadas em 220 V.
             \item Cozinha do Salão de Festas: tomada dedicada ao freezer e tomada dedicada ao grill.
-            \item Circulação e garagem: Corredor do Tipo (220 V) e Garagem do Subsolo (220 V).
+            \item Circulação e garagem: Corredor do Tipo e Garagem do Subsolo.
             \item Demais áreas: Poço dos Elevadores; Guarita; Tomadas do Condomínio (uso geral).
         \end{itemize}
     \item \textbf{Cargas de força e equipamentos}
@@ -527,7 +528,7 @@ equipamentos previstos assim o exigir.
 
 \begin{tabular}{c c c}
 \toprule
-\textbf{Cômodos} & \textbf{Perímetro} \small{(m)} & \textbf{Área} \small{(m²)} \\
+\textbf{Cômodos} & \textbf{Perímetro \small{(m)}} & \textbf{Área \small{(m²)}} \\
 \midrule
 Área de Serviço	& 6,9     & 2,8 \\
 BWC	            & 6,3     & 2,15 \\
@@ -542,8 +543,8 @@ WC Social       & 7,9     & 3,51 \\
 Sacada 1        & 13,2    & 10,34 \\
 Sacada 2        & 8,9     & 4,63 \\
 Sacada 3        & 7,6     & 3,75 \\
-\midrule
-\textbf{Total}  & 133,2   & 89,3 \rule{0pt}{15pt}para \\
+\midrule \rowcolor[HTML]{ffc187}
+\textbf{Total}  & 133,2   & 89,3  \\
 \bottomrule
 \end{tabular}
 \fonte{O autor (2026).}
@@ -595,30 +596,34 @@ e o teto (altura de suspensão ou embutimento).
 \setlength{\tabcolsep}{12pt}      % Aumenta o espaço lateral entre as colunas (padrão é 6pt)
 % ------------------------------
 
-\begin{tabular}{c c c c c}
+\begin{tabular}{cccc}
 \toprule
-\textbf{Cômodos} &\textbf{Quantidade} & \textbf{Potência Unitária} & \textbf{Potência Total}\\
+\multirow{2}{*}{\textbf{Ambiente}} & \multirow{2}{*}{\textbf{Quantidade}} & \textbf{Potência Unitária} & \textbf{Potência Total} \\
+                                   &                                      & \textbf{(VA)}              & \textbf{(VA)}           \\
 \midrule
-Área de Serviço	& 1   & 100 & 100 \\
-BWC	             & 1 & 100 &  100 \\
-Cozinha	         & 1 & 100 &  100 \\
-Sala	          & 3 & 100 + 60 +60 &  220 \\
-Quarto 1	     & 1 & 100 &  100 \\
-Circulação	     & 1 & 100 &  100 \\
-Suíte             & 3 & 100 + 60 + 60 &  220 \\
-WC Suíte         & 1 & 100 &  100 \\
-Quarto 2         & 2 & 100 + 60 &  160 \\
-WC Social        & 1 & 100 &  100 \\
-Sacada 1          & 2 & 100 + 60 &  160 \\
-Sacada 2         & 1 & 100 &  100 \\
-Sacada 3         & 1 & 100 &  100 \\
-\midrule
-\textbf{Total}   & \textbf{19} & -- &  \textbf{1.660} \rule{0pt}{15pt} \\
+Área de Serviço                    & 1                                    & 100                        & 100                     \\
+BWC                                & 1                                    & 100                        & 100                     \\
+Circulação                         & 1                                    & 100                        & 100                     \\
+Cozinha                            & 1                                    & 100                        & 100                     \\
+Quarto 1                           & 1                                    & 100                        & 100                     \\
+Quarto 2$^{*}$                           & 2                                    & 100 + 60                   & 160                     \\
+Sacada 1                           & 2                                    & 100 + 60                   & 160                     \\
+Sacada 2                           & 1                                    & 100                        & 100                     \\
+Sacada 3                           & 1                                    & 100                        & 100                     \\
+Sala                               & 3                                    & 100 + 60 + 60              & 220                     \\
+Suíte$^{*}$                              & 3                                    & 100 + 60 + 60              & 220                     \\
+WC Social                          & 1                                    & 100                        & 100                     \\
+WC Suíte                           & 1                                    & 100                        & 100                     \\
+\midrule \rowcolor[HTML]{ffc187}
+\textbf{Total}                              & \textbf{19}                          & \textbf{--}                & \textbf{1.660}         \\
 \bottomrule
 \end{tabular}
+
 \fonte{O autor (2026).}
 \label{tab:iluminacao_apartamento_individual}
 \end{table}
+
+Note que se seguirmos o critério mínimo dada pela equação~\ref{eq:iluminacao} da norma \cite{nbr5410}, a quantidade de pontos de iluminação necessários para atender os ambiente: \textbf{Quarto 2} e \textbf{Suite}, são respectivamente: 1 e 2, porém por decisão dos projetistas foram adicionadas 1 ponto adicional (de 60~VA) para cada um dos ambientes em questão, assim, a potência de iluminação total do apartamento é de \textbf{1.660~VA}, distribuída em 19 pontos de iluminação.
 
 \subsection{Tomadas de Uso Geral (TUGs)}\index{Tomadas de uso geral (TUG)}
 
@@ -660,30 +665,35 @@ projeto.
 \setlength{\tabcolsep}{12pt}      % Aumenta o espaço lateral entre as colunas (padrão é 6pt)
 % ------------------------------
 
-\begin{tabular}{c c c c c}
+\begin{tabular}{cccc}
+
 \toprule
-\textbf{Cômodos} &\textbf{Quantidade} & \textbf{Potência Unitária} & \textbf{Potência Total}\\
+\multirow{2}{*}{\textbf{Ambiente}} & \multirow{2}{*}{\textbf{Quantidade}} & \textbf{Potência Unitária} & \textbf{Potência Total} \\
+                                   &                                      & \textbf{(VA)}              & \textbf{(VA)}           \\
 \midrule
-Área de Serviço	 & 1 & 600 & 600\\
-BWC	             & 1 & 600 &  600\\
-Cozinha	         & 3 & 600 + 600 + 600 &  1800\\
-Sala	         & 4 & 100 + 100 + 100 + 100 &  400\\
-Quarto 1	     & 3 & 100 + 100 + 100 &  300\\
-Circulação	     & 1 & 100 &  100\\
-Suíte            & 4 & 100 + 100 + 100 + 100 &  400\\
-WC Suíte         & 1 & 600 &  600\\
-Quarto 2         & 4 & 100 + 100 + 100 + 100 &  400\\
-WC Social        & 1 & 600 &  600\\
-Sacada 1         & 3 & 600 + 600 + 600 &  1800\\
-Sacada 2         & 0 & 0 &  0\\
-Sacada 3         & 0 & 0 &  0\\
-\midrule
-\textbf{Total}   & 26 & -- &  7600 \rule{0pt}{15pt}\\
+Área de Serviço                    & 1                                    & 600                        & 600                     \\
+BWC                                & 1                                    & 600                        & 600                     \\
+Circulação                         & 1                                    & 100                        & 100                     \\
+Cozinha                            & 3                                    & 600 + 600 + 600            & 1.800                   \\
+Quarto 1                           & 3                                    & 100 + 100 + 100            & 300                     \\
+Quarto 2                           & 4                                    & 100 + 100 + 100 + 100      & 400                     \\
+Sacada 1                           & 3                                    & 600 + 600 + 600            & 1.800                   \\
+Sacada 2                           & -                                    & -                          & 0                       \\
+Sacada 3                           & -                                    & -                          & 0                       \\
+Sala                               & 4                                    & 100 + 100 + 100 + 100      & 400                     \\
+Suíte                              & 4                                    & 100 + 100 + 100 + 100      & 400                     \\
+WC Social                          & 1                                    & 600                        & 600                     \\
+WC Suíte                           & 1                                    & 600                        & 600                     \\
+\midrule \rowcolor[HTML]{ffc187}
+\textbf{Total}                     & \textbf{26}                          & \textbf{--}                & \textbf{7.600}          \\
 \bottomrule
+
 \end{tabular}
 \fonte{O autor (2026).}
 \label{tab:tomadas_gerais_apartamento_individual}
 \end{table}
+
+Com base na Tabela~\ref{tab:tomadas_gerais_apartamento_individual}, que detalha as tomadas gerais por ambiente em um apartamento individual, observa-se um total de 26 pontos instalados. O levantamento resulta em uma potência total de \textbf{7.600~VA}, com maior concentração de carga na Cozinha e na Sacada 1 (ambas com 1.800 VA), o que fornece os parâmetros necessários para o dimensionamento correto dos circuitos de uso geral da unidade.
 
 \subsection{Tomadas de Uso Específico (TUEs)}\index{Tomadas de uso específico (TUE)}
 
@@ -711,60 +721,59 @@ pelo fabricante:
     \begin{minipage}{\textheight}
         \centering
         \caption{Tomadas de Uso Especifico}
+        
         \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
         
-        \renewcommand{\arraystretch}{1.15} % Ajusta a altura das linhas da tabela
-        \setlength{\tabcolsep}{9pt}       
+        \renewcommand{\arraystretch}{0.95} % Ajusta a altura das linhas da tabela
+        \setlength{\tabcolsep}{12pt}       
 
-        \begin{tabular}{c c c c c c c}
-        \toprule 
-        \textbf{Ambiente} & \textbf{Quant.} & \textbf{Tipo (de aparelho)} & \textbf{Potência Unitária (W)} & \textbf{Potência Total (W)} & \textbf{Potência Total (VA)} \\
+        \begin{tabular}{cccccc}
         \toprule
-        \multirow{2}{*}{Área de Serviço} 
-        & 1 & Máquina Lava e Seca & 1220 & \multirow{2}{*}{1360} & \multirow{2}{*}{1700} \\
-        & 1 & Robô Aspirador     & 140  &                       &                       \\
-        \hline
-        BWC & 1 & Chuveiro & 7500 & 7500 & 9375 \\
-        \hline
-        \multirow{5}{*}{Cozinha} 
-        & 1 & Torneira Elétrica & 5550 & \multirow{5}{*}{12990} & \multirow{5}{*}{16237,5} \\
-        & 1 & Fogão             & 4000 &                        &                          \\
-        & 1 & Microondas        & 1100 &                        &                          \\
-        & 1 & Geladeira         & 340  &                        &                          \\
-        & 1 & Air Fryer         & 2000 &                        &                          \\
-        \hline
-        Sala & 1 & A/C Central & 1500 & 1500 & 1875 \\
-        \hline
-        \multirow{2}{*}{Quarto 1} 
-        & 1 & Televisão & 300 & \multirow{2}{*}{1115} & \multirow{2}{*}{1393,75} \\
-        & 1 & Ar Condicionado & 815  &                       &                       \\
-        \hline
-        Circulação & -- & -- & -- & -- & -- \\
-        \hline
-        \multirow{2}{*}{Quarto 1} 
-        & 1 & Televisão & 300 & \multirow{2}{*}{1500} & \multirow{2}{*}{1800} \\
-        & 1 & Ar Condicionado & 1200  &                       &                       \\
-        \hline
-        WC Suíte & 1 & Chuveiro & 7500 & 7500 & 9375 \\
-        \hline
-        \multirow{2}{*}{Quarto 2} 
-        & 1 & Televisão & 300 & \multirow{2}{*}{1115} & \multirow{2}{*}{1393,75} \\
-        & 1 & Ar Condicionado & 815  &                       &                       \\
-        \hline
-        WC Social & 1 & Chuveiro & 7500 & 7500 & 9375 \\
-        \hline
-        Sacada 1 & 1 & Adega & 180 & 180 & 225 \\
-        \hline
-        Sacada 2 & -- & -- & -- & -- & -- \\
-        \hline
-        Sacada 3 & -- & -- & -- & -- & -- \\
-        \toprule
-        \textbf{Total} & 18 & -- & 42260 & 42260 & 52750 \\
-        \toprule
+        \multirow{2}{*}{\textbf{Ambiente}} & \multirow{2}{*}{\textbf{Quant.}} & \textbf{Tipo}          & \textbf{Potência Unitária} & \textbf{Potência Total} & \textbf{Potência Total}   \\
+        &                                  & \textbf{(de aparelho)} & \textbf{(W)}               & \textbf{(W)}            & \textbf{(VA)}             \\
+        \midrule
+        \multirow{2}{*}{Área de Serviço}   & 1                                & Máquina Lava e Seca    & 1.220                      & \multirow{2}{*}{1.360}  & \multirow{2}{*}{1.700}    \\
+        & 1                                & Robô Aspirador         & 140                        &                         &                           \\
+        \midrule
+        BWC                                & 1                                & Chuveiro               & 7.500                      & 7.500                   & 9.375                     \\
+        \midrule
+        Circulação                         & --                                & --                      & --                          & --                       & --                         \\
+        \midrule
+        \multirow{5}{*}{Cozinha}           & 1                                & Torneira Elétrica      & 5.550                      & \multirow{5}{*}{12.990} & \multirow{5}{*}{16.237,5} \\
+        & 1                                & Fogão                  & 4.000                      &                         &                           \\
+        & 1                                & Microondas             & 1.100                      &                         &                           \\
+        & 1                                & Geladeira              & 340                        &                         &                           \\
+        & 1                                & Air Fryer              & 2.000                      &                         &                           \\
+        \midrule
+        \multirow{2}{*}{Quarto 1}          & 1                                & Televisão              & 300                        & \multirow{2}{*}{1.115}  & \multirow{2}{*}{1352,1}  \\
+        & 1                                & Ar Condicionado        & 815                        &                         &                           \\
+        \midrule
+        \multirow{2}{*}{Quarto 2}          & 1                                & Televisão              & 300                        & \multirow{2}{*}{1.115}  & \multirow{2}{*}{1352,1}  \\
+        & 1                                & Ar Condicionado        & 815                        &                         &                           \\
+        \midrule
+        Sacada 1                           & 1                      & Adega        & 180              & 180                     & 225                       \\
+        \midrule
+        Sacada 2                           & 0                                & --                      & --                          & --                       & --                         \\
+        \midrule
+        Sacada 3                           & 0                                & --                      & --                          & --                       & --                         \\
+        \midrule
+        Sala                               & 1                                & A/C Central            & 1.500                      & 1.500                   & 1.875                     \\
+        \midrule
+        \multirow{2}{*}{Suíte}             & 1                                & Televisão              & 300                        & \multirow{2}{*}{1.500}  & \multirow{2}{*}{1833,3}    \\
+        & 1                                & Ar Condicionado        & 1.200                      &                         &                           \\
+        \midrule
+        WC Social                          & 1                                & Chuveiro               & 7.500                      & 7.500                   & 9.375                     \\
+        \midrule
+        WC Suíte                           & 1                                & Chuveiro               & 7.500                      & 7.500                   & 9.375                     \\
+        \midrule \rowcolor[HTML]{ffc187}
+        \textbf{Total}                     & \textbf{18}                      & \textbf{--}            & \textbf{42.260}            & \textbf{42.260}         & \textbf{52.700}          \\
+        \bottomrule
+
         \end{tabular}
         
         \vspace{0.15cm}
         \fonte{O autor (2026).}
+        \label{tab:tues}
     \end{minipage}
 \end{sideways}
 
@@ -772,9 +781,11 @@ pelo fabricante:
 
 \newpage
 
+Com base na Tabela~\ref{tab:tues} referente às Tomadas de Uso Específico (TUEs), constata-se um total de 18 aparelhos distribuídos pelos diversos ambientes da residência. O levantamento aponta uma potência total instalada de \textbf{42.260~W}, que resulta em \textbf{52.700~VA} ao considerar os fatores de conversão para o projeto elétrico. Os maiores impactos na carga concentram-se na cozinha (com destaque para a torneira elétrica e o fogão) e nos banheiros (devido aos chuveiros de 7.500 W cada), evidenciando a expressiva demanda energética desses setores e fornecendo os subsídios necessários para o dimensionamento adequado dos circuitos específicos da instalação.
+
 \subsection{Cargas Especiais de Edificações Coletivas}
 
-\hspace{1.27cm} Nas edificações de uso coletivo, soma-se ao levantamento residencial
+\hspace{1.27cm} Nas edificações de uso coletivo, soma--se ao levantamento residencial
 convencional o levantamento das \textbf{cargas de uso comum}, cuja
 importância é proporcional ao porte da edificação e que, com frequência,
 concentram os maiores blocos de potência instalada:
@@ -834,12 +845,13 @@ e coletivas:
     \begin{minipage}{\textheight}
         \centering
         \caption{Cargas dos Apartamentos - Parte 1 de 2}
+        \label{tab:cargas_apartamentos_1}
         \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
         \setlength{\tabcolsep}{8pt}       
 
         \centering
         \small
-        \renewcommand{\arraystretch}{1.3}
+        \renewcommand{\arraystretch}{1.35}
         \resizebox{\linewidth}{!}{%
         \begin{tabular}{c | c c c c c c c c c c c c}
         \toprule
@@ -856,6 +868,7 @@ e coletivas:
         & 202 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 301 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         \hline
+        \rowcolor[HTML]{fde6c7}
         \textbf{Total -- CM1} & \textbf{5} & \textbf{446,4} & \textbf{7.800} & \textbf{38.000} & \textbf{4.075} & \textbf{6.000} & \textbf{4.075} & \textbf{7.500} & \textbf{37.500} & \textbf{37.500} & \textbf{37.500} & \textbf{6.100} \\
         \hline
         \multirow{9}{*}{Centro de Medi\c{c}\~ao 2}
@@ -869,12 +882,15 @@ e coletivas:
         & 701 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         & 702 & 89,27 & 1.560 & 7.600 & 815 & 1.200 & 815 & 1.500 & 7.500 & 7.500 & 7.500 & 1.220 \\
         \hline
-        \textbf{Total -- CM2} & \textbf{9} & \textbf{803} & \textbf{14040} & \textbf{68400} & \textbf{7335} & \textbf{10800} & \textbf{7335} & \textbf{13500} & \textbf{67500} & \textbf{67500} & \textbf{67500} & \textbf{10980} \\
-        \hline
-        \textbf{Total Geral: CM1 + CM2} & \textbf{14} & \textbf{1250} & \textbf{21840} & \textbf{106400} & \textbf{11410} & \textbf{16800} & \textbf{11410} & \textbf{21000} & \textbf{105000} & \textbf{105000} & \textbf{105000} & \textbf{17080} \\
+        \rowcolor[HTML]{fde6c7}
+        \textbf{Total -- CM2} & \textbf{9} & \textbf{803} & \textbf{14.040} & \textbf{68.400} & \textbf{7.335} & \textbf{10.800} & \textbf{7.335} & \textbf{13.500} & \textbf{67.500} & \textbf{67.500} & \textbf{67.500} & \textbf{10.980} \\
+        \hline \rowcolor[HTML]{ffc187}
+        \textbf{Total Geral: CM1 + CM2} & \textbf{14} & \textbf{1.250} & \textbf{21.840} & \textbf{106.400} & \textbf{11.410} & \textbf{16.800} & \textbf{11.410} & \textbf{21.000} & \textbf{105.000} & \textbf{105.000} & \textbf{105.000} & \textbf{17.080} \\
         \bottomrule
+
         \end{tabular}%
         }
+        
         
         \vspace{0.15cm}
         \fonte{O autor (2026).}
@@ -893,6 +909,7 @@ e coletivas:
     \begin{minipage}{\textheight}
         \centering
         \caption{Cargas dos Apartamentos - Parte 2 de 2}
+        \label{tab:cargas_apartamentos_2}
         \vspace{0.15cm} % Dá um espacinho entre o título e a tabela
         \setlength{\tabcolsep}{8pt}       
 
@@ -915,6 +932,7 @@ e coletivas:
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             \hline
+            \rowcolor[HTML]{fde6c7}
             \textbf{Total -- CM1} & \textbf{1.500} & \textbf{1.500} & \textbf{1.500} & \textbf{27.750} & \textbf{700} & \textbf{20.000} & \textbf{5.500} & \textbf{1.700} & \textbf{10.000} & \textbf{900} & \textbf{257.100} \\
             \hline
             \multirow{9}{*}{Centro de Medi\c{c}\~ao 2}
@@ -928,9 +946,10 @@ e coletivas:
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             & 300 & 300 & 300 & 5.550 & 140 & 4.000 & 1.100 & 340 & 2.000 & 180 & 51.420 \\
             \hline
-            \textbf{Total -- CM2} & \textbf{2700} & \textbf{2700} & \textbf{2700} & \textbf{49950} & \textbf{1260} & \textbf{36000} & \textbf{9900} & \textbf{3060} & \textbf{18000} & \textbf{1620} & \textbf{462780} \\
-            \hline
-            \textbf{Total Geral: CM1 + CM2} & \textbf{4200} & \textbf{4200} & \textbf{4200} & \textbf{77700} & \textbf{1960} & \textbf{56000} & \textbf{15400} & \textbf{4760} & \textbf{28000} & \textbf{2520} & \textbf{719880} \\
+            \rowcolor[HTML]{fde6c7}
+            \textbf{Total -- CM2} & \textbf{2.700} & \textbf{2.700} & \textbf{2.700} & \textbf{49.950} & \textbf{1.260} & \textbf{36.000} & \textbf{9.900} & \textbf{3.060} & \textbf{18.000} & \textbf{1.620} & \textbf{462.780} \\
+            \hline \rowcolor[HTML]{ffc187}
+            \textbf{Total Geral: CM1 + CM2} & \textbf{4.200} & \textbf{4.200} & \textbf{4.200} & \textbf{77.700} & \textbf{1.960} & \textbf{56.000} & \textbf{15.400} & \textbf{4.760} & \textbf{28.000} & \textbf{2.520} & \textbf{719.880} \\
             \bottomrule
             \end{tabular}%
         }
@@ -941,6 +960,8 @@ e coletivas:
 \end{sideways}
 
 \end{table}
+
+Com base nas Tabelas ~\ref{tab:cargas_apartamentos_1} e ~\ref{tab:cargas_apartamentos_2} referentes às cargas dos apartamentos, observa-se que o projeto elétrico compreende um total de 14 unidades consumidoras divididas entre dois centros de medição (CM1 com 5 apartamentos e CM2 com 9 apartamentos). O dimensionamento detalhado das Tomadas de Uso Específico (TUE's) e dos aparelhos elétricos demonstra uma carga individual padronizada de \textbf{51.420~W} por apartamento, culminando em uma carga geral expressiva de \textbf{719.880~W} para toda a edificação. Esses dados consolidam o planejamento técnico necessário para a infraestrutura de distribuição e o dimensionamento adequado dos circuitos e dispositivos de proteção de entrada de energia do empreendimento.
 
 \section{Carga do Condomínio}
 \label{subsec:carga_condominio}
@@ -973,7 +994,7 @@ e coletivas:
  & Elevadores & 200 & 200 & R \\
  & Emergência & 200 & 200 & S \\
  & Casa de máquinas & 800 & 800 & S \\
-\midrule
+\midrule \rowcolor[HTML]{fde6c7}
 \small{\textbf{Subtotal}} & \small{Iluminação} & \small{18.000} & \small{18.000} & --  \\
 \midrule
 \multirow{9}{*}{\rotatebox{90}{Tomada}}
@@ -986,18 +1007,19 @@ e coletivas:
  & Poço Elevadores & 1400 & 1750 & S \\
  & Guarita & 1500 & 1875 & S \\
  & Condomínio & 1400 & 1750 & R \\
- \midrule
+ \midrule \rowcolor[HTML]{fde6c7}
  \small{\textbf{Subtotal}} & \small{Tomadas} & \small{13.200} & \small{16.500} & --  \\
 \midrule
 \multirow{3}{*}{\rotatebox{90}{\small{Forças}}}
   & Portões de Garagem & 600 & 750 & S \\
   & Elevador & 5520 & 6900 & RST \\
   & Bomba de Recalque & 3680 & 4600 & RST \\
-\midrule
+\midrule \rowcolor[HTML]{fde6c7}
  \small{\textbf{Subtotal}} & \small{Cargas Especiais} & \small{9.800} & \small{12.250} & --  \\
-\midrule
+\midrule \rowcolor[HTML]{ffc187}
 \textbf{Total} & 25 & \textbf{41000} & \textbf{46750} & -- \\
 \bottomrule
+\label{Elaborado pelo autor (2026).}
 \end{tabular}
 \end{table}
 
@@ -1484,7 +1506,7 @@ Esse esquema é aplicável quando o aterramento das massas da instalação é re
 
 Caso seja o próprio projetista a realizar a solicitação do pedido de fornecimento, ele deve acessar o site oficial da COPEL e se encaminhar para a aba de Mais Serviços, e em seguida selecionar a opção Para Projetistas. 
 
-A parte técnica da documentação exige a entrega do projeto elétrico, que inclui a planta baixa do imóvel indicando a localização de todos os pontos de energia, e a Anotação de Responsabilidade Técnica (ART) emitida e assinada pelo engenheiro eletricista responsável. Em alguns casos específicos, também pode ser cobrada a licença ambiental ou a declaração de dispensa expedida pelo órgão ambiental competente. Além disso, é obrigatório apresentar a Declaração de Carga Instalada, que lista os equipamentos que serão usados e suas potências, é indispensável sempre que a entrada de energia tiver disjuntor de 100 A ou mais, ou se no local forem utilizados máquinas específicas como motores elétricos, aparelhos de solda ou máquinas de raios X.
+A parte técnica da documentação exige a entrega do projeto elétrico, que inclui a planta baixa do imóvel indicando a localização de todos os pontos de energia, e a Anotação de Responsabilidade Técnica (ART) emitida e assinada pelo engenheiro eletricista responsável. Em alguns casos específicos, também pode ser cobrada a licença ambiental ou a declaração de dispensa expedida pelo órgão ambiental competente. Além disso, é obrigatório apresentar a Declaração de Carga Instalada, que lista os equipamentos que serão usados e suas potências, é indispensável sempre que a entrada de energia tiver disjuntor de 100~A ou mais, ou se no local forem utilizados máquinas específicas como motores elétricos, aparelhos de solda ou máquinas de raios X.
 
 Antes que a COPEL faça a ligação da rede, a entrada de serviço do prédio precisa estar totalmente pronta. Isso significa que o poste, a caixa de medição, os eletrodutos, os fios e o disjuntor já devem estar instalados e dimensionados corretamente, seguindo as normas técnicas e de segurança da concessionária. A ligação da energia só é aprovada após a fiscalização e vistoria feita pela equipe da COPEL.
 
@@ -1667,11 +1689,19 @@ eletrodutos de alimentação de cada trecho da prumada.}
 
 \section{Diagramas Unifilares dos Quadros}
 
-\hspace{1.27cm}\FALTA{Representar os \textbf{Diagramas Unifilares} de cada quadro de
-distribuição do projeto (QGBT, QL de cada apartamento, QG-C, quadro da
-subestação/gerador quando aplicável), indicando circuitos, disjuntores
-(com suas correntes nominais), dispositivos DR/IDR e demais proteções,
-conforme simbologia normatizada.}
+\hspace{1.27cm} A Figura~\ref{img:diagrama_unifilar} apresenta o diagrama unifilar do quadro de distribuição (QD) da unidade consumidora do apartamento, que representa de forma simplificada a organização da instalação elétrica a partir do ponto de entrega de energia. A alimentação vem do centro de medição (CM) por meio de condutores de 16~mm² ($3\#16(16)T16mm^2$), instalados em eletroduto de $\phi40$ mm, e chega a um disjuntor geral de 63 A, responsável pela proteção e pelo seccionamento de toda a unidade. A partir dele, o barramento de cobre (3F+N+T) distribui a energia para 28 circuitos terminais, sendo 2 de iluminação (10~A, condutores de 1,5~mm²), 5 de tomadas de uso geral (TUG, protegidos por disjuntores de 10~A e 16~A, com condutores de 2,5~mm²), 18 de tomadas de uso específico (TUE) e 3 reservados para ampliações futuras. Os circuitos de uso específico possuem proteções e seções adequadas à carga de cada equipamento: a maioria utiliza disjuntores de 10~A ou 16~A com condutores de 2,5~mm², enquanto os de maior potência, como os de 50~A, utilizam condutores de 10~mm², e os de 25 A e 32 A, condutores de 4~mm². O diagrama também indica a distribuição das cargas entre as fases R, S e T, buscando o equilíbrio do sistema, e a presença de dispositivos diferenciais residuais (DDR) em diversos circuitos, que reforçam a proteção das pessoas contra choques elétricos e a segurança da instalação.
+
+\begin{figure}[H]
+    \centering
+
+    \caption{Diagrama Unifilar dos Quadros.}
+    \vspace{0.15cm}
+    \includegraphics[width=0.9\textwidth]{imagens/Unifilar_Apartamento.png}
+    \vspace{0.15cm}
+    \fonte{Elaborado pelo autor (2026), com base em \citeonline{telebras}.}
+    
+    \label{img:diagrama_unifilar}
+\end{figure}
 
 \section{Estudo de Pesquisa: Projeto Telefônico}\index{Projeto telefônico}
 
@@ -2306,18 +2336,7 @@ As tabelas aqui presentes estão organizadas de acordo com as etapas de dimensio
     \end{minipage}
 \end{sideways}
 
-\end{table}
-
-\FALTA{Reunir nos Apêndices (item 3 da Etapa 5 do roteiro) as tabelas,
-normas e demais materiais de apoio utilizados para a composição dos
-resultados (por exemplo, tabelas de fatores de correção da NBR~5410,
-tabelas de ampacidade de condutores, tabela de bitolas comerciais de
-eletrodutos), identificando cada apêndice com letras -- a), b), c) etc. --
-e citando a \textbf{fonte} logo abaixo de cada um. Avaliar também se as
-tabelas extensas de levantamento de cargas hoje inseridas no corpo do
-texto (Seções~4.4, 4.5) devem ser movidas para os apêndices, mantendo no
-corpo apenas os totais e a análise dos resultados.}
-
+\end{table} 
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
