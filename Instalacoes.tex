@@ -1373,7 +1373,7 @@ O circuito de alimentação entre o QGBT e os CM1 e CM2 é constituído por:
 
 A partir dos CM1 e CM2, a alimentação é distribuída entre os quadros correspondentes às unidades consumidoras dos apartamentos e os quadros destinados às cargas de condomínio. Neste projeto, as cargas de condomínio são distribuídas entre os quadros da casa de máquinas, térreo e subsolo.
 
-Para cada unidade consumidora, a categoria é determinada por meio da expressão \((P_1 \times G_1) + (P_2 \times G_2)\) (Equação~\ref{eq:demanda_simples}). Para as unidades consumidoras dos apartamentos, foi definida a categoria 37, cujo ramal de ligação é constituído por:
+Para cada unidade consumidora, a categoria é determinada por meio da expressão \((P_1 \times G_1) + (P_2 \times G_2)\). Para as unidades consumidoras dos apartamentos, foi definida a categoria 37\index{Categoria dos Apartamentos}, cujo ramal de ligação é constituído por:
 
 \[3\#10(10)T10\,\mathrm{mm}^2\,- 1\,\mathrm{kV} - \mathrm{PVC}\,\Phi_m\,32\,\mathrm{mm} \] \vspace{0.01px}
 
@@ -1692,12 +1692,88 @@ ser tratados nos itens a seguir, com fundamentação complementar na
 % ============================================================
 \section{Prumada Elétrica}\index{Prumada elétrica}
 
-\hspace{1.27cm}\FALTA{Realizar e apresentar (como figura) a \textbf{prumada elétrica}
-do edifício (item do roteiro), representando esquematicamente a
-distribuição vertical de energia entre o(s) Quadro(s) Geral(is) de Baixa
-Tensão (QGBT), os quadros de luz (QL) de cada pavimento/apartamento e os
-quadros gerais de condomínio (QG-C), com indicação dos condutores/
-eletrodutos de alimentação de cada trecho da prumada.}
+\subsection{Quadro do Subsolo}
+
+\hspace{1.27cm} A Figura~\ref{img:quadro_subsolo} apresenta o quadro do subsolo, instalado abaixo do nível da calçada (0,00 m) e alimentado pelo alimentador S, de 16 mm², que desce em eletroduto desde o pavimento superior. Do quadro saem os circuitos 1 a 5, distribuídos por eletrodutos, com condutores de 4 mm² nos circuitos de iluminação e tomadas e de 6 mm² no circuito 5.
+
+\begin{figure}[H]
+    \centering
+
+    \caption{Quadro do Subsolo.}
+    \vspace{0.15cm}
+    \includegraphics[width=0.92\textwidth]{imagens/Quadro_Subsolo.png}
+    \vspace{0.15cm}
+    \fonte{Elaborado pelo autor (2026).}
+    
+    \label{img:quadro_subsolo}
+\end{figure}
+
+
+\subsection{Caixa seccionadora e QGBT}
+
+\hspace{1.27cm} A Figura~\ref{img:quadro_cs_qgbt} apresenta o esquema físico da entrada de energia na região da caixa seccionadora (CS) e do quadro geral de baixa tensão (QGBT), instalados no nível da casa de gás (+2,25 m), com o térreo em +0,50 m. A entrada (ENT) é feita por eletrodutos de Ø100 mm que sobem do nível do térreo, com condutores de 120 mm² e de 95 mm². A partir do QGBT, partem os alimentadores dos centros de medição CM1 e CM2, também com condutores de 120 mm² e 95 mm², distribuídos em eletrodutos de Ø73 mm e Ø100 mm até os gabinetes de medição.
+
+\begin{figure}[H]
+    \centering
+
+    \caption{Quadro da Caixa seccionadora e QGBT.}
+    \vspace{0.15cm}
+    \includegraphics[width=0.92\textwidth]{imagens/Quadro_CS_QGBT.png}
+    \vspace{0.15cm}
+    \fonte{Elaborado pelo autor (2026).}
+    
+    \label{img:quadro_cs_qgbt}
+\end{figure}
+
+\subsection{QGC e Quadro do Térreo}
+
+\hspace{1.27cm} A Figura~\ref{img:quadro_QGC_QGCT} mostra a disposição dos quadros no nível da casa de gás (+2,25 m): o quadro geral de condomínio (QGC) e o quadro do térreo, lado a lado. Dele saem os alimentadores das áreas comuns, identificados no desenho como CD (condomínio), com condutores de 35 mm², e MQ (casa de máquinas), com 16 mm². Os alimentadores do térreo (T) e do subsolo (S), também de 16 mm², descem em eletrodutos de Ø32 mm. Os circuitos terminais numerados, de 1 a 19, saem dos quadros e sobem pelos eletrodutos até o nível do Andar 1 (+3,30 m), com condutores de 1,5 mm², 2,5 mm², 4 mm² e 6 mm², conforme a função de cada circuito.
+
+\begin{figure}[H]
+    \centering
+
+    \caption{QGC e quadro do térreo.}
+    \vspace{0.15cm}
+    \includegraphics[width=0.92\textwidth]{imagens/QGC_QGCT.png}
+    \vspace{0.15cm}
+    \fonte{Elaborado pelo autor (2026).}
+    
+    \label{img:quadro_QGC_QGCT}
+\end{figure}
+
+\subsection{Quadro do apartamento.}
+
+\hspace{1.27cm} A Figura~\ref{img:quadro_apartamento} apresenta a distribuição dos circuitos a partir do quadro de um apartamento, identificado pelo alimentador 101, de 16 mm². Os circuitos terminais, numerados de 1 a 25, saem do quadro por eletrodutos que se espalham pelo pavimento. Os circuitos de iluminação aparecem subdivididos (como 1cd, 1d, 1i, 1j, 1l, 1m, 2ab, 2e, 2f, 2g e 2h) e usam, em geral, condutores de 1,5 mm². Os de tomadas e de uso específico utilizam seções de 2,5 mm², 4 mm², 10 mm² e 16 mm², de acordo com a carga atendida.
+
+\begin{figure}[H]
+    \centering
+
+    \caption{Quadro do apartamento.}
+    \vspace{0.15cm}
+    \includegraphics[width=0.92\textwidth]{imagens/Quadro_APT.png}
+    \vspace{0.15cm}
+    \fonte{Elaborado pelo autor (2026).}
+    
+    \label{img:quadro_apartamento}
+\end{figure}
+
+
+\subsection{Quadro da casa de máquinas.}
+
+\hspace{1.27cm} A Figura~\ref{img:quadro_casa_maquinas} mostra o quadro da casa de máquinas, localizado no pavimento mais alto da edificação (+24,61 m), alimentado por condutores de 16 mm² (MQ). Dele derivam três circuitos: o circuito 1, com condutores de 1,5 mm², e o circuito 2, com 2,5 mm², para iluminação e tomadas, e o circuito 3, com condutores de 16 mm², que segue em eletroduto até o equipamento representado à direita do quadro, indicando uma carga de maior potência.
+
+\begin{figure}[H]
+    \centering
+
+    \caption{Quadro da casa de máquinas.}
+    \vspace{0.15cm}
+    \includegraphics[width=0.92\textwidth]{imagens/Unifilar_maquinas.png}
+    \vspace{0.15cm}
+    \fonte{Elaborado pelo autor (2026).}
+    
+    \label{img:quadro_casa_maquinas}
+\end{figure}
+
 
 \section{Diagramas Unifilares dos Quadros}
 
@@ -1720,28 +1796,28 @@ eletrodutos de alimentação de cada trecho da prumada.}
 
 \subsection{Diagrama Unifilar do QGC}
 
-\hspace{1.27cm} A Figura apresenta o diagrama unifilar geral da entrada de energia da edificação, que mostra o caminho da eletricidade desde a rede da concessionária até os quadros de cada unidade e das áreas comuns. A alimentação chega por condutores de 120 mm² $(3x3\#120(120) mm^{2}$, isolação de 1 kV em PVC, eletroduto de 3x Ø100 mm) até a caixa seccionadora, dimensionada para 223.264 VA e equipada com disjuntor de 600 A, dispositivo de proteção contra surtos (DPS) e ligação ao sistema de aterramento por haste de 5/8" com 4 m de comprimento. Da caixa seccionadora, a energia segue para o quadro geral de baixa tensão (QGBT), protegido por um disjuntor geral de 600 A, que a divide em dois centros de medição: o CM1, alimentado por um disjuntor de 300 A com condutores de 70 mm², e o CM2, alimentado por um disjuntor de 400 A com condutores de 120 mm². O CM1 reúne cinco medidores de energia (kWh) de unidades consumidoras, cada um protegido por disjuntor de 63 A e condutores de 10 mm², além de um medidor dedicado ao quadro geral de condomínio (QGC), com disjuntor de 100 A e condutores de 35 mm². O CM2 reúne outros nove medidores, também com disjuntores de 63 A e condutores de 10 mm², totalizando 14 unidades com medição individual. A partir do QGC, a energia é distribuída por condutores de 10 mm² para os quadros das áreas comuns: subsolo (32 A), térreo (63 A) e casa de máquinas (50 A). Todos os quadros e centros de medição estão interligados ao sistema de aterramento, assegurando a proteção das pessoas e dos equipamentos.
+\hspace{1.27cm} A Figura~\ref{img:unifilar_subsolo} apresenta o diagrama unifilar geral da entrada de energia da edificação, que mostra o caminho da eletricidade desde a rede da concessionária até os quadros de cada unidade e das áreas comuns. A alimentação chega por condutores de 120 mm² $(3x3\#120(120) mm^{2}$, isolação de 1 kV em PVC, eletroduto de 3x Ø100 mm) até a caixa seccionadora, dimensionada para 223.264 VA e equipada com disjuntor de 600 A, dispositivo de proteção contra surtos (DPS) e ligação ao sistema de aterramento por haste de 5/8" com 4 m de comprimento. Da caixa seccionadora, a energia segue para o quadro geral de baixa tensão (QGBT), protegido por um disjuntor geral de 600 A, que a divide em dois centros de medição: o CM1, alimentado por um disjuntor de 300 A com condutores de 70 mm², e o CM2, alimentado por um disjuntor de 400 A com condutores de 120 mm². O CM1 reúne cinco medidores de energia (kWh) de unidades consumidoras, cada um protegido por disjuntor de 63 A e condutores de 10 mm², além de um medidor dedicado ao quadro geral de condomínio (QGC), com disjuntor de 100 A e condutores de 35 mm². O CM2 reúne outros nove medidores, também com disjuntores de 63 A e condutores de 10 mm², totalizando 14 unidades com medição individual. A partir do QGC, a energia é distribuída por condutores de 10 mm² para os quadros das áreas comuns: subsolo (32 A), térreo (63 A) e casa de máquinas (50 A). Todos os quadros e centros de medição estão interligados ao sistema de aterramento, assegurando a proteção das pessoas e dos equipamentos.
 
 \begin{figure}[H]
     \centering
 
     \caption{Unifilar do QGC.}
-    \vspace{0.15cm}
-    \includegraphics[width=0.79\textwidth]{imagens/Unifilar_QGC.png}
-    \vspace{0.15cm}
+    \vspace{0.12cm}
+    \includegraphics[width=0.73\textwidth]{imagens/Unifilar_QGC.png}
+    \vspace{0.1cm}
     \fonte{Elaborado pelo autor (2026).}
     
     \label{img:unifilar_subsolo}
 \end{figure}
 
-\subsection{Diagrama Unifilar do Térrio}
+\subsection{Diagrama Unifilar do Térreo}
 
 \hspace{1.27cm} A Figura~\ref{img:unifilar_terrio} apresenta o diagrama unifilar da instalação elétrica do pavimento térreo, cuja alimentação parte do centro de medição CM-1 por condutores de 35 mm² com função PEN $(3\#35(35)PEN mm^{2})$, isolação de 1 kV em PVC, instalados em eletroduto de Ø50 mm. Após o disjuntor geral do QGC, de 100 A, e do medidor de energia (kWh) que registra o consumo dessa área, a alimentação segue em condutores de 10 mm² $(2\#10(10)PEN mm^{2})$, em eletroduto de Ø32 mm, até o quadro do térreo, protegido por um disjuntor geral de 63 A. Desse quadro derivam 19 circuitos terminais em uso, além de três circuitos reservas previstos para futuras ampliações. Os dez primeiros são de iluminação e utilizam, em sua maioria, condutores de 4 mm², protegidos por disjuntores de 16 A (circuitos 1 a 7) e 10 A (circuitos 8 e 9), sendo o circuito 10 executado com condutores de 6 mm². Os circuitos 11 a 14 atendem às tomadas de uso geral (TUG), com disjuntores de 10 A a 20 A e condutores de 1,5 mm², 2,5 mm² e 4 mm², enquanto os circuitos 15 a 19 são destinados às tomadas de uso específico (TUE), protegidos por disjuntores de 10 A e 8 A, com condutores de 1,5 mm². O diagrama indica ainda a distribuição das cargas entre as fases R, S e T, buscando o equilíbrio do sistema, a presença de dispositivos diferenciais residuais (DDR) em alguns circuitos, para proteção contra choques elétricos, e a ligação do quadro ao sistema de aterramento.
 
 \begin{figure}[H]
     \centering
 
-    \caption{Unifilar do Térrio.}
+    \caption{Unifilar do Térreo.}
     \vspace{0.15cm}
     \includegraphics[width=0.8\textwidth]{imagens/Unifilar_Terio.png}
     \vspace{0.15cm}
